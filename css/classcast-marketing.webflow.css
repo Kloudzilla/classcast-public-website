@@ -1,0 +1,357 @@
+body {
+  background-color: #f9f9f9;
+  font-family: Raleway, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 200;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+}
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.cc-logo {
+  margin-top: 33px;
+}
+.cc-header-right-col {
+  padding-top: 29px;
+  text-align: right;
+}
+.cc-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 4px;
+  background-color: #23aef6;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.cc-btn.cc-btn-secondary {
+  padding: 10px 50px;
+  border: 1px solid gainsboro;
+  background-color: transparent;
+  color: #b9b8b8;
+  font-weight: 400;
+}
+.cc-btn.cc-btn-secondary:hover {
+  background-color: white;
+}
+.cc-btn.cc-btn-wide {
+  width: 100%;
+}
+.cc-btn.cc-btn-wide:hover {
+  background-color: #009ddb;
+}
+.cc-header-sign-in-text {
+  display: inline-block;
+  margin-right: 20px;
+  color: #b9b8b8;
+  font-size: 14px;
+}
+.cc-call-to-action {
+  height: 74px;
+  margin-top: 120px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #eeeded;
+}
+.cc-tagline {
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 75px;
+  line-height: 80px;
+  font-weight: 200;
+}
+.cc-subline {
+  color: #aeaeae;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 200;
+}
+.cc-input {
+  margin-right: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 22px;
+  border: 0px solid white;
+  border-radius: 4px;
+  font-size: 17px;
+  line-height: 30px;
+}
+.cc-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #262626;
+}
+.cc-footer-crafted {
+  display: block;
+  margin-right: 20px;
+  color: white;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 100;
+}
+.cc-footer-copyright {
+  color: white;
+  font-size: 17px;
+  font-weight: 200;
+  text-align: right;
+}
+.cc-trusted-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #d7d7d7;
+  background-color: #f6f5f5;
+}
+.cc-phone-wrap {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 306px;
+  height: 535px;
+  margin-top: 25px;
+  margin-bottom: -193px;
+  float: right;
+}
+.cc-header-row {
+  margin-bottom: 30px;
+}
+.cc-tagline-row {
+  margin-top: 160px;
+}
+.cc-phone-screen {
+  position: absolute;
+  left: 25px;
+  top: 93px;
+}
+.cc-call-to-action-form {
+  width: 65%;
+}
+.cc-trusted-yogafit {
+  display: block;
+  width: 164px;
+  height: 60px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  float: left;
+  background-image: url('../images/trusted-yogafit.gif');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.cc-trusted-yogafit:hover {
+  opacity: 1;
+}
+.cc-trusted-totalgym {
+  display: block;
+  width: 167px;
+  height: 60px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  float: left;
+  background-image: url('../images/trusted-totalgym.gif');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.cc-trusted-totalgym:hover {
+  opacity: 1;
+}
+.cc-trusted-kettleworx {
+  display: block;
+  width: 208px;
+  height: 60px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  float: left;
+  background-image: url('../images/trusted-kettleworx.gif');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.cc-trusted-kettleworx:hover {
+  opacity: 1;
+}
+.cc-trusted-iom {
+  display: block;
+  width: 173px;
+  height: 60px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  float: right;
+  background-image: url('../images/trusted-iom.gif');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.cc-trusted-iom:hover {
+  display: block;
+  opacity: 1;
+}
+.cc-trusted-gymstick {
+  display: block;
+  width: 194px;
+  height: 60px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  float: right;
+  background-image: url('../images/trusted-gymstick.gif');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.cc-trusted-gymstick:hover {
+  opacity: 1;
+}
+.cc-main-heading {
+  margin-top: 80px;
+}
+.cc-text {
+  display: inline-block;
+}
+.cc-footer-link {
+  color: white;
+  font-weight: 100;
+}
+@media (max-width: 991px) {
+  .cc-call-to-action {
+    margin-top: 110px;
+  }
+  .cc-call-to-action-form {
+    width: 100%;
+  }
+  .cc-trusted-yogafit {
+    float: right;
+  }
+  .cc-trusted-totalgym {
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  h3 {
+    display: block;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .cc-header-sign-in-text {
+    display: none;
+  }
+  .cc-call-to-action {
+    height: 135px;
+    margin-top: 192px;
+  }
+  .cc-phone-wrap {
+    left: -23%;
+  }
+}
+@media (max-width: 479px) {
+  h3 {
+    text-align: center;
+  }
+  .cc-tagline {
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .cc-subline {
+    font-size: 18px;
+    text-align: center;
+  }
+  .cc-footer-crafted {
+    font-size: 14px;
+    text-align: center;
+  }
+  .cc-footer-copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+  .cc-trusted-section {
+    padding-top: 18px;
+  }
+  .cc-phone-wrap {
+    left: 0%;
+    height: 404px;
+    margin-top: 40px;
+  }
+  .cc-tagline-row {
+    margin-top: 40px;
+  }
+  .cc-trusted-yogafit {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .cc-trusted-totalgym {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .cc-trusted-kettleworx {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .cc-trusted-iom {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .cc-trusted-gymstick {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+}
