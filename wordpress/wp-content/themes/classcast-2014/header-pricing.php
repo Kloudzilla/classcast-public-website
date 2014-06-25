@@ -1,10 +1,13 @@
+<?php
+/* pricing */
+?>
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Jun 18 2014 05:44:26 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Jun 25 2014 00:36:10 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
-  <title>Classcast External</title>
+  <title>Classcast <?php the_title(); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
@@ -136,26 +139,9 @@ QUOTE DOTS
         </ul>
       </div>
     </div>
-    <div class="cc-hero home">
-      <div class="w-container cc-content-container cc-home-hero-content">
-        <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
-        <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
-          <br>your customers want it, direct to their mobile.</div>
-        <a class="w-inline-block cc-button-s blue" href="#">
-          <div>Get Started</div>
-        </a>
-      </div>
-      <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
-      <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
-        <div class="w-container cc-content-container">
-          <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
-          <div class="cc-trusted-logo-wrap">
-            <div class="cc-trusted-logo total-gym"></div>
-            <div class="cc-trusted-logo gymstick"></div>
-            <div class="cc-trusted-logo kettleworx"></div>
-            <div class="cc-trusted-logo yogafit"></div>
-            <div class="cc-trusted-logo iom"></div>
-          </div>
-        </div>
+    <div class="cc-hero pricing" data-ix="navigation-past-hero">
+      <div class="w-container cc-content-container cc-pricing-hero-content">
+        <h3 class="cc-pricing-hero-headline">Pricing. Plain and simple</h3>
+        <p class="cc-pricing-hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
       </div>
     </div>

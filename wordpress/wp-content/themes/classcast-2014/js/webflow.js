@@ -458,8 +458,8 @@ window.tram=function(t){function i(t,i){var e=new Z.Bare;return e.init(t,i)}func
 
         if (!this.moved) {
             //create custom event
-            if (typeof document.CustomEvent !== "undefined") {
-                evt = new document.CustomEvent('tap', {
+            if (window.CustomEvent) {
+                evt = new window.CustomEvent('tap', {
                     bubbles: true,
                     cancelable: true
                 });
@@ -969,6 +969,9 @@ Webflow.define('touch', function ($, _) {
   $.event.special.tap = (fallback || !Webflow.env.touch) ? { bindType: 'click', delegateType: 'click' } : {
     setup: function () {
       $.data(this, dataKey, new Tap(this));
+
+      // Returning false instructs jQuery to use native `addEventListener` on the element.
+      return false;
     },
     teardown: function () {
       var tap = $.data(this, dataKey);
@@ -976,12 +979,9 @@ Webflow.define('touch', function ($, _) {
         tap.destroy();
         $.removeData(this, dataKey);
       }
-    },
-    add: function (handleObj) {
-      this.addEventListener('tap', handleObj.handler, false);
-    },
-    remove: function (handleObj) {
-      this.removeEventListener('tap', handleObj.handler, false);
+
+      // Returning false makes sure the native event handlers bound above are removed.
+      return false;
     }
   };
 
@@ -994,6 +994,9 @@ Webflow.define('touch', function ($, _) {
   $.event.special.swipe = {
     setup: function () {
       $.data(this, dataKey, new Swipe(this));
+
+      // Returning false instructs jQuery to use native `addEventListener` on the element.
+      return false;
     },
     teardown: function () {
       var tap = $.data(this, dataKey);
@@ -1001,12 +1004,9 @@ Webflow.define('touch', function ($, _) {
         tap.destroy();
         $.removeData(this, dataKey);
       }
-    },
-    add: function (handleObj) {
-      this.addEventListener('swipe', handleObj.handler, false);
-    },
-    remove: function (handleObj) {
-      this.removeEventListener('swipe', handleObj.handler, false);
+
+      // Returning false makes sure the native event handlers bound above are removed.
+      return false;
     }
   };
 
@@ -1047,7 +1047,7 @@ Webflow.define('touch', function ($, _) {
       var velocityX = this.velocityX;
       this.cancel();
       if (Math.abs(velocityX) > threshold) {
-        $(this.element).triggerHandler('swipe', { direction: velocityX > 0 ? 'right' : 'left' });
+        $(e.target).trigger('swipe', { direction: velocityX > 0 ? 'right' : 'left' });
       }
     };
 
@@ -2768,7 +2768,7 @@ Webflow.define('tabs', function ($, _) {
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"bounce","name":"Bounce","value":{"style":{},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 50ms ease 0ms","scale":0.95},{"transition":"transform 150ms ease 0ms","scale":1.01},{"transition":"transform 100ms ease 0ms","scale":1}],"stepsB":[]}]}},
-  {"slug":"side-navigation-open-close","name":"Side Navigation Open & Close","value":{"style":{},"triggers":[{"type":"click","selector":".cc-navigation-side-menu","stepsA":[{"wait":500,"transition":"transform 500ms ease 0ms","x":"0%","y":"0px"}],"stepsB":[{"display":"block","wait":500,"transition":"transform 500ms ease 0ms","x":"-100%","y":"0px"}]}]}},
-  {"slug":"navigation-past-hero","name":"Navigation Past Hero","value":{"style":{},"triggers":[{"type":"scroll","selector":".cc-navigation-past-hero","stepsA":[{"display":"none","opacity":0,"wait":1000,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[{"display":"block","opacity":1,"wait":1000,"transition":"opacity 1000ms ease 0ms"}]}]}}
+  {"slug":"navigation-past-hero","name":"Navigation Past Hero","value":{"style":{},"triggers":[{"type":"scroll","selector":".cc-navigation-past-hero","stepsA":[{"display":"none","opacity":0,"wait":1000,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[{"display":"block","opacity":1,"wait":1000,"transition":"opacity 1000ms ease 0ms"}]}]}},
+  {"slug":"slide-from-right","name":"Slide From Right","value":{"style":{"x":"100%","y":"0px"},"triggers":[{"type":"scroll","offsetBot":"30%","stepsA":[{"transition":"transform 500ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
+  {"slug":"fade-in","name":"Fade In","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","offsetBot":"40%","stepsA":[{"opacity":1,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[]}]}}
 ]);
