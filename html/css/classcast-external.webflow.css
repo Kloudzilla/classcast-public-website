@@ -32,7 +32,7 @@ h4 {
   margin-bottom: 10px;
   font-size: 30px;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 200;
 }
 h5 {
   line-height: 20px;
@@ -67,7 +67,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.blog {
-  height: 300px;
+  height: 400px;
   background-color: #896ec7;
 }
 .cc-hero.about {
@@ -75,14 +75,17 @@ p {
   background-color: #509bd6;
 }
 .cc-hero.pricing {
-  height: 500px;
-  background-color: #896ec7;
+  height: 400px;
+  background-color: #83accc;
 }
 .cc-hero.home {
-  height: 910px;
-  background-image: url('../images/hero_01.png');
-  background-position: 50% 0px;
-  background-repeat: no-repeat;
+  height: 880px;
+  background-color: #509bd6;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 .cc-trusted-headline {
   margin-bottom: 0px;
@@ -122,10 +125,11 @@ p {
   position: relative;
   margin-bottom: 40px;
   float: left;
+  color: white;
 }
 .cc-content-subtext {
   margin-top: 20px;
-  color: white;
+  color: #555;
 }
 .cc-content-list-item-icon {
   position: static;
@@ -135,11 +139,15 @@ p {
   height: 40px;
   margin-top: 2.5px;
   float: left;
+  font-family:'Ios7 icon', sans-serif;
+  color: #509bd6;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
 }
 .cc-content-list-item-text {
   display: inline-block;
   float: left;
-  color: white;
   font-weight: 300;
 }
 .cc-stats-img {
@@ -160,7 +168,7 @@ p {
 .cc-quote {
   position: relative;
   height: 330px;
-  background-color: #896ec7;
+  background-color: #f8f8f8;
   font-family: Raleway, sans-serif;
 }
 .cc-quote-text {
@@ -168,7 +176,7 @@ p {
   margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
-  color: white;
+  color: #555;
   font-size: 24px;
   line-height: 34px;
   text-align: center;
@@ -184,13 +192,13 @@ p {
   width: 40px;
   height: 40px;
   float: none;
+  border: 1px solid #c9c9c9;
   border-radius: 30px;
 }
 .cc-quote-author-name {
   display: block;
   margin-top: 10px;
   float: none;
-  color: white;
   font-size: 18px;
   font-weight: 600;
 }
@@ -198,7 +206,6 @@ p {
   display: block;
   margin-top: 10px;
   float: none;
-  color: white;
 }
 .cc-quote-author {
   display: inline-block;
@@ -237,57 +244,58 @@ p {
 .cc-footer-legal {
   display: inline-block;
   margin-top: 10px;
-  margin-left: 20px;
   float: left;
 }
 .cc-trusted-logo {
   display: inline-block;
-  width: 100%;
-  margin-top: 10px;
+  width: 20%;
+  height: 75px;
   opacity: 1;
 }
-.cc-industry-secondary-tab-item-icon {
-  position: absolute;
-  left: 20px;
-  top: 25%;
-  right: 0px;
-  bottom: 25%;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  float: left;
-  border-radius: 20px;
-  font-family:'Ios7 icon', sans-serif;
-  font-weight: 400;
+.cc-trusted-logo.total-gym {
+  background-image: url('../images/totalgym.png');
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
-.cc-industry-description {
-  color: white;
-  font-size: 16px;
+.cc-trusted-logo.gymstick {
+  background-image: url('../images/gymstick.png');
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.cc-trusted-logo.kettleworx {
+  background-image: url('../images/kettleworx.png');
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.cc-trusted-logo.yogafit {
+  background-image: url('../images/yogafit.png');
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.cc-trusted-logo.iom {
+  background-image: url('../images/iom.png');
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
 .cc-industry-secondary-tab-item-subtext {
-  width: 350px;
-  margin-left: 70px;
   float: left;
 }
 .cc-industry-secondary-tab-item-headline {
-  display: inline-block;
-  margin-bottom: 5px;
-  margin-left: 70px;
-  float: left;
-  font-size: 16px;
-  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
 }
 .cc-industry-img {
   margin-right: auto;
   margin-left: auto;
   border-radius: 20px;
   background-image: url('../images/music_03.png');
-}
-.cc-industry-img.education {
-  background-color: #6ec271;
-}
-.cc-industry-img.health {
-  background-color: #ed5cd5;
 }
 .cc-navigation {
   position: absolute;
@@ -302,7 +310,6 @@ p {
   display: inline-block;
   margin-bottom: 5px;
   float: left;
-  color: white;
   font-weight: 700;
 }
 .cc-content-list-item-text-wrap {
@@ -310,6 +317,7 @@ p {
   width: 85%;
   padding-left: 30px;
   float: left;
+  color: #555;
 }
 .cc-quote-author-img-wrap {
   display: inline-block;
@@ -358,11 +366,12 @@ p {
   left: 0px;
   top: 0px;
   right: 0px;
-  z-index: 9100;
+  z-index: 10001;
   display: none;
   width: 100%;
   height: 60px;
   background-color: rgba(250, 250, 250, 0.98);
+  box-shadow: #6e6e6e 0px 1px 2px -1px;
   -webkit-transform: none;
   -ms-transform: none;
   -o-transform: none;
@@ -371,15 +380,16 @@ p {
 .cc-industry-tab {
   display: inline-block;
   width: 25%;
+  border-top: 1px solid #509bd6;
+  border-right: 1px solid #509bd6;
+  border-bottom: 1px solid #509bd6;
   background-color: transparent;
-  color: #654ca0;
+  color: #9cd4ff;
   font-size: 16px;
   font-weight: 600;
 }
-.cc-industry-tab.education {
-  background-color: transparent;
-}
 .cc-industry-tab.education.w--current {
+  background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -391,19 +401,31 @@ p {
   background-color: transparent;
 }
 .cc-industry-tab.health.w--current {
+  background-color: #509bd6;
   color: white;
 }
 .cc-industry-tab.request {
-  background-color: transparent;
+  border-right-style: solid;
+  border-right-color: #509bd6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .cc-industry-tab.request.w--current {
-  background-color: transparent;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #509bd6;
   color: white;
 }
 .cc-industry-tab.fitness {
+  border-left: 1px solid #509bd6;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: transparent;
 }
 .cc-industry-tab.fitness.w--current {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -412,74 +434,48 @@ p {
   color: white;
 }
 .cc-industry-tab-title {
-  margin-top: 10px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  font-weight: 500;
   text-align: center;
 }
 .cc-industry-tab-pane {
+  padding-top: 60px;
   padding-bottom: 10px;
 }
 .cc-navigation-item-logo-pasthero {
   width: 20%;
   height: 60px;
   float: left;
-  background-image: url('../images/classcastlogodarksymbol.png');
+  background-image: url('../images/classcastlogodark.png');
   background-position: 0px 50%;
   background-repeat: no-repeat;
-}
-.cc-industry-secondary-tab-menu {
-  width: 50%;
-  padding-top: 60px;
-  padding-right: 20px;
-  padding-left: 20px;
-  float: right;
-}
-.cc-industry-secondary-tab-content {
-  width: 50%;
-  margin-top: 60px;
-}
-.cc-industry-secondary-tab-link {
-  position: relative;
-  display: block;
-  margin-top: 15px;
-  padding: 5px 10px;
-  float: left;
-  border: 1px solid #896ec7;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #b59bf2;
-}
-.cc-industry-secondary-tab-link.w--current {
-  position: relative;
-  float: left;
-  border-color: white;
-  background-color: transparent;
-  color: white;
 }
 .cc-industry-tab-circle {
   position: relative;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin-right: auto;
   margin-left: auto;
-  border: 2px solid #654ca0;
+  border: 2px solid #9cd4ff;
   border-radius: 30px;
 }
 .cc-industry-tab-icon {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
   font-family:'Ios7 icon', sans-serif;
-  font-size: 38px;
-  font-weight: 200;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
   text-align: center;
 }
 .cc-industry-tab-icon.fitness {
-  padding-top: 13px;
+  margin-top: 4px;
 }
 .cc-navigation-side-menu-list {
   margin-top: 20px;
@@ -526,45 +522,42 @@ p {
   text-decoration: none;
 }
 .cc-footer-list-item-link:hover {
-  color: #dedede;
+  border-bottom-width: 2px;
+  color: white;
+}
+.cc-industry-request-form {
+  display: block;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .cc-pricing-grid-wrap {
   display: block;
   width: 90%;
-  margin-top: -200px;
+  margin-top: -10px;
   margin-right: auto;
   margin-left: auto;
 }
 .cc-pricing-grid-col {
   padding-right: 0px;
   padding-left: 0px;
-  border-left: 1px solid #c9c9c9;
-  background-color: white;
-}
-.cc-pricing-grid-col.last {
-  border-right: 1px solid #c9c9c9;
 }
 .cc-pricing-grid-col-list.featured {
-  background-color: whitesmoke;
+  background-color: #509bd6;
+  color: white;
 }
 .cc-pricing-grid-col-list-item {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #c9c9c9;
-  color: #555;
   font-weight: 500;
   text-align: center;
 }
 .cc-pricing-grid-col-package {
+  padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #c9c9c9;
-  border-bottom: 1px solid #c9c9c9;
   background-color: white;
 }
 .cc-pricing-grid-col-package.featured {
-  margin-top: -20px;
-  padding-top: 1px;
-  border-top-style: none;
   background-color: #509bd6;
 }
 .cc-pricing-package-title {
@@ -579,7 +572,7 @@ p {
   color: white;
 }
 .cc-pricing-faq-wrap {
-  margin-top: 60px;
+  margin-top: 80px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -587,7 +580,7 @@ p {
   padding-right: 40px;
 }
 .cc-pricing-faq-col-list-item {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .cc-pricing-faq-headline {
   margin-bottom: 10px;
@@ -621,7 +614,6 @@ p {
   margin-bottom: 8px;
 }
 .cc-pricing-package-price-wrap.featured {
-  margin-top: 50px;
   color: white;
 }
 .cc-pricing-package-price-enterprise {
@@ -795,11 +787,11 @@ p {
   padding-bottom: 0px;
 }
 .cc-content-container.cc-industry-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .cc-content-container.cc-home-hero-content {
-  padding-top: 154px;
+  padding-top: 150px;
 }
 .cc-content-container.cc-users-content {
   padding-top: 60px;
@@ -807,10 +799,15 @@ p {
   padding-bottom: 0px;
 }
 .cc-content-container.cc-content-content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10000;
   padding-top: 78px;
   padding-right: 540px;
   padding-bottom: 0px;
-  background-color: #509bd6;
 }
 .cc-content-container.cc-stats-content {
   padding-top: 60px;
@@ -823,7 +820,7 @@ p {
   padding-top: 100px;
 }
 .cc-content-container.cc-blog-hero-content {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .cc-content-container.cc-blog-content {
   padding-bottom: 60px;
@@ -848,6 +845,9 @@ p {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.cc-content-container.cc-brand-content {
+  padding-top: 60px;
+}
 .cc-section.cc-about-tagline {
   height: 180px;
   background-color: #e3e3e3;
@@ -864,13 +864,9 @@ p {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  display: block;
   padding-top: 10px;
-  background-color: #292f30;
-  opacity: 0.6;
-}
-.cc-section.cc-industry {
-  min-height: 654px;
-  background-color: #896ec7;
+  background-color: #f8f8f8;
 }
 .cc-section.cc-users {
   position: relative;
@@ -883,7 +879,7 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 800px;
-  background-color: #509bd6;
+  background-color: #f8f8f8;
 }
 .cc-section.cc-stats {
   position: relative;
@@ -909,6 +905,12 @@ p {
   height: 80px;
   background-color: #292f30;
 }
+.cc-section.cc-brand {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 400px;
+  background-color: #f8f8f8;
+}
 .cc-about-team-headline {
   margin-bottom: 40px;
 }
@@ -925,6 +927,7 @@ p {
   padding-right: 10px;
   padding-left: 10px;
   color: #a8a8a8;
+  text-align: left;
 }
 .cc-location-info-headline {
   margin-bottom: 10px;
@@ -933,6 +936,7 @@ p {
   padding-left: 10px;
   color: #e8e8e8;
   font-weight: 500;
+  text-align: left;
 }
 .cc-about-team-location-headline {
   text-align: center;
@@ -946,7 +950,7 @@ p {
   border-radius: 4px;
   color: white;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
 }
@@ -958,12 +962,15 @@ p {
   border: 1px solid #509bd6;
   color: #509bd6;
 }
-.cc-button-s.green {
+.cc-button-s.blue {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #4fb454;
+  background-color: #2069a1;
 }
-.cc-button-s.green.footer-signup {
+.cc-button-s.blue:hover {
+  background-color: #165687;
+}
+.cc-button-s.blue.footer-signup {
   display: block;
   width: 200px;
   margin-right: auto;
@@ -971,10 +978,7 @@ p {
   margin-left: auto;
   text-align: center;
 }
-.cc-button-s.green.footer-signup:hover {
-  background-color: #70db75;
-}
-.cc-button-s.green.team-join-us {
+.cc-button-s.blue.team-join-us {
   margin-bottom: 20px;
 }
 .cc-button-s.center {
@@ -982,9 +986,6 @@ p {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-}
-.cc-button-s.center.purple {
-  background-color: #896ec7;
 }
 .cc-button-s.white-keyline {
   padding-top: 12px;
@@ -1117,9 +1118,6 @@ p {
 .cc-about-resources-tagline {
   line-height: 36px;
 }
-.cc-content-headline {
-  color: white;
-}
 .cc-home-hero-headline {
   margin-bottom: 30px;
   color: white;
@@ -1203,6 +1201,7 @@ p {
   margin-bottom: 40px;
 }
 .cc-input {
+  min-height: 60px;
   border-radius: 6px;
 }
 .cc-input.cc-text-area {
@@ -1266,25 +1265,23 @@ p {
 }
 .cc-footer-min-list {
   display: inline-block;
-  height: 40px;
   margin-top: 0px;
   margin-bottom: 0px;
   float: right;
 }
 .cc-footer-min-list-item {
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   float: left;
 }
 .cc-footer-min {
-  height: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 100%;
+  padding-top: 20px;
 }
 .cc-footer-min-legal {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
   float: left;
 }
 .cc-footer-min-logo {
@@ -1295,11 +1292,13 @@ p {
 .cc-footer-min-list-item-link {
   display: inline-block;
   width: 100%;
-  height: 40px;
   padding-top: 10px;
-  padding-bottom: 10px;
   color: #555;
   text-decoration: none;
+}
+.cc-footer-min-list-item-link:hover {
+  border-bottom: 2px solid white;
+  color: white;
 }
 .cc-footer-min-logo-link {
   float: left;
@@ -1309,12 +1308,12 @@ p {
   text-decoration: none;
 }
 .cc-navigation-menu-list {
-  width: 50%;
+  width: 40%;
   height: 100%;
   float: right;
 }
 .cc-navigation-menu-list.pop-down {
-  width: 50%;
+  width: 40%;
   padding-right: 0px;
 }
 .cc-navigation-menu-list-item {
@@ -1325,61 +1324,183 @@ p {
 .cc-navigation-menu-list-item-link {
   width: 100%;
   height: 100%;
-  padding-top: 20px;
-  color: #ebebeb;
+  opacity: 0.6;
+  color: white;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
 }
 .cc-navigation-menu-list-item-link:hover {
-  color: white;
+  opacity: 1;
 }
 .cc-navigation-menu-list-item-link.pop-down {
-  color: #555;
+  color: #6e6e6e;
   font-size: 14px;
 }
-.cc-industry-img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: none;
-  background-position: 0% 0%;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
+.cc-navigation-menu-list-item-link.pop-down:hover {
+  color: #555;
 }
-.cc-industry-img-video {
-  display: block;
-  max-width: 440px;
-  margin-right: auto;
-  margin-left: auto;
+.cc-navigation-menu-list-item-link.pop-down.sign-up {
+  opacity: 1;
 }
-.cc-industry-img-music {
-  display: block;
-  max-width: 316px;
-  margin-right: auto;
-  margin-left: auto;
+.cc-right-arrow {
+  display: none;
+  color: #9cd4ff;
 }
-.cc-industry-img-notes {
-  display: block;
-  max-width: 380px;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
+.cc-left-arrow {
+  color: #9cd4ff;
 }
-.cc-industry-img-revenue {
+.cc-industry-feature-icon {
+  padding-top: 5%;
+  padding-bottom: 60px;
+  font-family:'Ios7 icon', sans-serif;
+  color: #509bd6;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 200;
+  text-align: center;
+}
+.cc-industry-feature-text {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+.cc-industry-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.cc-blog-post-hero-headline {
+  color: white;
+  font-size: 38px;
+  line-height: 42px;
+}
+.cc-about-tagline-headline {
+  margin-top: 12px;
+  font-size: 38px;
+  line-height: 38px;
+}
+.cc-navigation-menu-list-item-text {
+  display: inline-block;
+  padding-top: 20px;
+  font-weight: 400;
+}
+.cc-navigation-menu-list-item-text-signup {
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.cc-footer-list-item-text {
+  display: inline-block;
+}
+.cc-pricing-hero-subtext {
   display: block;
-  max-width: 400px;
-  margin-top: 120px;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.cc-pricing-faq-title {
+  margin-top: 80px;
+  text-align: center;
+}
+.cc-home-hero-image {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  width: 720px;
+  height: 660px;
+  background-image: url('../images/hero-test.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+.cc-navigation-menu-list-item-text-dark {
+  display: inline-block;
+  padding-top: 20px;
+}
+.cc-navigation-menu-list-item-text-signup-dark {
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  background-color: #509bd6;
+  color: white;
+}
+.cc-branding-img {
+  position: relative;
+  height: 340px;
+  background-image: url('../images/branding-iphone4.png');
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+}
+.cc-branding-logo {
+  position: absolute;
+  top: 134px;
+  right: 84px;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #896ec7;
+}
+.cc-branding-logo-text {
+  margin-top: 16px;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.cc-content-slider {
+  height: 800px;
+  background-color: #f8f8f8;
+}
+.cc-content-slide-1 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.cc-content-slide-2 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.cc-content-left-arrow {
+  color: #509bd6;
+}
+.cc-content-right-arrow {
+  color: #509bd6;
+}
+.cc-content-slide-nav {
+  display: none;
+}
+.cc-content-right-arrow-icon {
+  width: 50px;
+  height: 50px;
+  padding-top: 7.5px;
+  border-radius: 30px;
+  background-color: white;
+}
+html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
+  -webkit-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  -o-transform: translate(100%, 0px);
+  transform: translate(100%, 0px);
+}
+html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
+  opacity: 0;
 }
 @media (max-width: 991px) {
   .cc-hero {
     background-position: 50% 30%;
   }
   .cc-hero.home {
-    height: 660px;
-    background-position: 50% 40%;
+    height: 600px;
+    background-image: none;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
   }
   .cc-users-img {
     position: static;
@@ -1465,7 +1586,6 @@ p {
   .cc-footer-legal {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 20px;
   }
   .cc-trusted-logo {
     height: auto;
@@ -1499,6 +1619,12 @@ p {
     padding-right: 5%;
     padding-left: 5%;
   }
+  .cc-pricing-faq-wrap {
+    margin-top: 60px;
+  }
+  .cc-pricing-faq-col-list-item {
+    margin-bottom: 60px;
+  }
   .cc-blog-post-content {
     width: 85%;
   }
@@ -1515,6 +1641,11 @@ p {
     text-align: center;
   }
   .cc-content-container.cc-content-content {
+    position: absolute;
+    left: 0px;
+    top: 360px;
+    right: 0px;
+    bottom: 0px;
     padding-top: 60px;
     padding-right: 0px;
     padding-bottom: 60px;
@@ -1560,25 +1691,35 @@ p {
     line-height: 22px;
   }
   .cc-navigation-menu-list {
-    width: 60%;
+    width: 50%;
   }
   .cc-navigation-menu-list.pop-down {
-    width: 70%;
+    width: 50%;
   }
-  .cc-industry-img-video {
-    max-width: 320px;
-    margin-top: 80px;
+  .cc-home-hero-image {
+    background-position: 493px -78px;
   }
-  .cc-industry-img-music {
-    margin-top: 60px;
+  .cc-branding-img {
+    background-size: 330px;
   }
-  .cc-industry-img-notes {
-    max-width: 320px;
-    margin-top: 80px;
+  .cc-branding-logo {
+    top: 110px;
+    right: 60px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
   }
-  .cc-industry-img-revenue {
-    max-width: 340px;
-    margin-top: 200px;
+  .cc-branding-logo-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .cc-content-left-arrow {
+    height: 50%;
+    margin-top: 0px;
+  }
+  .cc-content-right-arrow {
+    height: 50%;
+    margin-top: 0px;
   }
 }
 @media (max-width: 767px) {
@@ -1595,13 +1736,10 @@ p {
     background-position: 67% 24%;
   }
   .cc-hero.blog {
-    height: 300px;
+    height: auto;
   }
   .cc-hero.about {
     padding-top: 60px;
-  }
-  .cc-hero.pricing {
-    height: 460px;
   }
   .cc-hero.home {
     height: 590px;
@@ -1621,7 +1759,6 @@ p {
   .cc-content-img {
     width: 100%;
     min-height: 200px;
-    background-color: #509bd6;
     background-size: 500px;
   }
   .cc-content-list {
@@ -1677,16 +1814,16 @@ p {
   }
   .cc-industry-mobile {
     padding: 60px 5% 0px;
-    background-color: #896ec7;
   }
   .cc-industry-ring-mobile {
+    position: relative;
     display: block;
     width: 80px;
     height: 80px;
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
-    border: 2px solid white;
+    border: 2px solid #509bd6;
     border-radius: 50px;
   }
   .cc-industry-block-mobile {
@@ -1695,7 +1832,7 @@ p {
   }
   .cc-industry-headline-mobile {
     margin-bottom: 10px;
-    color: white;
+    color: #509bd6;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -1706,7 +1843,7 @@ p {
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    color: white;
+    color: #555;
     text-align: center;
   }
   .cc-footer-logo-mobile {
@@ -1719,15 +1856,19 @@ p {
     background-repeat: no-repeat;
   }
   .cc-industry-icon-mobile {
-    margin-top: 32px;
-    margin-bottom: 30px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 80px;
+    height: 80px;
+    padding-top: 30px;
     font-family:'Ios7 icon', sans-serif;
-    color: white;
+    color: #509bd6;
     font-size: 50px;
     text-align: center;
   }
   .cc-industry-icon-mobile.fitness {
-    margin-top: 22px;
+    padding-top: 20px;
   }
   .cc-navigation-item-logo {
     display: block;
@@ -1757,16 +1898,14 @@ p {
   }
   .cc-pricing-grid-wrap {
     width: 90%;
-    margin-top: -220px;
   }
-  .cc-pricing-grid-col {
-    margin-top: 20px;
+  .cc-pricing-grid-col.second-row {
+    margin-top: 40px;
   }
   .cc-pricing-grid-col-list.featured.last {
     border-right: 1px solid #c9c9c9;
   }
   .cc-footer-legal-mobile {
-    margin-top: 10px;
     text-align: center;
   }
   .cc-blog-post {
@@ -1778,6 +1917,12 @@ p {
   }
   .cc-hero-navigation-list {
     width: 100%;
+  }
+  .cc-hero-navigation-list-item-link {
+    opacity: 0.6;
+  }
+  .cc-hero-navigation-list-item-link:hover {
+    opacity: 1;
   }
   .cc-pricing-hero-headline {
     font-size: 40px;
@@ -1803,6 +1948,7 @@ p {
     padding-right: 5%;
   }
   .cc-content-container.cc-content-content {
+    top: 260px;
     padding-right: 5%;
   }
   .cc-content-container.cc-stats-content {
@@ -1812,12 +1958,15 @@ p {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .cc-content-container.cc-pricing-hero-content {
-    padding-top: 40px;
+  .cc-content-container.cc-brand-content {
+    text-align: center;
   }
   .cc-section.cc-footer-section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .cc-section.cc-brand {
+    height: auto;
   }
   .cc-team-row {
     margin-top: 0px;
@@ -1825,9 +1974,9 @@ p {
   .cc-team-col {
     margin-top: 40px;
   }
-  .cc-button-s.white-keyline.request-demo {
+  .cc-button-s.blue {
     display: block;
-    width: 50%;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1894,6 +2043,24 @@ p {
   .cc-navigation-menu-list.pop-down {
     width: 90%;
   }
+  .cc-navigation-menu-list-item {
+    width: 33.3%;
+  }
+  .cc-branding-img {
+    height: 200px;
+  }
+  .cc-branding-logo {
+    right: 130px;
+  }
+  .cc-branding-headline {
+    margin-top: 60px;
+  }
+  .cc-content-slider {
+    height: 700px;
+  }
+  .cc-content-left-arrow {
+    margin-top: 0px;
+  }
 }
 @media (max-width: 479px) {
   h2 {
@@ -1903,9 +2070,6 @@ p {
     padding-top: 120px;
     background-position: 67% 20%;
     background-size: 960px 490px;
-  }
-  .cc-hero.pricing {
-    height: 460px;
   }
   .cc-hero.home {
     height: 510px;
@@ -1933,7 +2097,6 @@ p {
     margin-right: 0%;
     margin-left: 0%;
     float: none;
-    background-color: #509bd6;
     background-size: 280px;
     background-repeat: no-repeat;
   }
@@ -1995,12 +2158,6 @@ p {
     font-size: 16px;
     line-height: 24px;
   }
-  .cc-industry-secondary-tab-item-icon {
-    left: 0px;
-    top: 5px;
-    width: 30px;
-    height: 30px;
-  }
   .cc-industry-secondary-tab-item-subtext {
     width: auto;
     margin-left: 60px;
@@ -2032,21 +2189,9 @@ p {
   }
   .cc-industry-headline-mobile {
     margin-bottom: 10px;
-    color: white;
-    font-size: 16px;
-    text-align: center;
   }
   .cc-industry-subtext-mobile {
     width: 90%;
-    color: white;
-    text-align: center;
-  }
-  .cc-industry-icon-mobile {
-    margin-top: 32px;
-    margin-bottom: 30px;
-    color: white;
-    font-size: 50px;
-    text-align: center;
   }
   .cc-industry-icon-mobile.fitness {
     font-weight: 100;
@@ -2071,14 +2216,18 @@ p {
     width: 100%;
     background-position: 50% 50%;
   }
-  .cc-pricing-grid-col.last-portrait {
-    border-right: 1px solid #c9c9c9;
+  .cc-pricing-grid-col {
+    margin-top: 20px;
+    border: 1px solid #509bd6;
   }
   .cc-pricing-grid-col-package.featured {
     margin-top: 0px;
   }
   .cc-pricing-faq-col {
     padding-right: 10px;
+  }
+  .cc-pricing-faq-col-list-item {
+    margin-bottom: 40px;
   }
   .cc-blog-post-content {
     width: 100%;
@@ -2124,14 +2273,12 @@ p {
     text-align: center;
   }
   .cc-content-container.cc-content-content {
+    top: 240px;
     padding-top: 20px;
   }
   .cc-content-container.cc-stats-content {
     padding-top: 20px;
     padding-right: 5%;
-  }
-  .cc-content-container.cc-pricing-hero-content {
-    padding-top: 30px;
   }
   .cc-section.cc-footer-min-section {
     height: 120px;
@@ -2143,11 +2290,14 @@ p {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .cc-button-s.blue {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .cc-button-s.white-keyline {
     display: block;
-  }
-  .cc-button-s.white-keyline.request-demo {
-    width: 80%;
   }
   .cc-location-col.palo-alto {
     border-bottom: 1px solid #3f4042;
@@ -2200,7 +2350,12 @@ p {
   }
   .cc-footer-min-list-item {
     width: 25%;
+    margin-right: 0px;
     margin-left: 0px;
+    text-align: center;
+  }
+  .cc-footer-min-legal {
+    width: 100%;
     text-align: center;
   }
   .cc-footer-min-logo {
@@ -2223,23 +2378,28 @@ p {
   .cc-navigation-menu-list.pop-down {
     width: 100%;
   }
+  .cc-pricing-hero-subtext {
+    display: none;
+  }
+  .cc-branding-img {
+    background-position: 53% 0px;
+    background-size: 268px;
+  }
+  .cc-branding-logo {
+    top: 90px;
+    right: 40px;
+  }
+  .cc-branding-headline {
+    margin-top: 30px;
+  }
+  .cc-content-slider {
+    height: 920px;
+  }
 }
 
 @font-face {
   font-family: 'Ios7 icon';
-  src: url('../fonts/ios7-icon.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ios7 icon';
-  src: url('../fonts/ios7-icon.ttf') format('truetype');
+  src: url('../fonts/ios7-icon.woff') format('woff'), url('../fonts/ios7-icon.ttf') format('truetype'), url('../fonts/ios7-icon.svg') format('svg');
   font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ios7 icon';
-  src: url('../fonts/ios7-icon.ttf') format('truetype');
-  font-weight: 100;
   font-style: normal;
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Jun 18 2014 05:44:27 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Jun 25 2014 00:36:10 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -53,32 +53,30 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
 }
   </style>
   <!-------------------------------
-INDUSTRY NAVIGATION EFFECTS
+TOP NAVIGATION & FOOTER UNDERLINE HOVER
 -------------------------------->
   <style>
-    .cc-industry-tab.fitness.w--current .cc-industry-tab-circle{
-        border:2px solid white;
-        background:white;
-        /*padding-top:2px;*/
-        color:#896ec7;
+    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
+        border-bottom:2px solid white;
     }
-    .cc-industry-tab.education.w--current .cc-industry-tab-circle{
-        border:2px solid white;
-        background:white;
-            /*padding-top:2px;*/
-        color:#896ec7;
+    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text-dark {
+        border-bottom:2px solid #555;
     }
-    .cc-industry-tab.health.w--current .cc-industry-tab-circle{
-        border:2px solid white;
-        background:white;
-            /*padding-top:2px;*/
-        color:#896ec7;
+    .cc-footer-list-item-link:hover .cc-footer-list-item-text {
+        border-bottom:2px solid white;
     }
-    .cc-industry-tab.request.w--current .cc-industry-tab-circle{
-        border:2px solid white;
-        background:white;
-            /*padding-top:2px;*/
-        color:#896ec7;
+  </style>
+  <!-------------------------------
+QUOTE DOTS
+-------------------------------->
+  <style>
+    .w-slider-dot {
+        background:none;
+        border:1px solid #555;
+    }
+    .w-slider-dot.w-active {
+        background:none;
+        border:3px solid #555;
     }
   </style>
 </head>
@@ -90,22 +88,22 @@ INDUSTRY NAVIGATION EFFECTS
         <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
           <li class="cc-navigation-menu-list-item">
             <a class="w-inline-block cc-navigation-menu-list-item-link" href="about-team.html">
-              <div>ABOUT</div>
+              <div class="cc-navigation-menu-list-item-text">About</div>
             </a>
           </li>
           <li class="cc-navigation-menu-list-item">
             <a class="w-inline-block cc-navigation-menu-list-item-link" href="pricing.html">
-              <div>PRICING</div>
+              <div class="cc-navigation-menu-list-item-text">Pricing</div>
+            </a>
+          </li>
+          <li class="w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+            <a class="w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
+              <div class="cc-navigation-menu-list-item-text">Log In</div>
             </a>
           </li>
           <li class="cc-navigation-menu-list-item">
             <a class="w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
-              <div>BLOG</div>
-            </a>
-          </li>
-          <li class="cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="http://manage.classcast.co">
-              <div>LOG IN</div>
+              <div class="cc-navigation-menu-list-item-text-signup">Get Started</div>
             </a>
           </li>
         </ul>
@@ -116,28 +114,23 @@ INDUSTRY NAVIGATION EFFECTS
         <a class="w-inline-block cc-navigation-item-logo-pasthero" href="#"></a>
         <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list pop-down">
           <li class="w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://classcast-external.webflow.com/about-team">
-              <div>ABOUT</div>
+            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
+              <div class="cc-navigation-menu-list-item-text-dark">About</div>
             </a>
           </li>
           <li class="w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://classcast-external.webflow.com/pricing">
-              <div>PRICING</div>
-            </a>
-          </li>
-          <li class="w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://classcast-external.webflow.com/blog">
-              <div>BLOG</div>
+            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="pricing.html">
+              <div class="cc-navigation-menu-list-item-text-dark">Pricing</div>
             </a>
           </li>
           <li class="w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
             <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
-              <div>REQUEST&nbsp;DEMO</div>
+              <div class="cc-navigation-menu-list-item-text-dark">Log In</div>
             </a>
           </li>
-          <li class="w-hidden-main w-hidden-medium w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
-              <div>DEMO</div>
+          <li class="cc-navigation-menu-list-item">
+            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="#">
+              <div class="cc-navigation-menu-list-item-text-signup-dark">Get Started</div>
             </a>
           </li>
         </ul>
@@ -190,13 +183,7 @@ INDUSTRY NAVIGATION EFFECTS
                 sodales pretium. Nullam sed erat hendrerit lorem faucibus aliquet.
                 <br>
                 <br>Donec aliquam ipsum vel tortor consequat placerat.</div>
-              <ul class="cc-position-requirements-list">
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-              </ul>
-              <a class="w-inline-block cc-button-s green center jobs-bottom" href="#">
+              <a class="w-inline-block cc-button-s blue center jobs-bottom" href="#">
                 <div>Apply Now</div>
               </a>
             </div>
@@ -209,13 +196,7 @@ INDUSTRY NAVIGATION EFFECTS
                 sodales pretium. Nullam sed erat hendrerit lorem faucibus aliquet.
                 <br>
                 <br>Donec aliquam ipsum vel tortor consequat placerat.</div>
-              <ul class="cc-position-requirements-list">
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-              </ul>
-              <a class="w-inline-block cc-button-s green center jobs-bottom" href="#">
+              <a class="w-inline-block cc-button-s blue center jobs-bottom" href="#">
                 <div>Apply Now</div>
               </a>
             </div>
@@ -230,13 +211,7 @@ INDUSTRY NAVIGATION EFFECTS
                 sodales pretium. Nullam sed erat hendrerit lorem faucibus aliquet.
                 <br>
                 <br>Donec aliquam ipsum vel tortor consequat placerat.</div>
-              <ul class="cc-position-requirements-list">
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-              </ul>
-              <a class="w-inline-block cc-button-s green center jobs-bottom" href="#">
+              <a class="w-inline-block cc-button-s blue center jobs-bottom" href="#">
                 <div>Apply Now</div>
               </a>
             </div>
@@ -249,13 +224,7 @@ INDUSTRY NAVIGATION EFFECTS
                 sodales pretium. Nullam sed erat hendrerit lorem faucibus aliquet.
                 <br>
                 <br>Donec aliquam ipsum vel tortor consequat placerat.</div>
-              <ul class="cc-position-requirements-list">
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-                <li class="cc-position-requirements-list-item">Lorem ipsum dolor sit amet,</li>
-              </ul>
-              <a class="w-inline-block cc-button-s green center jobs-bottom" href="#">
+              <a class="w-inline-block cc-button-s blue center jobs-bottom" href="#">
                 <div>Apply Now</div>
               </a>
             </div>
@@ -266,20 +235,17 @@ INDUSTRY NAVIGATION EFFECTS
     <div class="cc-section cc-footer-min-section">
       <div class="w-container cc-content-container cc-footer-min-content">
         <div class="w-clearfix cc-footer-min">
-          <a class="w-inline-block cc-footer-min-logo-link" href="index.html">
-            <img class="cc-footer-min-logo" src="images/538be7dffedd28266051eac8_classcastlogo.png" alt="538e837605bb5da96a2f1128_538be7dffedd28266051eac8_classcastlogo.png">
-          </a>
-          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
           <ul class="w-list-unstyled w-clearfix cc-footer-min-list">
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="about-team.html">ABOUT</a>
+            <li class="cc-footer-min-list-item"><a href="about-team.html" class="cc-footer-min-list-item-link">About</a>
             </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="pricing.html">PRICING</a>
+            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="pricing.html">Pricing</a>
             </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">BLOG</a>
+            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">Blog</a>
             </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link">HELP</a>
+            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link">Help</a>
             </li>
           </ul>
+          <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
         </div>
       </div>
     </div>
