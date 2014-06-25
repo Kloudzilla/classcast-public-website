@@ -6,11 +6,11 @@
         </a>
         <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
         <div class="cc-trusted-logo-wrap">
-          <a class="w-inline-block cc-trusted-logo-link total-gym" href="#"></a>
-          <a class="w-inline-block cc-trusted-logo-link gymstick" href="#"></a>
-          <a class="w-inline-block cc-trusted-logo-link kettleworx" href="#"></a>
-          <a class="w-inline-block cc-trusted-logo-link yogafit" href="#"></a>
-          <a class="w-inline-block cc-trusted-logo-link iom" href="#"></a>
+          <a class="w-inline-block cc-trusted-logo-link total-gym" href="http://www.totalgym.com/"></a>
+          <a class="w-inline-block cc-trusted-logo-link gymstick" href="http://www.gymstick.com/"></a>
+          <a class="w-inline-block cc-trusted-logo-link kettleworx" href="http://www.kettleworx.com/"></a>
+          <a class="w-inline-block cc-trusted-logo-link yogafit" href="http://www.yogafit.com/"></a>
+          <a class="w-inline-block cc-trusted-logo-link iom" href="http://www.qpec.com.au/"></a>
         </div>
       </div>
     </div>
@@ -57,65 +57,6 @@
           <?php
             }
           ?>
-
-
-
-
-          <!--<div class="w-col w-col-3">
-            <ul class="w-list-unstyled">
-              <li class="cc-footer-list-item-heading">Help &amp; Support</li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="#">
-                  <div class="cc-footer-list-item-text">Help Center</div>
-                </a>
-              </li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="about-contact.html">
-                  <div class="cc-footer-list-item-text">Contact Us</div>
-                </a>
-              </li>
-            </ul>
-          </div>-->
-<!--           <div class="w-col w-col-3">
-            <ul class="w-list-unstyled">
-              <li class="cc-footer-list-item-heading">Company</li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="about-team.html">
-                  <div class="cc-footer-list-item-text">About</div>
-                </a>
-              </li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="blog.html">
-                  <div class="cc-footer-list-item-text">Blog</div>
-                </a>
-              </li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="#">
-                  <div class="cc-footer-list-item-text">Privacy</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-col w-col-3">
-            <ul class="w-list-unstyled">
-              <li class="cc-footer-list-item-heading">Connect</li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="#">
-                  <div class="cc-footer-list-item-text">Facebook</div>
-                </a>
-              </li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="#">
-                  <div class="cc-footer-list-item-text">Linked In</div>
-                </a>
-              </li>
-              <li class="cc-footer-list-item">
-                <a class="w-inline-block cc-footer-list-item-link" href="#">
-                  <div class="cc-footer-list-item-text">Twitter</div>
-                </a>
-              </li>
-            </ul>
-          </div> -->
         </div>
         <div class="w-clearfix cc-footer-branding">
           <div class="cc-footer-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>

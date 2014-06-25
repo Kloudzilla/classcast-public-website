@@ -143,8 +143,7 @@ QUOTE DOTS
       <div class="w-container cc-content-container cc-about-hero-content">
         <h1 class="cc-about-hero-headline"><?php the_title(); ?></h1>
       </div>
-      
-      <div class="cc-section cc-about-hero-navigation">
+      <div class="cc-section cc-hero-navigation">
         <div class="w-container cc-content-container">
           <ul class="w-list-unstyled w-clearfix cc-hero-navigation-list">
             <li class="w-clearfix cc-hero-navigation-list-item">
