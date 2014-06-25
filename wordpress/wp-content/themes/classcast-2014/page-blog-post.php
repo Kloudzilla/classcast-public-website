@@ -2,10 +2,12 @@
 	/*
 	Template Name: Blog Post Page
 	*/
+  global $template_section;
+  $template_section = 'blog';
 ?>
 
 <?php
-	get_header('blog');
+	get_header();
 ?>
  
     <div class="cc-section">

@@ -2,13 +2,15 @@
 	/*
 	Template Name: Blog Page
 	*/
+  global $template_section;
+  $template_section = 'blog';
 ?>
 
 <?php
-	get_header('blog');
+	get_header();
 ?>
  
-   <div class="cc-section">
+    <div class="cc-section">
       <div class="w-container cc-content-container cc-blog-content">
         <div class="w-clearfix cc-blog-post">
           <img class="w-hidden-tiny cc-blog-post-author-img" src="<?php echo get_template_directory_uri(); ?>/img/image-placeholder.svg" alt="image-placeholder.svg">

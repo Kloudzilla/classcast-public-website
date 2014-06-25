@@ -2,6 +2,9 @@
 	/*
 	Template Name: Home Page
 	*/
+
+  global $template_section;
+  $template_section = 'home';
 ?>
 
 <?php

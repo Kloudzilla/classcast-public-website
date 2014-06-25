@@ -1,3 +1,6 @@
+<?php
+  global $template_section;
+?>
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Wed Jun 18 2014 05:44:26 GMT+0000 (UTC) -->
@@ -88,7 +91,7 @@ QUOTE DOTS
   <div class="cc-external-wrap">
     <div class="cc-navigation" data-ix="navigation-past-hero">
       <div class="w-container cc-navigation-items-wrap">
-        <a class="w-inline-block cc-navigation-item-logo" href="index.html"></a>
+        <a class="w-inline-block cc-navigation-item-logo" href="<?php echo get_home_url(); ?>"></a>
         <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
           <?php 
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
@@ -148,26 +151,95 @@ QUOTE DOTS
         </ul>
       </div>
     </div>
-    <div class="cc-hero home">
-      <div class="w-container cc-content-container cc-home-hero-content">
-        <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
-        <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
-          <br>your customers want it, direct to their mobile.</div>
-        <a class="w-inline-block cc-button-s blue" href="#">
-          <div>Get Started</div>
-        </a>
-      </div>
-      <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
-      <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
-        <div class="w-container cc-content-container">
-          <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
-          <div class="cc-trusted-logo-wrap">
-            <div class="cc-trusted-logo total-gym"></div>
-            <div class="cc-trusted-logo gymstick"></div>
-            <div class="cc-trusted-logo kettleworx"></div>
-            <div class="cc-trusted-logo yogafit"></div>
-            <div class="cc-trusted-logo iom"></div>
+    <?php
+      if($template_section == 'home') {
+    ?>
+        <div class="cc-hero home">
+          <div class="w-container cc-content-container cc-home-hero-content">
+            <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
+            <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
+              <br>your customers want it, direct to their mobile.</div>
+            <a class="w-inline-block cc-button-s blue" href="#">
+              <div>Get Started</div>
+            </a>
+          </div>
+          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
+          <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
+            <div class="w-container cc-content-container">
+              <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
+              <div class="cc-trusted-logo-wrap">
+                <div class="cc-trusted-logo total-gym"></div>
+                <div class="cc-trusted-logo gymstick"></div>
+                <div class="cc-trusted-logo kettleworx"></div>
+                <div class="cc-trusted-logo yogafit"></div>
+                <div class="cc-trusted-logo iom"></div>
+              </div>
+            </div>
+          </div>
+      <?php
+        } else if($template_section == 'about') {
+      ?>
+          <div class="cc-hero about" data-ix="navigation-past-hero">
+          <div class="w-container cc-content-container cc-about-hero-content">
+            <h1 class="cc-about-hero-headline"><?php the_title(); ?></h1>
+          </div>
+          <div class="cc-section cc-hero-navigation">
+            <div class="w-container cc-content-container">
+              <ul class="w-list-unstyled w-clearfix cc-hero-navigation-list">
+                <li class="w-clearfix cc-hero-navigation-list-item">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-team.html">
+                    <div>Team</div>
+                  </a>
+                </li>
+                <li class="w-clearfix cc-hero-navigation-list-item">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-resources.html">
+                    <div>Resources</div>
+                  </a>
+                </li>
+                <li class="w-clearfix cc-hero-navigation-list-item">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-jobs.html">
+                    <div>Jobs</div>
+                  </a>
+                </li>
+                <li class="w-clearfix cc-hero-navigation-list-item">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-press.html">
+                    <div>Press</div>
+                  </a>
+                </li>
+                <li class="w-clearfix cc-hero-navigation-list-item">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-contact.html">
+                    <div>Contact</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
+    <?php 
+      } elseif ($template_section == 'blog') {
+    ?>
+      <div class="cc-hero blog" data-ix="navigation-past-hero">
+        <div class="w-container cc-content-container cc-blog-hero-content">
+          <h1 class="cc-blog-hero-headline">
+            Blog
+          </h1>
+        </div>
       </div>
+
+    <?php
+      } elseif ($template_section == 'pricing') {
+    ?>
+
+      <div class="cc-hero pricing" data-ix="navigation-past-hero">
+        <div class="w-container cc-content-container cc-pricing-hero-content">
+          <h3 class="cc-pricing-hero-headline">Pricing. Plain and simple</h3>
+          <p class="cc-pricing-hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        </div>
+      </div>
+
+    <?php
+      }
+      else {}
+    ?>
     </div>

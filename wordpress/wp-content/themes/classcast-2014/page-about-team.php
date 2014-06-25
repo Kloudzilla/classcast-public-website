@@ -2,10 +2,13 @@
 	/*
 	Template Name: About Team Page
 	*/
+
+  global $template_section;
+  $template_section = 'about';
 ?>
 
 <?php
-	get_header('about');
+	get_header();
 ?>
  
     <div class="cc-section cc-about-tagline">

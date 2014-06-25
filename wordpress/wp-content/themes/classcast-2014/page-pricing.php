@@ -2,10 +2,12 @@
   /*
   Template Name: Pricing Page
   */
+  global $template_section;
+  $template_section = 'pricing';
 ?>
 
 <?php
-  get_header('pricing');
+  get_header();
 ?>
 
 <div class="cc-section">
