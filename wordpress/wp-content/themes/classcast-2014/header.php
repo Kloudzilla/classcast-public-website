@@ -86,23 +86,27 @@ QUOTE DOTS
       <div class="w-container cc-navigation-items-wrap">
         <a class="w-inline-block cc-navigation-item-logo" href="index.html"></a>
         <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
-          <li class="cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="about-team.html">
-              <div class="cc-navigation-menu-list-item-text">About</div>
+             <?php 
+              foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
+            ?>
+            <li class="cc-navigation-menu-list-item">
+            <a class="w-inline-block cc-navigation-menu-list-item-link" href="<?php echo $primary_menu_item->url;?>">
+              <div class="cc-navigation-menu-list-item-text"><?php echo $primary_menu_item->title;?></div>
             </a>
           </li>
-          <li class="cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="pricing.html">
-              <div class="cc-navigation-menu-list-item-text">Pricing</div>
-            </a>
-          </li>
+      
+          <?php
+            }
+          ?>
+
+          
           <li class="w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
+            <a class="w-inline-block cc-navigation-menu-list-item-link" href="http://manage.classcast.co">
               <div class="cc-navigation-menu-list-item-text">Log In</div>
             </a>
           </li>
           <li class="cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
+            <a class="w-inline-block cc-navigation-menu-list-item-link" href="#">
               <div class="cc-navigation-menu-list-item-text-signup">Get Started</div>
             </a>
           </li>
@@ -113,21 +117,26 @@ QUOTE DOTS
       <div class="w-container cc-navigation-items-wrap">
         <a class="w-inline-block cc-navigation-item-logo-pasthero" href="#"></a>
         <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list pop-down">
+            <?php 
+              foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
+            ?>
           <li class="w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
-              <div class="cc-navigation-menu-list-item-text-dark">About</div>
+            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="<?php echo $primary_menu_item->url;?>">
+              <div class="cc-navigation-menu-list-item-text-dark"><?php echo $primary_menu_item->title;?></div>
             </a>
           </li>
-          <li class="w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="pricing.html">
-              <div class="cc-navigation-menu-list-item-text-dark">Pricing</div>
-            </a>
-          </li>
+          <?php
+            }
+          ?>
+
+
+
           <li class="w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
+            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://manage.classcast.co">
               <div class="cc-navigation-menu-list-item-text-dark">Log In</div>
             </a>
           </li>
+          
           <li class="cc-navigation-menu-list-item">
             <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="#">
               <div class="cc-navigation-menu-list-item-text-signup-dark">Get Started</div>
