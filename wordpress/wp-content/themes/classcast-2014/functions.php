@@ -10,6 +10,7 @@
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
 			'primary'   => __( 'Top primary menu', 'classcast' ),
+			'footer'   => __( 'Footer menu', 'classcast' ),
 		) );
 	}
 	add_action( 'after_setup_theme', 'classcast_setup' );

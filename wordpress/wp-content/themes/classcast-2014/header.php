@@ -79,6 +79,10 @@ QUOTE DOTS
         border:3px solid #555;
     }
   </style>
+
+  <?php
+    wp_head();
+  ?>
 </head>
 <body>
   <div class="cc-external-wrap">
