@@ -27,7 +27,7 @@
               <div class="cc-industry-tab-title">Request an Industry</div>
             </a>
           </div>
-          <div class="w-tab-content">
+          <div class="w-tab-content cc-industry-tab-content">
             <div class="w-tab-pane w--tab-active cc-industry-tab-pane" data-w-tab="Fitness">
               <h4 class="cc-industry-title">Fitness &amp; Training</h4>
               <div class="w-row">
