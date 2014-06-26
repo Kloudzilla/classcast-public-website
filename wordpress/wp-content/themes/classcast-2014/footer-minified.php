@@ -3,14 +3,18 @@
       <div class="w-container cc-content-container cc-footer-min-content">
         <div class="w-clearfix cc-footer-min">
           <ul class="w-list-unstyled w-clearfix cc-footer-min-list">
-            <li class="cc-footer-min-list-item"><a href="about-team.html" class="cc-footer-min-list-item-link">About</a>
+
+          <?php
+            foreach(wp_get_nav_menu_items('minified-footer') as $footermin_menu_item) {
+          ?>
+            <li class="cc-footer-min-list-item">
+              <a href="<?php echo $footermin_menu_item->url;?>" class="cc-footer-min-list-item-link">
+                <?php echo $footermin_menu_item->title;?>
+              </a>
             </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">Blog</a>
-            </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link">Help</a>
-            </li>
+          <?php 
+          }
+          ?>
           </ul>
           <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
         </div>

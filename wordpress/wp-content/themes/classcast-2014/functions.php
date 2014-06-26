@@ -11,6 +11,7 @@
 		register_nav_menus( array(
 			'primary'   => __( 'Top primary menu', 'classcast' ),
 			'footer'   => __( 'Footer menu', 'classcast' ),
+			'minified-footer'   => __( 'Footer minified', 'classcast' ),
 		) );
 	}
 	add_action( 'after_setup_theme', 'classcast_setup' );
