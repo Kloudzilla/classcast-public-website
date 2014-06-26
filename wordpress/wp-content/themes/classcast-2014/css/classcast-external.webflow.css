@@ -250,6 +250,7 @@ p {
   display: inline-block;
   width: 20%;
   height: 75px;
+  float: left;
   opacity: 1;
 }
 .cc-trusted-logo.total-gym {
@@ -380,6 +381,7 @@ p {
 .cc-industry-tab {
   display: inline-block;
   width: 25%;
+  float: left;
   border-top: 1px solid #509bd6;
   border-right: 1px solid #509bd6;
   border-bottom: 1px solid #509bd6;
@@ -1217,6 +1219,7 @@ p {
 .cc-trusted-logo-link {
   width: 20%;
   height: 75px;
+  float: left;
 }
 .cc-trusted-logo-link.total-gym {
   background-image: url('../images/totalgym.png');
@@ -1480,6 +1483,9 @@ p {
   padding-top: 7.5px;
   border-radius: 30px;
   background-color: white;
+}
+.cc-industry-tab-content {
+  clear: both;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);

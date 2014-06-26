@@ -1,5 +1,4 @@
 <?php
-
   global $template_section;
   $template_section = 'blog';
 ?>

@@ -151,6 +151,8 @@ QUOTE DOTS
         </ul>
       </div>
     </div>
+
+    
     <?php
       if($template_section == 'home') {
     ?>

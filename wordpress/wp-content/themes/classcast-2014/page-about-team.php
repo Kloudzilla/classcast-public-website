@@ -141,5 +141,5 @@
                 
 
 <?php
-	get_footer('minified');
+	get_footer('tinyfooter');
 ?>

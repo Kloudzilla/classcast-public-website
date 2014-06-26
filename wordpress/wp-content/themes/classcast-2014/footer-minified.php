@@ -5,16 +5,21 @@
           <ul class="w-list-unstyled w-clearfix cc-footer-min-list">
 
           <?php
-            foreach(wp_get_nav_menu_items('minified-footer') as $footermin_menu_item) {
+            $tinyfooter_menu_items = wp_get_nav_menu_items('tinyfooter');
+            foreach($tinyfooter_menu_items as $tinyfooter_menu_item)
+            { 
           ?>
+          
             <li class="cc-footer-min-list-item">
-              <a href="<?php echo $footermin_menu_item->url;?>" class="cc-footer-min-list-item-link">
-                <?php echo $footermin_menu_item->title;?>
+              <a href="<?php echo $tinyfooter_menu_item->url;?>" class="cc-footer-min-list-item-link">
+                <?php echo $tinyfooter_menu_item->title;?>
               </a>
             </li>
+
           <?php 
-          }
+            }
           ?>
+          
           </ul>
           <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
         </div>
