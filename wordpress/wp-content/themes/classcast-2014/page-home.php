@@ -188,7 +188,7 @@
         <p>Manage your users and notify them of upcomming events. See who is viewing your content and what market to reach out to. Keep in touch with your members and reach out to them with offers.</p>
       </div>
     </div>
-    <div class="w-slider cc-content-slider" data-animation="slide" data-duration="500" data-infinite="1" data-delay="4000" data-autoplay="1">
+    <div class="w-slider cc-content-slider" data-animation="slide" data-duration="500" data-infinite="1">
       <div class="w-container cc-content-container cc-content-content" data-ix="fade-in">
         <h3 class="cc-content-headline">Package your content</h3>
         <p class="cc-content-subtext">Create the content that you need and get it out to your customers quickly. Classcast offers unrivaled abilty to instantly broadcast your content to your user=base.</p>
