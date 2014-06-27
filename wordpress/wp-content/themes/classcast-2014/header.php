@@ -106,7 +106,6 @@ QUOTE DOTS
             }
           ?>
 
-          
           <li class="w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
             <a class="w-inline-block cc-navigation-menu-list-item-link" href="http://manage.classcast.co">
               <div class="cc-navigation-menu-list-item-text">Log In</div>
@@ -156,7 +155,7 @@ QUOTE DOTS
     <?php
       if($template_section == 'home') {
     ?>
-        <div class="cc-hero home">
+        <div class="cc-hero <?php echo (($template_section == 'home')?'home':''); ?> <?php echo (($template_section == 'about')?'about':''); ?>">
           <div class="w-container cc-content-container cc-home-hero-content">
             <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
             <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
@@ -165,7 +164,7 @@ QUOTE DOTS
               <div>Get Started</div>
             </a>
           </div>
-          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
+        <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
           <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
             <div class="w-container cc-content-container">
               <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
@@ -178,41 +177,29 @@ QUOTE DOTS
               </div>
             </div>
           </div>
+
       <?php
         } else if($template_section == 'about') {
       ?>
-          <div class="cc-hero about" data-ix="navigation-past-hero">
+          <div class="cc-hero <?php echo (($template_section == 'home')?'home':''); ?> <?php echo (($template_section == 'about')?'about':''); ?>" data-ix="navigation-past-hero">
           <div class="w-container cc-content-container cc-about-hero-content">
             <h1 class="cc-about-hero-headline"><?php the_title(); ?></h1>
           </div>
           <div class="cc-section cc-hero-navigation">
             <div class="w-container cc-content-container">
               <ul class="w-list-unstyled w-clearfix cc-hero-navigation-list">
+
+              <?php 
+                foreach(wp_get_nav_menu_items('heronav') as $heronav_menu_item){
+              ?>
                 <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-team.html">
-                    <div>Team</div>
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="<?php echo $heronav_menu_item->url;?>">
+                    <div><?php echo $heronav_menu_item->title;?></div>
                   </a>
                 </li>
-                <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-resources.html">
-                    <div>Resources</div>
-                  </a>
-                </li>
-                <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-jobs.html">
-                    <div>Jobs</div>
-                  </a>
-                </li>
-                <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-press.html">
-                    <div>Press</div>
-                  </a>
-                </li>
-                <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-contact.html">
-                    <div>Contact</div>
-                  </a>
-                </li>
+              <?php
+                }
+              ?>
               </ul>
             </div>
           </div>
