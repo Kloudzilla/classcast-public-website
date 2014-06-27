@@ -335,6 +335,7 @@ p {
   display: inline-block;
   width: 20%;
   height: 100%;
+  min-width: 146px;
   float: left;
   background-image: url('../images/538be7dffedd28266051eac8_classcastlogo.png');
   background-position: 0px 50%;
