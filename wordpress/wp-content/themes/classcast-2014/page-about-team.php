@@ -11,7 +11,7 @@
 	get_header();
 ?>
  
-    <div class="cc-section cc-about-tagline">
+    <div class="w-hidden-small w-hidden-tiny cc-section cc-about-tagline">
       <div class="w-container cc-content-container cc-about-tagline-content">
         <h4 class="cc-about-tagline-headline">The Team dedicated to building a solution<br>for your business</h4>
       </div>

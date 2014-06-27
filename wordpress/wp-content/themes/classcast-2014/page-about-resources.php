@@ -10,7 +10,7 @@
 	get_header();
 ?>
  
-      <div class="cc-section cc-about-tagline">
+      <div class="w-hidden-small w-hidden-tiny cc-section cc-about-tagline">
       <div class="w-container cc-content-container cc-about-tagline-content">
         <h4 class="cc-about-resources-tagline">Your best source of knowledge and education to get your mobile content monetized</h4>
       </div>
