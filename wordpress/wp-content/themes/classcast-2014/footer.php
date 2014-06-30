@@ -68,7 +68,33 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-link').click(function() {
+        $('.modal-background').slideDown();
+      });
+      $('.close-modal').click(function() {
+        $('.modal-background').slideUp();
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".cc-drop-link").click(function(){
+        $(".cc-drop").slideToggle(300);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".cc-drop-pasthero-link").click(function(){
+        $(".cc-drop-pasthero").slideToggle(300);
+      });
+    });
+  </script>
+  <script>
+    $('a[href="#"]').on('click',function(e){e.preventDefault();});
+  </script>
   <?php
     wp_footer();
   ?>

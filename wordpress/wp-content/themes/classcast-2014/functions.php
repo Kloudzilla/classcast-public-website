@@ -13,6 +13,7 @@
 			'footer'   => __( 'Footer menu', 'classcast' ),
 			'tinyfooter'   => __( 'Tinyfooter menu', 'classcast' ),
 			'heronav'   => __( 'Heronav menu', 'classcast' ),
+			'drop'   => __( 'Drop menu', 'classcast' ),
 		) );
 	}
 	add_action( 'after_setup_theme', 'classcast_setup' );
