@@ -155,7 +155,7 @@ QUOTE DOTS
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
             <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
-              <a class="w-inline-block cc-navigation-item-logo" href=""></a>
+              <a class="w-inline-block cc-navigation-item-logo" href="/"></a>
             </li>
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
@@ -199,6 +199,12 @@ QUOTE DOTS
                 }
               ?>
 
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
+                  <div>Get Started</div>
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -208,7 +214,7 @@ QUOTE DOTS
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="#">
+              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
                 <div class="cc-navigation-menu-list-item-text-signup-dark">Get Started</div>
               </a>
             </li>
@@ -232,7 +238,7 @@ QUOTE DOTS
             </li>
 
             <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
-              <a class="w-inline-block cc-navigation-item-logo-pasthero" href=""></a>
+              <a class="w-inline-block cc-navigation-item-logo-pasthero" href="/"></a>
             </li>
 
           </ul>
@@ -252,6 +258,12 @@ QUOTE DOTS
               <?php
                 }
               ?>
+
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
+                  <div>Get Started</div>
+                </a>
+              </li>
 
             </ul>
           </div>
@@ -321,157 +333,3 @@ QUOTE DOTS
       }
       else {}
     ?>
-
-
-
-<!-- </head>
-<body>
-  <div class="cc-external-wrap">
-    <div class="cc-navigation" data-ix="navigation-past-hero">
-      <div class="w-container cc-navigation-items-wrap">
-        <a class="w-inline-block cc-navigation-item-logo" href="<?php echo get_home_url(); ?>"></a>
-        <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
-
-          <li class="cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="#">
-              <div class="cc-navigation-menu-list-item-text-signup">Get Started</div>
-            </a>
-          </li>
-
-          <li class="w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link" href="http://manage.classcast.co">
-              <div class="cc-navigation-menu-list-item-text">Log In</div>
-            </a>
-          </li>
-
-          <?php 
-            foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
-          ?>
-            <li class="cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link" href="<?php echo $primary_menu_item->url;?>">
-                <div class="cc-navigation-menu-list-item-text"><?php echo $primary_menu_item->title;?></div>
-              </a>
-            </li>
-      
-          <?php
-            }
-          ?>
-
-        </ul>
-      </div>
-    </div>
-
-    <div class="cc-navigation-past-hero">
-      <div class="w-container cc-navigation-items-wrap">
-        <a class="w-inline-block cc-navigation-item-logo-pasthero" href="#"></a>
-        <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list pop-down">
-
-          <li class="cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="#">
-              <div class="cc-navigation-menu-list-item-text-signup-dark">Get Started</div>
-            </a>
-          </li>
-
-          <li class="w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
-            <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://manage.classcast.co">
-              <div class="cc-navigation-menu-list-item-text-dark">Log In</div>
-            </a>
-          </li>
-            
-          <?php 
-            foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
-          ?>
-            <li class="w-clearfix cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="<?php echo $primary_menu_item->url;?>">
-                <div class="cc-navigation-menu-list-item-text-dark"><?php echo $primary_menu_item->title;?></div>
-              </a>
-            </li>
-          <?php
-            }
-          ?>     
-                    
-        </ul>
-      </div>
-    </div>
-
-    
-    <?php
-      if($template_section == 'home') {
-    ?>
-        <div class="cc-hero <?php echo (($template_section == 'home')?'home':''); ?> <?php echo (($template_section == 'about')?'about':''); ?>">
-          <div class="w-container cc-content-container cc-home-hero-content">
-            <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
-            <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
-              <br>your customers want it, direct to their mobile.</div>
-            <a class="w-inline-block cc-button-s blue" href="#">
-              <div>Get Started</div>
-            </a>
-          </div>
-        <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
-          <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
-            <div class="w-container cc-content-container">
-              <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
-              <div class="cc-trusted-logo-wrap">
-                <div class="cc-trusted-logo total-gym"></div>
-                <div class="cc-trusted-logo gymstick"></div>
-                <div class="cc-trusted-logo kettleworx"></div>
-                <div class="cc-trusted-logo yogafit"></div>
-                <div class="cc-trusted-logo iom"></div>
-              </div>
-            </div>
-          </div>
-
-      <?php
-        } else if($template_section == 'about') {
-      ?>
-          <div class="cc-hero <?php echo (($template_section == 'home')?'home':''); ?> <?php echo (($template_section == 'about')?'about':''); ?>" data-ix="navigation-past-hero">
-          <div class="w-container cc-content-container cc-about-hero-content">
-            <h1 class="cc-about-hero-headline"><?php the_title(); ?></h1>
-          </div>
-          <div class="cc-section cc-hero-navigation">
-            <div class="w-container cc-content-container">
-              <ul class="w-list-unstyled w-clearfix cc-hero-navigation-list">
-
-              <?php 
-                foreach(wp_get_nav_menu_items('heronav') as $heronav_menu_item){
-              ?>
-                <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="<?php echo $heronav_menu_item->url;?>">
-                    <div><?php echo $heronav_menu_item->title;?></div>
-                  </a>
-                </li>
-              <?php
-                }
-              ?>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-    <?php 
-      } elseif ($template_section == 'blog') {
-    ?>
-      <div class="cc-hero blog" data-ix="navigation-past-hero">
-        <div class="w-container cc-content-container cc-blog-hero-content">
-          <h1 class="cc-blog-hero-headline">
-            Blog
-          </h1>
-        </div>
-      </div>
-
-    <?php
-      } elseif ($template_section == 'pricing') {
-    ?>
-
-      <div class="cc-hero pricing" data-ix="navigation-past-hero">
-        <div class="w-container cc-content-container cc-pricing-hero-content">
-          <h3 class="cc-pricing-hero-headline">Pricing. Plain and simple</h3>
-          <p class="cc-pricing-hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        </div>
-      </div>
-
-    <?php
-      }
-      else {}
-    ?>
-    </div> -->

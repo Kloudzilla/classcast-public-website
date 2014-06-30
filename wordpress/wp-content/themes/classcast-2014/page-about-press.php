@@ -41,5 +41,5 @@
                 
 
 <?php
-	get_footer('tinyfooter');
+	get_footer('min');
 ?>

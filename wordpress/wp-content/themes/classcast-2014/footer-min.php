@@ -1,4 +1,4 @@
-<!-- minified -->
+<!-- min -->
     <div class="cc-section cc-footer-min-section">
       <div class="w-container cc-content-container cc-footer-min-content">
         <div class="w-clearfix cc-footer-min">
