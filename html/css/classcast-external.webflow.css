@@ -1470,6 +1470,10 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-hero.about {
     height: auto;
   }
+  .cc-hero.pricing {
+    height: auto;
+    padding-bottom: 20px;
+  }
   .cc-hero.home {
     height: auto;
     background-image: none;
