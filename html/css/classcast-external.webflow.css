@@ -236,12 +236,6 @@ p {
 .cc-footer-list-item {
   margin-bottom: 5px;
 }
-.cc-footer-logo {
-  display: inline-block;
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
-  float: left;
-}
 .cc-footer-legal {
   display: inline-block;
   margin-top: 10px;
@@ -1212,11 +1206,6 @@ p {
   margin-bottom: 10px;
   float: left;
 }
-.cc-footer-min-logo {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  float: left;
-}
 .cc-footer-min-list-item-link {
   display: inline-block;
   width: 100%;
@@ -1228,9 +1217,6 @@ p {
   border-bottom: 2px solid white;
   color: white;
 }
-.cc-footer-min-logo-link {
-  float: left;
-}
 .cc-blog-post-headline-link {
   color: #896ec7;
   text-decoration: none;
@@ -1239,9 +1225,6 @@ p {
   display: inline-block;
   width: 100%;
   float: right;
-}
-.cc-navigation-menu-list.pop-down {
-  padding-right: 0px;
 }
 .cc-navigation-menu-list-item {
   display: inline-block;
@@ -1430,10 +1413,6 @@ p {
   text-align: center;
   text-decoration: underline;
 }
-.cc-modal-text {
-  margin-bottom: 20px;
-  clear: both;
-}
 .cc-modal-form-row {
   margin-right: -20px;
   margin-left: -20px;
@@ -1490,10 +1469,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-hero.about {
     height: auto;
-  }
-  .cc-hero.pricing {
-    height: auto;
-    padding-bottom: 20px;
   }
   .cc-hero.home {
     height: auto;
@@ -1579,10 +1554,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     width: 100%;
     height: 40px;
     margin-top: 20px;
-  }
-  .cc-footer-logo {
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
   .cc-footer-legal {
     margin-top: 10px;
@@ -1677,9 +1648,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     position: relative;
     width: 90%;
     min-height: 640px;
-  }
-  .cc-navigation-menu-list.pop-down {
-    width: 50%;
   }
   .cc-home-hero-image {
     background-position: 493px -78px;
@@ -1819,15 +1787,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     margin-left: auto;
     color: #555;
     text-align: center;
-  }
-  .cc-footer-logo-mobile {
-    display: block;
-    width: 150px;
-    height: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: url('../images/538be7dffedd28266051eac8_classcastlogo.png');
-    background-repeat: no-repeat;
   }
   .cc-industry-icon-mobile {
     position: absolute;
@@ -1988,9 +1947,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-navigation-menu-list {
     margin-right: auto;
     margin-left: auto;
-  }
-  .cc-navigation-menu-list.pop-down {
-    width: 90%;
   }
   .cc-branding-img {
     height: 200px;
@@ -2302,23 +2258,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     width: 100%;
     text-align: center;
   }
-  .cc-footer-min-logo {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    float: none;
-  }
-  .cc-footer-min-logo-link {
-    display: block;
-    height: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    float: none;
-  }
   .cc-navigation-menu-list {
-    width: 100%;
-  }
-  .cc-navigation-menu-list.pop-down {
     width: 100%;
   }
   .cc-pricing-hero-subtext {
