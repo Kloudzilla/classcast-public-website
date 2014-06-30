@@ -95,8 +95,8 @@
   <script>
     $('a[href="#"]').on('click',function(e){e.preventDefault();});
   </script>
-  <?php
+  <!--<?php
     wp_footer();
-  ?>
+  ?>-->
 </body>
 </html>
