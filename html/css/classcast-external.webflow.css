@@ -1485,6 +1485,16 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-hero {
     background-position: 50% 30%;
   }
+  .cc-hero.blog {
+    height: auto;
+  }
+  .cc-hero.about {
+    height: auto;
+  }
+  .cc-hero.pricing {
+    height: auto;
+    padding-bottom: 20px;
+  }
   .cc-hero.home {
     height: auto;
     background-image: none;
@@ -1636,6 +1646,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     padding-right: 0px;
     padding-bottom: 60px;
     text-align: center;
+  }
+  .cc-content-container.cc-about-hero-content {
+    padding-bottom: 80px;
   }
   .cc-section.cc-users {
     height: auto;
@@ -2210,6 +2223,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-content-container.cc-stats-content {
     padding-top: 20px;
     padding-right: 5%;
+  }
+  .cc-content-container.cc-about-hero-content {
+    padding-bottom: 160px;
   }
   .cc-section.cc-footer-min-section {
     height: 120px;
