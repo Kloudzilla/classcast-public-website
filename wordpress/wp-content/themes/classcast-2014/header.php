@@ -136,8 +136,8 @@ QUOTE DOTS
                   </select>
                 </div>
               </div>
+              <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
             </div>
-            <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
           </form>
           <div class="w-form-done">
             <p>Thank you! Your submission has been received!</p>
@@ -274,7 +274,7 @@ QUOTE DOTS
       if($template_section == 'home') {
     ?>
 
-      <div class="w-container cc-content-container cc-home-hero-content">
+    <div class="w-container cc-content-container cc-home-hero-content">
         <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
         <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
           <br>your customers want it, direct to their mobile.</div>
@@ -283,6 +283,18 @@ QUOTE DOTS
         </a>
       </div>
       <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
+    </div>
+    <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
+      <div class="w-container cc-content-container">
+        <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
+        <div class="w-clearfix cc-trusted-logo-wrap">
+          <div class="cc-trusted-logo total-gym"></div>
+          <div class="cc-trusted-logo gymstick"></div>
+          <div class="cc-trusted-logo kettleworx"></div>
+          <div class="cc-trusted-logo yogafit"></div>
+          <div class="cc-trusted-logo iom"></div>
+        </div>
+      </div>
     </div>
 
     <?php

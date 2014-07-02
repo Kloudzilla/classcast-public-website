@@ -104,13 +104,13 @@
             <div class="cc-team-title">Title</div>
             <div class="cc-team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
-          <div class="w-col w-col-3 w-col-small-6 cc-team-col">
+          <!-- <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img"></div>
             <a class="w-inline-block cc-button-s blue team-join-us" href="#">
               <div>JOIN&nbsp;US</div>
             </a>
             <div class="cc-team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dolor sit lorem.</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -120,20 +120,20 @@
         <div class="w-row cc-location-row">
           <div class="w-col w-col-2 w-col-small-6 cc-location-col">
             <div class="cc-location-info-headline">Palo Alto Office</div>
-            <div class="cc-location-info-text">2225 East bay Shore Rd.
+            <div class="cc-location-info-text">2225 East bay Shore Rd,
               <br>Palo Alto
               <br>94303</div>
           </div>
           <div class="w-col w-col-4 w-col-small-6 cc-location-col palo-alto">
-            <a class="w-inline-block cc-location-link" href="#"></a>
+            <a class="w-inline-block cc-location-link ca" href="#"></a>
           </div>
           <div class="w-col w-col-4 w-col-small-6 cc-location-col sydney">
             <a class="w-inline-block cc-location-link" href="#"></a>
           </div>
           <div class="w-col w-col-2 w-col-small-6 cc-location-col">
             <div class="cc-location-info-headline">Sydney Office</div>
-            <div class="cc-location-info-text">Suite 320
-              <br>Kriora Centre</div>
+            <div class="cc-location-info-text">Suite 304, 29 Kiora Road, Miranda
+              <br>2228</div>
           </div>
         </div>
       </div>

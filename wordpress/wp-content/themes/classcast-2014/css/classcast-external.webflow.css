@@ -955,12 +955,15 @@ p {
 }
 .cc-location-col.palo-alto {
   padding-top: 300px;
-  border-right: 1px solid #3f4042;
+  border-right: 1px solid #b8b8b8;
   background-color: #b3b3b3;
 }
 .cc-location-col.sydney {
   padding-top: 300px;
   background-color: #6b6b6b;
+  background-image: url('../images/office_syd.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .cc-location-link {
   position: absolute;
@@ -969,6 +972,11 @@ p {
   display: inline-block;
   width: 100%;
   height: 300px;
+}
+.cc-location-link.ca {
+  background-image: url('../images/office_palo.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .cc-about-resources-headline {
   margin-bottom: 40px;
@@ -1139,6 +1147,10 @@ p {
   width: 20%;
   height: 75px;
   float: left;
+  opacity: 0.6;
+}
+.cc-trusted-logo-link:hover {
+  opacity: 1;
 }
 .cc-trusted-logo-link.total-gym {
   background-image: url('../images/totalgym.png');
@@ -1146,17 +1158,11 @@ p {
   background-size: 90%;
   background-repeat: no-repeat;
 }
-.cc-trusted-logo-link.total-gym:hover {
-  background-image: url('../images/totalgym_hover.png');
-}
 .cc-trusted-logo-link.gymstick {
   background-image: url('../images/gymstick.png');
   background-position: 50% 50%;
   background-size: 90%;
   background-repeat: no-repeat;
-}
-.cc-trusted-logo-link.gymstick:hover {
-  background-image: url('../images/gymstick_hover.png');
 }
 .cc-trusted-logo-link.kettleworx {
   background-image: url('../images/kettleworx.png');
@@ -1164,26 +1170,17 @@ p {
   background-size: 90%;
   background-repeat: no-repeat;
 }
-.cc-trusted-logo-link.kettleworx:hover {
-  background-image: url('../images/kettleworx_hover.png');
-}
 .cc-trusted-logo-link.yogafit {
   background-image: url('../images/yogafit.png');
   background-position: 50% 50%;
   background-size: 90%;
   background-repeat: no-repeat;
 }
-.cc-trusted-logo-link.yogafit:hover {
-  background-image: url('../images/yogafit_hover.png');
-}
 .cc-trusted-logo-link.iom {
-  background-image: url('../images/yogafit.png');
+  background-image: url('../images/iom.png');
   background-position: 50% 50%;
   background-size: 90%;
   background-repeat: no-repeat;
-}
-.cc-trusted-logo-link.iom:hover {
-  background-image: url('../images/yogafit_hover.png');
 }
 .cc-footer-min-list {
   display: inline-block;
@@ -1974,7 +1971,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-modal-scroll {
     overflow-x: auto;
     overflow-y: auto;
-    height: 400px;
+    height: 550px;
     margin-bottom: 40px;
     border: 1px solid #c9c9c9;
   }
@@ -2281,6 +2278,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-content-slider {
     height: 920px;
+  }
+  .cc-modal-scroll {
+    height: 560px;
   }
 }
 
