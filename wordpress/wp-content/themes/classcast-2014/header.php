@@ -71,7 +71,7 @@ TOP NAVIGATION & FOOTER UNDERLINE HOVER
   </style>
   <!-------------------------------
 QUOTE DOTS
--------------------------------->
+---------->
   <style>
     .w-slider-dot {
         background:none;
@@ -83,9 +83,6 @@ QUOTE DOTS
     }
   </style>
 
-  <!--<?php
-    wp_head();
-  ?>-->
 
 </head>
 <body>

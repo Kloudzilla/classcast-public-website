@@ -240,7 +240,7 @@
             <div class="cc-quote-author-wrap">
               <div class="cc-quote-author">
                 <div class="cc-quote-author-img-wrap">
-                  <img class="cc-quote-author-img" src="images/avatar.png" alt="538e951301b066d112564048_avatar.png">
+                  <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="538e951301b066d112564048_avatar.png">
                 </div>
                 <div class="cc-quote-author-name">Craig Bradley</div>
                 <div class="cc-author-titleposition">VP Global Sales, Pivotal 5 (KettleWorX)</div>
@@ -254,7 +254,7 @@
             <div class="cc-quote-author-wrap">
               <div class="cc-quote-author">
                 <div class="cc-quote-author-img-wrap">
-                  <img class="cc-quote-author-img" src="images/avatar.png" alt="538e951301b066d112564048_avatar.png">
+                  <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="538e951301b066d112564048_avatar.png">
                 </div>
                 <div class="cc-quote-author-name">Craig Bradley</div>
                 <div class="cc-author-titleposition">VP Global Sales, Pivotal 5 (KettleWorX)</div>
@@ -268,7 +268,7 @@
             <div class="cc-quote-author-wrap">
               <div class="cc-quote-author">
                 <div class="cc-quote-author-img-wrap">
-                  <img class="cc-quote-author-img" src="images/avatar.png" alt="538e951301b066d112564048_avatar.png">
+                  <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="538e951301b066d112564048_avatar.png">
                 </div>
                 <div class="cc-quote-author-name">Craig Bradley</div>
                 <div class="cc-author-titleposition">VP Global Sales, Pivotal 5 (KettleWorX)</div>
