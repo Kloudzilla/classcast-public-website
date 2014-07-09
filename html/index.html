@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Jul 01 2014 07:04:09 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Jul 09 2014 02:30:27 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -77,6 +77,14 @@ QUOTE DOTS
     .w-slider-dot.w-active {
         background:none;
         border:3px solid #555;
+    }
+  </style>
+  <!-------------------------------
+SLIDER VERTICAL ALIGNMENT
+-------------------------------->
+  <style>
+    .w-slide{
+        vertical-align:bottom;
     }
   </style>
 </head>
@@ -168,7 +176,7 @@ QUOTE DOTS
               </a>
             </li>
             <li class="w-hidden-main cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link cc-drop-link" href="mailto:">
+              <a class="w-inline-block cc-navigation-menu-list-item-link cc-drop-link">
                 <div class="cc-navigation-menu-list-item-text">Menu</div>
               </a>
             </li>
@@ -225,7 +233,7 @@ QUOTE DOTS
               </a>
             </li>
             <li class="w-hidden-main cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="mailto:">
+              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="#">
                 <div class="cc-navigation-menu-list-item-text-dark">Menu</div>
               </a>
             </li>
@@ -261,15 +269,75 @@ QUOTE DOTS
           </div>
         </div>
       </div>
-      <div class="w-container cc-content-container cc-home-hero-content">
-        <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
-        <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
-          <br>your customers want it, direct to their mobile.</div>
-        <a class="w-inline-block cc-button-s blue modal-link" href="#">
-          <div>Get Started</div>
-        </a>
+      <div class="cc-section">
+        <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1" data-delay="4000" data-autoplay="1">
+          <div class="w-slider-mask">
+            <div class="w-slide w-clearfix">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Monetize your mobile content.</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-yoga-cropped.png" width="940" alt="53bb7650f5d047c425ac608f_hero-template-browser-phone-yoga-cropped.png">
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Slide 2</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+              </div>
+            </div>
+            <div class="w-slide w-clearfix">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Slide 3</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+              </div>
+            </div>
+            <div class="w-slide w-clearfix">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Slide 4</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-cropped.png" width="940" alt="53ba3702a0584677026e3d39_hero-template-browser-cropped.png">
+              </div>
+            </div>
+          </div>
+          <div class="w-slider-arrow-left cc-home-hero-slider-arrow">
+            <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="w-slider-arrow-right cc-home-hero-slider-arrow">
+            <div class="w-icon-slider-right"></div>
+          </div>
+          <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
+        </div>
       </div>
-      <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
     </div>
     <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
       <div class="w-container cc-content-container">
@@ -295,9 +363,6 @@ QUOTE DOTS
             </a>
             <a class="w-tab-link w-inline-block cc-industry-tab health" data-w-tab="Health">
               <div class="cc-industry-tab-title">Health &amp; Well-being</div>
-            </a>
-            <a class="w-tab-link w-inline-block cc-industry-tab request" data-w-tab="Request">
-              <div class="cc-industry-tab-title">Request an Industry</div>
             </a>
           </div>
           <div class="w-tab-content cc-industry-tab-content">
@@ -383,24 +448,6 @@ QUOTE DOTS
                 </div>
               </div>
             </div>
-            <div class="w-tab-pane cc-industry-tab-pane" data-w-tab="Request">
-              <div class="w-form cc-industry-request-form">
-                <form id="email-form" name="email-form" data-name="Email Form">
-                  <label for="name">Name:</label>
-                  <input class="w-input cc-input" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name">
-                  <label for="email">Email Address:</label>
-                  <input class="w-input cc-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
-                  <input class="w-input cc-input cc-text-area" id="field" type="text" placeholder="Example Text" name="field" required="required">
-                  <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
-                </form>
-                <div class="w-form-done">
-                  <p>Thank you! Your submission has been received!</p>
-                </div>
-                <div class="w-form-fail">
-                  <p>Oops! Something went wrong while submitting the form :(</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -439,12 +486,7 @@ QUOTE DOTS
       <div class="w-container cc-content-container cc-brand-content">
         <div class="w-row">
           <div class="w-col w-col-6">
-            <div class="cc-branding-img" data-ix="fade-in">
-              <div class="cc-branding-logo">
-                <div class="cc-branding-logo-text">Your
-                  <br>Brand</div>
-              </div>
-            </div>
+            <div class="cc-branding-img" data-ix="fade-in"></div>
           </div>
           <div class="w-col w-col-6">
             <h3 class="cc-branding-headline">Your App,Your Brand</h3>
@@ -504,10 +546,10 @@ QUOTE DOTS
           <div class="cc-content-img" data-ix="slide-from-right"></div>
         </div>
       </div>
-      <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny cc-content-left-arrow">
+      <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny cc-content-slider-arrow">
         <div class="w-icon-slider-left"></div>
       </div>
-      <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny cc-content-right-arrow">
+      <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny -wfp-hover cc-content-slider-arrow">
         <div class="w-icon-slider-right"></div>
       </div>
       <div class="w-slider-nav w-round cc-content-slide-nav"></div>
@@ -670,7 +712,7 @@ QUOTE DOTS
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
-  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><span class="pe-7s-map-marker"></span> pe-7s-map-marker
   <!-------------------------------
 MODAL
 -------------------------------->
