@@ -288,7 +288,7 @@ QUOTE DOTS
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-yoga-cropped.png" width="940" alt="53bb7650f5d047c425ac608f_hero-template-browser-phone-yoga-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-yoga-cropped.png" width="940" alt="53bb7650f5d047c425ac608f_hero-template-browser-phone-yoga-cropped.png">
               </div>
             </div>
             <div class="w-slide">
@@ -302,7 +302,7 @@ QUOTE DOTS
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
               </div>
             </div>
             <div class="w-slide w-clearfix">
@@ -316,7 +316,7 @@ QUOTE DOTS
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
               </div>
             </div>
             <div class="w-slide w-clearfix">
@@ -330,7 +330,7 @@ QUOTE DOTS
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="images/hero-template-browser-cropped.png" width="940" alt="53ba3702a0584677026e3d39_hero-template-browser-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-cropped.png" width="940" alt="53ba3702a0584677026e3d39_hero-template-browser-cropped.png">
               </div>
             </div>
           </div>
