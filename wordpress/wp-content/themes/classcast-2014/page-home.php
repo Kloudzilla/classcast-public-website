@@ -10,10 +10,22 @@
 <?php
 	get_header();
 ?>
-      <div class="w-hidden-small w-hidden-tiny cc-section cc-industry">
+        <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
+      <div class="w-container cc-content-container">
+        <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
+        <div class="w-clearfix cc-trusted-logo-wrap">
+          <div class="cc-trusted-logo total-gym"></div>
+          <div class="cc-trusted-logo gymstick"></div>
+          <div class="cc-trusted-logo kettleworx"></div>
+          <div class="cc-trusted-logo yogafit"></div>
+          <div class="cc-trusted-logo iom"></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-hidden-small w-hidden-tiny cc-section cc-industry">
       <div class="w-container cc-content-container cc-industry-content">
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
-          <div class="w-tab-menu cc-industry-menu">
+          <div class="w-tab-menu w-clearfix cc-industry-menu">
             <a class="w-tab-link w--current w-inline-block cc-industry-tab fitness" data-w-tab="Fitness">
               <div class="cc-industry-tab-title">Fitness &amp; Training</div>
             </a>
@@ -22,9 +34,6 @@
             </a>
             <a class="w-tab-link w-inline-block cc-industry-tab health" data-w-tab="Health">
               <div class="cc-industry-tab-title">Health &amp; Well-being</div>
-            </a>
-            <a class="w-tab-link w-inline-block cc-industry-tab request" data-w-tab="Request">
-              <div class="cc-industry-tab-title">Request an Industry</div>
             </a>
           </div>
           <div class="w-tab-content cc-industry-tab-content">
@@ -110,24 +119,6 @@
                 </div>
               </div>
             </div>
-            <div class="w-tab-pane cc-industry-tab-pane" data-w-tab="Request">
-              <div class="w-form cc-industry-request-form">
-                <form id="email-form" name="email-form" data-name="Email Form">
-                  <label for="name">Name:</label>
-                  <input class="w-input cc-input" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name">
-                  <label for="email">Email Address:</label>
-                  <input class="w-input cc-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
-                  <input class="w-input cc-input cc-text-area" id="field" type="text" placeholder="Example Text" name="field" required="required">
-                  <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
-                </form>
-                <div class="w-form-done">
-                  <p>Thank you! Your submission has been received!</p>
-                </div>
-                <div class="w-form-fail">
-                  <p>Oops! Something went wrong while submitting the form :(</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -166,12 +157,7 @@
       <div class="w-container cc-content-container cc-brand-content">
         <div class="w-row">
           <div class="w-col w-col-6">
-            <div class="cc-branding-img" data-ix="fade-in">
-              <div class="cc-branding-logo">
-                <div class="cc-branding-logo-text">Your
-                  <br>Brand</div>
-              </div>
-            </div>
+            <div class="cc-branding-img" data-ix="fade-in"></div>
           </div>
           <div class="w-col w-col-6">
             <h3 class="cc-branding-headline">Your App,Your Brand</h3>
@@ -231,10 +217,10 @@
           <div class="cc-content-img" data-ix="slide-from-right"></div>
         </div>
       </div>
-      <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny cc-content-left-arrow">
+      <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny cc-content-slider-arrow">
         <div class="w-icon-slider-left"></div>
       </div>
-      <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny cc-content-right-arrow">
+      <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny -wfp-hover cc-content-slider-arrow">
         <div class="w-icon-slider-right"></div>
       </div>
       <div class="w-slider-nav w-round cc-content-slide-nav"></div>
@@ -254,7 +240,7 @@
             <div class="cc-quote-author-wrap">
               <div class="cc-quote-author">
                 <div class="cc-quote-author-img-wrap">
-                  <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="538e951301b066d112564048_avatar.png">
+                  <img class="cc-quote-author-img" src="images/avatar.png" alt="538e951301b066d112564048_avatar.png">
                 </div>
                 <div class="cc-quote-author-name">Craig Bradley</div>
                 <div class="cc-author-titleposition">VP Global Sales, Pivotal 5 (KettleWorX)</div>
@@ -268,7 +254,7 @@
             <div class="cc-quote-author-wrap">
               <div class="cc-quote-author">
                 <div class="cc-quote-author-img-wrap">
-                  <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="538e951301b066d112564048_avatar.png">
+                  <img class="cc-quote-author-img" src="images/avatar.png" alt="538e951301b066d112564048_avatar.png">
                 </div>
                 <div class="cc-quote-author-name">Craig Bradley</div>
                 <div class="cc-author-titleposition">VP Global Sales, Pivotal 5 (KettleWorX)</div>
@@ -282,7 +268,7 @@
             <div class="cc-quote-author-wrap">
               <div class="cc-quote-author">
                 <div class="cc-quote-author-img-wrap">
-                  <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt="538e951301b066d112564048_avatar.png">
+                  <img class="cc-quote-author-img" src="images/avatar.png" alt="538e951301b066d112564048_avatar.png">
                 </div>
                 <div class="cc-quote-author-name">Craig Bradley</div>
                 <div class="cc-author-titleposition">VP Global Sales, Pivotal 5 (KettleWorX)</div>

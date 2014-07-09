@@ -274,25 +274,73 @@ QUOTE DOTS
       if($template_section == 'home') {
     ?>
 
-    <div class="w-container cc-content-container cc-home-hero-content">
-        <h3 class="cc-home-hero-headline">Monetize your&nbsp;<br>mobile content <br>today.</h3>
-        <div class="cc-home-hero-subtext">Collect reoccuring revenue by delivering classes the way
-          <br>your customers want it, direct to their mobile.</div>
-        <a class="w-inline-block cc-button-s blue modal-link" href="#">
-          <div>Get Started</div>
-        </a>
-      </div>
-      <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-home-hero-image" data-ix="slide-from-right"></div>
-    </div>
-    <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
-      <div class="w-container cc-content-container">
-        <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
-        <div class="w-clearfix cc-trusted-logo-wrap">
-          <div class="cc-trusted-logo total-gym"></div>
-          <div class="cc-trusted-logo gymstick"></div>
-          <div class="cc-trusted-logo kettleworx"></div>
-          <div class="cc-trusted-logo yogafit"></div>
-          <div class="cc-trusted-logo iom"></div>
+        <div class="cc-section">
+        <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1" data-delay="4000" data-autoplay="1">
+          <div class="w-slider-mask">
+            <div class="w-slide w-clearfix">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Monetize your mobile content.</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-yoga-cropped.png" width="940" alt="53bb7650f5d047c425ac608f_hero-template-browser-phone-yoga-cropped.png">
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Slide 2</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+              </div>
+            </div>
+            <div class="w-slide w-clearfix">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Slide 3</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+              </div>
+            </div>
+            <div class="w-slide w-clearfix">
+              <div class="cc-home-hero-slider-text">
+                <div class="w-container cc-content-container cc-home-hero-content">
+                  <h3 class="cc-home-hero-headline">Slide 4</h3>
+                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
+                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+              </div>
+              <div class="cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-cropped.png" width="940" alt="53ba3702a0584677026e3d39_hero-template-browser-cropped.png">
+              </div>
+            </div>
+          </div>
+          <div class="w-slider-arrow-left cc-home-hero-slider-arrow">
+            <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="w-slider-arrow-right cc-home-hero-slider-arrow">
+            <div class="w-icon-slider-right"></div>
+          </div>
+          <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
         </div>
       </div>
     </div>
