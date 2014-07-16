@@ -23,7 +23,7 @@
             <input class="w-input cc-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
             <label for="message">Your Message:</label>
             <textarea class="w-input cc-input cc-text-area" id="message" placeholder="Enter your message here" name="message" data-name="Message" required="required"></textarea>
-            <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
+            <input class="w-button cc-button-s green" type="submit" value="Submit" data-wait="Please wait...">
           </form>
           <div class="w-form-done">
             <p>Thank you! Your submission has been received!</p>

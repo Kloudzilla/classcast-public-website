@@ -10,9 +10,9 @@
 <?php
 	get_header();
 ?>
-        <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
+     <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
       <div class="w-container cc-content-container">
-        <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
+        <h3 class="cc-trusted-headline-top">Trusted and loved by these great companies</h3>
         <div class="w-clearfix cc-trusted-logo-wrap">
           <div class="cc-trusted-logo total-gym"></div>
           <div class="cc-trusted-logo gymstick"></div>
@@ -26,19 +26,19 @@
       <div class="w-container cc-content-container cc-industry-content">
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
           <div class="w-tab-menu w-clearfix cc-industry-menu">
-            <a class="w-tab-link w--current w-inline-block cc-industry-tab fitness" data-w-tab="Fitness">
-              <div class="cc-industry-tab-title">Fitness &amp; Training</div>
+            <a class="w-tab-link w--current w-inline-block cc-industry-tab fitness" data-w-tab="section1">
+              <div class="cc-industry-tab-title">Section 1</div>
             </a>
-            <a class="w-tab-link w-inline-block cc-industry-tab education" data-w-tab="Education">
-              <div class="cc-industry-tab-title">Education &amp; Learning</div>
+            <a class="w-tab-link w-inline-block cc-industry-tab education" data-w-tab="section2">
+              <div class="cc-industry-tab-title">Section 2</div>
             </a>
-            <a class="w-tab-link w-inline-block cc-industry-tab health" data-w-tab="Health">
-              <div class="cc-industry-tab-title">Health &amp; Well-being</div>
+            <a class="w-tab-link w-inline-block cc-industry-tab health" data-w-tab="section3">
+              <div class="cc-industry-tab-title">Section 3</div>
             </a>
           </div>
           <div class="w-tab-content cc-industry-tab-content">
-            <div class="w-tab-pane w--tab-active cc-industry-tab-pane" data-w-tab="Fitness">
-              <h4 class="cc-industry-title">Fitness &amp; Training</h4>
+            <div class="w-tab-pane w--tab-active cc-industry-tab-pane" data-w-tab="section1">
+              <h4 class="cc-industry-title">Section 1</h4>
               <div class="w-row">
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
@@ -65,8 +65,8 @@
                 </div>
               </div>
             </div>
-            <div class="w-tab-pane cc-industry-tab-pane" data-w-tab="Education">
-              <h4 class="cc-industry-title">Education &amp; Learning</h4>
+            <div class="w-tab-pane cc-industry-tab-pane" data-w-tab="section2">
+              <h4 class="cc-industry-title">Section 2</h4>
               <div class="w-row">
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
@@ -92,8 +92,8 @@
                 </div>
               </div>
             </div>
-            <div class="w-tab-pane cc-industry-tab-pane" data-w-tab="Health">
-              <h4 class="cc-industry-title">Health &amp; Well-being</h4>
+            <div class="w-tab-pane cc-industry-tab-pane" data-w-tab="section3">
+              <h4 class="cc-industry-title">Section 3</h4>
               <div class="w-row">
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
@@ -161,8 +161,7 @@
           </div>
           <div class="w-col w-col-6">
             <h3 class="cc-branding-headline">Your App,Your Brand</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            <p>With Classcast you can have your own app with your own branding. Place your app in the various app stores and promote your business on top of the Classcast platform.</p>
           </div>
         </div>
       </div>
@@ -170,7 +169,7 @@
     <div class="cc-section cc-users">
       <div class="cc-users-img" data-ix="slide-from-right"></div>
       <div class="w-container cc-content-container cc-users-content" data-ix="fade-in">
-        <h3>Manage your users</h3>
+        <h3 class="cc-users-headline">Manage your users</h3>
         <p>Manage your users and notify them of upcomming events. See who is viewing your content and what market to reach out to. Keep in touch with your members and reach out to them with offers.</p>
       </div>
     </div>
@@ -213,14 +212,11 @@
         <div class="w-slide cc-content-slide-1">
           <div class="cc-content-img" data-ix="slide-from-right"></div>
         </div>
-        <div class="w-slide cc-content-slide-2">
-          <div class="cc-content-img" data-ix="slide-from-right"></div>
-        </div>
       </div>
       <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny cc-content-slider-arrow">
         <div class="w-icon-slider-left"></div>
       </div>
-      <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny -wfp-hover cc-content-slider-arrow">
+      <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny cc-content-slider-arrow">
         <div class="w-icon-slider-right"></div>
       </div>
       <div class="w-slider-nav w-round cc-content-slide-nav"></div>
@@ -228,7 +224,7 @@
     <div class="cc-section cc-stats">
       <div class="cc-stats-img" data-ix="slide-from-right"></div>
       <div class="w-container cc-content-container cc-stats-content" data-ix="fade-in">
-        <h3>Make smart moves</h3>
+        <h3 class="cc-stats-headline">Make smart moves</h3>
         <p>With Classcast you have the power to calculate your business decisions with detailed statistics. Statistics that show who your users are and what content they are consuming.</p>
       </div>
     </div>

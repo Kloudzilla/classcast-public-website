@@ -70,19 +70,13 @@ TOP NAVIGATION & FOOTER UNDERLINE HOVER
     }
   </style>
   <!-------------------------------
-QUOTE DOTS
----------->
+SLIDER VERTICAL ALIGNMENT
+-------------------------------->
   <style>
-    .w-slider-dot {
-        background:none;
-        border:1px solid #555;
-    }
-    .w-slider-dot.w-active {
-        background:none;
-        border:3px solid #555;
+    .w-slide{
+        vertical-align:bottom;
     }
   </style>
-
 
 </head>
 <body>
@@ -91,56 +85,58 @@ QUOTE DOTS
       <a class="w-inline-block close-modal" href="#">
         <div>CLOSE</div>
       </a>
-      <div class="modal-window">
-        <h3>Heading</h3>
-        <div class="w-form">
-          <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
-            <div class="cc-modal-scroll">
-              <div class="w-row cc-modal-form-row">
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-2" type="text" placeholder="Full Name" name="field-2" required="required">
+      <div class="w-container">
+        <div class="modal-window">
+          <h3>Heading</h3>
+          <div class="w-form">
+            <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
+              <div class="cc-modal-scroll">
+                <div class="w-row cc-modal-form-row">
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-2" type="text" placeholder="Full Name" name="field-2" required="required">
+                  </div>
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-3" type="text" placeholder="Company Name" name="field-3" required="required" data-name="Field 3">
+                  </div>
                 </div>
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-3" type="text" placeholder="Company Name" name="field-3" required="required" data-name="Field 3">
+                <div class="w-row cc-modal-form-row">
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-6" type="text" placeholder="Email Address" name="field-6" required="required" data-name="Field 6">
+                  </div>
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-7" type="text" placeholder="Phone Number" name="field-7" required="required" data-name="Field 7">
+                  </div>
                 </div>
+                <div class="w-row cc-modal-form-row">
+                  <div class="w-col w-col-6">
+                    <label for="field-9">Do you have any content that you distribute now?</label>
+                    <select class="w-select cc-dropdown" id="field-9" name="field-9" data-name="Field 9">
+                      <option value="">Select one...</option>
+                      <option value="Content-First">I'm just getting started, not yet</option>
+                      <option value="Content-Second">I'm selling physical products but not digital</option>
+                      <option value="Content-Third">I'm selling online but not yet on mobile</option>
+                    </select>
+                  </div>
+                  <div class="w-col w-col-6">
+                    <label for="field-8">What Industry are you involved with?</label>
+                    <select class="w-select cc-dropdown" id="field-8" name="field-8">
+                      <option value="">Select one...</option>
+                      <option value="Industry-First">Fitness</option>
+                      <option value="Industry-Second">Education</option>
+                      <option value="Industry-Third">Health</option>
+                      <option value="Industry-Fourth">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <input class="w-button cc-button-s green" type="submit" value="Submit" data-wait="Please wait...">
               </div>
-              <div class="w-row cc-modal-form-row">
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-6" type="text" placeholder="Email Address" name="field-6" required="required" data-name="Field 6">
-                </div>
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-7" type="text" placeholder="Phone Number" name="field-7" required="required" data-name="Field 7">
-                </div>
-              </div>
-              <div class="w-row cc-modal-form-row">
-                <div class="w-col w-col-6">
-                  <label for="field-9">Do you have any content that you distribute now?</label>
-                  <select class="w-select cc-dropdown" id="field-9" name="field-9" data-name="Field 9">
-                    <option value="">Select one...</option>
-                    <option value="Content-First">I'm just getting started, not yet</option>
-                    <option value="Content-Second">I'm selling physical products but not digital</option>
-                    <option value="Content-Third">I'm selling online but not yet on mobile</option>
-                  </select>
-                </div>
-                <div class="w-col w-col-6">
-                  <label for="field-8">What Industry are you involved with?</label>
-                  <select class="w-select cc-dropdown" id="field-8" name="field-8">
-                    <option value="">Select one...</option>
-                    <option value="Industry-First">Fitness</option>
-                    <option value="Industry-Second">Education</option>
-                    <option value="Industry-Third">Health</option>
-                    <option value="Industry-Fourth">Other</option>
-                  </select>
-                </div>
-              </div>
-              <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
             </div>
-          </form>
-          <div class="w-form-done">
-            <p>Thank you! Your submission has been received!</p>
-          </div>
-          <div class="w-form-fail">
-            <p>Oops! Something went wrong while submitting the form :(</p>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
           </div>
         </div>
       </div>
@@ -155,9 +151,9 @@ QUOTE DOTS
               <a class="w-inline-block cc-navigation-item-logo" href="/"></a>
             </li>
 
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup">Get Started</div>
+            <li class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link modal-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-signup">GET&nbsp;STARTED</div>
               </a>
             </li>
 
@@ -165,7 +161,7 @@ QUOTE DOTS
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
           ?>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link" href="<?php echo $primary_menu_item->url;?>">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="<?php echo $primary_menu_item->url;?>">
                 <div class="cc-navigation-menu-list-item-text"><?php echo $primary_menu_item->title;?></div>
               </a>
             </li>      
@@ -173,11 +169,10 @@ QUOTE DOTS
             }
           ?>
             <li class="w-hidden-main cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link cc-drop-link" href="#">
-                <div class="cc-navigation-menu-list-item-text">Menu</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link cc-drop-link" href="#">
+                <div class="cc-navigation-menu-list-item-text">MENU</div>
               </a>
             </li>
-
           </ul>
         </div>
         <div class="cc-drop">
@@ -198,7 +193,7 @@ QUOTE DOTS
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
-                  <div>Get Started</div>
+                  <div>GET STARTED</div>
                 </a>
               </li>
 
@@ -210,9 +205,9 @@ QUOTE DOTS
         <div class="w-container cc-navigation-items-wrap">
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">Get Started</div>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-signup-dark">GET&nbsp;STARTED</div>
               </a>
             </li>
 
@@ -220,7 +215,7 @@ QUOTE DOTS
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
           ?>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="<?php echo $primary_menu_item->url;?>">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="<?php echo $primary_menu_item->url;?>">
                 <div class="cc-navigation-menu-list-item-text-dark"><?php echo $primary_menu_item->title;?></div>
               </a>
             </li>
@@ -229,8 +224,8 @@ QUOTE DOTS
           ?>
 
             <li class="w-hidden-main cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-dark">Menu</div>
+              <a class="w-clearfix  w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-dark">MENU</div>
               </a>
             </li>
 
@@ -258,7 +253,7 @@ QUOTE DOTS
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
-                  <div>Get Started</div>
+                  <div>GET STARTED</div>
                 </a>
               </li>
 
@@ -272,20 +267,20 @@ QUOTE DOTS
     ?>
 
         <div class="cc-section">
-        <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1" data-delay="4000" data-autoplay="1">
+        <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
           <div class="w-slider-mask">
             <div class="w-slide w-clearfix">
               <div class="cc-home-hero-slider-text">
                 <div class="w-container cc-content-container cc-home-hero-content">
                   <h3 class="cc-home-hero-headline">Monetize your mobile content.</h3>
                   <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                  <a class="w-inline-block cc-button-s green modal-link" href="#">
                     <div>Get Started</div>
                   </a>
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-yoga-cropped.png" width="940" alt="53bb7650f5d047c425ac608f_hero-template-browser-phone-yoga-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
               </div>
             </div>
             <div class="w-slide">
@@ -293,13 +288,13 @@ QUOTE DOTS
                 <div class="w-container cc-content-container cc-home-hero-content">
                   <h3 class="cc-home-hero-headline">Slide 2</h3>
                   <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                  <a class="w-inline-block cc-button-s green modal-link" href="#">
                     <div>Get Started</div>
                   </a>
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
               </div>
             </div>
             <div class="w-slide w-clearfix">
@@ -307,13 +302,13 @@ QUOTE DOTS
                 <div class="w-container cc-content-container cc-home-hero-content">
                   <h3 class="cc-home-hero-headline">Slide 3</h3>
                   <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                  <a class="w-inline-block cc-button-s green modal-link" href="#">
                     <div>Get Started</div>
                   </a>
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53ba1e35738574441e054327_hero-template-browser-phone-cropped.png">
+                <img class="cc-home-hero-image" src="i<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
               </div>
             </div>
             <div class="w-slide w-clearfix">
@@ -321,13 +316,13 @@ QUOTE DOTS
                 <div class="w-container cc-content-container cc-home-hero-content">
                   <h3 class="cc-home-hero-headline">Slide 4</h3>
                   <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s blue modal-link" href="#">
+                  <a class="w-inline-block cc-button-s green modal-link" href="#">
                     <div>Get Started</div>
                   </a>
                 </div>
               </div>
               <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-cropped.png" width="940" alt="53ba3702a0584677026e3d39_hero-template-browser-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-cropped.png" width="940" alt="53be382defd06169282104d2_hero-template-browser-cropped.png">
               </div>
             </div>
           </div>
@@ -340,7 +335,7 @@ QUOTE DOTS
           <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
         </div>
       </div>
-    </div>
+    </div>      
 
     <?php
       } else if($template_section == 'about') {
