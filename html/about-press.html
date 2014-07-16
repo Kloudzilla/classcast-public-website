@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Jul 09 2014 02:30:27 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Jul 16 2014 05:03:05 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -67,19 +67,6 @@ TOP NAVIGATION & FOOTER UNDERLINE HOVER
     }
   </style>
   <!-------------------------------
-QUOTE DOTS
--------------------------------->
-  <style>
-    .w-slider-dot {
-        background:none;
-        border:1px solid #555;
-    }
-    .w-slider-dot.w-active {
-        background:none;
-        border:3px solid #555;
-    }
-  </style>
-  <!-------------------------------
 SLIDER VERTICAL ALIGNMENT
 -------------------------------->
   <style>
@@ -94,56 +81,58 @@ SLIDER VERTICAL ALIGNMENT
       <a class="w-inline-block close-modal" href="#">
         <div>CLOSE</div>
       </a>
-      <div class="modal-window">
-        <h3>Heading</h3>
-        <div class="w-form">
-          <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
-            <div class="cc-modal-scroll">
-              <div class="w-row cc-modal-form-row">
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-2" type="text" placeholder="Full Name" name="field-2" required="required">
+      <div class="w-container">
+        <div class="modal-window">
+          <h3>Heading</h3>
+          <div class="w-form">
+            <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
+              <div class="cc-modal-scroll">
+                <div class="w-row cc-modal-form-row">
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-2" type="text" placeholder="Full Name" name="field-2" required="required">
+                  </div>
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-3" type="text" placeholder="Company Name" name="field-3" required="required" data-name="Field 3">
+                  </div>
                 </div>
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-3" type="text" placeholder="Company Name" name="field-3" required="required" data-name="Field 3">
+                <div class="w-row cc-modal-form-row">
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-6" type="text" placeholder="Email Address" name="field-6" required="required" data-name="Field 6">
+                  </div>
+                  <div class="w-col w-col-6">
+                    <input class="w-input cc-input" id="field-7" type="text" placeholder="Phone Number" name="field-7" required="required" data-name="Field 7">
+                  </div>
                 </div>
+                <div class="w-row cc-modal-form-row">
+                  <div class="w-col w-col-6">
+                    <label for="field-9">Do you have any content that you distribute now?</label>
+                    <select class="w-select cc-dropdown" id="field-9" name="field-9" data-name="Field 9">
+                      <option value="">Select one...</option>
+                      <option value="Content-First">I'm just getting started, not yet</option>
+                      <option value="Content-Second">I'm selling physical products but not digital</option>
+                      <option value="Content-Third">I'm selling online but not yet on mobile</option>
+                    </select>
+                  </div>
+                  <div class="w-col w-col-6">
+                    <label for="field-8">What Industry are you involved with?</label>
+                    <select class="w-select cc-dropdown" id="field-8" name="field-8">
+                      <option value="">Select one...</option>
+                      <option value="Industry-First">Fitness</option>
+                      <option value="Industry-Second">Education</option>
+                      <option value="Industry-Third">Health</option>
+                      <option value="Industry-Fourth">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <input class="w-button cc-button-s green" type="submit" value="Submit" data-wait="Please wait...">
               </div>
-              <div class="w-row cc-modal-form-row">
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-6" type="text" placeholder="Email Address" name="field-6" required="required" data-name="Field 6">
-                </div>
-                <div class="w-col w-col-6">
-                  <input class="w-input cc-input" id="field-7" type="text" placeholder="Phone Number" name="field-7" required="required" data-name="Field 7">
-                </div>
-              </div>
-              <div class="w-row cc-modal-form-row">
-                <div class="w-col w-col-6">
-                  <label for="field-9">Do you have any content that you distribute now?</label>
-                  <select class="w-select cc-dropdown" id="field-9" name="field-9" data-name="Field 9">
-                    <option value="">Select one...</option>
-                    <option value="Content-First">I'm just getting started, not yet</option>
-                    <option value="Content-Second">I'm selling physical products but not digital</option>
-                    <option value="Content-Third">I'm selling online but not yet on mobile</option>
-                  </select>
-                </div>
-                <div class="w-col w-col-6">
-                  <label for="field-8">What Industry are you involved with?</label>
-                  <select class="w-select cc-dropdown" id="field-8" name="field-8">
-                    <option value="">Select one...</option>
-                    <option value="Industry-First">Fitness</option>
-                    <option value="Industry-Second">Education</option>
-                    <option value="Industry-Third">Health</option>
-                    <option value="Industry-Fourth">Other</option>
-                  </select>
-                </div>
-              </div>
-              <input class="w-button cc-button-s blue" type="submit" value="Submit" data-wait="Please wait...">
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
             </div>
-          </form>
-          <div class="w-form-done">
-            <p>Thank you! Your submission has been received!</p>
-          </div>
-          <div class="w-form-fail">
-            <p>Oops! Something went wrong while submitting the form :(</p>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
           </div>
         </div>
       </div>
@@ -155,29 +144,29 @@ SLIDER VERTICAL ALIGNMENT
             <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
               <a class="w-inline-block cc-navigation-item-logo" href="index.html"></a>
             </li>
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+            <li class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
               <a class="w-inline-block cc-navigation-menu-list-item-link modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup">Get Started</div>
+                <div class="cc-navigation-menu-list-item-text-signup">GET&nbsp;STARTED</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
-                <div class="cc-navigation-menu-list-item-text">Log In</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
+                <div class="cc-navigation-menu-list-item-text">LOG&nbsp;IN</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link" href="pricing.html">
-                <div class="cc-navigation-menu-list-item-text">Pricing</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="pricing.html">
+                <div class="cc-navigation-menu-list-item-text">PRICING</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link" href="#">
-                <div class="cc-navigation-menu-list-item-text">About</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="#">
+                <div class="cc-navigation-menu-list-item-text">TOUR</div>
               </a>
             </li>
             <li class="w-hidden-main cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link cc-drop-link">
-                <div class="cc-navigation-menu-list-item-text">Menu</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link cc-drop-link">
+                <div class="cc-navigation-menu-list-item-text">MENU</div>
               </a>
             </li>
           </ul>
@@ -212,29 +201,29 @@ SLIDER VERTICAL ALIGNMENT
       <div class="cc-navigation-past-hero">
         <div class="w-container cc-navigation-items-wrap">
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">Get Started</div>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-signup-dark">GET&nbsp;STARTED</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
-                <div class="cc-navigation-menu-list-item-text-dark">Log In</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
+                <div class="cc-navigation-menu-list-item-text-dark">LOG&nbsp;IN</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="pricing.html">
-                <div class="cc-navigation-menu-list-item-text-dark">Pricing</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="pricing.html">
+                <div class="cc-navigation-menu-list-item-text-dark">PRICING</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
-                <div class="cc-navigation-menu-list-item-text-dark">About</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
+                <div class="cc-navigation-menu-list-item-text-dark">TOUR</div>
               </a>
             </li>
             <li class="w-hidden-main cc-navigation-menu-list-item">
-              <a class="w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-dark">Menu</div>
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-dark">MENU</div>
               </a>
             </li>
             <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
