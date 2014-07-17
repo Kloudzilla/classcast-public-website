@@ -1413,7 +1413,7 @@ p {
 }
 .cc-home-hero-slider-arrow {
   display: block;
-  width: 40px;
+  width: 60px;
 }
 .cc-home-hero-slider-arrow:hover {
   display: block;
@@ -1926,6 +1926,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     margin-bottom: 40px;
     border: 1px solid #c9c9c9;
   }
+  .cc-home-hero-slider-arrow {
+    display: none;
+  }
 }
 @media (max-width: 479px) {
   h2 {
@@ -2215,9 +2218,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-modal-scroll {
     height: 560px;
-  }
-  .cc-home-hero-slider-arrow {
-    display: none;
   }
   .cc-home-hero-image {
     width: 95%;
