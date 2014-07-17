@@ -815,7 +815,9 @@ p {
 }
 .cc-section.cc-about-team-mini-hero {
   height: 400px;
-  background-color: #2c3e50;
+  background-image: -webkit-linear-gradient(45deg, #26a65b, #1ba39c);
+  background-image: -o-linear-gradient(315deg, #26a65b, #1ba39c);
+  background-image: linear-gradient(315deg, #26a65b, #1ba39c);
 }
 .cc-section.cc-about-team-location {
   background-color: #2c3e50;
@@ -1414,9 +1416,11 @@ p {
 .cc-home-hero-slider-arrow {
   display: block;
   width: 60px;
+  opacity: 0.2;
 }
 .cc-home-hero-slider-arrow:hover {
   display: block;
+  opacity: 1;
 }
 .cc-home-hero-image {
   display: block;
@@ -1644,6 +1648,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-content-slider-arrow {
     height: 50%;
     margin-top: 0px;
+  }
+  .cc-home-hero-slider-arrow:hover {
+    opacity: 1;
   }
   .cc-home-hero-image {
     width: 90%;
