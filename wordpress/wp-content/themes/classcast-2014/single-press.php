@@ -3,7 +3,7 @@
 	Template Name: Blog Post Page
 	*/
   global $template_section;
-  $template_section = 'blogpost';
+  $template_section = 'aboutpost';
 ?>
 
 <?php
@@ -21,11 +21,11 @@
               <?php the_content(); ?>
             </div>
             <div class="w-clearfix cc-blog-post-full-author-info">
-              <?php if ( has_post_thumbnail() ) { ?>
+              <!--<?php if ( has_post_thumbnail() ) { ?>
               <div class="cc-blog-post-full-author-img"><?php the_post_thumbnail('thumbnail');?></div>
               <?php 
                   }
-                ?>
+                ?>-->
               <div class="cc-blog-post-full-author-text">By <?php the_author() ?> – <?php the_time('F jS, Y') ?></div>
             </div>
             <?php 

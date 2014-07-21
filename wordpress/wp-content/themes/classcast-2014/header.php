@@ -141,7 +141,7 @@ SLIDER VERTICAL ALIGNMENT
         </div>
       </div>
     </div>
-    <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?>
+    <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?>">
       <div class="cc-navigation" data-ix="navigation-past-hero">
         <div class="w-container cc-navigation-items-wrap">
@@ -363,6 +363,16 @@ SLIDER VERTICAL ALIGNMENT
           </div>
         </div>
       </div>
+
+    <?php
+      } else if($template_section == 'aboutpost') {
+    ?>
+
+      <div class="w-container cc-content-container cc-about-hero-content">
+        <h3 class="cc-blog-post-hero-headline"><?php the_title(); ?></h3>
+        <div class="cc-blog-hero-post-date"><?php the_time('F jS, Y') ?></div>
+      </div>
+    </div>
 
     <?php
       } else if($template_section == 'blog') {

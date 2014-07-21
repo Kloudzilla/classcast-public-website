@@ -20,7 +20,7 @@
                 <div class="cc-blog-post-content">
                   <div class="cc-blog-post-headline"><a class="cc-blog-post-headline-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                   </div>
-                  <div class="cc-blog-post-text"><?php the_content(); ?></div>
+                  <div class="cc-blog-post-text"><?php the_excerpt(); ?></div>
                   <div class="cc-blog-post-author-text">By <?php the_author() ?> – <?php the_time('F jS, Y') ?></div>
                 </div>
               </div>
