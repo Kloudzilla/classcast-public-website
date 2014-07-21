@@ -18,15 +18,14 @@
           <div class="w-col w-col-6 cc-job-col">
             <h4 class="cc-job-title-headline">Senior Software Engineer</h4>
             <p class="cc-job-text">This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.</p>
-            <a class="w-inline-block cc-button-s keyline"
-            href="#">
+            <a class="w-inline-block cc-button-s keyline" href="mailto:jobs@classcast.co?subject=<?php the_title(); ?>">
               <div>Apply</div>
             </a>
           </div>
           <div class="w-col w-col-6 cc-job-col">
             <h4 class="cc-job-title-headline">Inside Sales Representative</h4>
             <p class="cc-job-text">This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.</p>
-            <a class="w-inline-block cc-button-s keyline" href="#">
+            <a class="w-inline-block cc-button-s keyline" href="mailto:jobs@classcast.co?subject=<?php the_title(); ?>">
               <div>Apply</div>
             </a>
           </div>
@@ -35,15 +34,14 @@
           <div class="w-col w-col-6 cc-job-col">
             <h4 class="cc-job-title-headline">Customer Success Engineer</h4>
             <p class="cc-job-text">This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.</p>
-            <a class="w-inline-block cc-button-s keyline"
-            href="#">
+            <a class="w-inline-block cc-button-s keyline" href="mailto:jobs@classcast.co?subject=<?php the_title(); ?>">
               <div>Apply</div>
             </a>
           </div>
           <div class="w-col w-col-6 cc-job-col">
             <h4 class="cc-job-title-headline">Support Engineer</h4>
             <p class="cc-job-text">This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.</p>
-            <a class="w-inline-block cc-button-s keyline" href="#">
+            <a class="w-inline-block cc-button-s keyline" href="mailto:jobs@classcast.co?subject=<?php the_title(); ?>">
               <div>Apply</div>
             </a>
           </div>
@@ -52,15 +50,14 @@
           <div class="w-col w-col-6 cc-job-col">
             <h4 class="cc-job-title-headline">Marketing and Communications</h4>
             <p class="cc-job-text">This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.</p>
-            <a class="w-inline-block cc-button-s keyline"
-            href="#">
+            <a class="w-inline-block cc-button-s keyline" href="mailto:jobs@classcast.co?subject=<?php the_title(); ?>">
               <div>Apply</div>
             </a>
           </div>
           <div class="w-col w-col-6 cc-job-col">
             <h4 class="cc-job-title-headline">Product Marketing Manager</h4>
             <p class="cc-job-text">This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.&nbsp;This is a job description.</p>
-            <a class="w-inline-block cc-button-s keyline" href="#">
+            <a class="w-inline-block cc-button-s keyline" href="mailto:jobs@classcast.co?subject=<?php the_title(); ?>">
               <div>Apply</div>
             </a>
           </div>
