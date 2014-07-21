@@ -79,9 +79,9 @@ p {
 }
 .cc-hero.about {
   height: 400px;
-  background-image: -webkit-linear-gradient(135deg, #6bb9f0, #9b59b6);
-  background-image: -o-linear-gradient(45deg, #6bb9f0, #9b59b6);
-  background-image: linear-gradient(45deg, #6bb9f0, #9b59b6);
+  background-image: -webkit-linear-gradient(135deg, #6037d9, #9d30de);
+  background-image: -o-linear-gradient(45deg, #6037d9, #9d30de);
+  background-image: linear-gradient(45deg, #6037d9, #9d30de);
 }
 .cc-hero.pricing {
   height: 400px;
@@ -1649,9 +1649,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     height: 50%;
     margin-top: 0px;
   }
-  .cc-home-hero-slider-arrow:hover {
-    opacity: 1;
-  }
   .cc-home-hero-image {
     width: 90%;
   }
@@ -1873,9 +1870,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-ebook {
     display: block;
     margin-top: 20px;
-  }
-  .cc-video {
-    width: 240px;
   }
   .cc-video-featured {
     width: 100%;
