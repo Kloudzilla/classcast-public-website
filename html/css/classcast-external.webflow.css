@@ -944,7 +944,8 @@ p {
   color: #d1d1d1;
 }
 .cc-button-s.keyline:hover {
-  border-style: none;
+  border-style: solid;
+  border-color: #45b46d;
   background-color: #45b46d;
   color: white;
 }
