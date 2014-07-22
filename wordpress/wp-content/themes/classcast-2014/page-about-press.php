@@ -10,32 +10,19 @@
 	get_header();
 ?>
  
-   <div class="cc-section">
+    <div class="cc-section">
       <div class="w-container cc-content-container cc-about-press-content">
-        <div class="cc-press-post">
-          <div class="cc-press-post-content">
-            <div class="cc-press-post-headline">Case Study: How KettleWorkX Uses Classcast To Engage Instructors</div>
-            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis
-              facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
-            <div class="cc-press-post-author-text">By Firstname Last – May 26th, 2014</div>
+        <?php $loop = new WP_Query( array( 'post_type' => 'press' ) ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?> 
+          <div class="w-clearfix cc-press-post">
+            <div class="cc-press-post-content">
+              <div class="cc-press-post-headline"><a class="cc-blog-post-headline-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </div>
+              <div class="cc-press-post-text"><?php the_excerpt(); ?></div>
+              <div class="cc-press-post-author-text">By <?php the_author() ?> – <?php the_time('F jS, Y') ?></div>
+            </div>
           </div>
-        </div>
-        <div class="cc-press-post">
-          <div class="cc-press-post-content">
-            <div class="cc-press-post-headline">Case Study: How KettleWorkX Uses Classcast To Engage Instructors</div>
-            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis
-              facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
-            <div class="cc-press-post-author-text">By Firstname Last – May 26th, 2014</div>
-          </div>
-        </div>
-        <div class="cc-press-post">
-          <div class="cc-press-post-content last">
-            <div class="cc-press-post-headline">Case Study: How KettleWorkX Uses Classcast To Engage Instructors</div>
-            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis
-              facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
-            <div class="cc-press-post-author-text">By Firstname Last – May 26th, 2014</div>
-          </div>
-        </div>
+        <?php endwhile; ?>          
       </div>
     </div>
                 

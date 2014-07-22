@@ -24,18 +24,6 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
- 
-function get_custom_cat_template($single_template) {
-     global $post;
- 
-       if ( in_category( 'press' )) {
-          $single_template = dirname( __FILE__ ) . '/single-press.php';
-     }
-     return $single_template;
-}
- 
-add_filter( "single_template", "get_custom_cat_template" ) ;
-
 add_action('init', 'cptui_register_my_cpt_job');
 function cptui_register_my_cpt_job() {
 register_post_type('job', array(
@@ -66,6 +54,47 @@ register_post_type('job', array(
   'not_found_in_trash' => 'No Jobs Found in Trash',
   'parent' => 'Parent Job',
 )
-) ); } 
+) ); }
+add_action('init', 'cptui_register_my_cpt_press');
+function cptui_register_my_cpt_press() {
+register_post_type('press', array(
+'label' => 'Press',
+'description' => '',
+'public' => true,
+'show_ui' => true,
+'show_in_menu' => true,
+'capability_type' => 'post',
+'map_meta_cap' => true,
+'hierarchical' => false,
+'rewrite' => array('slug' => 'press', 'with_front' => true),
+'query_var' => true,
+'supports' => array('title','editor','excerpt','trackbacks','custom-fields','comments','revisions','thumbnail','author','page-attributes','post-formats'),
+'labels' => array (
+  'name' => 'Press',
+  'singular_name' => 'Press',
+  'menu_name' => 'Press',
+  'add_new' => 'Add Press',
+  'add_new_item' => 'Add New Press',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Press',
+  'new_item' => 'New Press',
+  'view' => 'View Press',
+  'view_item' => 'View Press',
+  'search_items' => 'Search Press',
+  'not_found' => 'No Press Found',
+  'not_found_in_trash' => 'No Press Found in Trash',
+  'parent' => 'Parent Press',
+)
+) ); }
+ 
+function get_custom_post_type_template($single_template) {
+     global $post;
+ 
+       if ($post->post_type == 'custom-post-type') {
+          $single_template = dirname( __FILE__ ) . '/single-template.php';
+     }
+     return $single_template;
+}
+ 
+add_filter( "single_template", "get_custom_post_type_template" ) ;
 ?>
-
