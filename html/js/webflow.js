@@ -1781,7 +1781,12 @@ Webflow.define('slider', function ($, _) {
 
     // Store slider state in data
     var data = $.data(el, namespace);
-    if (!data) data = $.data(el, namespace, { index: 0, el: $el, config: {} });
+    if (!data) data = $.data(el, namespace, {
+      index: 0,
+      depth: 1,
+      el: $el,
+      config: {}
+    });
     data.mask = $el.children('.w-slider-mask');
     data.left = $el.children('.w-slider-arrow-left');
     data.right = $el.children('.w-slider-arrow-right');
@@ -1811,7 +1816,7 @@ Webflow.define('slider', function ($, _) {
     // Add events based on mode
     if (designer) {
       data.el.on('setting' + namespace, handler(data));
-      killTimer(data);
+      stopTimer(data);
       data.hasTimer = false;
     } else {
       data.el.on('swipe' + namespace, handler(data));
@@ -1821,6 +1826,7 @@ Webflow.define('slider', function ($, _) {
       // Start timer if autoplay is true, only once
       if (data.config.autoplay && !data.hasTimer) {
         data.hasTimer = true;
+        data.timerCount = 1;
         startTimer(data);
       }
     }
@@ -1842,7 +1848,6 @@ Webflow.define('slider', function ($, _) {
   function configure(data) {
     var config = {};
 
-    config.depth = 1;
     config.crossOver = 0;
 
     // Set config options from data attributes
@@ -1868,10 +1873,11 @@ Webflow.define('slider', function ($, _) {
     if (+data.el.attr('data-autoplay')) {
       config.autoplay = true;
       config.delay = +data.el.attr('data-delay') || 2000;
+      config.timerMax = +data.el.attr('data-autoplay-limit');
       // Disable timer on first touch or mouse down
       var touchEvents = 'mousedown' + namespace + ' touchstart' + namespace;
       if (!designer) data.el.off(touchEvents).one(touchEvents, function () {
-        killTimer(data);
+        stopTimer(data);
       });
     }
 
@@ -1910,25 +1916,20 @@ Webflow.define('slider', function ($, _) {
   }
 
   function startTimer(data) {
-    var config = data.config;
     stopTimer(data);
-    config.timer = window.setTimeout(function () {
-      if (!config.autoplay || designer) return;
+    var config = data.config;
+    var timerMax = config.timerMax;
+    if (timerMax && data.timerCount++ > timerMax) return;
+    data.timerId = window.setTimeout(function () {
+      if (data.timerId == null || designer) return;
       next(data)();
       startTimer(data);
     }, config.delay);
   }
 
   function stopTimer(data) {
-    var config = data.config;
-    window.clearTimeout(config.timer);
-    config.timer = null;
-  }
-
-  function killTimer(data) {
-    var config = data.config;
-    config.autoplay = false;
-    stopTimer(data);
+    window.clearTimeout(data.timerId);
+    data.timerId = null;
   }
 
   function handler(data) {
@@ -2040,7 +2041,7 @@ Webflow.define('slider', function ($, _) {
         .add(fadeRule)
         .start({ opacity: 0 });
       tram(targets)
-        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: config.depth++ })
+        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: data.depth++ })
         .add(fadeRule)
         .wait(wait)
         .then({ opacity: 1 })
@@ -2054,7 +2055,7 @@ Webflow.define('slider', function ($, _) {
         .set({ visibility: '' })
         .stop();
       tram(targets)
-        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: config.depth++ })
+        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: data.depth++ })
         .add(fadeRule)
         .start({ opacity: 1 })
         .then(resetOthers);
@@ -2068,7 +2069,7 @@ Webflow.define('slider', function ($, _) {
         .set({ visibility: '' })
         .stop();
       tram(targets)
-        .set({ visibility: '', zIndex: config.depth++, x: offsetX + anchors[data.index].width * vector })
+        .set({ visibility: '', zIndex: data.depth++, x: offsetX + anchors[data.index].width * vector })
         .add(slideRule)
         .start({ x: offsetX })
         .then(resetOthers);
