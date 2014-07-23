@@ -37,7 +37,9 @@ h4 {
   font-weight: 200;
 }
 h5 {
+  font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
 }
 h6 {
   margin-top: 10px;
@@ -905,14 +907,6 @@ p {
   text-align: center;
   text-decoration: none;
 }
-.cc-button-s.blue-keyline {
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  bottom: 0px;
-  border: 1px solid #45b46d;
-  color: #45b46d;
-}
 .cc-button-s.green {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -983,82 +977,14 @@ p {
 .cc-about-resources-headline {
   margin-bottom: 40px;
 }
-.cc-ebooks-featured-row {
-  height: 420px;
-}
-.cc-ebooks-row {
-  margin-top: 60px;
-  margin-bottom: 80px;
-}
-.cc-ebook-featured {
-  display: block;
-  width: 200px;
-  height: 300px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  background-color: #b0b0b0;
-}
-.cc-ebook-featured-title {
-  margin-bottom: 20px;
-  color: #45b46d;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-}
-.cc-ebooks-featured-col {
-  height: 100%;
-  padding-bottom: 20px;
-}
-.cc-ebook {
-  display: block;
-  width: 140px;
-  height: 200px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  background-color: #bdbdbd;
-}
-.cc-ebook-title {
-  margin-bottom: 10px;
-  font-size: 16px;
-  font-weight: 500;
-}
-.cc-ebook-download {
-  color: #45b46d;
-  text-decoration: underline;
-}
 .cc-video {
   display: block;
-  width: 100%;
-  height: 120px;
+  width: 160px;
+  height: 100px;
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
   background-color: #bfbfbf;
-}
-.cc-videos-row {
-  margin-bottom: 80px;
-}
-.cc-video-featured {
-  display: block;
-  width: 720px;
-  height: 400px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  background-color: #969696;
-}
-.cc-video-featured-title {
-  margin-bottom: 40px;
-  color: #45b46d;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 700;
-}
-.cc-video-title {
-  font-size: 16px;
-  font-weight: 500;
 }
 .cc-tutorial-heading {
   margin-top: 30px;
@@ -1454,10 +1380,47 @@ p {
   text-align: center;
 }
 .cc-job-text {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .cc-job-col {
   margin-bottom: 40px;
+}
+.cc-ebook-cover {
+  display: block;
+  width: 160px;
+  height: 220px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  background-color: #e6e6e6;
+}
+.cc-ebook-title {
+  margin-bottom: 20px;
+  color: #45b46d;
+}
+.cc-ebook-row {
+  margin-bottom: 40px;
+}
+.cc-video-cover {
+  display: block;
+  width: 160px;
+  height: 100px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  background-color: #e6e6e6;
+}
+.cc-video-title {
+  color: #45b46d;
+}
+.cc-video-row {
+  margin-bottom: 40px;
+}
+.cc-tutorial-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #45b46d;
+  text-align: left;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
@@ -1631,10 +1594,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-section.cc-footer-section {
     padding-bottom: 10px;
-  }
-  .cc-button-s.blue-keyline {
-    padding-right: 10px;
-    padding-left: 10px;
   }
   .cc-button-s.center {
     padding-right: 20px;
@@ -1865,20 +1824,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     margin-right: auto;
     margin-left: auto;
   }
-  .cc-ebooks-featured-col {
-    margin-top: 20px;
-  }
-  .cc-ebook {
-    display: block;
-    margin-top: 20px;
-  }
-  .cc-video-featured {
-    width: 100%;
-    height: 280px;
-  }
-  .cc-video-title {
-    margin-bottom: 20px;
-  }
   .cc-tutorial-heading {
     margin-top: 0px;
     text-align: center;
@@ -1930,6 +1875,19 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-home-hero-slider-arrow {
     display: none;
+  }
+  .cc-video-cover {
+    display: block;
+  }
+  .cc-video-title {
+    margin-bottom: 20px;
+  }
+  .cc-tutorial-title {
+    margin-top: 0px;
+    text-align: center;
+  }
+  .cc-ebook-col {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 479px) {
@@ -2140,10 +2098,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-location-info-text {
     margin-bottom: 20px;
   }
-  .cc-button-s.blue-keyline {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
   .cc-button-s.green {
     display: block;
     width: 60%;
@@ -2154,24 +2108,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     border-bottom: 1px solid #3f4042;
     border-right-style: none;
   }
-  .cc-ebooks-featured-col {
-    margin-top: 20px;
-  }
-  .cc-ebook {
-    width: 120px;
-    height: 180px;
-  }
   .cc-video {
     width: 100%;
     max-width: 200px;
-  }
-  .cc-video-featured {
-    width: 100%;
-    height: 160px;
-  }
-  .cc-video-featured-title {
-    font-size: 18px;
-    line-height: 22px;
   }
   .cc-about-resources-tagline {
     font-size: 26px;
