@@ -865,6 +865,7 @@ Webflow.define('touch', function ($, _) {
 
   var api = {};
   var fallback = !document.addEventListener;
+  var getSelection = window.getSelection;
 
   // Fallback to click events in old IE
   if (fallback) {
@@ -883,13 +884,14 @@ Webflow.define('touch', function ($, _) {
     var useTouch = false;
     var thresholdX = Math.min(Math.round(window.innerWidth * 0.04), 40);
     var startX, startY, lastX;
+    var _move = _.throttle(move);
 
     el.addEventListener('touchstart', start, false);
-    el.addEventListener('touchmove', move, false);
+    el.addEventListener('touchmove', _move, false);
     el.addEventListener('touchend', end, false);
     el.addEventListener('touchcancel', cancel, false);
     el.addEventListener('mousedown', start, false);
-    el.addEventListener('mousemove', move, false);
+    el.addEventListener('mousemove', _move, false);
     el.addEventListener('mouseup', end, false);
     el.addEventListener('mouseout', cancel, false);
 
@@ -931,7 +933,8 @@ Webflow.define('touch', function ($, _) {
       var velocityX = x - lastX;
       lastX = x;
 
-      if (Math.abs(velocityX) > thresholdX) {
+      // Allow swipes while pointer is down, but prevent them during text selection
+      if (Math.abs(velocityX) > thresholdX && getSelection && getSelection() + '' === '') {
         triggerEvent('swipe', evt, { direction: velocityX > 0 ? 'right' : 'left' });
         cancel();
       }
@@ -944,6 +947,7 @@ Webflow.define('touch', function ($, _) {
 
     function end(evt) {
       if (!active) return;
+      active = false;
 
       if (useTouch && evt.type === 'mouseup') {
         evt.preventDefault();
@@ -961,11 +965,11 @@ Webflow.define('touch', function ($, _) {
 
     function destroy() {
       el.removeEventListener('touchstart', start, false);
-      el.removeEventListener('touchmove', move, false);
+      el.removeEventListener('touchmove', _move, false);
       el.removeEventListener('touchend', end, false);
       el.removeEventListener('touchcancel', cancel, false);
       el.removeEventListener('mousedown', start, false);
-      el.removeEventListener('mousemove', move, false);
+      el.removeEventListener('mousemove', _move, false);
       el.removeEventListener('mouseup', end, false);
       el.removeEventListener('mouseout', cancel, false);
       el = null;
