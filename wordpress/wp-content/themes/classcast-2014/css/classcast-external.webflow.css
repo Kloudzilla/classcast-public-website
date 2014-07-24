@@ -1371,6 +1371,8 @@ p {
   text-align: center;
 }
 .cc-job-title-headline {
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: #45b46d;
   font-size: 22px;
 }
@@ -1421,6 +1423,12 @@ p {
   margin-bottom: 10px;
   color: #45b46d;
   text-align: left;
+}
+.cc-ebook-col {
+  margin-top: 20px;
+}
+.cc-video-col {
+  margin-top: 20px;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
