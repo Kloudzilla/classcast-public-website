@@ -13,6 +13,10 @@
       <div class="w-clearfix cc-blog-post-full-content">
         <div class="cc-blog-post-full-text">
           <?php the_content(); ?>
+          <?php $press = get_post_meta($post->ID, 'pdf_release', true); ?>
+          <?php if ($press): ?>
+          <a href="<?php echo wp_get_attachment_url($press); ?>" class="cc-button-s keyline">Download Release</a>
+          <?php endif; ?> 
         </div>
         <div class="w-clearfix cc-blog-post-full-author-info">
             <!--<?php if ( has_post_thumbnail() ) { ?>
