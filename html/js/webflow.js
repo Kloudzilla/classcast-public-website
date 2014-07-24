@@ -2224,7 +2224,7 @@ var lightbox = (function (window, document, $, tram, undefined) {
   // Instance of Spinner
   var spinner;
 
-  function lightbox(thing) {
+  function lightbox(thing, index) {
     items = isArray(thing) ? thing : [thing];
     
     if (!$refs) {
@@ -2265,7 +2265,7 @@ var lightbox = (function (window, document, $, tram, undefined) {
     // Prevent document from scrolling while lightbox is active.
     addClass($refs.html, 'noscroll');
     
-    return lightbox.show(0);
+    return lightbox.show(index || 0);
   }
 
   /**
@@ -2703,6 +2703,7 @@ Webflow.define('lightbox', function ($, _) {
   var designer;
   var inApp = Webflow.env();
   var namespace = '.w-lightbox';
+  var groups;
 
   // -----------------------------------
   // Module methods
@@ -2718,6 +2719,9 @@ Webflow.define('lightbox', function ($, _) {
 
     // Reset Lightbox
     lightbox.destroy();
+
+    // Reset groups
+    groups = {};
 
     // Find all instances on the page
     $lightboxes = $doc.find(namespace);
@@ -2756,6 +2760,7 @@ Webflow.define('lightbox', function ($, _) {
 
   function configure(data) {
     var json = data.el.children('.w-json').html();
+    var groupId, group;
 
     if (!json) {
       data.images = [];
@@ -2770,7 +2775,23 @@ Webflow.define('lightbox', function ($, _) {
         data.embed = json.embed;
       }
       else {
-        data.images = json.images;
+        groupId = json.groupId;
+        if (groupId) {
+          group = groups[groupId];
+          if (!group) {
+            group = groups[groupId] = [];
+          }
+
+          data.images = group;
+
+          if (json.images.length) {
+            data.index = group.length;
+            group.push.apply(group, json.images);
+          }
+        }
+        else {
+          data.images = json.images;
+        }
       }
     }
     catch (e) {
@@ -2783,7 +2804,7 @@ Webflow.define('lightbox', function ($, _) {
       if (data.mode == 'video') {
         data.embed && lightbox(data.embed);
       } else {
-        data.images.length && lightbox(data.images);
+        data.images.length && lightbox(data.images, data.index || 0);
       }
     };
   }
@@ -3183,7 +3204,7 @@ Webflow.define('dropdown', function ($, _) {
     if (designer) {
       $el.on('setting' + namespace, handler(data));
     } else {
-      data.toggle.on('click' + namespace, toggle(data));
+      data.toggle.on('tap' + namespace, toggle(data));
     }
   }
 
