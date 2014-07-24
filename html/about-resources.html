@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Jul 24 2014 06:57:09 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Jul 24 2014 07:07:02 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -342,50 +342,42 @@ SLIDER VERTICAL ALIGNMENT
         <h3 class="cc-about-resources-headline">WEBINARS</h3>
         <div class="w-row cc-video-row">
           <div class="w-col w-col-3 cc-video-col">
-            <div class="cc-video-cover"></div>
-            <h5 class="cc-video-title">Heading</h5>
+            <a class="w-inline-block cc-video-link modal-video-link" href="#">
+              <div class="cc-video-cover"></div>
+              <h5 class="cc-video-title">Heading</h5>
+            </a>
           </div>
           <div class="w-col w-col-3 cc-video-col">
-            <div class="cc-video-cover"></div>
-            <h5 class="cc-video-title">Heading</h5>
+            <a class="w-inline-block cc-video-link modal-video-link" href="#">
+              <div class="cc-video-cover"></div>
+              <h5 class="cc-video-title">Heading</h5>
+            </a>
           </div>
           <div class="w-col w-col-3 cc-video-col">
-            <div class="cc-video-cover"></div>
-            <h5 class="cc-video-title">Heading</h5>
+            <a class="w-inline-block cc-video-link modal-video-link" href="#">
+              <div class="cc-video-cover"></div>
+              <h5 class="cc-video-title">Heading</h5>
+            </a>
           </div>
           <div class="w-col w-col-3 cc-video-col">
-            <div class="cc-video-cover"></div>
-            <h5 class="cc-video-title">Heading</h5>
+            <a class="w-inline-block cc-video-link modal-video-link" href="#">
+              <div class="cc-video-cover"></div>
+              <h5 class="cc-video-title">Heading</h5>
+            </a>
           </div>
         </div>
         <h3 class="cc-about-resources-headline">TUTORIALS</h3>
-        <div class="w-row">
-          <div class="w-col w-col-3">
-            <div class="cc-video-cover"></div>
+        <a class="w-inline-block cc-tutorial-link modal-video-link" href="#">
+          <div class="w-row">
+            <div class="w-col w-col-3">
+              <div class="cc-video-cover"></div>
+            </div>
+            <div class="w-col w-col-9">
+              <h5 class="cc-tutorial-title">Heading</h5>
+              <div class="cc-tutorial-subtext">A general introduction to the platforms features and capabilities</div>
+            </div>
           </div>
-          <div class="w-col w-col-9">
-            <h5 class="cc-tutorial-title">Heading</h5>
-            <div class="cc-tutorial-subtext">A general introduction to the platforms features and capabilities</div>
-          </div>
-        </div>
-        <div class="w-row">
-          <div class="w-col w-col-3">
-            <div class="cc-video-cover"></div>
-          </div>
-          <div class="w-col w-col-9">
-            <h5 class="cc-tutorial-title">Heading</h5>
-            <div class="cc-tutorial-subtext">A look into the complexities of a constantly moving industry</div>
-          </div>
-        </div>
-        <div class="w-row">
-          <div class="w-col w-col-3">
-            <div class="cc-video-cover"></div>
-          </div>
-          <div class="w-col w-col-9">
-            <h5 class="cc-tutorial-title">Heading</h5>
-            <div class="cc-tutorial-subtext">Discover how Classcast can make managing thousands of users simple</div>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
     <div class="cc-section cc-footer-min-section">
@@ -422,9 +414,28 @@ MODAL
       });
     });
   </script>
+  <!-------------------------------
+VIDEO MODAL
+-------------------------------->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-video-link').click(function() {
+        $('.modal-video-background').slideDown();
+      });
+      $('.close-modal-video').click(function() {
+        $('.modal-video-background').slideUp();
+      });
+    });
+  </script>
+  <!-------------------------------
+HASH REMOVAL
+-------------------------------->
   <script type="text/javascript">
     $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
   </script>
+  <!-------------------------------
+MOBILE SLIDE DOWN MENU
+-------------------------------->
   <script type="text/javascript">
     $(function(){
         var menuBindPairs = [

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Jul 24 2014 06:57:09 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Jul 24 2014 07:07:02 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -340,9 +340,28 @@ MODAL
       });
     });
   </script>
+  <!-------------------------------
+VIDEO MODAL
+-------------------------------->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-video-link').click(function() {
+        $('.modal-video-background').slideDown();
+      });
+      $('.close-modal-video').click(function() {
+        $('.modal-video-background').slideUp();
+      });
+    });
+  </script>
+  <!-------------------------------
+HASH REMOVAL
+-------------------------------->
   <script type="text/javascript">
     $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
   </script>
+  <!-------------------------------
+MOBILE SLIDE DOWN MENU
+-------------------------------->
   <script type="text/javascript">
     $(function(){
         var menuBindPairs = [
