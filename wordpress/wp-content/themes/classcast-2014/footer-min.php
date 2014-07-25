@@ -29,7 +29,9 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-  
+  <!-------------------------------
+MODAL
+-------------------------------->
   <script type="text/javascript">
     $(document).ready(function() {
       $('.modal-link').click(function() {
@@ -40,11 +42,28 @@
       });
     });
   </script>
-
+  <!-------------------------------
+VIDEO MODAL
+-------------------------------->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-video-link').click(function() {
+        $('.modal-video-background').slideDown();
+      });
+      $('.close-modal-video').click(function() {
+        $('.modal-video-background').slideUp();
+      });
+    });
+  </script>
+  <!-------------------------------
+HASH REMOVAL
+-------------------------------->
   <script type="text/javascript">
     $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
   </script>
-
+  <!-------------------------------
+MOBILE SLIDE DOWN MENU
+-------------------------------->
   <script type="text/javascript">
     $(function(){
         var menuBindPairs = [

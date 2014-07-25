@@ -1430,6 +1430,40 @@ p {
 .cc-video-col {
   margin-top: 20px;
 }
+.modal-video-background {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.modal-video-window {
+  display: block;
+  height: 700px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.close-modal-video {
+  width: 80px;
+  height: 40px;
+  padding-top: 10px;
+  float: right;
+  color: #555;
+  text-align: center;
+}
+.cc-tutorial-link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
   -ms-transform: translate(100%, 0px);

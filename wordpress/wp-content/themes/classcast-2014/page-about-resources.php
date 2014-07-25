@@ -38,7 +38,7 @@
         <div class="w-col w-col-3 cc-video-col">
           <?php $video = get_post_meta($post->ID, 'video_release', true); ?>
           <?php if ($video): ?>
-          <a href="<?php echo wp_get_attachment_url($video); ?>">
+          <a href="<?php echo wp_get_attachment_url($video); ?>" class="modal-video-link">
             <div class="cc-video-cover"></div>
             <h5 class="cc-video-title"><?php the_title(); ?></h5>
           </a>
@@ -51,11 +51,30 @@
 
       <h3 class="cc-about-resources-headline">TUTORIALS</h3>
       <?php $loop = new WP_Query( array( 'post_type' => 'tutorial', 'order' => 'ASC') ); ?>
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>   
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+      <div class="w-clearfix modal-video-background">
+      <a class="w-inline-block close-modal-video" href="#">
+        <div>CLOSE</div>
+      </a>
+      <div class="w-container">
+        <div class="modal-video-window">
+
+          <?php
+// Get the video URL and put it in the $video variable
+$videoID = get_post_meta($post->ID, 'tutorial_release', true);
+// Echo the embed code via oEmbed
+echo wp_oembed_get( 'http://vimeo.com/' . $videoID ); 
+?>
+        </div>
+      </div>
+    </div>
+
+
       <div class="w-row">
-        <?php $tutorial = get_post_meta($post->ID, 'tutorial_release', true); ?>
-        <?php if ($tutorial): ?>
-        <a href="<?php echo wp_get_attachment_url($tutorial); ?>">
+        <!--<?php $tutorial = get_post_meta($post->ID, 'tutorial_release', true); ?>
+        <?php if ($tutorial): ?>-->
+        <a href="#" class="modal-video-link">
           <div class="w-col w-col-3">
             <div class="cc-video-cover"></div>
           </div>
@@ -64,7 +83,7 @@
             <div class="cc-tutorial-subtext"><?php the_excerpt(); ?></div>
           </div>  
         </a> 
-        <?php endif; ?>   
+        <!--<?php endif; ?>-->
       </div>
       <?php endwhile; ?>
 

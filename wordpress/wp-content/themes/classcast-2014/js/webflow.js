@@ -864,7 +864,16 @@ Webflow.define('touch', function ($, _) {
   'use strict';
 
   var api = {};
+  var fallback = !document.addEventListener;
+  var getSelection = window.getSelection;
+
+  // Fallback to click events in old IE
+  if (fallback) {
+    $.event.special.tap = { bindType: 'click', delegateType: 'click' };
+  }
+
   api.init = function (el) {
+    if (fallback) return null;
     el = typeof el === 'string' ? $(el).get(0) : el;
     return el ? new Touch(el) : null;
   };
@@ -875,13 +884,14 @@ Webflow.define('touch', function ($, _) {
     var useTouch = false;
     var thresholdX = Math.min(Math.round(window.innerWidth * 0.04), 40);
     var startX, startY, lastX;
+    var _move = _.throttle(move);
 
     el.addEventListener('touchstart', start, false);
-    el.addEventListener('touchmove', move, false);
+    el.addEventListener('touchmove', _move, false);
     el.addEventListener('touchend', end, false);
     el.addEventListener('touchcancel', cancel, false);
     el.addEventListener('mousedown', start, false);
-    el.addEventListener('mousemove', move, false);
+    el.addEventListener('mousemove', _move, false);
     el.addEventListener('mouseup', end, false);
     el.addEventListener('mouseout', cancel, false);
 
@@ -923,7 +933,8 @@ Webflow.define('touch', function ($, _) {
       var velocityX = x - lastX;
       lastX = x;
 
-      if (Math.abs(velocityX) > thresholdX) {
+      // Allow swipes while pointer is down, but prevent them during text selection
+      if (Math.abs(velocityX) > thresholdX && getSelection && getSelection() + '' === '') {
         triggerEvent('swipe', evt, { direction: velocityX > 0 ? 'right' : 'left' });
         cancel();
       }
@@ -936,6 +947,7 @@ Webflow.define('touch', function ($, _) {
 
     function end(evt) {
       if (!active) return;
+      active = false;
 
       if (useTouch && evt.type === 'mouseup') {
         evt.preventDefault();
@@ -953,11 +965,11 @@ Webflow.define('touch', function ($, _) {
 
     function destroy() {
       el.removeEventListener('touchstart', start, false);
-      el.removeEventListener('touchmove', move, false);
+      el.removeEventListener('touchmove', _move, false);
       el.removeEventListener('touchend', end, false);
       el.removeEventListener('touchcancel', cancel, false);
       el.removeEventListener('mousedown', start, false);
-      el.removeEventListener('mousemove', move, false);
+      el.removeEventListener('mousemove', _move, false);
       el.removeEventListener('mouseup', end, false);
       el.removeEventListener('mouseout', cancel, false);
       el = null;
@@ -1769,7 +1781,12 @@ Webflow.define('slider', function ($, _) {
 
     // Store slider state in data
     var data = $.data(el, namespace);
-    if (!data) data = $.data(el, namespace, { index: 0, el: $el, config: {} });
+    if (!data) data = $.data(el, namespace, {
+      index: 0,
+      depth: 1,
+      el: $el,
+      config: {}
+    });
     data.mask = $el.children('.w-slider-mask');
     data.left = $el.children('.w-slider-arrow-left');
     data.right = $el.children('.w-slider-arrow-right');
@@ -1799,7 +1816,7 @@ Webflow.define('slider', function ($, _) {
     // Add events based on mode
     if (designer) {
       data.el.on('setting' + namespace, handler(data));
-      killTimer(data);
+      stopTimer(data);
       data.hasTimer = false;
     } else {
       data.el.on('swipe' + namespace, handler(data));
@@ -1809,6 +1826,7 @@ Webflow.define('slider', function ($, _) {
       // Start timer if autoplay is true, only once
       if (data.config.autoplay && !data.hasTimer) {
         data.hasTimer = true;
+        data.timerCount = 1;
         startTimer(data);
       }
     }
@@ -1830,7 +1848,6 @@ Webflow.define('slider', function ($, _) {
   function configure(data) {
     var config = {};
 
-    config.depth = 1;
     config.crossOver = 0;
 
     // Set config options from data attributes
@@ -1856,10 +1873,11 @@ Webflow.define('slider', function ($, _) {
     if (+data.el.attr('data-autoplay')) {
       config.autoplay = true;
       config.delay = +data.el.attr('data-delay') || 2000;
+      config.timerMax = +data.el.attr('data-autoplay-limit');
       // Disable timer on first touch or mouse down
       var touchEvents = 'mousedown' + namespace + ' touchstart' + namespace;
       if (!designer) data.el.off(touchEvents).one(touchEvents, function () {
-        killTimer(data);
+        stopTimer(data);
       });
     }
 
@@ -1898,25 +1916,20 @@ Webflow.define('slider', function ($, _) {
   }
 
   function startTimer(data) {
-    var config = data.config;
     stopTimer(data);
-    config.timer = window.setTimeout(function () {
-      if (!config.autoplay || designer) return;
+    var config = data.config;
+    var timerMax = config.timerMax;
+    if (timerMax && data.timerCount++ > timerMax) return;
+    data.timerId = window.setTimeout(function () {
+      if (data.timerId == null || designer) return;
       next(data)();
       startTimer(data);
     }, config.delay);
   }
 
   function stopTimer(data) {
-    var config = data.config;
-    window.clearTimeout(config.timer);
-    config.timer = null;
-  }
-
-  function killTimer(data) {
-    var config = data.config;
-    config.autoplay = false;
-    stopTimer(data);
+    window.clearTimeout(data.timerId);
+    data.timerId = null;
   }
 
   function handler(data) {
@@ -2028,7 +2041,7 @@ Webflow.define('slider', function ($, _) {
         .add(fadeRule)
         .start({ opacity: 0 });
       tram(targets)
-        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: config.depth++ })
+        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: data.depth++ })
         .add(fadeRule)
         .wait(wait)
         .then({ opacity: 1 })
@@ -2042,7 +2055,7 @@ Webflow.define('slider', function ($, _) {
         .set({ visibility: '' })
         .stop();
       tram(targets)
-        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: config.depth++ })
+        .set({ visibility: '', x: offsetX, opacity: 0, zIndex: data.depth++ })
         .add(fadeRule)
         .start({ opacity: 1 })
         .then(resetOthers);
@@ -2056,7 +2069,7 @@ Webflow.define('slider', function ($, _) {
         .set({ visibility: '' })
         .stop();
       tram(targets)
-        .set({ visibility: '', zIndex: config.depth++, x: offsetX + anchors[data.index].width * vector })
+        .set({ visibility: '', zIndex: data.depth++, x: offsetX + anchors[data.index].width * vector })
         .add(slideRule)
         .start({ x: offsetX })
         .then(resetOthers);
@@ -2211,7 +2224,7 @@ var lightbox = (function (window, document, $, tram, undefined) {
   // Instance of Spinner
   var spinner;
 
-  function lightbox(thing) {
+  function lightbox(thing, index) {
     items = isArray(thing) ? thing : [thing];
     
     if (!$refs) {
@@ -2249,10 +2262,10 @@ var lightbox = (function (window, document, $, tram, undefined) {
       .add('opacity .3s')
       .start({opacity: 1});
 
-    // Prevent <html> and <body> from scrolling while lightbox is active.
-    addClass($refs.parents, 'noscroll');
+    // Prevent document from scrolling while lightbox is active.
+    addClass($refs.html, 'noscroll');
     
-    return lightbox.show(0);
+    return lightbox.show(index || 0);
   }
 
   /**
@@ -2263,7 +2276,7 @@ var lightbox = (function (window, document, $, tram, undefined) {
     lightbox.destroy();
 
     $refs = {
-      parents: $([document.documentElement, document.body]),
+      html: $(document.documentElement),
       // Empty jQuery object can be used to build new ones using `.add`.
       empty: $()
     };
@@ -2292,9 +2305,9 @@ var lightbox = (function (window, document, $, tram, undefined) {
       $refs.strip.on('tap', selector('item'), itemTapHandler);
       $refs.content
         .on('swipe', swipeHandler)
-        .on('tap', selector('left'), lightbox.prev)
-        .on('tap', selector('right'), lightbox.next)
-        .on('tap', selector('close'), closeTapHandler)
+        .on('tap', selector('left'), preventDefaultAnd(lightbox.prev))
+        .on('tap', selector('right'), preventDefaultAnd(lightbox.next))
+        .on('tap', selector('close'), preventDefaultAnd(lightbox.hide))
         .on('tap', selector('image, caption'), toggleControlsOr(lightbox.next));
       $refs.container.on(
         'tap', selector('view, strip'), toggleControlsOr(lightbox.hide)
@@ -2345,7 +2358,11 @@ var lightbox = (function (window, document, $, tram, undefined) {
     var previousIndex = currentIndex;
     currentIndex = index;
     spinner.show();
-    loadImage(item.url, function ($image) {
+
+    // For videos, load an empty SVG with the video dimensions to preserve
+    // the video’s aspect ratio while being responsive.
+    var url = item.html && svgDataUri(item.width, item.height) || item.url;
+    loadImage(url, function ($image) {
       // Make sure this is the last item requested to be shown since
       // images can finish loading in a different order than they were
       // requested in.
@@ -2356,6 +2373,10 @@ var lightbox = (function (window, document, $, tram, undefined) {
       var $figure = dom('figure', 'figure').append(addClass($image, 'image'));
       var $frame = dom('frame').append($figure);
       var $newView = dom('view').append($frame);
+
+      if (item.html) {
+        $figure.append(addClass($(item.html), 'embed'));
+      }
       
       if (item.caption) {
         $figure.append(dom('caption', 'figcaption').text(item.caption));
@@ -2434,9 +2455,11 @@ var lightbox = (function (window, document, $, tram, undefined) {
       }
     };
   }
-  
-  var itemTapHandler = function() {
+
+  var itemTapHandler = function(event) {
     var index = $(this).index();
+
+    event.preventDefault();
     lightbox.show(index);
   };
 
@@ -2452,11 +2475,13 @@ var lightbox = (function (window, document, $, tram, undefined) {
     }
   };
 
-  var closeTapHandler = function (event) {
-    // Prevents click events from firing.
-    event.preventDefault();
-    lightbox.hide();
-  };
+  function preventDefaultAnd(action) {
+    return function (event) {
+      // Prevents click events and zooming.
+      event.preventDefault();
+      action();
+    };
+  }
 
   var focusThis = function () {
     this.focus();
@@ -2486,10 +2511,10 @@ var lightbox = (function (window, document, $, tram, undefined) {
   }
 
   function hideLightbox() {
-    removeClass($refs.parents, 'noscroll');
+    removeClass($refs.html, 'noscroll');
     addClass($refs.lightbox, 'hide');
     $refs.strip.empty();
-    $refs.view.remove();
+    $refs.view && $refs.view.remove();
 
     // Reset some stuff
     removeClass($refs.content, 'group');
@@ -2608,6 +2633,63 @@ var lightbox = (function (window, document, $, tram, undefined) {
     return typeof value == 'object' && null != value && !isArray(value);
   }
 
+  function svgDataUri(width, height) {
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '"/>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURI(svg);
+  }
+
+  // Compute some dimensions manually for iOS, because of buggy support for VH.
+  // Also, Android built-in browser does not support viewport units.
+  (function () {
+    var ua = window.navigator.userAgent;
+    var iOS = /(iPhone|iPod|iPad).+AppleWebKit/i.test(ua);
+    var android = ua.indexOf('Android ') > -1 && ua.indexOf('Chrome') == -1;
+
+    if (!iOS && !android) {
+      return;
+    }
+
+    var styleNode = document.createElement('style');
+    document.head.appendChild(styleNode);
+    window.addEventListener('orientationchange', refresh, true);
+
+    function refresh() {
+      var vh = window.innerHeight;
+      var vw = window.innerWidth;
+      var content =
+        '.w-lightbox-content, .w-lightbox-view, .w-lightbox-view:before {' +
+          'height:' + vh + 'px' +
+        '}' +
+        '.w-lightbox-view {' +
+          'width:' + vw + 'px' +
+        '}' +
+        '.w-lightbox-group, .w-lightbox-group .w-lightbox-view, .w-lightbox-group .w-lightbox-view:before {' +
+          'height:' + (0.86 * vh) + 'px' +
+        '}' +
+        '.w-lightbox-image {' +
+          'max-width:' + vw + 'px;' +
+          'max-height:' + vh + 'px' +
+        '}' +
+        '.w-lightbox-group .w-lightbox-image {' +
+          'max-height:' + (0.86 * vh) + 'px' +
+        '}' +
+        '.w-lightbox-strip {' +
+          'padding: 0 ' + (0.01 * vh) + 'px' +
+        '}' +
+        '.w-lightbox-item {' +
+          'width:' + (0.1 * vh) + 'px;' +
+          'padding:' + (0.02 * vh) + 'px ' + (0.01 * vh) + 'px' +
+        '}' +
+        '.w-lightbox-thumbnail {' +
+          'height:' + (0.1 * vh) + 'px' +
+        '}';
+
+      styleNode.textContent = content;
+    }
+
+    refresh();
+  })();
+
   return lightbox;
 })(window, document, jQuery, window.tram);
 
@@ -2621,6 +2703,7 @@ Webflow.define('lightbox', function ($, _) {
   var designer;
   var inApp = Webflow.env();
   var namespace = '.w-lightbox';
+  var groups;
 
   // -----------------------------------
   // Module methods
@@ -2637,6 +2720,9 @@ Webflow.define('lightbox', function ($, _) {
     // Reset Lightbox
     lightbox.destroy();
 
+    // Reset groups
+    groups = {};
+
     // Find all instances on the page
     $lightboxes = $doc.find(namespace);
     $lightboxes.each(build);
@@ -2647,7 +2733,12 @@ Webflow.define('lightbox', function ($, _) {
 
     // Store state in data
     var data = $.data(el, namespace);
-    if (!data) data = $.data(el, namespace, {el: $el, images: []});
+    if (!data) data = $.data(el, namespace, {
+      el: $el,
+      mode: 'images',
+      images: [],
+      embed: ''
+    });
 
     // Remove old events
     data.el.off(namespace);
@@ -2669,14 +2760,39 @@ Webflow.define('lightbox', function ($, _) {
 
   function configure(data) {
     var json = data.el.children('.w-json').html();
-    
+    var groupId, group;
+
     if (!json) {
       data.images = [];
       return;
     }
     
     try {
-      data.images = JSON.parse(json).images;
+      json = JSON.parse(json);
+      data.mode = json.mode;
+
+      if (json.mode == 'video') {
+        data.embed = json.embed;
+      }
+      else {
+        groupId = json.groupId;
+        if (groupId) {
+          group = groups[groupId];
+          if (!group) {
+            group = groups[groupId] = [];
+          }
+
+          data.images = group;
+
+          if (json.images.length) {
+            data.index = group.length;
+            group.push.apply(group, json.images);
+          }
+        }
+        else {
+          data.images = json.images;
+        }
+      }
     }
     catch (e) {
       console.error('Malformed lightbox JSON configuration.', e.message);
@@ -2685,7 +2801,11 @@ Webflow.define('lightbox', function ($, _) {
 
   function tapHandler(data) {
     return function () {
-      data.images.length && lightbox(data.images);
+      if (data.mode == 'video') {
+        data.embed && lightbox(data.embed);
+      } else {
+        data.images.length && lightbox(data.images, data.index || 0);
+      }
     };
   }
 
@@ -2748,6 +2868,7 @@ Webflow.define('navbar', function ($, _) {
     if (!data) data = $.data(el, namespace, { open: false, el: $el, config: {} });
     data.menu = $el.find('.w-nav-menu');
     data.links = data.menu.find('.w-nav-link');
+    data.dropdowns = data.menu.find('.w-dropdown');
     data.button = $el.find('.w-nav-button');
     data.container = $el.find('.w-container');
     data.outside = outside(data);
@@ -2815,19 +2936,14 @@ Webflow.define('navbar', function ($, _) {
   function handler(data) {
     return function (evt, options) {
       options = options || {};
-
-      // Designer settings
-      if (designer && evt.type == 'setting') {
-        var winWidth = $win.width();
-        configure(data);
-        options.open === true && open(data, true);
-        options.open === false && close(data, true);
-        // Reopen if media query changed after setting
-        data.open && _.defer(function () {
-          if (winWidth != $win.width()) reopen(data);
-        });
-        return;
-      }
+      var winWidth = $win.width();
+      configure(data);
+      options.open === true && open(data, true);
+      options.open === false && close(data, true);
+      // Reopen if media query changed after setting
+      data.open && _.defer(function () {
+        if (winWidth != $win.width()) reopen(data);
+      });
     };
   }
 
@@ -2863,6 +2979,9 @@ Webflow.define('navbar', function ($, _) {
   }
 
   function outside(data) {
+    // Unbind previous tap handler if it exists
+    if (data.outside) $doc.off('tap' + namespace, data.outside);
+
     // Close menu when tapped outside
     return _.debounce(function (evt) {
       if (!data.open) return;
@@ -2879,23 +2998,28 @@ Webflow.define('navbar', function ($, _) {
     var collapsed = data.collapsed = data.button.css('display') != 'none';
     // Close menu if button is no longer visible (and not in designer)
     if (data.open && !collapsed && !designer) close(data, true);
-    // Set max-width of links to match container
-    data.container.length && data.links.each(maxLink(data));
+    // Set max-width of links + dropdowns to match container
+    if (data.container.length) {
+      var updateEachMax = updateMax(data);
+      data.links.each(updateEachMax);
+      data.dropdowns.each(updateEachMax);
+    }
     // If currently open and in overlay mode, update height to match body
     if (data.open && /^over/.test(data.config.animation)) {
-      setBodyHeight(data);
-      setMenuHeight(data);
+      updateDocHeight(data);
+      updateMenuHeight(data);
     }
   }
 
   var maxWidth = 'max-width';
-  function maxLink(data) {
-    // Set max-width of each link (unless it has an upstream value)
+  function updateMax(data) {
+    // Set max-width of each element to match container
     var containMax = data.container.css(maxWidth);
     if (containMax == 'none') containMax = '';
     return function (i, link) {
       link = $(link);
       link.css(maxWidth, '');
+      // Don't set the max-width if an upstream value exists
       if (link.css(maxWidth) == 'none') link.css(maxWidth, containMax);
     };
   }
@@ -2910,7 +3034,7 @@ Webflow.define('navbar', function ($, _) {
     var animation = config.animation;
     if (animation == 'none' || !tram.support.transform) immediate = true;
     var animOver = /^over/.test(animation);
-    var bodyHeight = setBodyHeight(data);
+    var bodyHeight = updateDocHeight(data);
     var menuHeight = data.menu.outerHeight(true);
     var menuWidth = data.menu.outerWidth(true);
     var navHeight = data.el.height();
@@ -2921,7 +3045,9 @@ Webflow.define('navbar', function ($, _) {
     if (!designer) $doc.on('tap' + namespace, data.outside);
 
     // Update menu height for Over state
-    if (animOver) setMenuHeight(data);
+    if (animOver) {
+      bodyHeight = updateMenuHeight(data);
+    }
 
     // No transition for immediate
     if (immediate) return;
@@ -2930,9 +3056,7 @@ Webflow.define('navbar', function ($, _) {
 
     // Add menu to overlay
     if (data.overlay) {
-      data.overlay.show()
-        .append(data.menu)
-        .height(menuHeight);
+      data.overlay.show().append(data.menu);
     }
 
     // Over left/right
@@ -2951,15 +3075,17 @@ Webflow.define('navbar', function ($, _) {
       .set({ y: -offsetY }).start({ y: 0 });
   }
 
-  function setBodyHeight(data) {
+  function updateDocHeight(data) {
     return data.bodyHeight = data.config.docHeight ? $doc.height() : $body.height();
   }
 
-  function setMenuHeight(data) {
-    var bodyHeight = data.bodyHeight;
+  function updateMenuHeight(data) {
+    var newMenuHeight = data.bodyHeight;
     var navFixed = data.el.css('position') == 'fixed';
-    if (!navFixed) bodyHeight -= data.el.offset().top;
-    data.menu.height(bodyHeight);
+    if (!navFixed) newMenuHeight -= data.el.offset().top;
+    data.menu.height(newMenuHeight);
+    data.overlay && data.overlay.height(newMenuHeight);
+    return newMenuHeight;
   }
 
   function close(data, immediate) {
@@ -3009,6 +3135,170 @@ Webflow.define('navbar', function ($, _) {
         data.menu.appendTo(data.parent);
         data.overlay.attr('style', '').hide();
       }
+
+      // Trigger event so other components can hook in (dropdown)
+      data.el.triggerHandler('w-close');
+    }
+  }
+
+  // Export module
+  return api;
+});
+/**
+ * ----------------------------------------------------------------------
+ * Webflow: Dropdown component
+ */
+Webflow.define('dropdown', function ($, _) {
+  'use strict';
+
+  var api = {};
+  var tram = window.tram;
+  var $doc = $(document);
+  var $dropdowns;
+  var designer;
+  var inApp = Webflow.env();
+  var namespace = '.w-dropdown';
+  var dropdownOpen = 'w--dropdown-open';
+
+  // -----------------------------------
+  // Module methods
+
+  api.ready = api.design = api.preview = init;
+
+  // -----------------------------------
+  // Private methods
+
+  function init() {
+    designer = inApp && Webflow.env('design');
+
+    // Find all instances on the page
+    $dropdowns = $doc.find(namespace);
+    $dropdowns.each(build);
+  }
+
+  function build(i, el) {
+    var $el = $(el);
+
+    // Store state in data
+    var data = $.data(el, namespace);
+    if (!data) data = $.data(el, namespace, { open: false, el: $el, config: {} });
+    data.list = $el.find('.w-dropdown-list');
+    data.toggle = $el.find('.w-dropdown-toggle');
+    data.links = data.list.find('.w-dropdown-link');
+    data.outside = outside(data);
+
+    // Remove old events
+    $el.off(namespace);
+    data.toggle.off(namespace);
+
+    // Set config from data attributes
+    configure(data);
+
+    if (data.nav) {
+      data.nav.off(namespace);
+    }
+    data.nav = $el.closest('.w-nav');
+    data.nav.on('w-close' + namespace, close.bind(null, data));
+
+    // Add events based on mode
+    if (designer) {
+      $el.on('setting' + namespace, handler(data));
+    } else {
+      data.toggle.on('tap' + namespace, toggle(data));
+    }
+  }
+
+  function configure(data) {
+    var config = {};
+
+    var easing = data.el.attr('data-easing') || 'ease';
+    var easing2 = data.el.attr('data-easing2') || 'ease';
+
+    var duration = data.el.attr('data-duration');
+    duration = duration != null ? +duration : 400;
+
+    config.immediate = duration < 1;
+    config.open = 'height ' + duration + 'ms ' + easing;
+    config.close = 'height ' + duration + 'ms ' + easing2;
+
+    // Store config in data
+    data.config = config;
+  }
+
+  function handler(data) {
+    return function (evt, options) {
+      options = options || {};
+      configure(data);
+      options.open === true && open(data, true);
+      options.open === false && close(data, true);
+    };
+  }
+
+  function outside(data) {
+    // Unbind previous tap handler if it exists
+    if (data.outside) $doc.off('tap' + namespace, data.outside);
+
+    // Close menu when tapped outside
+    return _.debounce(function (evt) {
+      if (!data.open) return;
+      var dropdown = $(evt.target).closest(namespace);
+      if (!data.el.is(dropdown)) {
+        close(data);
+      }
+    });
+  }
+
+  function toggle(data) {
+    return _.debounce(function (evt) {
+      data.open ? close(data) : open(data);
+    });
+  }
+
+  function open(data, immediate) {
+    if (data.open) return;
+    data.open = true;
+    data.el.addClass(dropdownOpen);
+    var config = data.config;
+
+    // Listen for tap outside events
+    if (!designer) $doc.on('tap' + namespace, data.outside);
+
+    // No transition for immediate
+    if (config.immediate || immediate) {
+      tram(data.list).set({ height: 'auto' });
+      return;
+    }
+
+    // Wait for CSS display, then transition height
+    tram(data.list)
+      .add(config.open)
+      .set({ height: 0 })
+      .wait(1)
+      .then({ height: 'auto' });
+  }
+
+  function close(data, immediate) {
+    data.open = false;
+    var config = data.config;
+
+    // Stop listening for tap outside events
+    $doc.off('tap' + namespace, data.outside);
+
+    // Stop transition and reset for immediate
+    if (config.immediate || immediate) {
+      tram(data.list).stop();
+      complete();
+      return;
+    }
+
+    // Transition height closed
+    tram(data.list)
+      .add(config.close)
+      .start({ height: 0 })
+      .then(complete);
+
+    function complete() {
+      data.el.removeClass(dropdownOpen);
     }
   }
 
