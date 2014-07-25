@@ -63,7 +63,7 @@
           // Get the video URL and put it in the $video variable
           $videoID = get_post_meta($post->ID, 'tutorial_release', true);
           // Echo the embed code via oEmbed
-          echo wp_oembed_get( 'http://vimeo.com/' . $videoID ); 
+          echo wp_oembed_get( 'http://vimeo.com/' . $videoID );
           ?>
         </div>
       </div>
