@@ -81,9 +81,9 @@ p {
 }
 .cc-hero.about {
   height: 400px;
-  background-image: -webkit-linear-gradient(135deg, #6037d9, #9d30de);
-  background-image: -o-linear-gradient(45deg, #6037d9, #9d30de);
-  background-image: linear-gradient(45deg, #6037d9, #9d30de);
+  background-image: -webkit-linear-gradient(135deg, #5631c4, #9d30de);
+  background-image: -o-linear-gradient(45deg, #5631c4, #9d30de);
+  background-image: linear-gradient(45deg, #5631c4, #9d30de);
 }
 .cc-hero.pricing {
   height: 400px;
@@ -1143,7 +1143,7 @@ p {
   float: left;
 }
 .cc-navigation-menu-list-item.sign-up {
-  width: 120px;
+  width: 140px;
 }
 .cc-navigation-menu-list-item-link {
   width: 100%;
@@ -1227,9 +1227,9 @@ p {
   padding-top: 20px;
 }
 .cc-navigation-menu-list-item-text-signup-dark {
-  margin-top: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border-radius: 4px;
   background-color: #45b46d;
   color: white;
@@ -1463,6 +1463,14 @@ p {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  color: #81878c;
+  text-decoration: none;
+}
+.cc-video-link {
+  text-decoration: none;
+}
+.cc-video-link.modal-video-link {
+  text-decoration: none;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);

@@ -85,13 +85,21 @@ MODAL
 VIDEO MODAL
 -------------------------------->
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('.modal-video-link').click(function() {
-        $('.modal-video-background').slideDown();
-      });
-      $('.close-modal-video').click(function() {
-        $('.modal-video-background').slideUp();
-      });
+    $(function() { // More efficient jQuery detector, less letters
+        // Do this for each tutorial video (or whatever you call the class around it)
+        $('.tutorial-video').each(function(){
+            var self = $(this);
+            
+            // Open
+            self.find('.modal-video-link').on('click', function(){
+                self.find('.modal-video-background').slideDown(500); // Half second
+            });
+            
+            // Close
+            self.find('.close-modal-video').on('click', function(){
+                self.find('.modal-video-background').slideUp(500); // Half second
+            });
+        });
     });
   </script>
   <!-------------------------------
