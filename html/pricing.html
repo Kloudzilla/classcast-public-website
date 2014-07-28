@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Fri Jul 25 2014 06:02:59 GMT+0000 (UTC) -->
+<!-- Last Published: Mon Jul 28 2014 06:19:49 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -72,6 +72,17 @@ SLIDER VERTICAL ALIGNMENT
   <style>
     .w-slide{
         vertical-align:bottom;
+    }
+  </style>
+  <!-------------------------------
+PRICING PACKAGE BUTTON HOVER
+-------------------------------->
+  <style>
+    .cc-pricing-package-link .cc-button-s.green.center.pricing{
+        visibility:hidden;
+    }
+    .cc-pricing-package-link:hover .cc-button-s.green.center.pricing{
+        visibility:visible;
     }
   </style>
 </head>
@@ -268,91 +279,91 @@ SLIDER VERTICAL ALIGNMENT
         <div class="cc-pricing-grid-wrap">
           <div class="w-row cc-pricing-grid-row">
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
-              <div class="cc-pricing-grid-col-package">
-                <div class="cc-pricing-package-title">STARTER</div>
-                <div class="w-clearfix cc-pricing-package-price-wrap">
-                  <div class="cc-pricing-package-currency">$</div>
-                  <div class="cc-pricing-package-price">299</div>
-                  <div class="cc-pricing-package-month">/mo</div>
+              <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                <div class="cc-pricing-grid-col-package">
+                  <div class="cc-pricing-package-title">STARTER</div>
+                  <div class="w-clearfix cc-pricing-package-price-wrap">
+                    <div class="cc-pricing-package-currency">$</div>
+                    <div class="cc-pricing-package-price">299</div>
+                    <div class="cc-pricing-package-month">/mo</div>
+                  </div>
                 </div>
-              </div>
-              <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">X</li>
-                <li class="cc-pricing-grid-col-list-item">X</li>
-                <li class="cc-pricing-grid-col-list-item">
-                  <a class="w-inline-block cc-button-s center green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </li>
-              </ul>
+                <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">X</li>
+                  <li class="cc-pricing-grid-col-list-item">X</li>
+                  <li class="cc-pricing-grid-col-list-item">
+                    <div class="cc-button-s green center pricing">Get Started</div>
+                  </li>
+                </ul>
+              </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
-              <div class="cc-pricing-grid-col-package featured">
-                <div class="cc-pricing-package-title featured">GROW</div>
-                <div class="w-clearfix cc-pricing-package-price-wrap featured">
-                  <div class="cc-pricing-package-currency">$</div>
-                  <div class="cc-pricing-package-price">499</div>
-                  <div class="cc-pricing-package-month">/mo</div>
+              <a class="w-inline-block cc-pricing-package-link featured modal-link" href="#">
+                <div class="cc-pricing-grid-col-package featured">
+                  <div class="cc-pricing-package-title featured">GROW</div>
+                  <div class="w-clearfix cc-pricing-package-price-wrap featured">
+                    <div class="cc-pricing-package-currency">$</div>
+                    <div class="cc-pricing-package-price">499</div>
+                    <div class="cc-pricing-package-month">/mo</div>
+                  </div>
                 </div>
-              </div>
-              <ul class="w-list-unstyled cc-pricing-grid-col-list featured">
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">X</li>
-                <li class="cc-pricing-grid-col-list-item">
-                  <a class="w-inline-block cc-button-s center green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </li>
-              </ul>
+                <ul class="w-list-unstyled cc-pricing-grid-col-list featured">
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">X</li>
+                  <li class="cc-pricing-grid-col-list-item">
+                    <div class="cc-button-s green center pricing">Get Started</div>
+                  </li>
+                </ul>
+              </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <div class="cc-pricing-grid-col-package">
-                <div class="cc-pricing-package-title">MAX</div>
-                <div class="w-clearfix cc-pricing-package-price-wrap">
-                  <div class="cc-pricing-package-currency">$</div>
-                  <div class="cc-pricing-package-price">999</div>
-                  <div class="cc-pricing-package-month">/mo</div>
+              <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                <div class="cc-pricing-grid-col-package">
+                  <div class="cc-pricing-package-title">MAX</div>
+                  <div class="w-clearfix cc-pricing-package-price-wrap">
+                    <div class="cc-pricing-package-currency">$</div>
+                    <div class="cc-pricing-package-price">999</div>
+                    <div class="cc-pricing-package-month">/mo</div>
+                  </div>
                 </div>
-              </div>
-              <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">
-                  <a class="w-inline-block cc-button-s center green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </li>
-              </ul>
+                <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">
+                    <div class="cc-button-s green center pricing">Get Started</div>
+                  </li>
+                </ul>
+              </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <div class="cc-pricing-grid-col-package">
-                <div class="cc-pricing-package-title">ENTERPRISE</div>
-                <div class="cc-pricing-package-price-wrap">
-                  <div class="cc-pricing-package-price-enterprise">Need more than
-                    <br>2000 users?</div>
+              <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                <div class="cc-pricing-grid-col-package">
+                  <div class="cc-pricing-package-title">ENTERPRISE</div>
+                  <div class="cc-pricing-package-price-wrap">
+                    <div class="cc-pricing-package-price-enterprise">Need more than
+                      <br>2000 users?</div>
+                  </div>
                 </div>
-              </div>
-              <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">Feature</li>
-                <li class="cc-pricing-grid-col-list-item">
-                  <a class="w-inline-block cc-button-s center green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </li>
-              </ul>
+                <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">
+                    <div class="cc-button-s green center pricing">Get Started</div>
+                  </li>
+                </ul>
+              </a>
             </div>
           </div>
         </div>
