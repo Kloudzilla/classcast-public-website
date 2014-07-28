@@ -77,7 +77,17 @@ SLIDER VERTICAL ALIGNMENT
         vertical-align:bottom;
     }
   </style>
-
+  <!-------------------------------
+PRICING PACKAGE BUTTON HOVER
+-------------------------------->
+  <style>
+    .cc-pricing-package-link .cc-button-s.green.center.pricing{
+        visibility:hidden;
+    }
+    .cc-pricing-package-link:hover .cc-button-s.green.center.pricing{
+        visibility:visible;
+    }
+  </style>
 </head>
 <body>
   <div class="cc-external-wrap">
