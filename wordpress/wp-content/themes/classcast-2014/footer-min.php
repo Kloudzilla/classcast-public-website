@@ -48,7 +48,7 @@ VIDEO MODAL
   <script type="text/javascript">
     $(function() { // More efficient jQuery detector, less letters
         // Do this for each tutorial video (or whatever you call the class around it)
-        $('.tutorial-video').each(function(){
+        $('.video').each(function(){
             var self = $(this);
             
             // Open

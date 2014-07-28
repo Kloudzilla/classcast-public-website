@@ -19,7 +19,7 @@
       <h3 class="cc-about-resources-headline">EBOOKS</h3>
       <div class="w-row cc-ebook-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'ebook' ) ); ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>     
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
         <div class="w-col w-col-3 cc-ebook-col">
           <div class="cc-ebook-cover"></div>
           <h5 class="cc-ebook-title"><?php the_title(); ?></h5>
@@ -34,57 +34,58 @@
       <h3 class="cc-about-resources-headline">VIDEOS</h3>
       <div class="w-row cc-video-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'video' ) ); ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>   
-        <div class="w-col w-col-3 cc-video-col">
-          <div class="w-clearfix modal-video-background">
-            <a class="w-inline-block close-modal-video" href="#">
-              <div>CLOSE</div>
-            </a>
-            <div class="w-container">
-              <div class="modal-video-window">
-                <?php $videoID = get_post_meta($post->ID, 'tutorial_release', true);?>
-                <iframe src="<?php echo 'http://player.vimeo.com/video/'. $videoID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <div class="video"> 
+          <div class="w-col w-col-3 cc-video-col">
+            <div class="w-clearfix modal-video-background">
+              <a class="w-inline-block close-modal-video" href="#">
+                <div>CLOSE</div>
+              </a>
+              <div class="w-container">
+                <div class="modal-video-window">
+                  <?php $videoID = get_post_meta($post->ID, 'tutorial_release', true);?>
+                  <iframe src="<?php echo 'http://player.vimeo.com/video/'. $videoID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
               </div>
             </div>
+            <a href="#" class="w-inline-block cc-video-link modal-video-link">
+              <div class="cc-video-cover"></div>
+              <h5 class="cc-video-title"><?php the_title(); ?></h5>
+            </a>
           </div>
-          <a href="#" class="w-inline-block cc-video-link modal-video-link">
-            <div class="cc-video-cover"></div>
-            <h5 class="cc-video-title"><?php the_title(); ?></h5>
-          </a>
-          <?php endif; ?> 
         </div>
-        <?php endwhile; ?>
-      </div>
+          <?php endwhile; ?>
+        </div>
 
       <h3 class="cc-about-resources-headline">TUTORIALS</h3>
       <?php $loop = new WP_Query( array( 'post_type' => 'tutorial', 'order' => 'ASC') ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-      <div class='tutorial-video'>
-      <div class="w-clearfix modal-video-background">
-      <a class="w-inline-block close-modal-video" href="#">
-        <div>CLOSE</div>
-      </a>
-      <div class="w-container">
-        <div class="modal-video-window">
-          <?php $videoID = get_post_meta($post->ID, 'tutorial_release', true);?>
-          <iframe src="<?php echo 'http://player.vimeo.com/video/'. $videoID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class='video'>
+        <div class="w-clearfix modal-video-background">
+        <a class="w-inline-block close-modal-video" href="#">
+          <div>CLOSE</div>
+        </a>
+        <div class="w-container">
+          <div class="modal-video-window">
+            <?php $videoID = get_post_meta($post->ID, 'tutorial_release', true);?>
+            <iframe src="<?php echo 'http://player.vimeo.com/video/'. $videoID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-      <div class="w-row">
-        <!--<?php $tutorial = get_post_meta($post->ID, 'tutorial_release', true); ?>
-        <?php if ($tutorial): ?>-->
-        <a class="w-inline-block cc-tutorial-link modal-video-link" href="#">
-          <div class="w-col w-col-3">
-            <div class="cc-video-cover"></div>
-          </div>
-          <div class="w-col w-col-9">
-            <h5 class="cc-tutorial-title"><?php the_title(); ?></h5>
-            <div class="cc-tutorial-subtext"><?php the_excerpt(); ?></div>
-          </div>  
-        </a> 
-        <!--<?php endif; ?>-->
-      </div>
+        <div class="w-row">
+          <!--<?php $tutorial = get_post_meta($post->ID, 'tutorial_release', true); ?>
+          <?php if ($tutorial): ?>-->
+          <a class="w-inline-block cc-tutorial-link modal-video-link" href="#">
+            <div class="w-col w-col-3">
+              <div class="cc-video-cover"></div>
+            </div>
+            <div class="w-col w-col-9">
+              <h5 class="cc-tutorial-title"><?php the_title(); ?></h5>
+              <div class="cc-tutorial-subtext"><?php the_excerpt(); ?></div>
+            </div>  
+          </a> 
+          <!--<?php endif; ?>-->
+        </div>
     </div>
       <?php endwhile; ?>
 
