@@ -1052,7 +1052,7 @@ textarea.w-select {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  z-index: 1100;
+  z-index: 900;
 }
 .w-dropdown-btn,
 .w-dropdown-toggle,
@@ -1065,6 +1065,7 @@ textarea.w-select {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  white-space: nowrap;
 }
 .w-dropdown-toggle {
   -webkit-user-select: none;
@@ -1090,18 +1091,15 @@ textarea.w-select {
 }
 .w-dropdown-list {
   position: absolute;
-  right: 0;
-  left: 0;
   background: #f2f2f2;
   display: none;
-  overflow: hidden;
+  min-width: 100%;
 }
-.w--dropdown-open .w-dropdown-list {
+.w--dropdown-open > .w-dropdown-list {
   display: block;
 }
 .w-dropdown-link {
   padding: 10px 20px;
-  white-space: nowrap;
   display: block;
 }
 .w-dropdown-link.w--current {

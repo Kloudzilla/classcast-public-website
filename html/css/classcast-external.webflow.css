@@ -1159,7 +1159,7 @@ p {
 }
 .cc-industry-feature-icon {
   padding-top: 5%;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-family:'Ios7 icon', sans-serif;
   color: #509bd6;
   font-size: 100px;
@@ -1736,6 +1736,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     margin-bottom: 30px;
     font-size: 18px;
   }
+  .cc-industry-secondary-tab-item-subtext {
+    float: none;
+  }
   .cc-content-list-item-text-wrap {
     width: 80%;
     padding-left: 10px;
@@ -1859,6 +1862,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     padding-bottom: 40px;
   }
   .cc-content-container.cc-brand-content {
+    padding-bottom: 60px;
     text-align: center;
   }
   .cc-section.cc-footer-section {
@@ -1905,6 +1909,10 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-navigation-menu-list {
     margin-right: auto;
     margin-left: auto;
+  }
+  .cc-industry-feature-icon {
+    padding-top: 10%;
+    padding-bottom: 10px;
   }
   .cc-branding-img {
     height: 200px;
@@ -2034,13 +2042,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     font-size: 16px;
     line-height: 24px;
   }
-  .cc-industry-secondary-tab-item-subtext {
-    width: auto;
-    margin-left: 60px;
-    float: none;
-  }
   .cc-industry-secondary-tab-item-headline {
-    margin-left: 60px;
     float: none;
   }
   .cc-navigation {
@@ -2081,6 +2083,18 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     -ms-transform: none;
     -o-transform: none;
     transform: none;
+  }
+  .cc-industry-tab.education {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .cc-industry-tab.health {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .cc-industry-tab.fitness.w--current {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .cc-pricing-grid-col {
     margin-top: 20px;
