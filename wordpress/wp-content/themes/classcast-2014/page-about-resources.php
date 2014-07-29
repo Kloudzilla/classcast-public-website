@@ -21,17 +21,18 @@
         <?php $loop = new WP_Query( array( 'post_type' => 'ebook' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
         <div class="w-col w-col-3 cc-ebook-col">
-          <div class="cc-ebook-cover"></div>
+          <?php $ebook_cover = get_field('ebook_cover');?>
+          <img src="<?php echo $ebook_cover['url']; ?>" class="cc-ebook-cover">
           <h5 class="cc-ebook-title"><?php the_title(); ?></h5>
-          <?php $ebook = get_post_meta($post->ID, 'ebook_release', true); ?>
-          <?php if ($ebook): ?>
-          <a href="<?php echo wp_get_attachment_url($ebook); ?>" class="w-inline-block cc-button-s keyline" >Download</a>
+          <?php $ebook_release = get_post_meta($post->ID, 'ebook_release', true); ?>
+          <?php if ($ebook_release): ?>
+          <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class="w-inline-block cc-button-s keyline" >Download</a>
           <?php endif; ?>          
         </div>
         <?php endwhile; ?>
       </div>
 
-      <h3 class="cc-about-resources-headline">VIDEOS</h3>
+      <!--<h3 class="cc-about-resources-headline">VIDEOS</h3>
       <div class="w-row cc-video-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'video' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -73,8 +74,6 @@
         </div>
       </div>
         <div class="w-row">
-          <!--<?php $tutorial = get_post_meta($post->ID, 'tutorial_release', true); ?>
-          <?php if ($tutorial): ?>-->
           <a class="w-inline-block cc-tutorial-link modal-video-link" href="#">
             <div class="w-col w-col-3">
               <div class="cc-video-cover"></div>
@@ -84,10 +83,9 @@
               <div class="cc-tutorial-subtext"><?php the_excerpt(); ?></div>
             </div>  
           </a> 
-          <!--<?php endif; ?>-->
         </div>
     </div>
-      <?php endwhile; ?>
+      <?php endwhile; ?>-->
 
     </div>
   </div>
