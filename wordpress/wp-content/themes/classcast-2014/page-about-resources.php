@@ -21,13 +21,13 @@
         <?php $loop = new WP_Query( array( 'post_type' => 'ebook' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
         <div class="w-col w-col-3 cc-ebook-col">
-          <?php $ebook_cover = get_field('ebook_cover');?>
-          <img src="<?php echo $ebook_cover['url']; ?>" class="cc-ebook-cover">
-          <h5 class="cc-ebook-title"><?php the_title(); ?></h5>
           <?php $ebook_release = get_post_meta($post->ID, 'ebook_release', true); ?>
-          <?php if ($ebook_release): ?>
-          <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class="w-inline-block cc-button-s keyline" >Download</a>
-          <?php endif; ?>          
+          <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class='cc-ebook-link'>
+          <?php $ebook_cover = get_field('ebook_cover');?>
+            <img src="<?php echo $ebook_cover['url']; ?>" class="cc-ebook-cover">
+            <h5 class="cc-ebook-title"><?php the_title(); ?></h5>
+          </a>
+          <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class="w-inline-block cc-button-s keyline" >Download</a>      
         </div>
         <?php endwhile; ?>
       </div>
@@ -50,7 +50,8 @@
               </div>
             </div>
             <a href="#" class="w-inline-block cc-video-link modal-video-link">
-              <div class="cc-video-cover"></div>
+              <?php $video_thumbnail = get_field('video_thumbnail');?>
+              <img src="<?php echo $video_thumbnail['url']; ?>" class="cc-video-cover">
               <h5 class="cc-video-title"><?php the_title(); ?></h5>
             </a>
           </div>
@@ -76,7 +77,8 @@
         <div class="w-row">
           <a class="w-inline-block cc-tutorial-link modal-video-link" href="#">
             <div class="w-col w-col-3">
-              <div class="cc-video-cover"></div>
+              <?php $tutorial_thumbnail = get_field('tutorial_thumbnail');?>
+              <img src="<?php echo $tutorial_thumbnail['url']; ?>" class="cc-video-cover">
             </div>
             <div class="w-col w-col-9">
               <h5 class="cc-tutorial-title"><?php the_title(); ?></h5>
