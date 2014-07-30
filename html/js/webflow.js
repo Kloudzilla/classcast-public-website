@@ -3257,7 +3257,9 @@ Webflow.define('dropdown', function($, _) {
   var designer;
   var inApp = Webflow.env();
   var namespace = '.w-dropdown';
+  var buttonOpen = 'w--open';
   var dropdownOpen = 'w--dropdown-open';
+  var closeEvent = 'w-close' + namespace;
 
   // -----------------------------------
   // Module methods
@@ -3294,17 +3296,18 @@ Webflow.define('dropdown', function($, _) {
     // Set config from data attributes
     configure(data);
 
-    if (data.nav) {
-      data.nav.off(namespace);
-    }
+    if (data.nav) data.nav.off(namespace);
     data.nav = $el.closest('.w-nav');
-    data.nav.on('w-close' + namespace, close.bind(null, data));
+    data.nav.on(closeEvent, handler(data));
 
     // Add events based on mode
     if (designer) {
       $el.on('setting' + namespace, handler(data));
     } else {
       data.toggle.on('tap' + namespace, toggle(data));
+      $el.on(closeEvent, handler(data));
+      // Close in preview mode
+      inApp && close(data);
     }
   }
 
@@ -3318,9 +3321,18 @@ Webflow.define('dropdown', function($, _) {
   function handler(data) {
     return function(evt, options) {
       options = options || {};
-      configure(data);
-      options.open === true && open(data, true);
-      options.open === false && close(data, true);
+
+      if (evt.type == 'w-close') {
+        close(data, true);
+        return;
+      }
+
+      if (evt.type == 'setting') {
+        configure(data);
+        options.open === true && open(data, true);
+        options.open === false && close(data, true);
+        return;
+      }
     };
   }
 
@@ -3332,8 +3344,10 @@ Webflow.define('dropdown', function($, _) {
 
   function open(data, immediate) {
     if (data.open) return;
+    closeOthers(data);
     data.open = true;
-    data.el.addClass(dropdownOpen);
+    data.list.addClass(dropdownOpen);
+    data.toggle.addClass(buttonOpen);
 
     // Listen for tap outside events
     if (!designer) $doc.on('tap' + namespace, data.outside);
@@ -3356,6 +3370,15 @@ Webflow.define('dropdown', function($, _) {
     data.delayId = window.setTimeout(data.complete, config.delay);
   }
 
+  function closeOthers(data) {
+    var self = data.el[0];
+    $dropdowns.each(function(i, other) {
+      var $other = $(other);
+      if ($other.is(self) || $other.has(self).length) return;
+      $other.triggerHandler(closeEvent);
+    });
+  }
+
   function outside(data) {
     // Unbind previous tap handler if it exists
     if (data.outside) $doc.off('tap' + namespace, data.outside);
@@ -3373,7 +3396,8 @@ Webflow.define('dropdown', function($, _) {
 
   function complete(data) {
     return function() {
-      data.el.removeClass(dropdownOpen);
+      data.list.removeClass(dropdownOpen);
+      data.toggle.removeClass(buttonOpen);
     };
   }
 

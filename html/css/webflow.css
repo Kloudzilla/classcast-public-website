@@ -1095,7 +1095,7 @@ textarea.w-select {
   display: none;
   min-width: 100%;
 }
-.w--dropdown-open > .w-dropdown-list {
+.w-dropdown-list.w--dropdown-open {
   display: block;
 }
 .w-dropdown-link {
