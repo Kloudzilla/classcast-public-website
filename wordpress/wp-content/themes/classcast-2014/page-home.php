@@ -22,7 +22,8 @@
         </div>
       </div>
     </div>
-    <div class="w-hidden-small w-hidden-tiny cc-section cc-industry">
+      <a name='industry'></a>
+      <div class="cc-section cc-industry">
       <div class="w-container cc-content-container cc-industry-content">
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
           <div class="w-tab-menu w-clearfix cc-industry-menu">
@@ -42,14 +43,14 @@
               <div class="w-row">
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Music direct to mobile</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Instructors can play music to their classes direct from mobile, even without an internet connection.</div>
                   </div>
                 </div>
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Replace DVD’s</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Stream video direct to your mobile,&nbsp;replacing all those
                       <br>clunky DVD’s</div>
@@ -57,7 +58,7 @@
                 </div>
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Choreography Notes
                       <br>without Printing</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Your choreography notes are tailored for mobile delivery, no more printing.</div>
@@ -70,14 +71,14 @@
               <div class="w-row">
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Teach your classes</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Instructors can play music to their classes direct from mobile, even without an internet connection.</div>
                   </div>
                 </div>
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Package your classes</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Stream video direct to your mobile,&nbsp;replacing all those
                       <br>clunky DVD’s</div>
@@ -85,7 +86,7 @@
                 </div>
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Get your lectures out there</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Your choreography notes are tailored for mobile delivery, no more printing.</div>
                   </div>
@@ -97,14 +98,14 @@
               <div class="w-row">
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Packaged Care</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Instructors can play music to their classes direct from mobile, even without an internet connection.</div>
                   </div>
                 </div>
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Tangible Results</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Stream video direct to your mobile,&nbsp;replacing all those
                       <br>clunky DVD’s</div>
@@ -112,7 +113,7 @@
                 </div>
                 <div class="w-col w-col-4">
                   <div class="cc-industry-feature-icon"></div>
-                  <div class="w-clearfix cc-industry-feature-text">
+                  <div class="cc-industry-feature-text">
                     <div class="cc-industry-secondary-tab-item-headline">Life Saving Education</div>
                     <div class="cc-industry-secondary-tab-item-subtext">Your choreography notes are tailored for mobile delivery, no more printing.</div>
                   </div>
@@ -121,36 +122,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="w-hidden-main w-hidden-medium cc-industry-mobile">
-      <div class="cc-industry-block-mobile">
-        <div class="w-clearfix cc-industry-ring-mobile">
-          <div class="cc-industry-icon-mobile fitness"></div>
-        </div>
-        <div class="cc-industry-headline-mobile">Fitness &amp; Training</div>
-        <div class="cc-industry-subtext-mobile">Mould your Classcast fitness app to the limits of your environment and provide your clients fitness solutions at a digital level</div>
-      </div>
-      <div class="cc-industry-block-mobile">
-        <div class="w-clearfix cc-industry-ring-mobile">
-          <div class="cc-industry-icon-mobile"></div>
-        </div>
-        <div class="cc-industry-headline-mobile">Health &amp;&nbsp;Well-being</div>
-        <div class="cc-industry-subtext-mobile">Deliver simple solutions for providing health &amp; well being education and training</div>
-      </div>
-      <div class="cc-industry-block-mobile">
-        <div class="w-clearfix cc-industry-ring-mobile">
-          <div class="cc-industry-icon-mobile"></div>
-        </div>
-        <div class="cc-industry-headline-mobile">Education &amp; Learning</div>
-        <div class="cc-industry-subtext-mobile">Create classes, lectures and training modules for monetisation</div>
-      </div>
-      <div class="w-hidden-small w-hidden-tiny cc-industry-block-mobile">
-        <div class="w-clearfix cc-industry-ring-mobile">
-          <div class="cc-industry-icon-mobile"></div>
-        </div>
-        <div class="cc-industry-headline-mobile">Request an Industry</div>
-        <div class="cc-industry-subtext-mobile">Your industry not listed? Request it and join the Classcast community</div>
       </div>
     </div>
     <div class="cc-section cc-brand">
