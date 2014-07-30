@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-      <a name='industry'></a>
+      <a name='tour'></a>
       <div class="cc-section cc-industry">
       <div class="w-container cc-content-container cc-industry-content">
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
