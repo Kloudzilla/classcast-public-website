@@ -64,7 +64,7 @@
                   <div class="cc-pricing-package-title">MAX</div>
                   <div class="w-clearfix cc-pricing-package-price-wrap">
                     <div class="cc-pricing-package-currency">$</div>
-                    <div class="cc-pricing-package-price">999</div>
+                    <div class="cc-pricing-package-price">899</div>
                     <div class="cc-pricing-package-month">/mo</div>
                   </div>
                 </div>

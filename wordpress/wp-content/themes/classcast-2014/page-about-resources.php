@@ -32,7 +32,7 @@
         <?php endwhile; ?>
       </div>
 
-      <!--<h3 class="cc-about-resources-headline">VIDEOS</h3>
+      <h3 class="cc-about-resources-headline">VIDEOS</h3>
       <div class="w-row cc-video-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'video' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -44,7 +44,7 @@
               </a>
               <div class="w-container">
                 <div class="modal-video-window">
-                  <?php $videoID = get_post_meta($post->ID, 'tutorial_release', true);?>
+                  <?php $videoID = get_post_meta($post->ID, 'video_release', true);?>
                   <iframe src="<?php echo 'http://player.vimeo.com/video/'. $videoID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
               </div>
@@ -69,8 +69,8 @@
         </a>
         <div class="w-container">
           <div class="modal-video-window">
-            <?php $videoID = get_post_meta($post->ID, 'tutorial_release', true);?>
-            <iframe src="<?php echo 'http://player.vimeo.com/video/'. $videoID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <?php $tutorialID = get_post_meta($post->ID, 'tutorial_release', true);?>
+            <iframe src="<?php echo 'http://player.vimeo.com/video/'. $tutorialID;?>" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>

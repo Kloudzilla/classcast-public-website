@@ -12,6 +12,7 @@
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/webflow.css">
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
@@ -88,6 +89,42 @@ PRICING PACKAGE BUTTON HOVER
         visibility:visible;
     }
   </style>
+  <style type="text/css">
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+.mc-field-group input {
+  border-radius:6px;
+  min-height:60px;
+  border: 1px solid #cccccc;
+  color:#555;
+}
+
+#mc_embed_signup input.mce_inline_error {
+border-color: #45b46d;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  margin:auto;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  background-color:#45b46d;
+  width:80%;
+}
+
+.mc-field-group select {
+  border-radius:6px;
+  height:60px;
+  border: 1px solid #cccccc;
+  color:#555;
+  background-color:white;
+}
+
+#mc_embed_signup input {
+  border: 1px solid #cccccc;
+}
+  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
 </head>
 <body>
   <div class="cc-external-wrap">
@@ -99,6 +136,82 @@ PRICING PACKAGE BUTTON HOVER
         <div class="modal-window">
           <h3>Heading</h3>
           <div class="w-form">
+           <!-- Begin MailChimp Signup Form -->
+
+            <div id="mc_embed_signup">
+            <form action="//classcast.us2.list-manage.com/subscribe/post?u=1c01ae6d41b7efa731691c63a&amp;id=168b1a7f71" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="indicates-required"></div>
+            <div class="w-row cc-modal-form-row">
+              <div class="w-col w-col-6">
+                <div class="mc-field-group">
+                  <label for="mce-FULLNAME">Full Name</label>
+                  <input type="text" value="Full Name" name="FULLNAME" class="required" id="mce-FULLNAME">
+                </div>                  
+              </div>
+              <div class="w-col w-col-6">
+                <div class="mc-field-group">
+                  <label for="mce-CNAME">Company Name</label>
+                  <input type="text" value="Company Name" name="CNAME" class="required" id="mce-CNAME">
+                </div>
+              </div>
+            </div>
+
+            <div class="w-row cc-modal-form-row">
+              <div class="w-col w-col-6">
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address</label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>                
+              </div>
+              <div class="w-col w-col-6">
+                <div class="mc-field-group">
+                  <label for="mce-PNUMBER">Phone Number</label>
+                  <input type="number" name="PNUMBER" class="required" value="" id="mce-PNUMBER">
+                </div>
+              </div>
+            </div>
+
+            <div class="w-row cc-modal-form-row">
+              <div class="w-col w-col-6">
+                <div class="mc-field-group">
+                  <label for="mce-CONTENT">Do you have any content that you distribute?</label>
+                  <select name="CONTENT" class="required" id="mce-CONTENT">
+                    <option value=""></option>
+                    <option value="First Choice">First Choice</option>
+                    <option value="Second Choice">Second Choice</option>
+                    <option value="Third Choice">Third Choice</option>
+                  </select>
+                </div>                 
+              </div>
+              <div class="w-col w-col-6">
+                <div class="mc-field-group">
+                  <label for="mce-INDUSTRY">What Industry are you a part of?</label>
+                  <select name="INDUSTRY" class="required" id="mce-INDUSTRY">
+                    <option value=""></option>
+                    <option value="First Choice">First Choice</option>
+                    <option value="Second Choice">Second Choice</option>
+                    <option value="Third Choice">Third Choice</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_1c01ae6d41b7efa731691c63a_168b1a7f71" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+            (function($) {
+            window.fnames = new Array(); window.ftypes = new Array();fnames[3]='FULLNAME';ftypes[3]='text';fnames[1]='CNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='CONTENT';ftypes[4]='dropdown';fnames[5]='INDUSTRY';ftypes[5]='dropdown';fnames[6]='PNUMBER';ftypes[6]='number';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+            </script>
+<!--End mc_embed_signup-->
             <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
               <div class="cc-modal-scroll">
                 <div class="w-row cc-modal-form-row">
