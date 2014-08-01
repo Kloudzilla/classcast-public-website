@@ -264,6 +264,7 @@ border-color: #45b46d;
         </div>
       </div>
     </div>
+
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?>">
       <div class="cc-navigation" data-ix="navigation-past-hero">
@@ -274,9 +275,9 @@ border-color: #45b46d;
               <a class="w-inline-block cc-navigation-item-logo" href="/"></a>
             </li>
 
-            <li class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">>
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup">GET&nbsp;STARTED</div>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
+              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up modal-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-signup">SIGN&nbsp;UP</div>
               </a>
             </li>
 
@@ -316,7 +317,7 @@ border-color: #45b46d;
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
-                  <div>GET STARTED</div>
+                  <div>SIGN&nbsp;UP</div>
                 </a>
               </li>
 
@@ -330,7 +331,7 @@ border-color: #45b46d;
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">GET&nbsp;STARTED</div>
+                <div class="cc-navigation-menu-list-item-text-signup-dark">SIGN&nbsp;UP</div>
               </a>
             </li>
 
@@ -376,7 +377,7 @@ border-color: #45b46d;
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
-                  <div>GET STARTED</div>
+                  <div>SIGN&nbsp;UP</div>
                 </a>
               </li>
 
@@ -395,7 +396,7 @@ border-color: #45b46d;
             <div class="w-slide w-clearfix">
               <div class="cc-home-hero-slider-text">
                 <div class="w-container cc-content-container cc-home-hero-content">
-                  <h3 class="cc-home-hero-headline">Monetize your mobile content.</h3>
+                  <h3 class="cc-home-hero-headline">Be Mobile Awesomely.</h3>
                   <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
                   <a class="w-inline-block cc-button-s green modal-link" href="#">
                     <div>Get Started</div>
@@ -404,48 +405,6 @@ border-color: #45b46d;
               </div>
               <div class="cc-home-hero-slider-img">
                 <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
-              </div>
-            </div>
-            <div class="w-slide">
-              <div class="cc-home-hero-slider-text">
-                <div class="w-container cc-content-container cc-home-hero-content">
-                  <h3 class="cc-home-hero-headline">Slide 2</h3>
-                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </div>
-              </div>
-              <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
-              </div>
-            </div>
-            <div class="w-slide w-clearfix">
-              <div class="cc-home-hero-slider-text">
-                <div class="w-container cc-content-container cc-home-hero-content">
-                  <h3 class="cc-home-hero-headline">Slide 3</h3>
-                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </div>
-              </div>
-              <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
-              </div>
-            </div>
-            <div class="w-slide w-clearfix">
-              <div class="cc-home-hero-slider-text">
-                <div class="w-container cc-content-container cc-home-hero-content">
-                  <h3 class="cc-home-hero-headline">Slide 4</h3>
-                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s green modal-link" href="#">
-                    <div>Get Started</div>
-                  </a>
-                </div>
-              </div>
-              <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-cropped.png" width="940" alt="53be382defd06169282104d2_hero-template-browser-cropped.png">
               </div>
             </div>
           </div>

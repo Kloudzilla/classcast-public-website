@@ -128,7 +128,7 @@
       <div class="w-container cc-content-container cc-brand-content">
         <div class="w-row">
           <div class="w-col w-col-6">
-            <div class="cc-branding-img" data-ix="fade-in"></div>
+            <div class="cc-branding-img"></div>
           </div>
           <div class="w-col w-col-6">
             <h3 class="cc-branding-headline">Your App,Your Brand</h3>
@@ -138,14 +138,14 @@
       </div>
     </div>
     <div class="cc-section cc-users">
-      <div class="cc-users-img" data-ix="slide-from-right"></div>
-      <div class="w-container cc-content-container cc-users-content" data-ix="fade-in">
+      <div class="cc-users-img"></div>
+      <div class="w-container cc-content-container cc-users-content">
         <h3 class="cc-users-headline">Manage your users</h3>
         <p>Manage your users and notify them of upcomming events. See who is viewing your content and what market to reach out to. Keep in touch with your members and reach out to them with offers.</p>
       </div>
     </div>
     <div class="w-slider cc-content-slider" data-animation="slide" data-duration="500" data-infinite="1">
-      <div class="w-container cc-content-container cc-content-content" data-ix="fade-in">
+      <div class="w-container cc-content-container cc-content-content">
         <h3 class="cc-content-headline">Package your content</h3>
         <p class="cc-content-subtext">Create the content that you need and get it out to your customers quickly. Classcast offers unrivaled abilty to instantly broadcast your content to your user=base.</p>
         <ul class="w-list-unstyled w-clearfix cc-content-list">
@@ -181,7 +181,7 @@
       </div>
       <div class="w-slider-mask">
         <div class="w-slide cc-content-slide-1">
-          <div class="cc-content-img" data-ix="slide-from-right"></div>
+          <div class="cc-content-img"></div>
         </div>
       </div>
       <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny cc-content-slider-arrow">
@@ -193,8 +193,8 @@
       <div class="w-slider-nav w-round cc-content-slide-nav"></div>
     </div>
     <div class="cc-section cc-stats">
-      <div class="cc-stats-img" data-ix="slide-from-right"></div>
-      <div class="w-container cc-content-container cc-stats-content" data-ix="fade-in">
+      <div class="cc-stats-img"></div>
+      <div class="w-container cc-content-container cc-stats-content">
         <h3 class="cc-stats-headline">Make smart moves</h3>
         <p>With Classcast you have the power to calculate your business decisions with detailed statistics. Statistics that show who your users are and what content they are consuming.</p>
       </div>
