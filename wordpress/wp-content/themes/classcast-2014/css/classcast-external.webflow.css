@@ -375,8 +375,8 @@ p {
   display: none;
   width: 100%;
   height: 60px;
-  background-color: rgba(250, 250, 250, 0.98);
-  box-shadow: #6e6e6e 0px 1px 2px -1px;
+  background-color: white;
+  box-shadow: #6e6e6e 0px 1px 1px -1px;
   -webkit-transform: none;
   -ms-transform: none;
   -o-transform: none;
@@ -985,13 +985,14 @@ p {
   color: white;
   font-size: 60px;
   line-height: 62px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .cc-home-hero-subtext {
   margin-bottom: 30px;
   color: white;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 100;
 }
 .cc-trusted-logo-wrap {
   display: block;
@@ -1110,8 +1111,8 @@ p {
 }
 .cc-navigation-menu-list-item {
   display: inline-block;
-  width: 90px;
-  height: 60px;
+  height: 80px;
+  margin-right: 35px;
   float: right;
   letter-spacing: 1px;
 }
@@ -1120,7 +1121,8 @@ p {
   float: left;
 }
 .cc-navigation-menu-list-item.sign-up {
-  width: 140px;
+  width: 110px;
+  margin-right: 0px;
 }
 .cc-navigation-menu-list-item-link {
   width: 100%;
@@ -1173,15 +1175,17 @@ p {
 }
 .cc-navigation-menu-list-item-text {
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 30px;
+  font-size: 13px;
   font-weight: 400;
 }
 .cc-navigation-menu-list-item-text-signup {
-  margin-top: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 22px;
+  padding-top: 8px;
+  padding-bottom: 6px;
   border: 1px solid white;
   border-radius: 4px;
+  font-size: 13px;
 }
 .cc-footer-list-item-text {
   display: inline-block;
@@ -1202,14 +1206,16 @@ p {
 .cc-navigation-menu-list-item-text-dark {
   display: inline-block;
   padding-top: 20px;
+  font-size: 13px;
 }
 .cc-navigation-menu-list-item-text-signup-dark {
-  margin-top: 14px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  margin-top: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border-radius: 4px;
   background-color: #45b46d;
   color: white;
+  font-size: 13px;
 }
 .cc-branding-img {
   position: relative;
@@ -2163,7 +2169,6 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
 .cc-resource-link {
   text-decoration:none;
 }
-
 img.attachment-thumbnail {
   border-radius: 30px;
 }
