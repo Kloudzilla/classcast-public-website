@@ -477,6 +477,7 @@ Webflow.define('ix', function($, _) {
   var transNone = 'none 0s ease 0s';
   var introEvent = 'w-ix-intro' + namespace;
   var outroEvent = 'w-ix-outro' + namespace;
+  var fallbackProps = /width|height/;
   var eventQueue = [];
   var $subs = $();
   var config = {};
@@ -752,7 +753,9 @@ Webflow.define('ix', function($, _) {
     if (transitions) {
       transitions = transitions.split(',');
       for (var i = 0; i < transitions.length; i++) {
-        _tram[addMethod](transitions[i]);
+        var transition = transitions[i];
+        var options = fallbackProps.test(transition) ? { fallback: true } : null;
+        _tram[addMethod](transition, options);
       }
     }
 
@@ -2923,6 +2926,7 @@ Webflow.define('navbar', function($, _) {
   var buttonOpen = 'w--open';
   var menuOpen = 'w--nav-menu-open';
   var linkOpen = 'w--nav-link-open';
+  var ix = Webflow.ixEvents();
 
   // -----------------------------------
   // Module methods
@@ -3138,7 +3142,9 @@ Webflow.define('navbar', function($, _) {
     var menuWidth = data.menu.outerWidth(true);
     var navHeight = data.el.height();
     var direction = /left$/.test(animation) ? -1 : 1;
-    resize(0, data.el[0]);
+    var navbarEl = data.el[0];
+    resize(0, navbarEl);
+    ix.intro(0, navbarEl);
 
     // Listen for tap outside events
     if (!designer) $doc.on('tap' + namespace, data.outside);
@@ -3188,11 +3194,13 @@ Webflow.define('navbar', function($, _) {
   }
 
   function close(data, immediate) {
+    if (!data.open) return;
     data.open = false;
     data.button.removeClass(buttonOpen);
     var config = data.config;
     if (config.animation == 'none' || !tram.support.transform) immediate = true;
     var animation = config.animation;
+    ix.outro(0, data.el[0]);
 
     // Stop listening for tap outside events
     $doc.off('tap' + namespace, data.outside);
@@ -3257,9 +3265,9 @@ Webflow.define('dropdown', function($, _) {
   var designer;
   var inApp = Webflow.env();
   var namespace = '.w-dropdown';
-  var buttonOpen = 'w--open';
-  var dropdownOpen = 'w--dropdown-open';
+  var stateOpen = 'w--open';
   var closeEvent = 'w-close' + namespace;
+  var ix = Webflow.ixEvents();
 
   // -----------------------------------
   // Module methods
@@ -3323,8 +3331,7 @@ Webflow.define('dropdown', function($, _) {
       options = options || {};
 
       if (evt.type == 'w-close') {
-        close(data, true);
-        return;
+        return close(data);
       }
 
       if (evt.type == 'setting') {
@@ -3346,16 +3353,22 @@ Webflow.define('dropdown', function($, _) {
     if (data.open) return;
     closeOthers(data);
     data.open = true;
-    data.list.addClass(dropdownOpen);
-    data.toggle.addClass(buttonOpen);
+    data.list.addClass(stateOpen);
+    data.toggle.addClass(stateOpen);
+    ix.intro(0, data.el[0]);
 
     // Listen for tap outside events
     if (!designer) $doc.on('tap' + namespace, data.outside);
+
+    // Clear previous delay
+    window.clearTimeout(data.delayId);
   }
 
   function close(data, immediate) {
+    if (!data.open) return;
     data.open = false;
     var config = data.config;
+    ix.outro(0, data.el[0]);
 
     // Stop listening for tap outside events
     $doc.off('tap' + namespace, data.outside);
@@ -3396,8 +3409,8 @@ Webflow.define('dropdown', function($, _) {
 
   function complete(data) {
     return function() {
-      data.list.removeClass(dropdownOpen);
-      data.toggle.removeClass(buttonOpen);
+      data.list.removeClass(stateOpen);
+      data.toggle.removeClass(stateOpen);
     };
   }
 
