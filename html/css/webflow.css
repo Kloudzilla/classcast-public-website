@@ -1483,10 +1483,6 @@ textarea.w-select {
   overflow: visible;
   min-width: 200px;
 }
-.w-nav-overlay .w--nav-menu-open {
-  position: static;
-  width: 100%;
-}
 .w--nav-link-open {
   display: block;
   position: relative;
@@ -1500,8 +1496,8 @@ textarea.w-select {
   right: 0;
   width: 100%;
 }
-.w-nav[data-animation="default"] .w--nav-menu-open {
-  top: 100%;
+.w-nav-overlay .w--nav-menu-open {
+  top: 0;
 }
 .w-nav[data-animation="over-left"] .w-nav-overlay {
   width: auto;

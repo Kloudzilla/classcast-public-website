@@ -3017,10 +3017,12 @@ Webflow.define('navbar', function($, _) {
     var old = data.config || {};
 
     // Set config options from data attributes
-    config.animation = data.el.attr('data-animation') || 'default';
+    var animation = config.animation = data.el.attr('data-animation') || 'default';
+    config.animOver = /^over/.test(animation);
+    config.animDirect = /left$/.test(animation) ? -1 : 1;
 
     // Re-open menu if the animation type changed
-    if (old.animation != config.animation) {
+    if (old.animation != animation) {
       data.open && _.defer(reopen, data);
     }
 
@@ -3107,10 +3109,9 @@ Webflow.define('navbar', function($, _) {
       data.links.each(updateEachMax);
       data.dropdowns.each(updateEachMax);
     }
-    // If currently open and in overlay mode, update height to match body
-    if (data.open && /^over/.test(data.config.animation)) {
-      updateDocHeight(data);
-      updateMenuHeight(data);
+    // If currently open, update height to match body
+    if (data.open) {
+      setOverlayHeight(data);
     }
   }
 
@@ -3136,23 +3137,16 @@ Webflow.define('navbar', function($, _) {
     var config = data.config;
     var animation = config.animation;
     if (animation == 'none' || !tram.support.transform) immediate = true;
-    var animOver = /^over/.test(animation);
-    var bodyHeight = updateDocHeight(data);
+    var bodyHeight = setOverlayHeight(data);
     var menuHeight = data.menu.outerHeight(true);
     var menuWidth = data.menu.outerWidth(true);
     var navHeight = data.el.height();
-    var direction = /left$/.test(animation) ? -1 : 1;
     var navbarEl = data.el[0];
     resize(0, navbarEl);
     ix.intro(0, navbarEl);
 
     // Listen for tap outside events
     if (!designer) $doc.on('tap' + namespace, data.outside);
-
-    // Update menu height for Over state
-    if (animOver) {
-      bodyHeight = updateMenuHeight(data);
-    }
 
     // No transition for immediate
     if (immediate) return;
@@ -3165,11 +3159,11 @@ Webflow.define('navbar', function($, _) {
     }
 
     // Over left/right
-    if (animOver) {
+    if (config.animOver) {
       tram(data.menu)
         .add(transConfig)
-        .set({ x: direction * menuWidth, height: bodyHeight }).start({ x: 0 });
-      data.overlay && data.overlay.css({ width: menuWidth, height: bodyHeight });
+        .set({ x: config.animDirect * menuWidth, height: bodyHeight }).start({ x: 0 });
+        data.overlay && data.overlay.width(menuWidth);
       return;
     }
 
@@ -3180,17 +3174,16 @@ Webflow.define('navbar', function($, _) {
       .set({ y: -offsetY }).start({ y: 0 });
   }
 
-  function updateDocHeight(data) {
-    return data.bodyHeight = data.config.docHeight ? $doc.height() : $body.height();
-  }
-
-  function updateMenuHeight(data) {
-    var newMenuHeight = data.bodyHeight;
-    var navFixed = data.el.css('position') == 'fixed';
-    if (!navFixed) newMenuHeight -= data.el.offset().top;
-    data.menu.height(newMenuHeight);
-    data.overlay && data.overlay.height(newMenuHeight);
-    return newMenuHeight;
+  function setOverlayHeight(data) {
+    var config = data.config;
+    var bodyHeight = config.docHeight ? $doc.height() : $body.height();
+    if (config.animOver) {
+      data.menu.height(bodyHeight);
+    } else if (data.el.css('position') != 'fixed') {
+      bodyHeight -= data.el.height();
+    }
+    data.overlay && data.overlay.height(bodyHeight);
+    return bodyHeight;
   }
 
   function close(data, immediate) {
@@ -3215,14 +3208,12 @@ Webflow.define('navbar', function($, _) {
     var menuHeight = data.menu.outerHeight(true);
     var menuWidth = data.menu.outerWidth(true);
     var navHeight = data.el.height();
-    var direction = /left$/.test(animation) ? -1 : 1;
-    var animOver = /^over/.test(animation);
 
     // Over left/right
-    if (animOver) {
+    if (config.animOver) {
       tram(data.menu)
         .add(transConfig)
-        .start({ x: menuWidth * direction }).then(complete);
+        .start({ x: menuWidth * config.animDirect }).then(complete);
       return;
     }
 
