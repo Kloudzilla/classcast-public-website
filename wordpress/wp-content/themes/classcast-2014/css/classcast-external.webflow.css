@@ -904,6 +904,7 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #45b46d;
+  border:none;
 }
 .cc-button-s.green:hover {
   background-color: #319957;
@@ -2166,6 +2167,10 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-home-hero-image {
     width: 95%;
   }
+}
+.cc-modal-iframe {
+  width:100%;
+  height:400px;
 }
 .cc-resource-link {
   text-decoration:none;

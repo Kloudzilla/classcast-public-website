@@ -89,38 +89,60 @@ PRICING PACKAGE BUTTON HOVER
         visibility:visible;
     }
   </style>
-  <style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+<style type="text/css">
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 
 .mc-field-group input {
   border-radius:6px;
-  min-height:60px;
+  height:40px;
   border: 1px solid #cccccc;
   color:#555;
 }
-
-#mc_embed_signup input.mce_inline_error {
-border-color: #45b46d;
-}
-
-#mc_embed_signup div.mce_inline_error {
-  margin:auto;
-  border-bottom-left-radius:6px;
-  border-bottom-right-radius:6px;
-  background-color:#45b46d;
-  width:80%;
-}
-
 .mc-field-group select {
   border-radius:6px;
-  height:60px;
+  height:40px;
   border: 1px solid #cccccc;
   color:#555;
   background-color:white;
 }
-
 #mc_embed_signup input {
   border: 1px solid #cccccc;
+}
+
+div.mce_inline_error {
+  margin:0 0 1em 0;
+  margin-top:10px;
+  border-radius: 6px;
+}
+
+#mc-embedded-subscribe {
+  margin: 0;
+}
+
+#mc_embed_signup form {
+  padding:0;
+}
+
+label {
+  font-weight:normal;
+}
+
+#mc_embed_signup div#mce-responses {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+#mc_embed_signup div.response {
+  padding:0;
+  width:100%;
+}
+
+#mc_embed_signup .mc-field-group {
+  width:100%;
+}
+.cc-contact-message {
+  min-height:200px;
 }
   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -135,23 +157,23 @@ border-color: #45b46d;
       <div class="w-container">
         <div class="modal-window">
           <h3>Heading</h3>
+          
           <div class="w-form">
            <!-- Begin MailChimp Signup Form -->
-
             <div id="mc_embed_signup">
             <form action="//classcast.us2.list-manage.com/subscribe/post?u=1c01ae6d41b7efa731691c63a&amp;id=168b1a7f71" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="indicates-required"></div>
             <div class="w-row cc-modal-form-row">
               <div class="w-col w-col-6">
                 <div class="mc-field-group">
-                  <label for="mce-FULLNAME">Full Name</label>
-                  <input type="text" value="Full Name" name="FULLNAME" class="required" id="mce-FULLNAME">
+                  <!-- <label for="mce-FULLNAME">Full Name</label> -->
+                  <input type="text" value="" name="FULLNAME" class="required" id="mce-FULLNAME" placeholder="Full Name">
                 </div>                  
               </div>
               <div class="w-col w-col-6">
                 <div class="mc-field-group">
-                  <label for="mce-CNAME">Company Name</label>
-                  <input type="text" value="Company Name" name="CNAME" class="required" id="mce-CNAME">
+                  <!--<label for="mce-CNAME">Company Name</label>-->
+                  <input type="text" value="" name="CNAME" class="required" id="mce-CNAME" placeholder="Company Name">
                 </div>
               </div>
             </div>
@@ -159,14 +181,14 @@ border-color: #45b46d;
             <div class="w-row cc-modal-form-row">
               <div class="w-col w-col-6">
                 <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address</label>
-                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  <!-- <label for="mce-EMAIL">Email Address</label> -->
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
                 </div>                
               </div>
               <div class="w-col w-col-6">
                 <div class="mc-field-group">
-                  <label for="mce-PNUMBER">Phone Number</label>
-                  <input type="number" name="PNUMBER" class="required" value="" id="mce-PNUMBER">
+                  <!-- <label for="mce-PNUMBER">Phone Number</label> -->
+                  <input type="number" name="PNUMBER" class="required" value="" id="mce-PNUMBER" placeholder="Phone Number">
                 </div>
               </div>
             </div>
@@ -195,13 +217,16 @@ border-color: #45b46d;
                 </div>
               </div>
             </div>
-
+            <div class="w-row cc-modal-form-row">
+              <div class="w-col w-col-12">
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
               </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_1c01ae6d41b7efa731691c63a_168b1a7f71" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="cc-button-s green"></div>
+              </div>
+            </div>
             </form>
             </div>
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -212,55 +237,8 @@ border-color: #45b46d;
             var $mcj = jQuery.noConflict(true);
             </script>
 <!--End mc_embed_signup-->
-            <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
-              <div class="cc-modal-scroll">
-                <div class="w-row cc-modal-form-row">
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-2" type="text" placeholder="Full Name" name="field-2" required="required">
-                  </div>
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-3" type="text" placeholder="Company Name" name="field-3" required="required" data-name="Field 3">
-                  </div>
-                </div>
-                <div class="w-row cc-modal-form-row">
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-6" type="text" placeholder="Email Address" name="field-6" required="required" data-name="Field 6">
-                  </div>
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-7" type="text" placeholder="Phone Number" name="field-7" required="required" data-name="Field 7">
-                  </div>
-                </div>
-                <div class="w-row cc-modal-form-row">
-                  <div class="w-col w-col-6">
-                    <label for="field-9">Do you have any content that you distribute now?</label>
-                    <select class="w-select cc-dropdown" id="field-9" name="field-9" data-name="Field 9">
-                      <option value="">Select one...</option>
-                      <option value="Content-First">I'm just getting started, not yet</option>
-                      <option value="Content-Second">I'm selling physical products but not digital</option>
-                      <option value="Content-Third">I'm selling online but not yet on mobile</option>
-                    </select>
-                  </div>
-                  <div class="w-col w-col-6">
-                    <label for="field-8">What Industry are you involved with?</label>
-                    <select class="w-select cc-dropdown" id="field-8" name="field-8">
-                      <option value="">Select one...</option>
-                      <option value="Industry-First">Fitness</option>
-                      <option value="Industry-Second">Education</option>
-                      <option value="Industry-Third">Health</option>
-                      <option value="Industry-Fourth">Other</option>
-                    </select>
-                  </div>
-                </div>
-                <input class="w-button cc-button-s green" type="submit" value="Submit" data-wait="Please wait...">
-              </div>
-            </form>
-            <div class="w-form-done">
-              <p>Thank you! Your submission has been received!</p>
-            </div>
-            <div class="w-form-fail">
-              <p>Oops! Something went wrong while submitting the form :(</p>
-            </div>
           </div>
+        
         </div>
       </div>
     </div>
