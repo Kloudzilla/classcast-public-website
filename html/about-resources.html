@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Fri Aug 01 2014 05:38:45 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Aug 06 2014 05:16:30 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
@@ -96,64 +96,12 @@ PRICING PACKAGE BUTTON HOVER
         <div class="modal-video-window"></div>
       </div>
     </div>
-    <div class="w-clearfix modal-background">
-      <a class="w-inline-block close-modal" href="#">
-        <div>CLOSE</div>
-      </a>
-      <div class="w-container">
-        <div class="modal-window">
-          <h3>Heading</h3>
-          <div class="w-form">
-            <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
-              <div class="cc-modal-scroll">
-                <div class="w-row cc-modal-form-row">
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-2" type="text" placeholder="Full Name" name="field-2" required="required">
-                  </div>
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-3" type="text" placeholder="Company Name" name="field-3" required="required" data-name="Field 3">
-                  </div>
-                </div>
-                <div class="w-row cc-modal-form-row">
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-6" type="text" placeholder="Email Address" name="field-6" required="required" data-name="Field 6">
-                  </div>
-                  <div class="w-col w-col-6">
-                    <input class="w-input cc-input" id="field-7" type="text" placeholder="Phone Number" name="field-7" required="required" data-name="Field 7">
-                  </div>
-                </div>
-                <div class="w-row cc-modal-form-row">
-                  <div class="w-col w-col-6">
-                    <label for="field-9">Do you have any content that you distribute now?</label>
-                    <select class="w-select cc-dropdown" id="field-9" name="field-9" data-name="Field 9">
-                      <option value="">Select one...</option>
-                      <option value="Content-First">I'm just getting started, not yet</option>
-                      <option value="Content-Second">I'm selling physical products but not digital</option>
-                      <option value="Content-Third">I'm selling online but not yet on mobile</option>
-                    </select>
-                  </div>
-                  <div class="w-col w-col-6">
-                    <label for="field-8">What Industry are you involved with?</label>
-                    <select class="w-select cc-dropdown" id="field-8" name="field-8">
-                      <option value="">Select one...</option>
-                      <option value="Industry-First">Fitness</option>
-                      <option value="Industry-Second">Education</option>
-                      <option value="Industry-Third">Health</option>
-                      <option value="Industry-Fourth">Other</option>
-                    </select>
-                  </div>
-                </div>
-                <input class="w-button cc-button-s green" type="submit" value="Submit" data-wait="Please wait...">
-              </div>
-            </form>
-            <div class="w-form-done">
-              <p>Thank you! Your submission has been received!</p>
-            </div>
-            <div class="w-form-fail">
-              <p>Oops! Something went wrong while submitting the form :(</p>
-            </div>
-          </div>
-        </div>
+    <div class="modal-background">
+      <div class="w-clearfix modal-window">
+        <a class="w-inline-block close-modal" href="#">
+          <div>CLOSE</div>
+        </a>
+        <h3>Heading</h3>
       </div>
     </div>
     <div class="cc-hero about" data-ix="navigation-past-hero">
@@ -448,26 +396,26 @@ PRICING PACKAGE BUTTON HOVER
   <!-------------------------------
 MODAL
 -------------------------------->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.modal-link').click(function() {
-        $('.modal-background').slideDown();
-      });
-      $('.close-modal').click(function() {
-        $('.modal-background').slideUp();
-      });
-    });
-  </script>
+  <!--<script type="text/javascript">
+$(document).ready(function() {
+  $('.modal-link').click(function() {
+    $('.modal-background').fadeIn();
+  });
+  $('.close-modal').click(function() {
+    $('.modal-background').fadeOut();
+  });
+});
+</script>-->
   <!-------------------------------
 VIDEO MODAL
 -------------------------------->
   <script type="text/javascript">
     $(document).ready(function() {
       $('.modal-video-link').click(function() {
-        $('.modal-video-background').slideDown();
+        $('.modal-video-background').fadeIn();
       });
       $('.close-modal-video').click(function() {
-        $('.modal-video-background').slideUp();
+        $('.modal-video-background').fadeOut();
       });
     });
   </script>
