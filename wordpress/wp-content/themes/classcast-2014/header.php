@@ -23,6 +23,7 @@
     });
   </script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favicon.ico">
   <!-------------------------------
 IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
@@ -90,161 +91,15 @@ PRICING PACKAGE BUTTON HOVER
     }
   </style>
 
-<style type="text/css">
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-
-.mc-field-group input {
-  border-radius:6px;
-  height:40px;
-  border: 1px solid #cccccc;
-  color:#555;
-}
-.mc-field-group select {
-  border-radius:6px;
-  height:40px;
-  border: 1px solid #cccccc;
-  color:#555;
-  background-color:white;
-}
-#mc_embed_signup input {
-  border: 1px solid #cccccc;
-}
-
-div.mce_inline_error {
-  margin:0 0 1em 0;
-  margin-top:10px;
-  border-radius: 6px;
-}
-
-#mc-embedded-subscribe {
-  margin: 0;
-}
-
-#mc_embed_signup form {
-  padding:0;
-}
-
-label {
-  font-weight:normal;
-}
-
-#mc_embed_signup div#mce-responses {
-  padding:0;
-  margin:0;
-  width:100%;
-}
-#mc_embed_signup div.response {
-  padding:0;
-  width:100%;
-}
-
-#mc_embed_signup .mc-field-group {
-  width:100%;
-}
-.cc-contact-message {
-  min-height:200px;
-}
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
 </head>
 <body>
   <div class="cc-external-wrap">
-    <div class="w-clearfix modal-background">
-      <a class="w-inline-block close-modal" href="#">
-        <div>CLOSE</div>
-      </a>
-      <div class="w-container">
-        <div class="modal-window">
-          <h3>Heading</h3>
-          
-          <div class="w-form">
-           <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup">
-            <form action="//classcast.us2.list-manage.com/subscribe/post?u=1c01ae6d41b7efa731691c63a&amp;id=168b1a7f71" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="indicates-required"></div>
-            <div class="w-row cc-modal-form-row">
-              <div class="w-col w-col-6">
-                <div class="mc-field-group">
-                  <!-- <label for="mce-FULLNAME">Full Name</label> -->
-                  <input type="text" value="" name="FULLNAME" class="required" id="mce-FULLNAME" placeholder="Full Name">
-                </div>                  
-              </div>
-              <div class="w-col w-col-6">
-                <div class="mc-field-group">
-                  <!--<label for="mce-CNAME">Company Name</label>-->
-                  <input type="text" value="" name="CNAME" class="required" id="mce-CNAME" placeholder="Company Name">
-                </div>
-              </div>
-            </div>
-
-            <div class="w-row cc-modal-form-row">
-              <div class="w-col w-col-6">
-                <div class="mc-field-group">
-                  <!-- <label for="mce-EMAIL">Email Address</label> -->
-                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-                </div>                
-              </div>
-              <div class="w-col w-col-6">
-                <div class="mc-field-group">
-                  <!-- <label for="mce-PNUMBER">Phone Number</label> -->
-                  <input type="number" name="PNUMBER" class="required" value="" id="mce-PNUMBER" placeholder="Phone Number">
-                </div>
-              </div>
-            </div>
-
-            <div class="w-row cc-modal-form-row">
-              <div class="w-col w-col-6">
-                <div class="mc-field-group">
-                  <label for="mce-CONTENT">Do you have any content that you distribute?</label>
-                  <select name="CONTENT" class="required" id="mce-CONTENT">
-                    <option value=""></option>
-                    <option value="First Choice">First Choice</option>
-                    <option value="Second Choice">Second Choice</option>
-                    <option value="Third Choice">Third Choice</option>
-                  </select>
-                </div>                 
-              </div>
-              <div class="w-col w-col-6">
-                <div class="mc-field-group">
-                  <label for="mce-INDUSTRY">What Industry are you a part of?</label>
-                  <select name="INDUSTRY" class="required" id="mce-INDUSTRY">
-                    <option value=""></option>
-                    <option value="First Choice">First Choice</option>
-                    <option value="Second Choice">Second Choice</option>
-                    <option value="Third Choice">Third Choice</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="w-row cc-modal-form-row">
-              <div class="w-col w-col-12">
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_1c01ae6d41b7efa731691c63a_168b1a7f71" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="cc-button-s green"></div>
-              </div>
-            </div>
-            </form>
-            </div>
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-            <script type='text/javascript'>
-            (function($) {
-            window.fnames = new Array(); window.ftypes = new Array();fnames[3]='FULLNAME';ftypes[3]='text';fnames[1]='CNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='CONTENT';ftypes[4]='dropdown';fnames[5]='INDUSTRY';ftypes[5]='dropdown';fnames[6]='PNUMBER';ftypes[6]='number';
-            }(jQuery));
-            var $mcj = jQuery.noConflict(true);
-            </script>
-<!--End mc_embed_signup-->
-          </div>
-        
-        </div>
-      </div>
-    </div>
-
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
-      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?>">
+      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='form')?'form' :'');?>">
+      
+    <?php
+      if($template_section == 'form') { }
+      else { ?>
       <div class="cc-navigation" data-ix="navigation-past-hero">
         <div class="w-container cc-navigation-items-wrap">
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
@@ -363,6 +218,9 @@ label {
           </div>
         </div>
       </div>
+    <?php 
+       };
+    ?>
 
     <?php
       if($template_section == 'home') {
