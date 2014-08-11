@@ -23,7 +23,6 @@
     });
   </script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favicon.ico">
   <!-------------------------------
 IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
@@ -109,7 +108,7 @@ PRICING PACKAGE BUTTON HOVER
             </li>
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up modal-link" href="#">
+              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
                 <div class="cc-navigation-menu-list-item-text-signup">SIGN&nbsp;UP</div>
               </a>
             </li>
@@ -149,7 +148,7 @@ PRICING PACKAGE BUTTON HOVER
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
+                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
                   <div>SIGN&nbsp;UP</div>
                 </a>
               </li>
@@ -163,7 +162,7 @@ PRICING PACKAGE BUTTON HOVER
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
                 <div class="cc-navigation-menu-list-item-text-signup-dark">SIGN&nbsp;UP</div>
               </a>
             </li>
@@ -209,7 +208,7 @@ PRICING PACKAGE BUTTON HOVER
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
+                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
                   <div>SIGN&nbsp;UP</div>
                 </a>
               </li>
@@ -234,7 +233,7 @@ PRICING PACKAGE BUTTON HOVER
                 <div class="w-container cc-content-container cc-home-hero-content">
                   <h3 class="cc-home-hero-headline">Be Mobile Awesomely.</h3>
                   <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s green modal-link" href="#">
+                  <a class="w-inline-block cc-button-s green" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
