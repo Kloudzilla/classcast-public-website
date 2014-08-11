@@ -20,7 +20,7 @@
       <div class="w-row cc-ebook-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'ebook' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
-        <div class="w-col w-col-3 cc-ebook-col">
+        <div class="w-col w-col-4 cc-ebook-col">
           <?php $ebook_release = get_post_meta($post->ID, 'ebook_release', true); ?>
           <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class='cc-ebook-link'>
           <?php $ebook_cover = get_field('ebook_cover');?>
