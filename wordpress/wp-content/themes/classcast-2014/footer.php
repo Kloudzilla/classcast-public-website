@@ -39,7 +39,7 @@
                           if($sub_footer_menu_item->menu_item_parent == $footer_menu_item->ID) {
                         ?>
                             <li class="cc-footer-list-item">
-                              <a class="w-inline-block cc-footer-list-item-link" href="<?php echo $sub_footer_menu_item->url;?>">
+                              <a class="w-inline-block cc-footer-list-item-link" href="<?php echo $sub_footer_menu_item->url;?>" target="<?php echo $sub_footer_menu_item->target; ?>">
                                 <div class="cc-footer-list-item-text"><?php echo $sub_footer_menu_item->title;?></div>
                               </a>
                             </li>

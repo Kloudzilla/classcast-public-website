@@ -11,7 +11,7 @@
           ?>
           
             <li class="cc-footer-min-list-item">
-              <a href="<?php echo $tinyfooter_menu_item->url;?>" class="cc-footer-min-list-item-link">
+              <a class="cc-footer-min-list-item-link" href="<?php echo $tinyfooter_menu_item->url;?>" target="<?php echo $tinyfooter_menu_item->target; ?>">
                 <?php echo $tinyfooter_menu_item->title;?>
               </a>
             </li>
