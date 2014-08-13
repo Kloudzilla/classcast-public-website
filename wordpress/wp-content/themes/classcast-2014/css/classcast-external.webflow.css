@@ -52,7 +52,7 @@ p {
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 300;
+  font-weight: 200;
 }
 .button {
   display: inline-block;
@@ -2198,6 +2198,37 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-home-hero-image {
     width: 95%;
   }
+}
+tbody {
+  margin-left:auto;
+  margin-right:auto;
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
+  background:#f1f1f1;
+}
+
+tr {
+  border-bottom:1px solid #ccc;
+}
+
+td {
+  border-right:1px solid #ccc;
+  padding:10px;
+}
+
+blockquote {
+  margin-left:20px;
+  margin-right:20px;
+  background:#f1f1f1;
+  padding:20px;
+  border:1px solid #c9c9c9;
+}
+.read-more {
+  font-weight:400;
+  color:#896ec7;
+  text-decoration:none;
+  border-bottom:1px solid #896ec7;
+  margin-left:5px;
 }
 .cc-resource-link {
   text-decoration:none;
