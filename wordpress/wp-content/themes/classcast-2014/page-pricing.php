@@ -130,7 +130,7 @@
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
                   <div class="cc-pricing-faq-headline">What kind of security do you have</div>
-                  <div class="cc-pricing-faq-text">Classcast uses secure 257-bit SSL encryption for all accounts and all data is stored securely. For more on privacy, see our privacy policies and terms of service.</div>
+                  <div class="cc-pricing-faq-text">Classcast uses secure 256-bit SSL encryption for all accounts and all data is stored securely. For more on privacy, see our privacy policies and terms of service.</div>
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
                   <div class="cc-pricing-faq-headline">Have more questions?</div>
