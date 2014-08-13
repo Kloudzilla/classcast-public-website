@@ -32,7 +32,7 @@
         <?php endwhile; ?>
       </div>
 
-      <!--<h3 class="cc-about-resources-headline">VIDEOS</h3>
+      <h3 class="cc-about-resources-headline">VIDEOS</h3>
       <div class="w-row cc-video-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'video' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -59,7 +59,7 @@
           <?php endwhile; ?>
         </div>
 
-      <h3 class="cc-about-resources-headline">TUTORIALS</h3>
+      <!--<h3 class="cc-about-resources-headline">TUTORIALS</h3>
       <?php $loop = new WP_Query( array( 'post_type' => 'tutorial', 'order' => 'ASC') ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class='video'>
