@@ -514,8 +514,7 @@ p {
   padding-left: 0px;
 }
 .cc-pricing-grid-col-list-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 10px;
   font-weight: 500;
   text-align: center;
 }
@@ -929,6 +928,11 @@ p {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.cc-button-s.center.highlight {
+  background-color: #3a539b;
 }
 .cc-button-s.keyline {
   padding: 5px 20px;
@@ -1373,8 +1377,8 @@ p {
 }
 .cc-ebook-cover {
   display: block;
-  width: 160px;
-  height: 220px;
+  width: 241px;
+  height: 341px;
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
@@ -1503,6 +1507,11 @@ p {
   background-position: 50% 50%;
   background-size: 150px;
   background-repeat: no-repeat;
+}
+.cc-pricing-grid-footnote {
+  margin-top: 25px;
+  font-size: 14px;
+  font-style: italic;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
