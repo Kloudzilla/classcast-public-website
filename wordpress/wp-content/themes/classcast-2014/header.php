@@ -7,7 +7,7 @@
 <html data-wf-site="538bcc732502ff2560203e03">
 <head>
   <meta charset="utf-8">
-  <title>Classcast External</title>
+  <title><?php wp_title( '|', true, 'right' ); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
