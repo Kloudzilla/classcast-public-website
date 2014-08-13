@@ -23,7 +23,8 @@
             #mc-embedded-subscribe { margin:0 0;}
             #mc_embed_signup .mc-field-group input { height:60px; width:100%; border:1px solid #ccc; border-radius:6px; font-weight:100;}
             #mc_embed_signup .mc-field-group label { font-weight:100;}
-            #mc_embed_signup .mc-field-group select { min-height:60px;}
+            #mc_embed_signup .mc-field-group select { min-height:60px; width:100%; margin-top:10px;}
+            select { border:1px solid #c9c9c9; height:60px; background-color:white; background:white; width:100%; color:#ccc;}
               /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
           </style>
