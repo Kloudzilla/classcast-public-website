@@ -62,28 +62,28 @@
         <div class="w-row cc-team-row">
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/stuart.jpg" width="129" alt="53ead9eca6f42a2f6a366809_stuart.jpg">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/stuart.jpg" width="129" alt="53ead9eca6f42a2f6a366809_stuart.jpg">
             </div>
             <div class="cc-team-name">Stuart Guest-Smith</div>
             <div class="cc-team-title">CEO &amp;&nbsp;C0-Founder</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/suren.jpg" width="150" alt="53eada2ef90240c2448f697f_suren.jpg">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/suren.jpg" width="150" alt="53eada2ef90240c2448f697f_suren.jpg">
             </div>
             <div class="cc-team-name">Suren Tippireddy</div>
             <div class="cc-team-title">CTO &amp; Co-Founder</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/aidan.jpg" width="186" alt="53eada45d056242e6a4c87ae_aidan.jpg">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/aidan.jpg" width="186" alt="53eada45d056242e6a4c87ae_aidan.jpg">
             </div>
             <div class="cc-team-name">Aidan Green</div>
             <div class="cc-team-title">Head of Product Design</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/Dallas_2.jpg" width="124" alt="53eb09b4d056242e6a4c8a31_Dallas_2.jpg">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/Dallas_2.jpg" width="124" alt="53eb09b4d056242e6a4c8a31_Dallas_2.jpg">
             </div>
             <div class="cc-team-name">Dallas Clark</div>
             <div class="cc-team-title">Head of Web</div>
@@ -92,29 +92,29 @@
         <div class="w-row cc-team-row">
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/brad.jpg" width="225" alt="53eada64a6f42a2f6a36680d_brad.jpg">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/brad.jpg" width="225" alt="53eada64a6f42a2f6a36680d_brad.jpg">
             </div>
             <div class="cc-team-name">Bradley Dwyer</div>
             <div class="cc-team-title">Head of Mobile</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/brian.png" alt="53eada6ea6f42a2f6a36680e_brian.png">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/brian.png" alt="53eada6ea6f42a2f6a36680e_brian.png">
             </div>
             <div class="cc-team-name">Brian Bettendorf</div>
             <div class="cc-team-title">Head of Growth</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
-            <img class="cc-team-img" src="<php echo get_template_directory_uri(); ?>/images/samprofilebnwsmall.png" alt="53ec4a98cd8267b75faeb1dd_samprofilebnwsmall.png">
+            <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/samprofilebnwsmall.png" alt="53ec4a98cd8267b75faeb1dd_samprofilebnwsmall.png">
             <div class="cc-team-name">Sam Stewart</div>
             <div class="cc-team-title">Designer</div>
           </div>
-          <div class="w-col w-col-3 w-col-small-6 cc-team-col">
+          <!--<div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img"></div>
             <a class="w-inline-block cc-button-s green team-join-us" href="#">
               <div>JOIN&nbsp;US</div>
             </a>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
