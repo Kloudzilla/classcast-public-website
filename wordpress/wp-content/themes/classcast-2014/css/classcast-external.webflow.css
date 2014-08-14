@@ -614,13 +614,14 @@ p {
 }
 .cc-hero-navigation-list {
   width: 100%;
+  height: 60px;
   text-align: center;
 }
 .cc-hero-navigation-list-item {
   display: inline-block;
   width: 80px;
   height: 60px;
-  float: left;
+  float: none;
 }
 .cc-hero-navigation-list-item-link {
   display: inline-block;
@@ -628,7 +629,7 @@ p {
   height: 100%;
   padding-top: 20px;
   opacity: 0.6;
-  color: white;
+  color: #777;
   text-align: center;
   text-decoration: none;
 }
@@ -847,10 +848,12 @@ p {
   background-color: #22313f;
 }
 .cc-section.cc-hero-navigation {
-  position: absolute;
+  position: static;
   left: 0px;
   right: 0px;
   bottom: 0px;
+  border-bottom: 1px solid #c9c9c9;
+  background-color: white;
 }
 .cc-section.cc-footer-min-section {
   height: 80px;
@@ -870,6 +873,7 @@ p {
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
 }
 .cc-team-title {
   margin-bottom: 10px;
