@@ -188,9 +188,16 @@
               <div class="w-container">
                 <div class="cc-home-hero-slider-text">
                   <h3 class="cc-home-hero-headline">Be mobile awesomely.</h3>
-                  <div class="cc-home-hero-subtext">Inject content into your userbase</div>
-                  <a class="w-inline-block cc-button-s green modal-link" href="#">
+                  <div class="cc-home-hero-subtext">Content content content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
+                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
+                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
+                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
+                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content</div>
+                  <a class="w-inline-block cc-button-l get-started" href="#">
                     <div>Get Started</div>
+                  </a>
+                  <a class="w-hidden-small w-hidden-tiny w-inline-block cc-button-l tour" href="#">
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tour&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                   </a>
                 </div>
               </div>
