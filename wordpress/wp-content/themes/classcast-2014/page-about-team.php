@@ -18,14 +18,18 @@
     </div>
     <div class="cc-section">
       <div class="w-container cc-content-container cc-about-team">
-        <h3 class="cc-about-team-headline">OUR&nbsp;STORY</h3>
+        <h3 class="cc-about-team-headline">Our Story</h3>
         <div class="cc-about-team-subtext">Classcast is the groundbreaking content monetisation service that is reinventing the way companies distribute and charge for their content. With simple non-technical ways of delivering content to your own app in the app store, and charging for
           it, Classcast is helping turn your current DVD sales channel into a mobile SAAS&nbsp;business.
           <br>
           <br>Launched in August 2013, Classcast started from Stuart Guest-Smith and Suren Tippireddy being frustrated with content distribution in the health and fitness industry and set out with a founding team to help solve that problem for the industry.</div>
         <h4
-        class="cc-about-team-values-headline">CORE&nbsp;VALUES</h4>
-          <div class="w-row cc-team-row">
+        class="cc-about-team-values-headline">Why Classcast?</h4>
+          <div class="cc-about-team-subtext">Classcast is the groundbreaking content monetisation service that is reinventing the way companies distribute and charge for their content. With simple non-technical ways of delivering content to your own app in the app store, and charging for
+            it, Classcast is helping turn your current DVD sales channel into a mobile SAAS&nbsp;business.
+            <br>
+            <br>Launched in August 2013, Classcast started from Stuart Guest-Smith and Suren Tippireddy being frustrated with content distribution in the health and fitness industry and set out with a founding team to help solve that problem for the industry.</div>
+          <!--<div class="w-row cc-team-row">
             <div class="w-col w-col-3 w-col-small-6 cc-team-col">
               <div class="cc-team-img"></div>
               <div class="cc-team-name">VALUE</div>
@@ -46,9 +50,9 @@
               <div class="cc-team-name">VALUE</div>
               <div class="cc-team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
-          </div>
-      </div>
+      </div>-->
     </div>
+  </div>
     <div class="cc-section cc-about-team-mini-hero">
       <div class="w-container cc-content-container cc-about-team-mini-hero-content">
         <h1 class="cc-about-team-mini-hero-headline">SMALL&nbsp;TEAM, HUGE&nbsp;SCALE</h1>
@@ -57,7 +61,7 @@
     </div>
     <div class="cc-section">
       <div class="w-container cc-content-container cc-about-team">
-        <h3 class="cc-about-team-headline">OUR&nbsp;TEAM</h3>
+        <h3 class="cc-about-team-headline">Our Team</h3>
         <div class="cc-about-team-subtext">The Classcast headquarters are in San Francisco but we embrace remote working so everyone at Classcast is free to live and work wherever they want.&nbsp;&nbsp;</div>
         <div class="w-row cc-team-row">
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
@@ -118,7 +122,7 @@
         </div>
       </div>
     </div>
-    <h4 class="cc-about-team-location-headline">WHERE&nbsp;TO&nbsp;FIND&nbsp;US</h4>
+    <h4 class="cc-about-team-location-headline">Where to find us</h4>
     <div class="cc-section cc-about-team-location">
       <div class="w-container cc-content-container cc-about-team-location-content">
         <div class="w-row cc-location-row">
