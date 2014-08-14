@@ -147,37 +147,11 @@
     <div class="w-slider cc-content-slider" data-animation="slide" data-duration="500" data-infinite="1">
       <div class="w-container cc-content-container cc-content-content">
         <h3 class="cc-content-headline">Package your content</h3>
-        <p class="cc-content-subtext">Create the content that you need and get it out to your customers quickly. Classcast offers unrivaled abilty to instantly broadcast your content to your user=base.</p>
-        <ul class="w-list-unstyled w-clearfix cc-content-list">
-          <li class="w-clearfix cc-content-list-item">
-            <div class="cc-content-list-item-icon"></div>
-            <div class="w-clearfix cc-content-list-item-text-wrap">
-              <div class="cc-content-list-item-headline">Box it up</div>
-              <div class="cc-content-list-item-text">Package your content easily and reliably</div>
-            </div>
-          </li>
-          <li class="w-clearfix cc-content-list-item">
-            <div class="cc-content-list-item-icon"></div>
-            <div class="w-clearfix cc-content-list-item-text-wrap">
-              <div class="cc-content-list-item-headline">Fit it in</div>
-              <div class="cc-content-list-item-text">Create content tailored for mobile platforms</div>
-            </div>
-          </li>
-          <li class="w-clearfix cc-content-list-item">
-            <div class="cc-content-list-item-icon"></div>
-            <div class="w-clearfix cc-content-list-item-text-wrap">
-              <div class="cc-content-list-item-headline">Ship it out</div>
-              <div class="cc-content-list-item-text">Deliver your content worldwide instantly</div>
-            </div>
-          </li>
-          <li class="w-clearfix cc-content-list-item">
-            <div class="cc-content-list-item-icon"></div>
-            <div class="w-clearfix cc-content-list-item-text-wrap">
-              <div class="cc-content-list-item-headline">Rate it up</div>
-              <div class="cc-content-list-item-text">Let your users rate your content</div>
-            </div>
-          </li>
-        </ul>
+        <p class="cc-content-subtext">This is at the heart of what you do, create great content that changes peoples lives. So we have dedicated ourselves to making this fast and easy for you to load content and when you’re ready publish instantly to your customers.
+          <br>
+          <br>No more printing DVD’s and Booklets, broadcast your content to your customers with fast streaming video, beautiful text and in a way that is effortless to use.
+          <br>
+          <br>We make it easy for you to publish content so you can spend more time creating.</p>
       </div>
       <div class="w-slider-mask">
         <div class="w-slide cc-content-slide-1">
@@ -196,7 +170,13 @@
       <div class="cc-stats-img"></div>
       <div class="w-container cc-content-container cc-stats-content">
         <h3 class="cc-stats-headline">Make smart moves</h3>
-        <p>With Classcast you have the power to calculate your business decisions with detailed statistics. Statistics that show who your users are and what content they are consuming.</p>
+        <p>Would you like to know:
+          <br>Who your users are and what content they are consuming?
+          <br>How about the number of plays 24hours after a new release?
+          <br>Or even how many times your back catalog is played?
+          <br>
+          <br>You spend countless hours creating great content but do you really know who your customers are and how your customers are using it? With Classcast you have unparrallell access to statistics which help you make better decisions and grow your
+          business.</p>
       </div>
     </div>
     <div class="w-slider cc-quote" data-animation="slide" data-duration="500" data-infinite="1" data-delay="4000" data-autoplay="1">
