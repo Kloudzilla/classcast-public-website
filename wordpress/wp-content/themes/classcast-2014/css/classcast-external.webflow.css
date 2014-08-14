@@ -1562,6 +1562,11 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
+.cc-company-subline {
+  color: #b5a6e0;
+  font-size: 16px;
+  font-weight: 300;
+}
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
   -ms-transform: translate(100%, 0px);

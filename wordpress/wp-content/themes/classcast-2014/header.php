@@ -219,6 +219,7 @@
     ?>
         <div class="w-container cc-content-container cc-about-hero-content">
           <h1 class="cc-about-hero-headline">COMPANY</h1>
+          <div class="cc-company-subline">See behind the scenes at Classcast and meet the folks that work here.</div>
         </div>
       </div>
 
