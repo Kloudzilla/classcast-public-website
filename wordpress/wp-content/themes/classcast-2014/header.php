@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/webflow.css">
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -44,72 +45,6 @@
   <meta name="msapplication-config" content="<?php echo get_template_directory_uri(); ?>/icons/browserconfig.xml">
   <meta name="application-name" content="Classcast">
   <!-- END OF: FAVICONS -->
-
-  <!-------------------------------
-IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
--------------------------------->
-  <style>
-    @font-face {
-  font-family: 'ios7-icon';
-  src:
-    url('fonts/ios7-icon.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-.icon {
-  display: inline-block;
-  font-size: 32px;
-  font-family: 'ios7-icon';
-  margin-right: 20px;
-  -webkit-text-rendering: geometricPrecision;
-  -moz-text-rendering: geometricPrecision;
-  -ms-text-rendering: geometricPrecision;
-  -o-text-rendering: geometricPrecision;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-.text {
-  font-size: 24px;
-  line-height: 32px;
-}
-  </style>
-  <!-------------------------------
-TOP NAVIGATION & FOOTER UNDERLINE HOVER
--------------------------------->
-  <style>
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
-        border-bottom:2px solid white;
-    }
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text-dark {
-        border-bottom:2px solid #555;
-    }
-    .cc-footer-list-item-link:hover .cc-footer-list-item-text {
-        border-bottom:2px solid white;
-    }
-  </style>
-  <!-------------------------------
-SLIDER VERTICAL ALIGNMENT
--------------------------------->
-  <style>
-    .w-slide{
-        vertical-align:bottom;
-    }
-  </style>
-  <!-------------------------------
-PRICING PACKAGE BUTTON HOVER
--------------------------------->
-  <style>
-    .cc-pricing-package-link .cc-button-s.green.center.pricing{
-        visibility:hidden;
-    }
-    .cc-pricing-package-link:hover .cc-button-s.green.center.pricing{
-        visibility:visible;
-    }
-  </style>
 
 </head>
 <body>
