@@ -75,17 +75,18 @@
             </select>
           </div>
 
-                      <div class="mc-field-group">
-              <label for="mce-PACKAGE">What is your desired Classcast Package?</label>
-              <select name="PACKAGE" class="required" id="mce-PACKAGE">
-              <option value=""></option>
-              <option value="Starter">Starter</option>
-            <option value="Grow">Grow</option>
-            <option value="Max">Max</option>
-            <option value="Enterprise">Enterprise</option>
+              <div class="mc-field-group">
+                <label for="mce-PACKAGE">What is your desired Classcast Package?  <span class="asterisk">*</span>
+              </label>
+                <select name="PACKAGE" class="required" id="mce-PACKAGE">
+                <option value=""></option>
+                <option value="Starter $299 /mo">Starter $299 /mo</option>
+              <option value="Grow $499 /mo">Grow $499 /mo</option>
+              <option value="Max $899 /mo">Max $899 /mo</option>
+              <option value="Enterprise">Enterprise</option>
 
-              </select>
-            </div>
+                </select>
+              </div>
 
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
