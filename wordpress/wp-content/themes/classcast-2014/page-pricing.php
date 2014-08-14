@@ -113,8 +113,7 @@
             </div>
           </div>
         </div>
-        <p class="cc-pricing-grid-footnote">* Music Licensing: Royalties charged at $2.99/user/month</p>
-        <h4 class="cc-pricing-faq-title">Answering your questions</h4>
+         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
         <div class="cc-pricing-faq-wrap">
           <div class="w-row cc-pricing-faq-row">
             <div class="w-col w-col-6 cc-pricing-faq-col">
@@ -131,6 +130,10 @@
                   <div class="cc-pricing-faq-headline">What are groups?</div>
                   <div class="cc-pricing-faq-text">Groups inside Classcast help you manage the flow of information. Create groups for different teams, departments or topics.</div>
                 </li>
+                <li class="cc-pricing-faq-col-list-item">
+                  <div class="cc-pricing-faq-headline">What about Music Licensing?</div>
+                  <div class="cc-pricing-faq-text">Classcast offers a comprehensive music licensing plan that covers all your bases. Contact us to find out more.</div>
+                </li>
               </ul>
             </div>
             <div class="w-col w-col-6 cc-pricing-faq-col">
@@ -142,6 +145,12 @@
                 <li class="cc-pricing-faq-col-list-item">
                   <div class="cc-pricing-faq-headline">What kind of security do you have</div>
                   <div class="cc-pricing-faq-text">Classcast uses secure 256-bit SSL encryption for all accounts and all data is stored securely. For more on privacy, see our privacy policies and terms of service.</div>
+                </li>
+                <li class="cc-pricing-faq-col-list-item">
+                  <div class="cc-pricing-faq-headline">To Be Added</div>
+                  <div class="cc-pricing-faq-text">Need Three lines of text
+                    <br>Need Three lines of text
+                    <br>Need Three lines of text</div>
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
                   <div class="cc-pricing-faq-headline">Have more questions?</div>
