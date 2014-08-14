@@ -15,7 +15,7 @@
         <div class="cc-pricing-grid-wrap">
           <div class="w-row cc-pricing-grid-row">
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
-              <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+              <a class="w-inline-block cc-pricing-package-link" href="/sign-up">
                 <div class="cc-pricing-grid-col-package">
                   <div class="cc-pricing-package-title">STARTER</div>
                   <div class="w-clearfix cc-pricing-package-price-wrap">
@@ -40,7 +40,7 @@
               </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
-              <a class="w-inline-block cc-pricing-package-link featured modal-link" href="#">
+              <a class="w-inline-block cc-pricing-package-link featured" href="/sign-up">
                 <div class="cc-pricing-grid-col-package featured">
                   <div class="cc-pricing-package-title featured">GROW</div>
                   <div class="w-clearfix cc-pricing-package-price-wrap featured">
@@ -65,7 +65,7 @@
               </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+              <a class="w-inline-block cc-pricing-package-link" href="/sign-up">
                 <div class="cc-pricing-grid-col-package">
                   <div class="cc-pricing-package-title">MAX</div>
                   <div class="w-clearfix cc-pricing-package-price-wrap">
@@ -89,7 +89,7 @@
               </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+              <a class="w-inline-block cc-pricing-package-link modal-link" href="/sign-up">
                 <div class="cc-pricing-grid-col-package">
                   <div class="cc-pricing-package-title">ENTERPRISE</div>
                   <div class="cc-pricing-package-price-wrap">
