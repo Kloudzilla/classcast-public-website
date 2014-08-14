@@ -334,8 +334,8 @@ PRICING PACKAGE BUTTON HOVER
       } else if($template_section == 'pricing') {
     ?>
       <div class="w-container cc-content-container cc-pricing-hero-content">
-        <h3 class="cc-pricing-hero-headline">Pricing. Plain and simple</h3>
-        <p class="cc-pricing-hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <h3 class="cc-pricing-hero-headline">Simple pricing to fit your business</h3>
+        <p class="cc-pricing-hero-subtext">Plans that grow with you, each with additional features. Upgrade at the right time, anytime.</p>
       </div>
     </div>
 

@@ -10,7 +10,7 @@
   get_header();
 ?>
 
-<div class="cc-section">
+ <div class="cc-section">
       <div class="w-container cc-content-container cc-pricing-content">
         <div class="cc-pricing-grid-wrap">
           <div class="w-row cc-pricing-grid-row">
@@ -25,13 +25,16 @@
                   </div>
                 </div>
                 <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">X</li>
-                  <li class="cc-pricing-grid-col-list-item">X</li>
+                  <li class="cc-pricing-grid-col-list-item">up to <strong>100</strong> users</li>
+                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                  <li class="cc-pricing-grid-col-list-item">-</li>
+                  <li class="cc-pricing-grid-col-list-item">-</li>
+                  <li class="cc-pricing-grid-col-list-item">-&nbsp;
+                    <br>&nbsp;</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center pricing">Get Started</div>
+                    <div class="cc-button-s green center">Get Started</div>
                   </li>
                 </ul>
               </a>
@@ -47,13 +50,16 @@
                   </div>
                 </div>
                 <ul class="w-list-unstyled cc-pricing-grid-col-list featured">
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">X</li>
+                  <li class="cc-pricing-grid-col-list-item">up to <strong>200</strong>&nbsp;users</li>
+                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                  <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                  <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                  <li class="cc-pricing-grid-col-list-item">-&nbsp;
+                    <br>&nbsp;</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center pricing">Get Started</div>
+                    <div class="cc-button-s green center highlight">Get Started</div>
                   </li>
                 </ul>
               </a>
@@ -69,19 +75,21 @@
                   </div>
                 </div>
                 <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">up to <strong>300</strong> users</li>
+                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                  <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                  <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                  <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center pricing">Get Started</div>
+                    <div class="cc-button-s green center">Get Started</div>
                   </li>
                 </ul>
               </a>
             </div>
             <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <a class="w-inline-block cc-pricing-package-link" href="/sign-up">
+              <a class="w-inline-block cc-pricing-package-link modal-link" href="/sign-up">
                 <div class="cc-pricing-grid-col-package">
                   <div class="cc-pricing-package-title">ENTERPRISE</div>
                   <div class="cc-pricing-package-price-wrap">
@@ -90,19 +98,22 @@
                   </div>
                 </div>
                 <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
-                  <li class="cc-pricing-grid-col-list-item">Feature</li>
+                  <li class="cc-pricing-grid-col-list-item">Over <strong>2,000</strong> users?&nbsp;</li>
+                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                  <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                  <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                  <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center pricing">Get Started</div>
+                    <div class="cc-button-s green center">Contact Us</div>
                   </li>
                 </ul>
               </a>
             </div>
           </div>
         </div>
+        <p class="cc-pricing-grid-footnote">* Music Licensing: Royalties charged at $2.99/user/month</p>
         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
         <div class="cc-pricing-faq-wrap">
           <div class="w-row cc-pricing-faq-row">

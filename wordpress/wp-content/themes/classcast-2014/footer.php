@@ -6,11 +6,11 @@
         </a>
         <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
         <div class="w-clearfix cc-trusted-logo-wrap">
-          <a class="w-inline-block cc-trusted-logo-link total-gym" href="http://www.totalgym.com/"></a>
-          <a class="w-inline-block cc-trusted-logo-link gymstick" href="http://www.gymstick.com"></a>
-          <a class="w-inline-block cc-trusted-logo-link kettleworx" href="http://www.kettleworx.com/"></a>
-          <a class="w-inline-block cc-trusted-logo-link yogafit" href="http://www.yogafit.com/"></a>
-          <a class="w-inline-block cc-trusted-logo-link iom" href="http://instituteofmotion.com"></a>
+          <a class="w-inline-block cc-trusted-logo-link total-gym" href="http://www.totalgym.com/" target="_blank"></a>
+          <a class="w-inline-block cc-trusted-logo-link gymstick" href="http://www.gymstick.com" target="_blank"></a>
+          <a class="w-inline-block cc-trusted-logo-link kettleworx" href="http://www.kettleworx.com/" target="_blank"></a>
+          <a class="w-inline-block cc-trusted-logo-link yogafit" href="http://www.yogafit.com/" target="_blank"></a>
+          <a class="w-inline-block cc-trusted-logo-link iom" href="http://www.instituteofmotion.com" target="_blank"></a>
         </div>
       </div>
     </div>
