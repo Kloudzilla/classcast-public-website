@@ -214,7 +214,7 @@
       } else if($template_section == 'about') {
     ?>
         <div class="w-container cc-content-container cc-about-hero-content">
-          <h1 class="cc-about-hero-headline">ABOUT&nbsp;US</h1>
+          <h1 class="cc-about-hero-headline">COMPANY</h1>
         </div>
         <div class="cc-section cc-hero-navigation">
           <div class="w-container cc-content-container">
