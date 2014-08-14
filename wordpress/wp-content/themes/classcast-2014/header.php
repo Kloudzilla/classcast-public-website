@@ -181,22 +181,19 @@
       if($template_section == 'home') {
     ?>
 
-      <div class="cc-section">
+       <div class="cc-section">
         <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
           <div class="w-slider-mask">
             <div class="w-slide">
               <div class="w-container">
                 <div class="cc-home-hero-slider-text">
-                  <h3 class="cc-home-hero-headline">Be mobile awesomely.</h3>
-                  <div class="cc-home-hero-subtext">Content content content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
-                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
-                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
-                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;
-                    <br>content&nbsp;content&nbsp;content&nbsp;content&nbsp;content</div>
-                  <a class="w-inline-block cc-button-l get-started" href="#">
+                  <h3 class="cc-home-hero-headline">The easiest way to present content to your<br>mobile customers</h3>
+                  <div class="cc-home-hero-subtext">Classcast is a single platform where you can publish in real-time health, wellbeing and fitness content to a mobile app using your brand. Join thousands of trainers, instructors, life coaches, physio’s and rehab specialists to simplify
+                    the way you deliver mobile content.</div>
+                  <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                     <div>Get Started</div>
                   </a>
-                  <a class="w-hidden-small w-hidden-tiny w-inline-block cc-button-l tour" href="#">
+                  <a class="w-hidden-small w-hidden-tiny w-inline-block cc-button-l tour" href="http://staging.classcast.co/tour#">
                     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tour&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                   </a>
                 </div>
