@@ -138,7 +138,7 @@ PRICING PACKAGE BUTTON HOVER
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
           ?>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="<?php echo $primary_menu_item->url;?>">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link <?php echo implode(' ', $primary_menu_item->classes); ?>" href="<?php echo $primary_menu_item->url;?>">
                 <div class="cc-navigation-menu-list-item-text"><?php echo $primary_menu_item->title;?></div>
               </a>
             </li>      
