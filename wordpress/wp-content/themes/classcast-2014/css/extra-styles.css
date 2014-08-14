@@ -1,6 +1,6 @@
-  <!-------------------------------
+/*
 IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
--------------------------------->
+*/
     @font-face {
   font-family: 'ios7-icon';
   src:
@@ -29,9 +29,7 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
   line-height: 32px;
 }
 
-  <!-------------------------------
-TOP NAVIGATION & FOOTER UNDERLINE HOVER
--------------------------------->
+/* TOP NAVIGATION & FOOTER UNDERLINE HOVER */
 
     .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
         border-bottom:2px solid white;
@@ -43,17 +41,13 @@ TOP NAVIGATION & FOOTER UNDERLINE HOVER
         border-bottom:2px solid white;
     }
 
-  <!-------------------------------
-SLIDER VERTICAL ALIGNMENT
--------------------------------->
+/* SLIDER VERTICAL ALIGNMENT */
 
     .w-slide{
         vertical-align:bottom;
     }
 
-  <!-------------------------------
-PRICING PACKAGE BUTTON HOVER
--------------------------------->
+/* PRICING PACKAGE BUTTON HOVER */
 
     .cc-pricing-package-link .cc-button-s.green.center.pricing{
         visibility:hidden;
