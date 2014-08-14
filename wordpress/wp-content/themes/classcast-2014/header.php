@@ -181,21 +181,21 @@
       if($template_section == 'home') {
     ?>
 
-        <div class="cc-section">
+      <div class="cc-section">
         <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
           <div class="w-slider-mask">
-            <div class="w-slide w-clearfix">
-              <div class="cc-home-hero-slider-text">
-                <div class="w-container cc-content-container cc-home-hero-content">
-                  <h3 class="cc-home-hero-headline">Be Mobile Awesomely.</h3>
-                  <div class="cc-home-hero-subtext">Deliver content the way your customers want it, direct to their mobile.</div>
-                  <a class="w-inline-block cc-button-s green" href="/sign-up">
+            <div class="w-slide">
+              <div class="w-container">
+                <div class="cc-home-hero-slider-text">
+                  <h3 class="cc-home-hero-headline">Be mobile awesomely.</h3>
+                  <div class="cc-home-hero-subtext">Inject content into your userbase</div>
+                  <a class="w-inline-block cc-button-s green modal-link" href="#">
                     <div>Get Started</div>
                   </a>
                 </div>
               </div>
-              <div class="cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
+              <div class="w-clearfix cc-home-hero-slider-img">
+                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@
           <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
         </div>
       </div>
-    </div>      
+    </div>
 
     <?php
       } else if($template_section == 'about') {
