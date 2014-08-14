@@ -515,7 +515,7 @@ p {
 }
 .cc-pricing-grid-col-list-item {
   padding: 20px 10px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
 }
 .cc-pricing-grid-col-package {
@@ -864,6 +864,7 @@ p {
 }
 .cc-about-team-headline {
   margin-bottom: 40px;
+  font-weight: 300;
 }
 .cc-about-team-subtext {
   margin-bottom: 40px;
@@ -991,6 +992,7 @@ p {
   text-align: left;
 }
 .cc-home-hero-headline {
+  margin-bottom: 30px;
   color: white;
   font-size: 40px;
   line-height: 50px;
