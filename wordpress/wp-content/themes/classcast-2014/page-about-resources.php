@@ -9,6 +9,25 @@
 <?php
 	get_header();
 ?>
+<div class="cc-section cc-hero-navigation">
+          <div class="w-container cc-content-container">
+            <ul class="w-list-unstyled cc-hero-navigation-list">
+
+              <?php 
+                foreach(wp_get_nav_menu_items('heronav') as $heronav_menu_item){
+              ?>
+                <li class="w-clearfix cc-hero-navigation-list-item">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="<?php echo $heronav_menu_item->url;?>">
+                    <div><?php echo $heronav_menu_item->title;?></div>
+                  </a>
+                </li>
+              <?php
+                }
+              ?>
+
+            </ul>
+          </div>
+        </div>
   <div class="cc-section cc-about-tagline">
     <div class="w-container cc-content-container cc-about-tagline-content">
       <h4 class="cc-about-resources-tagline">Your best source of knowledge and education to get your mobile content monetized</h4>
