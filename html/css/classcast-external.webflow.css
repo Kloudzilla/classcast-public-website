@@ -1000,7 +1000,7 @@ p {
   display: block;
   margin-bottom: 30px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 100;
 }
@@ -1348,7 +1348,7 @@ p {
 .cc-home-hero-slider-text {
   width: 50%;
   height: 600px;
-  padding-top: 100px;
+  padding-top: 40px;
   padding-right: 20px;
   text-align: left;
 }
