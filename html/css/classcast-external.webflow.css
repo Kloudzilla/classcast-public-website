@@ -790,7 +790,7 @@ p {
   padding-top: 100px;
 }
 .cc-content-container.cc-about-team-mini-hero-content {
-  padding-top: 120px;
+  padding-top: 150px;
 }
 .cc-content-container.cc-about-press-content {
   padding-bottom: 60px;
@@ -924,6 +924,9 @@ p {
 .cc-button-s.green.team-join-us {
   margin-bottom: 20px;
 }
+.cc-button-s.green.homepage {
+  padding: 20px 50px;
+}
 .cc-button-s.center {
   display: block;
   width: 80%;
@@ -989,11 +992,12 @@ p {
 }
 .cc-home-hero-headline {
   color: white;
-  font-size: 60px;
-  line-height: 62px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 300;
 }
 .cc-home-hero-subtext {
+  display: block;
   margin-bottom: 30px;
   color: white;
   font-size: 18px;
@@ -1177,8 +1181,6 @@ p {
 .cc-about-tagline-headline {
   margin-top: 12px;
   color: #81878c;
-  font-size: 38px;
-  line-height: 38px;
 }
 .cc-navigation-menu-list-item-text {
   display: inline-block;
@@ -1346,7 +1348,8 @@ p {
 .cc-home-hero-slider-text {
   width: 50%;
   height: 600px;
-  padding-top: 40px;
+  padding-top: 100px;
+  padding-right: 20px;
   text-align: left;
 }
 .cc-home-hero-slider-img {
@@ -1356,6 +1359,9 @@ p {
   width: 940px;
   height: 600px;
   float: left;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #7ae6c7;
 }
 .cc-trusted-headline-top {
   color: #ccc;
@@ -1378,6 +1384,9 @@ p {
   margin-bottom: 20px;
 }
 .cc-job-col {
+  margin-bottom: 40px;
+}
+.cc-about-team-values-headline {
   margin-bottom: 40px;
 }
 .cc-ebook-cover {
@@ -1517,6 +1526,31 @@ p {
   margin-top: 25px;
   font-size: 14px;
   font-style: italic;
+}
+.cc-button-l {
+  padding: 15px 40px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.cc-button-l.get-started {
+  border: 1px solid #65d2d6;
+  background-color: #65d2d6;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.cc-button-l.get-started:hover {
+  border-color: #5acdd1;
+  background-color: #5acdd1;
+}
+.cc-button-l.tour {
+  display: inline-block;
+  margin-left: 20px;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
@@ -1712,6 +1746,8 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     width: 100%;
     height: 100%;
     margin-left: 0%;
+    padding-top: 40px;
+    padding-right: 0px;
     float: none;
     text-align: center;
   }
@@ -2232,6 +2268,11 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-home-hero-slider-text {
     padding-top: 30px;
+  }
+  .cc-button-l.tour {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
   }
 }
 
