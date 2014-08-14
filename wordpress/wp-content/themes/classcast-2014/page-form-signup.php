@@ -14,7 +14,7 @@
         <a class="w-inline-block cc-form-logo" href="/"></a>
         <div class="cc-form">
           <h4 class="cc-form-headline">Get Started with Classcast today</h4>
-          <div class="cc-form-subheadline">This is some text inside of a div block.</div>
+          <div class="cc-form-subheadline"></div>
           <!-- Begin MailChimp Signup Form -->
           <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
           <style type="text/css">
