@@ -195,7 +195,7 @@
                 </div>
               </div>
               <div class="w-clearfix cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
               </div>
             </div>
           </div>
