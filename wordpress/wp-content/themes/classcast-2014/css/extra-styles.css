@@ -114,6 +114,10 @@ img.attachment-thumbnail {
   display:block;
 }
 
+.cc-blog-post-full tbody {
+  margin-bottom:20px;
+}
+
 .cc-press-post p {
   margin-bottom:20px;
 }
@@ -134,4 +138,8 @@ img.attachment-thumbnail {
   margin-left:auto;
   margin-right:auto;
   display:block;
+}
+
+.cc-press-post-full tbody {
+  margin-bottom:20px;
 }
