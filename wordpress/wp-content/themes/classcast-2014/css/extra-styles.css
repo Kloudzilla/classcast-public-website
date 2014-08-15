@@ -94,3 +94,19 @@ blockquote {
 img.attachment-thumbnail {
   border-radius: 30px;
 }
+
+.cc-blog-post p {
+  margin-bottom:30px;
+}
+
+.cc-blog-post-full p {
+  margin-bottom:30px;
+}
+
+.cc-press-post p {
+  margin-bottom:30px;
+}
+
+.cc-press-post-full p {
+  margin-bottom:30px;
+}
