@@ -102,11 +102,25 @@ img.attachment-thumbnail {
 .cc-blog-post-full p {
   margin-bottom:20px;
 }
+.cc-blog-post-full ol {
+  margin-bottom:20px;
+}
+.cc-blog-post-full ul {
+  margin-bottom:20px;
+}
 
 .cc-press-post p {
   margin-bottom:20px;
 }
 
 .cc-press-post-full p {
+  margin-bottom:20px;
+}
+
+.cc-press-post-full ol {
+  margin-bottom:20px;
+}
+
+.cc-press-post-full ul {
   margin-bottom:20px;
 }
