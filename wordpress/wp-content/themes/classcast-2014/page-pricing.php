@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
+        <h4 class="cc-pricing-faq-title">Answering your questions</h4>
         <div class="cc-pricing-faq-wrap">
           <div class="w-row cc-pricing-faq-row">
             <div class="w-col w-col-6 cc-pricing-faq-col">
@@ -127,12 +127,20 @@
                   <div class="cc-pricing-faq-text">Classcast limits your usage and users by the plans and notifies the account holder when the limit is approaching. We don’t automatically change or upgrade your plan.</div>
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
-                  <div class="cc-pricing-faq-headline">What are groups?</div>
-                  <div class="cc-pricing-faq-text">Groups inside Classcast help you manage the flow of information. Create groups for different teams, departments or topics.</div>
+                  <div class="cc-pricing-faq-headline">Do you offer a discount for annual plans?</div>
+                  <div class="cc-pricing-faq-text">Yes of course. We’re just in the process of making this automated, for now please let your sales associate know! Simple as that.</div>
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
                   <div class="cc-pricing-faq-headline">What about Music Licensing?</div>
                   <div class="cc-pricing-faq-text">Classcast offers a comprehensive music licensing plan that covers all your bases. Contact us to find out more.</div>
+                </li>
+                <li class="cc-pricing-faq-col-list-item">
+                  <div class="cc-pricing-faq-headline">What credit cards do you accept?</div>
+                  <div class="cc-pricing-faq-text">We accept all major credit cards (VISA, MasterCard, Discover, American Express). For annual payments we can also invoice you for payment.</div>
+                </li>
+                <li class="cc-pricing-faq-col-list-item">
+                  <div class="cc-pricing-faq-headline">Need more help before signing up?</div>
+                  <div class="cc-pricing-faq-text">If you have questions about Classcast, our pricing, features or the sign up process, please feel free to contact us at hello@classcast.co – we’re always here to help you!</div>
                 </li>
               </ul>
             </div>
@@ -147,14 +155,17 @@
                   <div class="cc-pricing-faq-text">Classcast uses secure 256-bit SSL encryption for all accounts and all data is stored securely. For more on privacy, see our privacy policies and terms of service.</div>
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
-                  <div class="cc-pricing-faq-headline">To Be Added</div>
-                  <div class="cc-pricing-faq-text">Need Three lines of text
-                    <br>Need Three lines of text
-                    <br>Need Three lines of text</div>
+                  <div class="cc-pricing-faq-headline">Do you offer non-profit discounts</div>
+                  <div class="cc-pricing-faq-text">While we don’t have specific discounts for non-profits or educational organizations, we do offer a discount when you sign up for an annual account. Please email us at hello@classcast.co as we might be able to help.</div>
                 </li>
                 <li class="cc-pricing-faq-col-list-item">
-                  <div class="cc-pricing-faq-headline">Have more questions?</div>
-                  <div class="cc-pricing-faq-text">Contact our support or sales team about your questions.</div>
+                  <div class="cc-pricing-faq-headline">Hosting and storage included?</div>
+                  <div class="cc-pricing-faq-text">All videos, music, text... well anything is hosted for as long as you remain with us.</div>
+                </li>
+                <li class="cc-pricing-faq-col-list-item">
+                  <div class="cc-pricing-faq-headline">What happens when I want to cancel an account?</div>
+                  <div class="cc-pricing-faq-text">This would be a very sad moment, but we understand that these things happen. From your point of view, nothing. Once you cancel your account you’ll simply never be billed again. To cancel your account please just send as an email and
+                    we’ll process your request.</div>
                 </li>
               </ul>
             </div>

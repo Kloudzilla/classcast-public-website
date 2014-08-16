@@ -35,7 +35,7 @@
         <h4 class="cc-about-tagline-headline">The Team dedicated to building a solution<br>for your business</h4>
       </div>
     </div>
-    <div class="cc-section">
+        <div class="cc-section">
       <div class="w-container cc-content-container cc-about-team">
         <h3 class="cc-about-team-headline">Our Story</h3>
         <div class="cc-about-team-subtext">Classcast is the groundbreaking content monetisation service that is reinventing the way companies distribute and charge for their content. With simple non-technical ways of delivering content to your own app in the app store, and charging for
@@ -44,10 +44,8 @@
           <br>Launched in August 2013, Classcast started from Stuart Guest-Smith and Suren Tippireddy being frustrated with content distribution in the health and fitness industry and set out with a founding team to help solve that problem for the industry.</div>
         <h4
         class="cc-about-team-values-headline">Why Classcast?</h4>
-          <div class="cc-about-team-subtext">Classcast is the groundbreaking content monetisation service that is reinventing the way companies distribute and charge for their content. With simple non-technical ways of delivering content to your own app in the app store, and charging for
-            it, Classcast is helping turn your current DVD sales channel into a mobile SAAS&nbsp;business.
-            <br>
-            <br>Launched in August 2013, Classcast started from Stuart Guest-Smith and Suren Tippireddy being frustrated with content distribution in the health and fitness industry and set out with a founding team to help solve that problem for the industry.</div>
+          <div class="cc-about-team-subtext">We set out to change the way in which the health and fitness industry delivers and packages content. Given the vast array of content available to professionals and consumers alike it's hard for many organizations to 'stick-out'. So we created
+            our platform to provide all the enabling technology, content marketing/production capabilities and the global insight to ensure business have all the tools to do this successfully in the future.</div>
           <!--<div class="w-row cc-team-row">
             <div class="w-col w-col-3 w-col-small-6 cc-team-col">
               <div class="cc-team-img"></div>
@@ -69,18 +67,18 @@
               <div class="cc-team-name">VALUE</div>
               <div class="cc-team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
-      </div>-->
+          </div>-->
+      </div>
     </div>
-  </div>
     <div class="cc-section cc-about-team-mini-hero">
       <div class="w-container cc-content-container cc-about-team-mini-hero-content">
-        <h1 class="cc-about-team-mini-hero-headline">SMALL&nbsp;TEAM, HUGE&nbsp;SCALE</h1>
+        <h1 class="cc-about-team-mini-hero-headline">GREAT&nbsp;TEAM, HUGE&nbsp;SCALE</h1>
         <div class="cc-about-team-mini-hero-subtext">We get the technology to do the heavy lifting.</div>
       </div>
     </div>
     <div class="cc-section">
       <div class="w-container cc-content-container cc-about-team">
-        <h3 class="cc-about-team-headline">Our Team</h3>
+        <h3 class="cc-about-team-headline">Core Team</h3>
         <div class="cc-about-team-subtext">The Classcast headquarters are in San Francisco but we embrace remote working so everyone at Classcast is free to live and work wherever they want.&nbsp;&nbsp;</div>
         <div class="w-row cc-team-row">
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">

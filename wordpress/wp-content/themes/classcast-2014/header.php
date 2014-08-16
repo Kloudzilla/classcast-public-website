@@ -65,7 +65,7 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup">SIGN&nbsp;UP</div>
+                <div class="cc-navigation-menu-list-item-text-signup">GET STARTED</div>
               </a>
             </li>
 
@@ -105,7 +105,7 @@
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>SIGN&nbsp;UP</div>
+                  <div>GET STARTED</div>
                 </a>
               </li>
 
@@ -119,7 +119,7 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">SIGN&nbsp;UP</div>
+                <div class="cc-navigation-menu-list-item-text-signup-dark">GET STARTED</div>
               </a>
             </li>
 
@@ -165,7 +165,7 @@
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>SIGN&nbsp;UP</div>
+                  <div>GET STARTED</div>
                 </a>
               </li>
 
@@ -188,18 +188,16 @@
               <div class="w-container">
                 <div class="cc-home-hero-slider-text">
                   <h3 class="cc-home-hero-headline">The easiest way to present content to your<br>mobile customers</h3>
-                  <div class="cc-home-hero-subtext">Classcast is a single platform where you can publish in real-time health, wellbeing and fitness content to a mobile app using your brand. Join thousands of trainers, instructors, life coaches, physio’s and rehab specialists to simplify
-                    the way you deliver mobile content.</div>
+                  <div class="cc-home-hero-subtext">
+                    Classcast is a single platform where you can publish in real-time health, well-being and fitness content to a mobile app using your brand.
+                  </div>
                   <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                     <div>Get Started</div>
-                  </a>
-                  <a class="w-hidden-small w-hidden-tiny w-inline-block cc-button-l tour" href="http://staging.classcast.co/tour#">
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tour&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                   </a>
                 </div>
               </div>
               <div class="w-clearfix cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero-template-browser-phone-cropped.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
+                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
               </div>
             </div>
           </div>

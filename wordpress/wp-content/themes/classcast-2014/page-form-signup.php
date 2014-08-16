@@ -15,10 +15,11 @@
         <div class="cc-form">
           <h4 class="cc-form-headline">Get Started with Classcast today</h4>
           <div class="cc-form-subheadline"></div>
+
 <!-- Begin MailChimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
             <style type="text/css">
-             #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
             #mc_embed_signup div#mce-responses { padding:0 0; margin:0 0; width:100%; padding-bottom:10px;}
             #mc-embedded-subscribe { margin:0 0;}
             #mc_embed_signup .mc-field-group input { height:60px; width:100%; border:1px solid #ccc; border-radius:6px; font-weight:100;}
@@ -51,42 +52,44 @@
               <input type="text" value="" name="PNUMBER" class="required" id="mce-PNUMBER" placeholder="Phone Number">
             </div>
 
+            <div class="mc-field-group">
+              <label for="mce-CONTENT">Do you have any content that you distribute?</label>
+              <select name="CONTENT" class="required" id="mce-CONTENT">
+              <option value=""></option>
+              <option value="Yes">Yes</option>
+            <option value="No">No</option>
+
+              </select>
+            </div>
+
 
           <div class="mc-field-group">
-            <label for="mce-CONTENT">Do you have any content that you distribute?</label>
-          </label>
-            <select name="CONTENT" class="required cc-form-select" id="mce-CONTENT">
-            <option value=""></option>
-            <option value="First Choice">First Choice</option>
-          <option value="Second Choice">Second Choice</option>
-          <option value="Third Choice">Third Choice</option>
+          <label for="mce-INDUSTRY">What Industry are you a part of?</label>
+          <select name="INDUSTRY" class="required" id="mce-INDUSTRY">
+          <option value=""></option>
+          <option value="Fitness Instructor">Fitness Instructor</option>
+          <option value="Personal Trainer">Personal Trainer</option>
+          <option value="Fitness Club or Studio">Fitness Club or Studio</option>
+          <option value="Physiotherapist">Physiotherapist</option>
+          <option value="Rehabilitation Specialist">Rehabilitation Specialist</option>
+          <option value="Dietician / Nutrionist">Dietician / Nutrionist</option>
+          <option value="Life Coach / Transformational Consultant">Life Coach / Transformational Consultant</option>
+          <option value="Other">Other</option>
 
             </select>
           </div>
+
           <div class="mc-field-group">
-            <label for="mce-INDUSTRY">What Industry are you a part of?</label>
-          </label>
-            <select name="INDUSTRY" class="required" id="mce-INDUSTRY">
+            <label for="mce-PACKAGE">What is your desired Classcast Package?</label>
+            <select name="PACKAGE" class="required" id="mce-PACKAGE">
             <option value=""></option>
-            <option value="First Choice">First Choice</option>
-          <option value="Second Choice">Second Choice</option>
-          <option value="Third Choice">Third Choice</option>
+            <option value="Starter $299 /mo (100 Users)">Starter $299 /mo (100 Users)</option>
+          <option value="Grow $499 /mo (200 Users)">Grow $499 /mo (200 Users)</option>
+          <option value="Max $899 /mo (400 Users)">Max $899 /mo (400 Users)</option>
+          <option value="Enterprise">Enterprise</option>
 
             </select>
           </div>
-
-              <div class="mc-field-group">
-                <label for="mce-PACKAGE">What is your desired Classcast Package?  <span class="asterisk">*</span>
-              </label>
-                <select name="PACKAGE" class="required" id="mce-PACKAGE">
-                <option value=""></option>
-                <option value="Starter $299 /mo">Starter $299 /mo</option>
-              <option value="Grow $499 /mo">Grow $499 /mo</option>
-              <option value="Max $899 /mo">Max $899 /mo</option>
-              <option value="Enterprise">Enterprise</option>
-
-                </select>
-              </div>
 
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
