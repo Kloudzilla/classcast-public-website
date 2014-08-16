@@ -933,7 +933,11 @@ p {
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
+  background-color: #65d2d6;
   text-align: center;
+}
+.cc-button-s.green.footer-signup:hover {
+  background-color: #5acdd1;
 }
 .cc-button-s.green.team-join-us {
   margin-bottom: 20px;
@@ -1239,9 +1243,12 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #45b46d;
+  background-color: #65d2d6;
   color: white;
   font-size: 13px;
+}
+.cc-navigation-menu-list-item-text-signup-dark:hover {
+  background-color: #5acdd1;
 }
 .cc-branding-img {
   display: block;
