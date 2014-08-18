@@ -34,7 +34,7 @@
                   <li class="cc-pricing-grid-col-list-item">-&nbsp;
                     <br>&nbsp;</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center">Get Started</div>
+                    <div class="cc-button-s green center">Sign Up</div>
                   </li>
                 </ul>
               </a>
@@ -59,7 +59,7 @@
                   <li class="cc-pricing-grid-col-list-item">-&nbsp;
                     <br>&nbsp;</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center highlight">Get Started</div>
+                    <div class="cc-button-s green center highlight">Sign Up</div>
                   </li>
                 </ul>
               </a>
@@ -83,7 +83,7 @@
                   <li class="cc-pricing-grid-col-list-item">Multi currency</li>
                   <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
                   <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center">Get Started</div>
+                    <div class="cc-button-s green center">Sign Up</div>
                   </li>
                 </ul>
               </a>
