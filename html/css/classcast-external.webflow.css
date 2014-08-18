@@ -519,6 +519,9 @@ p {
   font-weight: 400;
   text-align: center;
 }
+.cc-pricing-grid-col-list-item.signup {
+  opacity: 0;
+}
 .cc-pricing-grid-col-package {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -882,7 +885,7 @@ p {
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .cc-team-title {
   margin-bottom: 10px;
@@ -955,6 +958,9 @@ p {
 }
 .cc-button-s.center.highlight {
   background-color: #3a539b;
+}
+.cc-button-s.center.pricing {
+  display: block;
 }
 .cc-button-s.keyline {
   padding: 5px 20px;
@@ -1818,6 +1824,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     float: none;
   }
   .cc-navigation-past-hero {
+    display: none;
     -webkit-transform: none;
     -ms-transform: none;
     -o-transform: none;
@@ -1886,6 +1893,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-content-slider-arrow {
     height: 50%;
     margin-top: 0px;
+  }
+  .modal-background {
+    display: none;
   }
   .cc-home-hero-image {
     width: 90%;
