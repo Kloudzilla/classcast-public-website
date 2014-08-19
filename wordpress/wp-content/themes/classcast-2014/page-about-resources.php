@@ -41,12 +41,15 @@
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
         <div class="w-col w-col-4 cc-ebook-col">
           <?php $ebook_release = get_post_meta($post->ID, 'ebook_release', true); ?>
-          <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class='cc-ebook-link' target="_blank">
+          <div class="cc-ebook-link">
+          <!--<a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class='cc-ebook-link' target="_blank">-->
           <?php $ebook_cover = get_field('ebook_cover');?>
             <img src="<?php echo $ebook_cover['url']; ?>" class="cc-ebook-cover">
             <h5 class="cc-ebook-title"><?php the_title(); ?></h5>
-          </a>
-          <a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class="w-inline-block cc-button-s keyline" target="_blank" >Download</a>      
+          </div>
+          <!--</a>-->
+          <div class="w-inline-block cc-button-s keyline">Download</div>
+          <!--<a href="<?php echo wp_get_attachment_url($ebook_release); ?>" class="w-inline-block cc-button-s keyline" target="_blank" >Download</a>-->     
         </div>
         <?php endwhile; ?>
       </div>
@@ -68,11 +71,12 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="w-inline-block cc-video-link modal-video-link">
+            <!-- <a href="#" --><div class="w-inline-block cc-video-link"> <!--  'modal-video-link' -->
               <?php $video_thumbnail = get_field('video_thumbnail');?>
               <img src="<?php echo $video_thumbnail['url']; ?>" class="cc-video-cover">
               <h5 class="cc-video-title"><?php the_title(); ?></h5>
-            </a>
+            </div>
+            <!-- </a> -->
           </div>
         </div>
           <?php endwhile; ?>

@@ -2,7 +2,7 @@
       <div class="w-container cc-content-container cc-footer-signup-content">
         <div class="cc-signup-headline">Start monetizing your content today. Request your Classcast demo.</div>
         <a class="w-inline-block cc-button-s green footer-signup modal-link" href="<?php echo get_permalink(49); ?>">
-          <div>Get Started</div>
+          <div>SIGN UP</div>
         </a>
         <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
         <div class="w-clearfix cc-trusted-logo-wrap">
@@ -141,6 +141,20 @@ MOBILE SLIDE DOWN MENU
   </script>
 
 </body>
+<!-- KISSmetrics tracking snippet -->
+  <script type="text/javascript">var _kmq = _kmq || [];
+  var _kmk = _kmk || 'd1956d77b1fd9e9437566c72b0ab784ddba4a119';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+  </script>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

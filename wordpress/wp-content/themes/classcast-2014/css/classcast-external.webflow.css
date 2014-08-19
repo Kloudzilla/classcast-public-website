@@ -3,6 +3,7 @@ body {
   color: #81878c;
   font-size: 14px;
   line-height: 24px;
+  font-weight: 300;
 }
 h1 {
   margin-top: 0px;
@@ -516,8 +517,11 @@ p {
 }
 .cc-pricing-grid-col-list-item {
   padding: 20px 10px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
+}
+.cc-pricing-grid-col-list-item.signup {
+  opacity: 0;
 }
 .cc-pricing-grid-col-package {
   padding-top: 10px;
@@ -547,7 +551,7 @@ p {
 }
 .cc-pricing-faq-headline {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .cc-pricing-faq-text {
   color: #81878c;
@@ -652,6 +656,9 @@ p {
 .cc-blog-post-full {
   margin-top: 60px;
 }
+.cc-blog-post-full-text {
+  font-size: 16px;
+}
 .cc-blog-post-full-author-text {
   padding-top: 20px;
   float: left;
@@ -722,7 +729,7 @@ p {
   margin-bottom: 10px;
   color: #45b46d;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .cc-about-team-mini-hero-subtext {
   color: white;
@@ -956,6 +963,9 @@ p {
 .cc-button-s.center.highlight {
   background-color: #3a539b;
 }
+.cc-button-s.center.pricing {
+  display: block;
+}
 .cc-button-s.keyline {
   padding: 5px 20px;
   border: 1px solid #d1d1d1;
@@ -1004,6 +1014,7 @@ p {
 .cc-about-resources-tagline {
   color: #81878c;
   line-height: 36px;
+  font-weight: 300;
 }
 .cc-content-headline {
   color: #509bd6;
@@ -1202,6 +1213,7 @@ p {
 .cc-about-tagline-headline {
   margin-top: 12px;
   color: #81878c;
+  font-weight: 300;
 }
 .cc-navigation-menu-list-item-text {
   display: inline-block;
@@ -1231,6 +1243,7 @@ p {
 }
 .cc-pricing-faq-title {
   margin-top: 80px;
+  font-weight: 300;
   text-align: center;
 }
 .cc-navigation-menu-list-item-text-dark {
@@ -1408,6 +1421,7 @@ p {
   margin-bottom: 20px;
   color: #45b46d;
   font-size: 22px;
+  font-weight: 300;
 }
 .cc-job-headline {
   margin-bottom: 40px;
@@ -1435,6 +1449,7 @@ p {
 .cc-ebook-title {
   margin-bottom: 20px;
   color: #45b46d;
+  font-weight: 300;
 }
 .cc-ebook-row {
   margin-bottom: 40px;
@@ -1450,6 +1465,7 @@ p {
 }
 .cc-video-title {
   color: #45b46d;
+  font-weight: 300;
 }
 .cc-video-row {
   margin-bottom: 40px;
@@ -1458,6 +1474,7 @@ p {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #45b46d;
+  font-weight: 300;
   text-align: left;
 }
 .cc-ebook-col {
@@ -1687,7 +1704,7 @@ p {
 }
 .cc-stats-text {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .cc-stats-icon {
   width: 40px;
@@ -1818,6 +1835,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     float: none;
   }
   .cc-navigation-past-hero {
+    display: none;
     -webkit-transform: none;
     -ms-transform: none;
     -o-transform: none;
@@ -1886,6 +1904,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-content-slider-arrow {
     height: 50%;
     margin-top: 0px;
+  }
+  .modal-background {
+    display: none;
   }
   .cc-home-hero-image {
     width: 90%;
