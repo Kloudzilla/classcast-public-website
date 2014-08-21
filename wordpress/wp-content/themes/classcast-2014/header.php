@@ -192,7 +192,7 @@
                     Classcast is a single platform where you can publish in real-time health, well-being and fitness content to a mobile app using your brand.
                   </div>
                   <a class="w-inline-block cc-button-l get-started" href="/sign-up">
-                    <div>SIGN UP</div>
+                    <div>GET STARTED</div>
                   </a>
                 </div>
               </div>
