@@ -21,7 +21,7 @@
           ?>
           
           </ul>
-          <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
+          <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with love in Palo Alto & Sydney</div>
         </div>
       </div>
     </div>

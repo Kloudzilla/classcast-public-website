@@ -59,7 +59,7 @@
           ?>
         </div>
         <div class="w-clearfix cc-footer-branding">
-          <div class="cc-footer-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
+          <div class="cc-footer-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with love in Palo Alto & Sydney</div>
         </div>
       </div>
       <div class="w-hidden-main w-hidden-medium cc-footer-legal-mobile">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
