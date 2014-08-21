@@ -12,7 +12,7 @@
 ?>
      <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
       <div class="w-container cc-content-container">
-        <h3 class="cc-trusted-headline-top">Trusted and loved by these great companies</h3>
+        <h3 class="cc-trusted-headline-top">Trusted and loved by these great companies</h3><a name='tour'></a>
         <div class="w-clearfix cc-trusted-logo-wrap">
           <div class="cc-trusted-logo total-gym"></div>
           <div class="cc-trusted-logo gymstick"></div>
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <a name='tour'></a>
+
     <div class="cc-section cc-industry">
       <div class="w-container cc-content-container cc-industry-content">
         <h3 class="cc-features-headline">Everything you need in one platform</h3>
