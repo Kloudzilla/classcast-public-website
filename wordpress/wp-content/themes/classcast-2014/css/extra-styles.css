@@ -143,10 +143,3 @@ img.attachment-thumbnail {
 .cc-press-post-full table {
   margin-bottom:20px;
 }
-
-    .cc-pricing-package-link:hover .cc-pricing-grid-col-list-item.signup{
-        visibility:visible;
-    }
-    .cc-pricing-package-link .cc-pricing-grid-col-list-item.signup{
-        visibility:hidden;
-    }
