@@ -10,109 +10,208 @@
   get_header();
 ?>
 
- <div class="cc-section">
+     <div class="cc-section">
       <div class="w-container cc-content-container cc-pricing-content">
-        <div class="cc-pricing-grid-wrap">
-          <div class="w-row cc-pricing-grid-row">
-            <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
-              <a class="w-inline-block cc-pricing-package-link" href="/sign-up">
-                <div class="cc-pricing-grid-col-package">
-                  <div class="cc-pricing-package-title">STARTER</div>
-                  <div class="w-clearfix cc-pricing-package-price-wrap">
-                    <div class="cc-pricing-package-currency">$</div>
-                    <div class="cc-pricing-package-price">299</div>
-                    <div class="cc-pricing-package-month">/mo</div>
+        <div class="w-tabs" data-duration-in="300" data-duration-out="100">
+          <div class="w-tab-menu cc-pricing-tab-menu">
+            <a class="w-tab-link w-inline-block cc-pricing-tab monthly" data-w-tab="Tab 1">
+              <div>Billed Monthly</div>
+            </a>
+            <a class="w-tab-link w--current w-inline-block cc-pricing-tab annual" data-w-tab="Tab 2">
+              <div>Billed Annually</div>
+            </a>
+          </div>
+          <div class="w-tab-content">
+            <div class="w-tab-pane" data-w-tab="Tab 1">
+              <div class="cc-pricing-grid-wrap">
+                <div class="w-row cc-pricing-grid-row">
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
+                    <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package">
+                        <div class="cc-pricing-package-title">STARTER</div>
+                        <div class="w-clearfix cc-pricing-package-price-wrap">
+                          <div class="cc-pricing-package-currency">$</div>
+                          <div class="cc-pricing-package-price">299</div>
+                          <div class="cc-pricing-package-month">/mo</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                        <li class="cc-pricing-grid-col-list-item">up to <strong>100</strong> users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">-</li>
+                        <li class="cc-pricing-grid-col-list-item">-</li>
+                        <li class="cc-pricing-grid-col-list-item">-&nbsp;
+                          <br>&nbsp;</li>
+                      </ul>
+                    </a>
+                  </div>
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
+                    <a class="w-inline-block cc-pricing-package-link featured modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package featured">
+                        <div class="cc-pricing-package-title featured">GROW</div>
+                        <div class="cc-pricing-package-subline">Most Popular</div>
+                        <div class="w-clearfix cc-pricing-package-price-wrap featured">
+                          <div class="cc-pricing-package-currency">$</div>
+                          <div class="cc-pricing-package-price">499</div>
+                          <div class="cc-pricing-package-month">/mo</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list featured">
+                        <li class="cc-pricing-grid-col-list-item">up to <strong>200</strong>&nbsp;users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                        <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                        <li class="cc-pricing-grid-col-list-item">-&nbsp;
+                          <br>&nbsp;</li>
+                      </ul>
+                    </a>
+                  </div>
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
+                    <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package">
+                        <div class="cc-pricing-package-title">MAX</div>
+                        <div class="w-clearfix cc-pricing-package-price-wrap">
+                          <div class="cc-pricing-package-currency">$</div>
+                          <div class="cc-pricing-package-price">899</div>
+                          <div class="cc-pricing-package-month">/mo</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                        <li class="cc-pricing-grid-col-list-item">up to <strong>4<strong xmlns="http://www.w3.org/1999/xhtml">00</strong></strong>users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                        <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                        <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
+                      </ul>
+                    </a>
+                  </div>
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
+                    <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package">
+                        <div class="cc-pricing-package-title">ENTERPRISE</div>
+                        <div class="cc-pricing-package-price-wrap">
+                          <div class="cc-pricing-package-price-enterprise">Need more than
+                            <br>2000 users?</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                        <li class="cc-pricing-grid-col-list-item">Over <strong>2,000</strong> users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                        <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                        <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
+                      </ul>
+                    </a>
                   </div>
                 </div>
-                <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                  <li class="cc-pricing-grid-col-list-item">up to <strong>100</strong> users</li>
-                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
-                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
-                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
-                  <li class="cc-pricing-grid-col-list-item">-</li>
-                  <li class="cc-pricing-grid-col-list-item">-</li>
-                  <li class="cc-pricing-grid-col-list-item">-&nbsp;
-                    <br>&nbsp;</li>
-                  <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center">Get Started</div>
-                  </li>
-                </ul>
-              </a>
+              </div>
             </div>
-            <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
-              <a class="w-inline-block cc-pricing-package-link featured" href="/sign-up">
-                <div class="cc-pricing-grid-col-package featured">
-                  <div class="cc-pricing-package-title featured">GROW</div>
-                  <div class="w-clearfix cc-pricing-package-price-wrap featured">
-                    <div class="cc-pricing-package-currency">$</div>
-                    <div class="cc-pricing-package-price">499</div>
-                    <div class="cc-pricing-package-month">/mo</div>
+            <div class="w-tab-pane w--tab-active" data-w-tab="Tab 2">
+              <div class="cc-pricing-grid-wrap">
+                <div class="w-row cc-pricing-grid-row">
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
+                    <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package">
+                        <div class="cc-pricing-package-title">STARTER</div>
+                        <div class="w-clearfix cc-pricing-package-price-wrap">
+                          <div class="cc-pricing-package-currency">$</div>
+                          <div class="cc-pricing-package-price">269</div>
+                          <div class="cc-pricing-package-month">/mo</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                        <li class="cc-pricing-grid-col-list-item">up to <strong>100</strong> users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">-</li>
+                        <li class="cc-pricing-grid-col-list-item">-</li>
+                        <li class="cc-pricing-grid-col-list-item">-&nbsp;
+                          <br>&nbsp;</li>
+                      </ul>
+                    </a>
+                  </div>
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col">
+                    <a class="w-inline-block cc-pricing-package-link featured modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package featured">
+                        <div class="cc-pricing-package-title featured">GROW</div>
+                        <div class="cc-pricing-package-subline">Most Popular</div>
+                        <div class="w-clearfix cc-pricing-package-price-wrap featured">
+                          <div class="cc-pricing-package-currency">$</div>
+                          <div class="cc-pricing-package-price">449</div>
+                          <div class="cc-pricing-package-month">/mo</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list featured">
+                        <li class="cc-pricing-grid-col-list-item">up to <strong>200</strong>&nbsp;users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                        <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                        <li class="cc-pricing-grid-col-list-item">-&nbsp;
+                          <br>&nbsp;</li>
+                      </ul>
+                    </a>
+                  </div>
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
+                    <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package">
+                        <div class="cc-pricing-package-title">MAX</div>
+                        <div class="w-clearfix cc-pricing-package-price-wrap">
+                          <div class="cc-pricing-package-currency">$</div>
+                          <div class="cc-pricing-package-price">809</div>
+                          <div class="cc-pricing-package-month">/mo</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                        <li class="cc-pricing-grid-col-list-item">up to <strong>4<strong xmlns="http://www.w3.org/1999/xhtml">00</strong></strong>users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                        <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                        <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
+                      </ul>
+                    </a>
+                  </div>
+                  <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
+                    <a class="w-inline-block cc-pricing-package-link modal-link" href="#">
+                      <div class="cc-pricing-grid-col-package">
+                        <div class="cc-pricing-package-title">ENTERPRISE</div>
+                        <div class="cc-pricing-package-price-wrap">
+                          <div class="cc-pricing-package-price-enterprise">Need more than
+                            <br>2000 users?</div>
+                        </div>
+                      </div>
+                      <ul class="w-list-unstyled cc-pricing-grid-col-list">
+                        <li class="cc-pricing-grid-col-list-item">Over <strong>2,000</strong> users</li>
+                        <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
+                        <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
+                        <li class="cc-pricing-grid-col-list-item">Training bookings</li>
+                        <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
+                        <li class="cc-pricing-grid-col-list-item">Multi currency</li>
+                        <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
+                      </ul>
+                    </a>
                   </div>
                 </div>
-                <ul class="w-list-unstyled cc-pricing-grid-col-list featured">
-                  <li class="cc-pricing-grid-col-list-item">up to <strong>200</strong>&nbsp;users</li>
-                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
-                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
-                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
-                  <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
-                  <li class="cc-pricing-grid-col-list-item">Multi currency</li>
-                  <li class="cc-pricing-grid-col-list-item">-&nbsp;
-                    <br>&nbsp;</li>
-                  <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center highlight">Get Started</div>
-                  </li>
-                </ul>
-              </a>
-            </div>
-            <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <a class="w-inline-block cc-pricing-package-link" href="/sign-up">
-                <div class="cc-pricing-grid-col-package">
-                  <div class="cc-pricing-package-title">MAX</div>
-                  <div class="w-clearfix cc-pricing-package-price-wrap">
-                    <div class="cc-pricing-package-currency">$</div>
-                    <div class="cc-pricing-package-price">899</div>
-                    <div class="cc-pricing-package-month">/mo</div>
-                  </div>
-                </div>
-                <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                  <li class="cc-pricing-grid-col-list-item">up to <strong>300</strong> users</li>
-                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
-                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
-                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
-                  <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
-                  <li class="cc-pricing-grid-col-list-item">Multi currency</li>
-                  <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
-                  <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center">Get Started</div>
-                  </li>
-                </ul>
-              </a>
-            </div>
-            <div class="w-col w-col-3 w-col-small-6 cc-pricing-grid-col second-row">
-              <a class="w-inline-block cc-pricing-package-link modal-link" href="/sign-up">
-                <div class="cc-pricing-grid-col-package">
-                  <div class="cc-pricing-package-title">ENTERPRISE</div>
-                  <div class="cc-pricing-package-price-wrap">
-                    <div class="cc-pricing-package-price-enterprise">Need more than
-                      <br>2000 users?</div>
-                  </div>
-                </div>
-                <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                  <li class="cc-pricing-grid-col-list-item">Over <strong>2,000</strong> users?&nbsp;</li>
-                  <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
-                  <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
-                  <li class="cc-pricing-grid-col-list-item">Training bookings</li>
-                  <li class="cc-pricing-grid-col-list-item">Music licensing access*</li>
-                  <li class="cc-pricing-grid-col-list-item">Multi currency</li>
-                  <li class="cc-pricing-grid-col-list-item">Go to market and growth support</li>
-                  <li class="cc-pricing-grid-col-list-item">
-                    <div class="cc-button-s green center">Contact Us</div>
-                  </li>
-                </ul>
-              </a>
+              </div>
             </div>
           </div>
         </div>
+        <div class="cc-request-demo-title">Connect with us today and enjoy an obligations free trial.</div>
+        <a class="w-inline-block cc-button-h center request-demo" href="#">
+          <div>Request Demo</div>
+        </a>
         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
         <div class="cc-pricing-faq-wrap">
           <div class="w-row cc-pricing-faq-row">
