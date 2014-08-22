@@ -1563,12 +1563,8 @@ p {
 .cc-pricing-tab-menu {
   position: static;
   display: block;
-  width: 320px;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  width: 360px;
+  margin: 10px auto;
   text-align: center;
 }
 .cc-pricing-tab-menu.w--current {
@@ -1600,6 +1596,9 @@ p {
 .cc-pricing-tab {
   position: static;
   width: 140px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
   padding-right: 10px;
   padding-left: 10px;
   background-color: #f7f7f7;
@@ -1610,22 +1609,16 @@ p {
   color: white;
 }
 .cc-pricing-tab.monthly {
-  border-style: solid;
-  border-width: 2px 1px 2px 2px;
-  border-color: #45b46d;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border: 2px solid #45b46d;
+  border-radius: 6px;
 }
 .cc-pricing-tab.monthly.w--current {
   background-color: #45b46d;
   text-align: center;
 }
 .cc-pricing-tab.annual {
-  border-style: solid;
-  border-width: 2px 2px 2px 1px;
-  border-color: #45b46d;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border: 2px solid #45b46d;
+  border-radius: 6px;
 }
 .cc-pricing-package-subline {
   color: #45b46d;
@@ -2352,22 +2345,24 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     border-bottom-left-radius: 5px;
   }
   .cc-pricing-tab.monthly {
-    width: 100%;
-    border-right: 2px solid #45b46d;
-    border-bottom-style: none;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #45b46d;
+    border-radius: 6px;
   }
   .cc-pricing-tab.monthly.w--current {
     border-top-right-radius: 6px;
     border-bottom-left-radius: 0px;
   }
   .cc-pricing-tab.annual {
-    width: 100%;
-    border-left: 2px solid #45b46d;
-    border-top-style: none;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 5px;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #45b46d;
+    border-radius: 6px;
   }
 }
 
