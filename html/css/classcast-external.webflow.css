@@ -1562,9 +1562,11 @@ p {
 }
 .cc-pricing-tab-menu {
   display: inline-block;
-  width: 160px;
+  width: 140px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .cc-pricing-tab-menu.w--current {
   background-color: #45b46d;
@@ -1573,16 +1575,18 @@ p {
 .cc-pricing-tab-menu.monthly {
   position: static;
   display: block;
-  width: 324px;
+  width: 320px;
   margin-top: 10px;
   margin-bottom: 20px;
-  border: 2px solid #45b46d;
-  border-radius: 8px;
+  text-align: center;
 }
 .cc-pricing-tab-menu.annual {
   position: static;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top: 2px solid #45b46d;
+  border-right: 2px solid #45b46d;
+  border-bottom: 2px solid #45b46d;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: #f8f8f8;
   text-align: center;
 }
@@ -1592,19 +1596,22 @@ p {
 }
 .cc-pricing-tab {
   position: static;
-  width: 160px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 140px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 .cc-pricing-tab.w--current {
   background-color: #45b46d;
   color: white;
 }
 .cc-pricing-tab.monthly {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  background-color: #f8f8f8;
-  text-align: center;
+  border-top: 2px solid #45b46d;
+  border-bottom: 2px solid #45b46d;
+  border-left: 2px solid #45b46d;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .cc-pricing-tab.monthly.w--current {
   background-color: #45b46d;
@@ -2327,12 +2334,16 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-pricing-tab-menu.annual {
     width: 100%;
+    border-left: 2px solid #45b46d;
+    border-top-style: none;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 5px;
   }
   .cc-pricing-tab.monthly {
     width: 100%;
-    border-top-right-radius: 6px;
+    border-right: 2px solid #45b46d;
+    border-bottom-style: none;
+    border-top-right-radius: 5px;
     border-bottom-left-radius: 0px;
   }
   .cc-pricing-tab.monthly.w--current {
