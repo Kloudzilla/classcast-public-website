@@ -1561,12 +1561,15 @@ p {
   line-height: 20px;
 }
 .cc-pricing-tab-menu {
-  display: inline-block;
-  width: 140px;
+  position: static;
+  display: block;
+  width: 320px;
   margin-right: auto;
+  margin-bottom: 10px;
   margin-left: auto;
   padding-right: 10px;
   padding-left: 10px;
+  text-align: center;
 }
 .cc-pricing-tab-menu.w--current {
   background-color: #45b46d;
@@ -1616,6 +1619,13 @@ p {
 .cc-pricing-tab.monthly.w--current {
   background-color: #45b46d;
   text-align: center;
+}
+.cc-pricing-tab.annual {
+  border-top: 2px solid #45b46d;
+  border-right: 2px solid #45b46d;
+  border-bottom: 2px solid #45b46d;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .cc-pricing-package-subline {
   color: #45b46d;
@@ -2329,6 +2339,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   .cc-stats-icon-wrap {
     width: 80%;
   }
+  .cc-pricing-tab-menu {
+    width: 100%;
+  }
   .cc-pricing-tab-menu.monthly {
     width: auto;
   }
@@ -2347,9 +2360,15 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     border-bottom-left-radius: 0px;
   }
   .cc-pricing-tab.monthly.w--current {
-    width: 100%;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 0px;
+  }
+  .cc-pricing-tab.annual {
+    width: 100%;
+    border-left: 2px solid #45b46d;
+    border-top-style: none;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
   }
 }
 
