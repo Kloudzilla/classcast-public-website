@@ -1,9 +1,9 @@
     <div class="cc-section cc-footer-sign-up">
       <div class="w-container cc-content-container cc-footer-signup-content">
         <div class="cc-signup-headline">Start monetizing your content today. Request your Classcast demo.</div>
-        <a class="w-inline-block cc-button-s green footer-signup modal-link" href="<?php echo get_permalink(49); ?>">
-          <div>SIGN UP</div>
-        </a>
+        <a class="w-inline-block cc-button-l get-started center" href="<?php echo get_permalink(49); ?>">
+        <div>Get Started</div>
+      </a>
         <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
         <div class="w-clearfix cc-trusted-logo-wrap">
           <a class="w-inline-block cc-trusted-logo-link total-gym" href="http://www.totalgym.com/" target="_blank"></a>

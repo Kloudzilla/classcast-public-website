@@ -134,7 +134,7 @@
             <div class="cc-team-img">
               <div class="cc-join-us-question">?</div>
             </div>
-            <a class="w-inline-block cc-button-l join-us" href="mailto:jobs@classcast.co?subject=Job%20Opportunity" target="_blank">
+            <a class="w-inline-block cc-button-l join-us" href="mailto:jobs@classcast.co?subject=Job%20Opportunity">
               <div>JOIN&nbsp;US</div>
             </a>
           </div>
