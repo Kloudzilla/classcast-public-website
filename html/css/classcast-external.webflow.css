@@ -455,8 +455,12 @@ p {
   text-align: center;
 }
 .cc-pricing-grid-col-package {
+  margin-top: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.cc-pricing-grid-col-package.featured {
+  border-top: 2px solid #45b46d;
 }
 .cc-pricing-package-title {
   margin-top: 20px;
@@ -465,6 +469,9 @@ p {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+}
+.cc-pricing-package-title.featured {
+  margin-bottom: 5px;
 }
 .cc-pricing-faq-wrap {
   margin-top: 80px;
@@ -513,6 +520,9 @@ p {
 }
 .cc-pricing-package-price-wrap {
   margin-bottom: 8px;
+}
+.cc-pricing-package-price-wrap.featured {
+  margin-bottom: 5px;
 }
 .cc-pricing-package-price-enterprise {
   margin-bottom: 34px;
@@ -1114,7 +1124,7 @@ p {
   text-align: center;
 }
 .cc-pricing-faq-title {
-  margin-top: 80px;
+  margin-top: 60px;
   font-weight: 300;
   text-align: center;
 }
@@ -1372,7 +1382,8 @@ p {
   color: #6a6f73;
 }
 .cc-pricing-package-link.featured {
-  background-color: #e8fff0;
+  border: 2px solid #45b46d;
+  background-color: #d4fce2;
 }
 .cc-pricing-package-link.featured:hover {
   background-color: #d1f0db;
@@ -1415,7 +1426,7 @@ p {
   text-decoration: none;
 }
 .cc-button-l.get-started {
-  width: 200px;
+  width: 210px;
   padding-right: 50px;
   padding-left: 50px;
   border: 1px solid #11d0d6;
@@ -1551,6 +1562,7 @@ p {
 }
 .cc-pricing-tab-menu {
   display: inline-block;
+  width: 160px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1561,23 +1573,26 @@ p {
 .cc-pricing-tab-menu.monthly {
   position: static;
   display: block;
-  width: 218px;
+  width: 324px;
   margin-top: 10px;
   margin-bottom: 20px;
-  border: 1px solid #369147;
+  border: 2px solid #45b46d;
   border-radius: 8px;
 }
 .cc-pricing-tab-menu.annual {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  position: static;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   background-color: #f8f8f8;
+  text-align: center;
 }
 .cc-pricing-tab-menu.annual.w--current {
+  position: static;
   background-color: #45b46d;
 }
 .cc-pricing-tab {
+  position: static;
+  width: 160px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1586,14 +1601,43 @@ p {
   color: white;
 }
 .cc-pricing-tab.monthly {
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   background-color: #f8f8f8;
+  text-align: center;
 }
 .cc-pricing-tab.monthly.w--current {
   background-color: #45b46d;
+  text-align: center;
+}
+.cc-pricing-package-subline {
+  color: #45b46d;
+  text-align: center;
+}
+.cc-button-h {
+  padding: 20px 80px;
+  border-radius: 6px;
+  background-color: #11d0d6;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.cc-button-h:hover {
+  background-color: #3de5eb;
+}
+.cc-button-h.center {
+  display: block;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.cc-button-h.center.request-demo {
+  margin-top: 20px;
+}
+.cc-request-demo-title {
+  margin-top: 40px;
+  text-align: center;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
@@ -2147,7 +2191,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     border: 1px solid #509bd6;
   }
   .cc-pricing-grid-col-package.featured {
-    margin-top: 0px;
+    margin-top: -2px;
   }
   .cc-pricing-faq-col {
     padding-right: 10px;
@@ -2277,6 +2321,24 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
   }
   .cc-stats-icon-wrap {
     width: 80%;
+  }
+  .cc-pricing-tab-menu.monthly {
+    width: auto;
+  }
+  .cc-pricing-tab-menu.annual {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+  }
+  .cc-pricing-tab.monthly {
+    width: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+  }
+  .cc-pricing-tab.monthly.w--current {
+    width: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
   }
 }
 
