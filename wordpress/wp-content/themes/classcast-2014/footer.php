@@ -2,7 +2,7 @@
       <div class="w-container cc-content-container cc-footer-signup-content">
         <div class="cc-signup-headline">Start monetizing your content today. Request your Classcast demo.</div>
         <a class="w-inline-block cc-button-l get-started center" href="<?php echo get_permalink(49); ?>">
-        <div>Get Started</div>
+        <div>Request Demo</div>
       </a>
         <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
         <div class="w-clearfix cc-trusted-logo-wrap">
