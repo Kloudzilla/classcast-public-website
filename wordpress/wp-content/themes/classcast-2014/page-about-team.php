@@ -132,7 +132,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <div class="cc-join-us-question">?</div>
+              <div class="cc-join-us-question">+</div>
             </div>
             <a class="w-inline-block cc-button-l join-us" href="mailto:jobs@classcast.co?subject=Job%20Opportunity">
               <div>JOIN&nbsp;US</div>
