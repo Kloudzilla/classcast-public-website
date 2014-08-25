@@ -12,6 +12,7 @@
 
      <div class="cc-section">
       <div class="w-container cc-content-container cc-pricing-content">
+        <div class="cc-request-demo-title">Connect with us today and enjoy your 14-day unlimited free trial. No obligation, no credit card required.</div>
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
           <div class="w-tab-menu cc-pricing-tab-menu">
             <a class="w-tab-link w-inline-block cc-pricing-tab monthly" data-w-tab="Tab 1">
@@ -189,11 +190,11 @@
                         <div class="cc-pricing-package-title">ENTERPRISE</div>
                         <div class="cc-pricing-package-price-wrap">
                           <div class="cc-pricing-package-price-enterprise">Need more than
-                            <br>2000 users?</div>
+                            <br>400 users?</div>
                         </div>
                       </div>
                       <ul class="w-list-unstyled cc-pricing-grid-col-list">
-                        <li class="cc-pricing-grid-col-list-item">Over <strong>2,000</strong> users</li>
+                        <li class="cc-pricing-grid-col-list-item">Over <strong>400</strong> users</li>
                         <li class="cc-pricing-grid-col-list-item">Branded iPhone app</li>
                         <li class="cc-pricing-grid-col-list-item">Subscription billing</li>
                         <li class="cc-pricing-grid-col-list-item">Training bookings</li>
@@ -208,7 +209,7 @@
             </div>
           </div>
         </div>
-        <div class="cc-request-demo-title">Connect with us today and enjoy an obligations free trial.</div>
+        <div class="cc-request-demo-title">14-day unlimited free trial. No obligation, no credit card required.</div>
         <a class="w-inline-block cc-button-h center request-demo" href="#">
           <div>Request Demo</div>
         </a>
