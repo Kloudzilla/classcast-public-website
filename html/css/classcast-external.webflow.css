@@ -441,9 +441,7 @@ p {
 .cc-pricing-grid-wrap {
   display: block;
   width: 90%;
-  margin-top: -10px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: -10px auto 20px;
 }
 .cc-pricing-grid-col {
   padding-right: 0px;
@@ -460,7 +458,7 @@ p {
   padding-bottom: 10px;
 }
 .cc-pricing-grid-col-package.featured {
-  border-top: 2px solid #45b46d;
+  border-top: 2px solid #72d696;
 }
 .cc-pricing-package-title {
   margin-top: 20px;
@@ -474,7 +472,7 @@ p {
   margin-bottom: 5px;
 }
 .cc-pricing-faq-wrap {
-  margin-top: 80px;
+  margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1065,7 +1063,7 @@ p {
   float: left;
 }
 .cc-navigation-menu-list-item.sign-up {
-  width: 130px;
+  width: 150px;
   margin-right: 0px;
 }
 .cc-navigation-menu-list-item-link {
@@ -1138,12 +1136,12 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #11d0d6;
+  background-color: #177fb0;
   color: white;
   font-size: 13px;
 }
 .cc-navigation-menu-list-item-text-signup-dark:hover {
-  background-color: #3de5eb;
+  background-color: #218fc2;
 }
 .cc-branding-img {
   display: block;
@@ -1382,8 +1380,7 @@ p {
   color: #6a6f73;
 }
 .cc-pricing-package-link.featured {
-  border: 2px solid #45b46d;
-  background-color: #d4fce2;
+  border: 1px solid #72d696;
 }
 .cc-pricing-package-link.featured:hover {
   background-color: #d1f0db;
@@ -1422,15 +1419,15 @@ p {
 }
 .cc-button-l {
   padding: 15px 40px;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
 }
 .cc-button-l.get-started {
-  width: 210px;
-  padding-right: 50px;
-  padding-left: 50px;
-  border: 1px solid #11d0d6;
-  background-color: #11d0d6;
+  width: 220px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border: 1px solid #177fb0;
+  background-color: #177fb0;
   color: white;
   font-size: 16px;
   line-height: 20px;
@@ -1438,8 +1435,8 @@ p {
   text-align: center;
 }
 .cc-button-l.get-started:hover {
-  border-color: #3de5eb;
-  background-color: #3de5eb;
+  border-color: #218fc2;
+  background-color: #218fc2;
 }
 .cc-button-l.get-started.center {
   display: block;
@@ -1564,7 +1561,7 @@ p {
   position: static;
   display: block;
   width: 360px;
-  margin: 10px auto;
+  margin: 10px auto 20px;
   text-align: center;
 }
 .cc-pricing-tab-menu.w--current {
@@ -1609,7 +1606,7 @@ p {
   color: white;
 }
 .cc-pricing-tab.monthly {
-  border: 2px solid #45b46d;
+  border: 1px solid #45b46d;
   border-radius: 6px;
 }
 .cc-pricing-tab.monthly.w--current {
@@ -1617,7 +1614,7 @@ p {
   text-align: center;
 }
 .cc-pricing-tab.annual {
-  border: 2px solid #45b46d;
+  border: 1px solid #45b46d;
   border-radius: 6px;
 }
 .cc-pricing-package-subline {
@@ -1644,10 +1641,18 @@ p {
 }
 .cc-button-h.center.request-demo {
   margin-top: 20px;
+  background-color: #177fb0;
+}
+.cc-button-h.center.request-demo:hover {
+  background-color: #218fc2;
 }
 .cc-request-demo-title {
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
+}
+.cc-bacpm {
+  background-color: #d47979;
 }
 html.w-mod-js.w-mod-no-ios *[data-ix="slide-from-right"] {
   -webkit-transform: translate(100%, 0px);
@@ -2353,8 +2358,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="fade-in"] {
     border-radius: 6px;
   }
   .cc-pricing-tab.monthly.w--current {
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 0px;
+    border-radius: 6px;
   }
   .cc-pricing-tab.annual {
     display: block;
