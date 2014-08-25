@@ -65,7 +65,7 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup">REQUEST DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup">REQUEST A DEMO</div>
               </a>
             </li>
 
@@ -105,7 +105,7 @@
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>SIGN UP</div>
+                  <div>REQUEST A DEMO</div>
                 </a>
               </li>
 
@@ -119,7 +119,7 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">REQUEST DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup-dark">REQUEST A DEMO</div>
               </a>
             </li>
 
@@ -165,7 +165,7 @@
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>REQUEST DEMO</div>
+                  <div>REQUEST A DEMO</div>
                 </a>
               </li>
 
@@ -192,7 +192,7 @@
                     Classcast is a single platform where you can publish in real-time health, well-being and fitness content to a mobile app using your brand.
                   </div>
                   <a class="w-inline-block cc-button-l get-started" href="/sign-up">
-                    <div>Request Demo</div>
+                    <div>Request a Demo</div>
                   </a>
                 </div>
               </div>

@@ -2,7 +2,7 @@
       <div class="w-container cc-content-container cc-footer-signup-content">
         <div class="cc-signup-headline">Start monetizing your content today. Request your Classcast demo.</div>
         <a class="w-inline-block cc-button-l get-started center" href="<?php echo get_permalink(49); ?>">
-        <div>Request Demo</div>
+        <div>Request a Demo</div>
       </a>
         <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
         <div class="w-clearfix cc-trusted-logo-wrap">
@@ -59,10 +59,10 @@
           ?>
         </div>
         <div class="w-clearfix cc-footer-branding">
-          <div class="cc-footer-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with love in Palo Alto & Sydney</div>
+          <div class="cc-footer-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with&nbsp;♡ in Palo Alto &amp;&nbsp;Sydney.&nbsp;</div>
         </div>
       </div>
-      <div class="w-hidden-main w-hidden-medium cc-footer-legal-mobile">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved</div>
+      <div class="w-hidden-main w-hidden-medium cc-footer-legal-mobile">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with&nbsp;♡ in Palo Alto &amp;&nbsp;Sydney.&nbsp;</div>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
