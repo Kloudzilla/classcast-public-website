@@ -14,7 +14,7 @@
         <a class="w-inline-block cc-form-logo" href="/"></a>
         <div class="cc-form">
           <h4 class="cc-form-headline">Get Started with Classcast today</h4>
-          <div class="cc-form-subheadline"></div>
+          <div class="cc-form-subheadline">Setup a live demo by filling out the form below. One of our friendly Classcast team will contact you and show you how we can help grow your business.</div>
 
 <!-- Begin MailChimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,7 @@
             #mc_embed_signup .mc-field-group input { height:60px; width:100%; border:1px solid #ccc; border-radius:6px; font-weight:100;}
             #mc_embed_signup .mc-field-group label { font-weight:100;}
             #mc_embed_signup .mc-field-group select { min-height:60px; width:100%; margin-top:10px;}
-            select { border:1px solid #c9c9c9; height:60px; background-color:white; background:white; width:100%; color:#ccc;}
+            select { border:1px solid #c9c9c9; height:60px; background-color:white; background:white; width:100%;}
               /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
             </style>
