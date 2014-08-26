@@ -157,7 +157,7 @@
           <div class="cc-quote-author-wrap">
             <div class="cc-quote-author">
               <div class="cc-quote-author-img-wrap">
-                <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/jesse-campanaro.jpg" alt="53ef25118031012a22e1f41c_jesse-campanaro.jpg">
+                <img class="cc-quote-author-img" src="<?php echo get_template_directory_uri(); ?>/images/jesse.png" alt="jesse-Campanaro">
               </div>
               <div class="cc-quote-author-name">Jesse Campanaro</div>
               <div class="cc-author-titleposition">President, Total Gym</div>
