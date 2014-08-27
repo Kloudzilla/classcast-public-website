@@ -143,3 +143,8 @@ img.attachment-thumbnail {
 .cc-press-post-full table {
   margin-bottom:20px;
 }
+
+.cc-hero-navigation-list-item-link.cc-heronav-active {
+  color:black;
+  text-decoration:underline;
+}
