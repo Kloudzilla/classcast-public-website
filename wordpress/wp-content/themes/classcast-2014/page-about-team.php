@@ -18,7 +18,7 @@
                 foreach(wp_get_nav_menu_items('heronav') as $heronav_menu_item){
               ?>
                 <li class="w-clearfix cc-hero-navigation-list-item">
-                  <a class="w-inline-block cc-hero-navigation-list-item-link" href="<?php echo $heronav_menu_item->url;?>">
+                  <a class="w-inline-block cc-hero-navigation-list-item-link <?php echo implode(' ', $heronav_menu_item->classes); ?>" href="<?php echo $heronav_menu_item->url;?>">
                     <div><?php echo $heronav_menu_item->title;?></div>
                   </a>
                 </li>
