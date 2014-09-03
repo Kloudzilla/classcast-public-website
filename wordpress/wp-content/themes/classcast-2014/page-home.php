@@ -12,7 +12,7 @@
 ?>
      <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
       <div class="w-container cc-content-container">
-        <h3 class="cc-trusted-headline-top">Trusted and loved by these great companies</h3><a name='tour'></a>
+        <h3 class="cc-trusted-headline-top">Trusted by these companies</h3><a name='tour'></a>
         <div class="w-clearfix cc-trusted-logo-wrap">
           <div class="cc-trusted-logo total-gym"></div>
           <div class="cc-trusted-logo gymstick"></div>
