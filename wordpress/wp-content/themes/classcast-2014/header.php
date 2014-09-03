@@ -206,33 +206,34 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
       if($template_section == 'home') {
     ?>
 
-       <div class="cc-section">
-        <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
-          <div class="w-slider-mask">
-            <div class="w-slide">
-              <div class="w-container">
-                <div class="cc-home-hero-slider-text">
-                  <h3 class="cc-home-hero-headline">The easiest way to present content to your<br>mobile customers</h3>
-                  <div class="cc-home-hero-subtext">
-                    Classcast is a single platform where you can publish in real-time health, well-being and fitness content to a mobile app using your brand.
+        <div class="cc-section">
+          <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
+            <div class="w-slider-mask">
+              <div class="w-slide">
+                <div class="w-container">
+                  <div class="cc-home-hero-slider-text">
+                    <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
+                    <div class="cc-home-hero-subtext"><em>The <p class="bolded-italics">No.1 Health &amp; Fitness</p> content publishing platform</em>
+                    </div>
+                    <a class="w-inline-block cc-button-l get-started" href="#">
+                      <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+                    </a>
+                    <a class="w-inline-block cc-button-l tour" href="#">
+                      <div>TAKE&nbsp;A&nbsp;TOUR</div>
+                    </a>
+                    <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
                   </div>
-                  <a class="w-inline-block cc-button-l get-started" href="/sign-up">
-                    <div>Request a Demo</div>
-                  </a>
                 </div>
               </div>
-              <div class="w-clearfix cc-home-hero-slider-img">
-                <img class="cc-home-hero-image" src="<?php echo get_template_directory_uri(); ?>/images/hero.png" width="940" alt="53be32b94aa9cd9a45c9f1b7_hero-template-browser-phone-cropped.png">
-              </div>
             </div>
+            <div class="w-slider-arrow-left cc-home-hero-slider-arrow">
+              <div class="w-icon-slider-left"></div>
+            </div>
+            <div class="w-slider-arrow-right cc-home-hero-slider-arrow">
+              <div class="w-icon-slider-right"></div>
+            </div>
+            <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
           </div>
-          <div class="w-slider-arrow-left cc-home-hero-slider-arrow">
-            <div class="w-icon-slider-left"></div>
-          </div>
-          <div class="w-slider-arrow-right cc-home-hero-slider-arrow">
-            <div class="w-icon-slider-right"></div>
-          </div>
-          <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
         </div>
       </div>
     </div>
