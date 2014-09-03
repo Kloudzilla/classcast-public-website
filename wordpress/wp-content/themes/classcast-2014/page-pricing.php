@@ -10,7 +10,7 @@
   get_header();
 ?>
 
-     <div class="cc-section">
+      <div class="cc-section">
       <div class="w-container cc-content-container cc-pricing-content">
         <div class="cc-request-demo-title">Connect with us today and enjoy your 14-day unlimited free trial. No obligation, no credit card required.</div>
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
@@ -211,7 +211,7 @@
         </div>
         <div class="cc-request-demo-title">14-day unlimited free trial. No obligation, no credit card required.</div>
         <a class="w-inline-block cc-button-h center request-demo" href="#">
-          <div>Request Demo</div>
+          <div>REQUEST&nbsp;A&nbsp;DEMO</div>
         </a>
         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
         <div class="cc-pricing-faq-wrap">
