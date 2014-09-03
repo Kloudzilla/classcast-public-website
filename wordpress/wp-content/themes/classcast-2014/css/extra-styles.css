@@ -50,13 +50,13 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
 
 /* PRICING PACKAGE BUTTON HOVER */
 
-    .cc-pricing-package-link .cc-button-s.green.center.pricing{
+/*    .cc-pricing-package-link .cc-button-s.green.center.pricing{
         visibility:hidden;
     }
     .cc-pricing-package-link:hover .cc-button-s.green.center.pricing{
         visibility:visible;
     }
-
+*/
 
 tbody {
   margin-left:auto;
