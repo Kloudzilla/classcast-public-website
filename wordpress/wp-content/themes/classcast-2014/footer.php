@@ -1,19 +1,23 @@
-    <div class="cc-section cc-footer-sign-up">
-      <div class="w-container cc-content-container cc-footer-signup-content">
-        <div class="cc-signup-headline">Start monetizing your content today. Request your Classcast demo.</div>
-        <a class="w-inline-block cc-button-l get-started center" href="<?php echo get_permalink(49); ?>">
-        <div>Request a Demo</div>
-      </a>
-        <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
-        <div class="w-clearfix cc-trusted-logo-wrap">
-          <a class="w-inline-block cc-trusted-logo-link total-gym" href="http://www.totalgym.com/" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link gymstick" href="http://www.gymstick.com" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link kettleworx" href="http://www.kettleworx.com/" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link yogafit" href="http://www.yogafit.com/" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link iom" href="http://www.instituteofmotion.com" target="_blank"></a>
+<div class="cc-section cc-footer-sign-up">
+    <div class="w-container cc-content-container cc-footer-signup-content">
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-stack">
+          <div class="cc-signup-headline">Sign up. No-risk.</div>
+          <div class="cc-signup-subline">No credit card required</div>
+        </div>
+        <div class="w-col w-col-4 w-col-stack">
+          <a class="w-inline-block cc-button-l get-started footer" href="about-contact.html">
+            <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+          </a>
+        </div>
+        <div class="w-col w-col-4 w-col-stack">
+          <a class="w-inline-block cc-button-l learning-center footer" href="about-contact.html">
+            <div>OR&nbsp;VISIT&nbsp;OUR&nbsp;LEARNING&nbsp;CENTER</div>
+          </a>
         </div>
       </div>
     </div>
+  </div>
     <div class="cc-section cc-footer-section">
       <div class="w-container w-hidden-small w-hidden-tiny cc-content-container cc-footer-content">
         <div class="w-row">
