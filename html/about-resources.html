@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Aug 26 2014 07:21:59 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Sep 03 2014 06:15:22 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="539a8e5e33c21fd467402136">
 <head>
   <meta charset="utf-8">
@@ -53,33 +53,10 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/ -->
 }
   </style>
   <!--
-TOP NAVIGATION & FOOTER UNDERLINE HOVER -->
-  <style>
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
-        border-bottom:2px solid white;
-    }
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text-dark {
-        border-bottom:2px solid #555;
-    }
-    .cc-footer-list-item-link:hover .cc-footer-list-item-text {
-        border-bottom:2px solid white;
-    }
-  </style>
-  <!--
 SLIDER VERTICAL ALIGNMENT -->
   <style>
     .w-slide{
         vertical-align:bottom;
-    }
-  </style>
-  <!--
-PRICING PACKAGE BUTTON HOVER -->
-  <style>
-    .cc-pricing-package-link:hover .cc-pricing-grid-col-list-item.signup{
-        visibility:visible;
-    }
-    .cc-pricing-package-link .cc-pricing-grid-col-list-item.signup{
-        visibility:hidden;
     }
   </style>
 </head>
@@ -363,16 +340,18 @@ PRICING PACKAGE BUTTON HOVER -->
     <div class="cc-section cc-footer-min-section">
       <div class="w-container cc-content-container cc-footer-min-content">
         <div class="w-clearfix cc-footer-min">
-          <ul class="w-list-unstyled w-clearfix cc-footer-min-list">
-            <li class="cc-footer-min-list-item"><a href="about-team.html" class="cc-footer-min-list-item-link">About</a>
-            </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">Blog</a>
-            </li>
-            <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="https://classcast.zendesk.com/" target="_blank">Help</a>
-            </li>
-          </ul>
+          <div class="cc-footer-min-list-wrap">
+            <ul class="w-list-unstyled cc-footer-min-list">
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="about-team.html">Company</a>
+              </li>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">Blog</a>
+              </li>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" target="_blank" href="https://classcast.zendesk.com/">Help</a>
+              </li>
+            </ul>
+          </div>
           <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with&nbsp;♡ in Palo Alto &amp;&nbsp;Sydney.&nbsp;</div>
         </div>
       </div>
@@ -381,9 +360,9 @@ PRICING PACKAGE BUTTON HOVER -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><span class="pe-7s-map-marker"></span> pe-7s-map-marker
-  <!-------------------------------
+  <!--
 MODAL
--------------------------------->
+-->
   <!--<script type="text/javascript">
 $(document).ready(function() {
   $('.modal-link').click(function() {
@@ -394,9 +373,9 @@ $(document).ready(function() {
   });
 });
 </script>-->
-  <!-------------------------------
+  <!--
 VIDEO MODAL
--------------------------------->
+-->
   <script type="text/javascript">
     $(document).ready(function() {
       $('.modal-video-link').click(function() {
@@ -407,15 +386,15 @@ VIDEO MODAL
       });
     });
   </script>
-  <!-------------------------------
+  <!--
 HASH REMOVAL
--------------------------------->
+-->
   <script type="text/javascript">
     $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
   </script>
-  <!-------------------------------
+  <!--
 MOBILE SLIDE DOWN MENU
--------------------------------->
+-->
   <script type="text/javascript">
     $(function(){
         var menuBindPairs = [

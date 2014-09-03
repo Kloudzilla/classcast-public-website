@@ -31,7 +31,7 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
 
 /* TOP NAVIGATION & FOOTER UNDERLINE HOVER */
 
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
+/*    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
         border-bottom:2px solid white;
     }
     .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text-dark {
@@ -40,6 +40,7 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
     .cc-footer-list-item-link:hover .cc-footer-list-item-text {
         border-bottom:2px solid white;
     }
+*/
 
 /* SLIDER VERTICAL ALIGNMENT */
 
@@ -144,7 +145,8 @@ img.attachment-thumbnail {
   margin-bottom:20px;
 }
 
+/* HERO NAVIGATION ACTIVE STATE */
+
 .cc-hero-navigation-list-item-link.cc-heronav-active {
   color:black;
-  text-decoration:underline;
 }

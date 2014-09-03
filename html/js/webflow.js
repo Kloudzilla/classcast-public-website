@@ -3620,7 +3620,5 @@ Webflow.define('tabs', function($, _) {
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"navigation-past-hero","name":"Navigation Past Hero","value":{"style":{},"triggers":[{"type":"scroll","selector":".cc-navigation-past-hero","stepsA":[{"display":"none","opacity":0,"wait":1000,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[{"display":"block","opacity":1,"wait":1000,"transition":"opacity 1000ms ease 0ms"}]}]}},
-  {"slug":"slide-from-right","name":"Slide From Right","value":{"style":{"x":"100%","y":"0px"},"triggers":[{"type":"scroll","offsetBot":"30%","stepsA":[{"transition":"transform 500ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
-  {"slug":"fade-in","name":"Fade In","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","offsetBot":"40%","stepsA":[{"opacity":1,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[]}]}}
+  {"slug":"navigation-past-hero","name":"Navigation Past Hero","value":{"style":{},"triggers":[{"type":"scroll","selector":".cc-navigation-past-hero","stepsA":[{"display":"none","opacity":0,"wait":1000,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[{"display":"block","opacity":1,"wait":1000,"transition":"opacity 1000ms ease 0ms"}]}]}}
 ]);

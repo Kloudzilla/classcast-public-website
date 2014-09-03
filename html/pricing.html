@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Aug 26 2014 07:21:59 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Sep 03 2014 06:15:22 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="53991ab8c574a7075f3a7704">
 <head>
   <meta charset="utf-8">
@@ -53,33 +53,10 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/ -->
 }
   </style>
   <!--
-TOP NAVIGATION & FOOTER UNDERLINE HOVER -->
-  <style>
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
-        border-bottom:2px solid white;
-    }
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text-dark {
-        border-bottom:2px solid #555;
-    }
-    .cc-footer-list-item-link:hover .cc-footer-list-item-text {
-        border-bottom:2px solid white;
-    }
-  </style>
-  <!--
 SLIDER VERTICAL ALIGNMENT -->
   <style>
     .w-slide{
         vertical-align:bottom;
-    }
-  </style>
-  <!--
-PRICING PACKAGE BUTTON HOVER -->
-  <style>
-    .cc-pricing-package-link:hover .cc-pricing-grid-col-list-item.signup{
-        visibility:visible;
-    }
-    .cc-pricing-package-link .cc-pricing-grid-col-list-item.signup{
-        visibility:hidden;
     }
   </style>
 </head>
@@ -445,7 +422,7 @@ PRICING PACKAGE BUTTON HOVER -->
         </div>
         <div class="cc-request-demo-title">14-day unlimited free trial. No obligation, no credit card required.</div>
         <a class="w-inline-block cc-button-h center request-demo" href="#">
-          <div>Request Demo</div>
+          <div>REQUEST&nbsp;A&nbsp;DEMO</div>
         </a>
         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
         <div class="cc-pricing-faq-wrap">
@@ -509,17 +486,21 @@ PRICING PACKAGE BUTTON HOVER -->
     </div>
     <div class="cc-section cc-footer-sign-up">
       <div class="w-container cc-content-container cc-footer-signup-content">
-        <div class="cc-signup-headline">Start monetizing your content today. Request your Classcast demo.</div>
-        <a class="w-inline-block cc-button-l get-started center" href="about-contact.html">
-          <div>Request a Demo</div>
-        </a>
-        <h3 class="cc-trusted-headline">Trusted and loved by these great companies</h3>
-        <div class="w-clearfix cc-trusted-logo-wrap">
-          <a class="w-inline-block cc-trusted-logo-link total-gym" href="http://www.totalgym.com/" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link gymstick" href="http://www.gymstick.com" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link kettleworx" href="http://www.kettleworx.com/" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link yogafit" href="http://www.yogafit.com/" target="_blank"></a>
-          <a class="w-inline-block cc-trusted-logo-link iom" href="http://www.instituteofmotion.com" target="_blank"></a>
+        <div class="w-row">
+          <div class="w-col w-col-4 w-col-stack">
+            <div class="cc-signup-headline">Sign up. No-risk.</div>
+            <div class="cc-signup-subline">No credit card required</div>
+          </div>
+          <div class="w-col w-col-4 w-col-stack">
+            <a class="w-inline-block cc-button-l get-started footer" href="about-contact.html">
+              <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+            </a>
+          </div>
+          <div class="w-col w-col-4 w-col-stack">
+            <a class="w-inline-block cc-button-l learning-center footer" href="about-contact.html">
+              <div>OR&nbsp;VISIT&nbsp;OUR&nbsp;LEARNING&nbsp;CENTER</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -612,9 +593,9 @@ PRICING PACKAGE BUTTON HOVER -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><span class="pe-7s-map-marker"></span> pe-7s-map-marker
-  <!-------------------------------
+  <!--
 MODAL
--------------------------------->
+-->
   <!--<script type="text/javascript">
 $(document).ready(function() {
   $('.modal-link').click(function() {
@@ -625,9 +606,9 @@ $(document).ready(function() {
   });
 });
 </script>-->
-  <!-------------------------------
+  <!--
 VIDEO MODAL
--------------------------------->
+-->
   <script type="text/javascript">
     $(document).ready(function() {
       $('.modal-video-link').click(function() {
@@ -638,15 +619,15 @@ VIDEO MODAL
       });
     });
   </script>
-  <!-------------------------------
+  <!--
 HASH REMOVAL
--------------------------------->
+-->
   <script type="text/javascript">
     $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
   </script>
-  <!-------------------------------
+  <!--
 MOBILE SLIDE DOWN MENU
--------------------------------->
+-->
   <script type="text/javascript">
     $(function(){
         var menuBindPairs = [
