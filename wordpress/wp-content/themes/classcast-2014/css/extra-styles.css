@@ -150,3 +150,7 @@ img.attachment-thumbnail {
 .cc-hero-navigation-list-item-link.cc-heronav-active {
   color:black;
 }
+
+.bolded-italics {
+  font-weight:400;
+}

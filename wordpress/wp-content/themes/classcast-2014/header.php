@@ -213,7 +213,7 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
                     <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
-                    <div class="cc-home-hero-subtext"><em>The <p class="bolded-italics">No.1 Health &amp; Fitness</p> content publishing platform</em>
+                    <div class="cc-home-hero-subtext"><em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="#">
                       <div>REQUEST&nbsp;A&nbsp;DEMO</div>
@@ -236,7 +236,6 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
           </div>
         </div>
       </div>
-    </div>
 
     <?php
       } else if($template_section == 'about') {
