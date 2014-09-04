@@ -12,7 +12,7 @@
 
       <div class="cc-section">
       <div class="w-container cc-content-container cc-pricing-content">
-        <div class="cc-request-demo-title">Connect with us today and enjoy your 14-day unlimited free trial. No obligation, no credit card required.</div>
+        <div class="cc-request-demo-title">Connect with one of our team for a free demo. No obligation, no credit card required.</div>
         <div class="w-tabs" data-duration-in="300" data-duration-out="100">
           <div class="w-tab-menu cc-pricing-tab-menu">
             <a class="w-tab-link w-inline-block cc-pricing-tab monthly" data-w-tab="Tab 1">
