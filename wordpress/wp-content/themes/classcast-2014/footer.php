@@ -11,7 +11,7 @@
           </a>
         </div>
         <div class="w-col w-col-4 w-col-stack">
-          <a class="w-inline-block cc-button-l learning-center footer" href="https://classcast.zendesk.com">
+          <a class="w-inline-block cc-button-l learning-center footer" href="/company/learning">
             <div>OR&nbsp;VISIT&nbsp;OUR&nbsp;LEARNING&nbsp;CENTER</div>
           </a>
         </div>
