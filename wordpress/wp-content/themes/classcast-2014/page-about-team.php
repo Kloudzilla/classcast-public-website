@@ -152,10 +152,10 @@
               <br>94303</div>
           </div>
           <div class="w-col w-col-4 w-col-small-6 cc-location-col palo-alto">
-            <a class="w-inline-block cc-location-link ca" href="#"></a>
+            <!-- <a class="w-inline-block cc-location-link ca" href="#"></a> -->
           </div>
           <div class="w-col w-col-4 w-col-small-6 cc-location-col sydney">
-            <a class="w-inline-block cc-location-link" href="#"></a>
+            <!-- <a class="w-inline-block cc-location-link" href="#"></a> -->
           </div>
           <div class="w-col w-col-2 w-col-small-6 cc-location-col">
             <div class="cc-location-info-headline">Sydney Office</div>
