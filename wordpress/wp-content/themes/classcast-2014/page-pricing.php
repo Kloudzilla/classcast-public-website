@@ -210,7 +210,7 @@
           </div>
         </div>
         <div class="cc-request-demo-title">14-day unlimited free trial. No obligation, no credit card required.</div>
-        <a class="w-inline-block cc-button-h center request-demo" href="#">
+        <a class="w-inline-block cc-button-h center request-demo" href="/sign-up">
           <div>REQUEST&nbsp;A&nbsp;DEMO</div>
         </a>
         <h4 class="cc-pricing-faq-title">Answering your questions</h4>
