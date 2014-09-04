@@ -217,10 +217,10 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
                     <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
                     <div class="cc-home-hero-subtext"><em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
                     </div>
-                    <a class="w-inline-block cc-button-l get-started" href="#">
+                    <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                       <div>REQUEST&nbsp;A&nbsp;DEMO</div>
                     </a>
-                    <a class="w-inline-block cc-button-l tour" href="#">
+                    <a class="w-inline-block cc-button-l tour" href="/#tour">
                       <div>TAKE&nbsp;A&nbsp;TOUR</div>
                     </a>
                     <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
