@@ -770,10 +770,10 @@ p {
 .cc-section.cc-about-team-mini-hero {
   height: 400px;
   background-color: #509bd6;
-  background-image: none;
-  background-position: 0% 0%;
-  background-size: auto;
-  background-repeat: repeat;
+  background-image: url('../images/teamphoto.png');
+  background-position: 50% 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: scroll;
 }
 .cc-section.cc-about-team-location {
@@ -874,7 +874,6 @@ p {
 .cc-button-s.green {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #45b46d;
 }
 .cc-button-s.green:hover {
   background-color: #319957;
@@ -909,9 +908,15 @@ p {
 }
 .cc-button-s.keyline:hover {
   border-style: solid;
-  border-color: #45b46d;
-  background-color: #45b46d;
+  border-color: #509bd6;
+  background-color: #509bd6;
   color: white;
+}
+.cc-button-s.blue {
+  background-color: #509bd6;
+}
+.cc-button-s.blue:hover {
+  background-color: #3e6bae;
 }
 .cc-location-row {
   height: 100%;
@@ -1158,12 +1163,12 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #3e6bae;
+  background-color: #5087d9;
   color: white;
   font-size: 13px;
 }
 .cc-navigation-menu-list-item-text-signup-dark:hover {
-  background-color: #5087d9;
+  background-color: #3e6bae;
 }
 .cc-branding-img {
   display: block;
@@ -1451,8 +1456,8 @@ p {
   width: 220px;
   padding-right: 40px;
   padding-left: 40px;
-  border: 2px solid #3e6bae;
-  background-color: #3e6bae;
+  border: 2px solid #5087d9;
+  background-color: #5087d9;
   color: white;
   font-size: 14px;
   line-height: 20px;
@@ -1460,8 +1465,8 @@ p {
   text-align: center;
 }
 .cc-button-l.get-started:hover {
-  border-color: #5087d9;
-  background-color: #5087d9;
+  border-color: #3e6bae;
+  background-color: #3e6bae;
 }
 .cc-button-l.get-started.center {
   display: block;
@@ -1474,11 +1479,11 @@ p {
   float: right;
 }
 .cc-button-l.join-us {
-  background-color: #3e6bae;
+  background-color: #5087d9;
   color: white;
 }
 .cc-button-l.join-us:hover {
-  background-color: #5087d9;
+  background-color: #3e6bae;
 }
 .cc-button-l.learning-center {
   border: 2px solid white;
