@@ -23,17 +23,6 @@
     });
   </script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
-  <!-- KISS METRICS EVENTS -->
-  <script type="text/javascript">  _kmq.push(['record', 'Clicked on Sign Up Form Confirm']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Hero/Footer']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Sign Up Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Pricing Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Blog Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Contact Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Press Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Learning Centre Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Visited Team Page']);</script>
-  <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Navigation']);</script>
 
   <!-- FAVICONS -->
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/icons/favicon.ico">
@@ -71,6 +60,18 @@ function _kms(u){
 _kms('//i.kissmetrics.com/i.js');
 _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 </script>
+
+<!-- KISS METRICS EVENTS -->
+<script type="text/javascript">  _kmq.push(['record', 'Clicked on Sign Up Form Confirm']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Hero/Footer']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Sign Up Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Pricing Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Blog Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Contact Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Press Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Learning Centre Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Visited Team Page']);</script>
+<script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Navigation']);</script>
 
 <body>
   <div class="cc-external-wrap">
@@ -216,10 +217,10 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
                     <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
                     <div class="cc-home-hero-subtext"><em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
                     </div>
-                    <a class="w-inline-block cc-button-l get-started" href="#">
+                    <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                       <div>REQUEST&nbsp;A&nbsp;DEMO</div>
                     </a>
-                    <a class="w-inline-block cc-button-l tour" href="#">
+                    <a class="w-inline-block cc-button-l tour" href="/#tour">
                       <div>TAKE&nbsp;A&nbsp;TOUR</div>
                     </a>
                     <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>

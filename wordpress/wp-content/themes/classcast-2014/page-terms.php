@@ -29,7 +29,7 @@
               <strong>Privacy Policy</strong>
               <ol>
                 <li>
-                  In accepting these Terms you also confirm that you have read and accept our Privacy Policy. You can read our Privacy Policy <a href="privacy.html">here</a>.
+                  In accepting these Terms you also confirm that you have read and accept our Privacy Policy. You can read our Privacy Policy <a href="/privacy">here</a>.
                 </li>
               </ol>
             </li>
