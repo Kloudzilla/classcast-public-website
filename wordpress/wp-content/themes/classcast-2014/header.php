@@ -75,7 +75,8 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 <body>
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
-      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='form')?'form' :'');?>">
+      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='form')?'form' :'');?> 
+      <?php echo(($template_section =='legal')?'legal' :'');?>">
       
     <?php
       if($template_section == 'form') { }
@@ -276,6 +277,15 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
     <?php
       } else if($template_section == 'pricing') {
+    ?>
+      <div class="w-container cc-content-container cc-pricing-hero-content">
+        <h3 class="cc-pricing-hero-headline">Simple pricing to fit your business</h3>
+        <p class="cc-pricing-hero-subtext">Plans that grow with you, each with additional features. Upgrade at the right time, anytime.</p>
+      </div>
+    </div>
+
+    <?php
+      } else if($template_section == 'legal') {
     ?>
       <div class="w-container cc-content-container cc-pricing-hero-content">
         <h3 class="cc-pricing-hero-headline">Simple pricing to fit your business</h3>
