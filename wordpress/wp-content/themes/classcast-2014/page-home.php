@@ -94,7 +94,7 @@
   <div class="w-clearfix cc-section cc-content">
     <div class="cc-content-img"></div>
     <div class="w-container cc-content-container cc-content-content">
-      <h3 class="cc-content-headline">Content simply done right</h3>
+      <h3 class="cc-content-headline">Content done right</h3>
       <p class="cc-content-text">This is at the heart of what you do, create great content that changes peoples lives. So we have dedicated ourselves to making this fast and easy for you to load content and when you’re ready publish instantly to your customers.</p>
       <div class="w-row">
         <div class="w-col w-col-6">
