@@ -24,7 +24,7 @@ h2 {
 h3 {
   margin-top: 0px;
   margin-bottom: 20px;
-  color: #45b46d;
+  color: #509bd6;
   font-size: 40px;
   line-height: 50px;
   font-weight: 300;
@@ -84,7 +84,7 @@ p {
 }
 .cc-hero.about {
   height: 300px;
-  background-color: #19b8a2;
+  background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -109,12 +109,17 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.form {
-  background-color: #222f40;
+  min-height: 800px;
+  background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
   background-repeat: repeat;
   background-attachment: scroll;
+}
+.cc-hero.legal {
+  height: 300px;
+  background-color: #509bd6;
 }
 .cc-trusted-headline {
   margin-bottom: 0px;
@@ -214,7 +219,7 @@ p {
   color: white;
   font-size: 30px;
   line-height: 34px;
-  font-weight: 300;
+  font-weight: 200;
   text-align: center;
 }
 .cc-quote-author-wrap {
@@ -349,7 +354,7 @@ p {
   width: 100%;
   height: 100%;
   float: left;
-  background-image: url('../images/logo-light.png');
+  background-image: url('../images/logo-light_1.png');
   background-position: 50% 50%;
   background-size: 150px;
   background-repeat: no-repeat;
@@ -393,7 +398,7 @@ p {
   height: 100%;
   float: left;
   background-image: url('../images/logo-dark-colour.png');
-  background-position: 0px 50%;
+  background-position: 50% 50%;
   background-size: 150px;
   background-repeat: no-repeat;
 }
@@ -451,6 +456,7 @@ p {
   margin: -10px auto 20px;
 }
 .cc-pricing-grid-col {
+  margin-top: 12px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -463,9 +469,6 @@ p {
   margin-top: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.cc-pricing-grid-col-package.featured {
-  border-top: 2px solid #00afef;
 }
 .cc-pricing-package-title {
   margin-top: 20px;
@@ -648,7 +651,7 @@ p {
 }
 .cc-press-post-headline {
   margin-bottom: 20px;
-  color: #45b46d;
+  color: #00afef;
   font-size: 26px;
   line-height: 40px;
 }
@@ -672,7 +675,7 @@ p {
 }
 .cc-team-name {
   margin-bottom: 10px;
-  color: #19b8a2;
+  color: #00afef;
   font-size: 18px;
   font-weight: 600;
 }
@@ -766,7 +769,7 @@ p {
 }
 .cc-section.cc-about-team-mini-hero {
   height: 400px;
-  background-color: #19b8a2;
+  background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -823,7 +826,7 @@ p {
 }
 .cc-about-team-headline {
   margin-bottom: 40px;
-  color: #19b8a2;
+  color: #00afef;
   font-weight: 300;
 }
 .cc-about-team-subtext {
@@ -852,7 +855,7 @@ p {
   text-align: left;
 }
 .cc-about-team-location-headline {
-  color: #19b8a2;
+  color: #00afef;
   text-align: center;
 }
 .cc-team-row {
@@ -939,6 +942,7 @@ p {
 }
 .cc-about-resources-headline {
   margin-bottom: 40px;
+  color: #00afef;
 }
 .cc-tutorial-subtext {
   font-size: 16px;
@@ -977,6 +981,7 @@ p {
 }
 .cc-blog-hero-headline {
   color: white;
+  font-weight: 700;
 }
 .cc-trusted-logo-link {
   width: 20%;
@@ -1076,7 +1081,7 @@ p {
   float: left;
 }
 .cc-navigation-menu-list-item.sign-up {
-  width: 150px;
+  width: 160px;
   margin-right: 0px;
 }
 .cc-navigation-menu-list-item-link {
@@ -1097,6 +1102,9 @@ p {
 }
 .cc-navigation-menu-list-item-link.pop-down:hover {
   color: #555;
+}
+.cc-navigation-menu-list-item-link.pop-down.sign-up {
+  opacity: 1;
 }
 .cc-blog-post-hero-headline {
   color: white;
@@ -1150,9 +1158,12 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #00afef;
+  background-color: #3e6bae;
   color: white;
   font-size: 13px;
+}
+.cc-navigation-menu-list-item-text-signup-dark:hover {
+  background-color: #5087d9;
 }
 .cc-branding-img {
   display: block;
@@ -1276,7 +1287,7 @@ p {
 .cc-job-title-headline {
   margin-top: 0px;
   margin-bottom: 20px;
-  color: #45b46d;
+  color: #00afef;
   font-size: 22px;
   font-weight: 300;
 }
@@ -1293,7 +1304,7 @@ p {
 }
 .cc-about-team-values-headline {
   margin-bottom: 40px;
-  color: #19b8a2;
+  color: #00afef;
 }
 .cc-ebook-cover {
   display: block;
@@ -1306,7 +1317,7 @@ p {
 }
 .cc-ebook-title {
   margin-bottom: 20px;
-  color: #45b46d;
+  color: #00afef;
   font-weight: 300;
 }
 .cc-ebook-row {
@@ -1322,7 +1333,7 @@ p {
   background-color: #e6e6e6;
 }
 .cc-video-title {
-  color: #45b46d;
+  color: #00afef;
   font-weight: 300;
 }
 .cc-video-row {
@@ -1331,7 +1342,7 @@ p {
 .cc-tutorial-title {
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #45b46d;
+  color: #00afef;
   font-weight: 300;
   text-align: left;
 }
@@ -1392,6 +1403,7 @@ p {
 }
 .cc-pricing-package-link.featured {
   border: 1px solid #00afef;
+  border-radius: 6px;
 }
 .cc-ebook-link {
   display: block;
@@ -1439,8 +1451,8 @@ p {
   width: 220px;
   padding-right: 40px;
   padding-left: 40px;
-  border: 2px solid #509bd6;
-  background-color: #509bd6;
+  border: 2px solid #3e6bae;
+  background-color: #3e6bae;
   color: white;
   font-size: 14px;
   line-height: 20px;
@@ -1448,8 +1460,8 @@ p {
   text-align: center;
 }
 .cc-button-l.get-started:hover {
-  border-color: #00afef;
-  background-color: #00afef;
+  border-color: #5087d9;
+  background-color: #5087d9;
 }
 .cc-button-l.get-started.center {
   display: block;
@@ -1461,16 +1473,12 @@ p {
   margin-right: 20px;
   float: right;
 }
-.cc-button-l.get-started.footer:hover {
-  border-color: #00afef;
-  background-color: #00afef;
-}
 .cc-button-l.join-us {
-  background-color: #19b8a2;
+  background-color: #3e6bae;
   color: white;
 }
 .cc-button-l.join-us:hover {
-  background-color: #32dbc5;
+  background-color: #5087d9;
 }
 .cc-button-l.learning-center {
   border: 2px solid white;
@@ -1659,6 +1667,7 @@ p {
   border-left: 1px solid #509bd6;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  background-color: white;
 }
 .cc-pricing-tab.monthly.w--current {
   background-color: #509bd6;
@@ -1670,6 +1679,7 @@ p {
   border-bottom: 1px solid #509bd6;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  background-color: white;
 }
 .cc-pricing-tab.annual.w--current {
   background-color: #509bd6;
@@ -1698,10 +1708,12 @@ p {
 }
 .cc-button-h.center.request-demo {
   margin-top: 20px;
-  background-color: #509bd6;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #3e6bae;
 }
 .cc-button-h.center.request-demo:hover {
-  background-color: #00afef;
+  background-color: #5087d9;
 }
 .cc-request-demo-title {
   margin-top: 10px;
@@ -1722,10 +1734,19 @@ p {
   bottom: 0px;
   margin-bottom: 30px;
   color: #3779b0;
+  font-size: 12px;
   text-align: center;
 }
 .cc-signup-subline {
   color: white;
+}
+.cc-form-hero-headline {
+  color: white;
+  font-weight: 300;
+}
+.cc-terms-wrap {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -2066,7 +2087,7 @@ p {
     margin-top: 40px;
   }
   .cc-footer-legal-mobile {
-    color: white;
+    color: #96c5ff;
     text-align: center;
   }
   .cc-blog-post {
@@ -2448,7 +2469,7 @@ p {
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    border-right: 1px solid #45b46d;
+    border-right: 1px solid #509bd6;
     border-bottom-style: none;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 0px;
@@ -2458,8 +2479,9 @@ p {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    border-left: 1px solid #45b46d;
+    border-left: 1px solid #509bd6;
     border-top-style: none;
+    border-right-color: #509bd6;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 6px;
   }
