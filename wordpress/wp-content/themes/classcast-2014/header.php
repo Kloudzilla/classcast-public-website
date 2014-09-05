@@ -99,7 +99,7 @@
             </li>
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
+              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/register">
                 <div class="cc-navigation-menu-list-item-text-signup">
                   Register
                 </div>
@@ -141,7 +141,7 @@
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
+                <a class="w-inline-block cc-drop-list-item-link" href="/register">
                   <div>
                     Register
                   </div>
@@ -157,7 +157,7 @@
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/register">
                 <div class="cc-navigation-menu-list-item-text-signup-dark">
                   Register
                 </div>
@@ -205,7 +205,7 @@
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
+                <a class="w-inline-block cc-drop-list-item-link" href="/register">
                   <div>
                     Register
                   </div>
@@ -238,7 +238,7 @@
                       <em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
                     </div>
                     
-                    <a class="w-inline-block cc-button-l get-started" href="/sign-up">
+                    <a class="w-inline-block cc-button-l get-started" href="/register">
                       <div>
                         Register
                       </div>
