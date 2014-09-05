@@ -92,7 +92,9 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup">REQUEST A DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup">
+                  Register
+                </div>
               </a>
             </li>
 
@@ -132,7 +134,9 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>REQUEST A DEMO</div>
+                  <div>
+                    Register
+                  </div>
                 </a>
               </li>
 
@@ -146,7 +150,9 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">REQUEST A DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup-dark">
+                  Register
+                </div>
               </a>
             </li>
 
@@ -192,7 +198,9 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>REQUEST A DEMO</div>
+                  <div>
+                    Register
+                  </div>
                 </a>
               </li>
 
@@ -214,15 +222,24 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
               <div class="w-slide">
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
-                    <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
-                    <div class="cc-home-hero-subtext"><em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
+                    <h3 class="cc-home-hero-headline">
+                      HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT
+                    </h3>
+
+                    <div class="cc-home-hero-subtext">
+                      <em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
                     </div>
+                    
                     <a class="w-inline-block cc-button-l get-started" href="/sign-up">
-                      <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+                      <div>
+                        Register
+                      </div>
                     </a>
+
                     <a class="w-inline-block cc-button-l tour" href="/#tour">
                       <div>TAKE&nbsp;A&nbsp;TOUR</div>
                     </a>
+                    
                     <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
                   </div>
                 </div>
