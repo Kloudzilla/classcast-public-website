@@ -46,40 +46,40 @@
   <meta name="application-name" content="Classcast">
   <!-- END OF: FAVICONS -->
 
-</head>
-
-<?php
-  if(defined(CC_ENVIRONMENT) && CC_ENVIRONMENT == 'PRODUCTION') {
-?>
-    <script type="text/javascript">var _kmq = _kmq || [];
-    var _kmk = _kmk || 'd1956d77b1fd9e9437566c72b0ab784ddba4a119';
-    function _kms(u){
-      setTimeout(function(){
-        var d = document, f = d.getElementsByTagName('script')[0],
-        s = d.createElement('script');
-        s.type = 'text/javascript'; s.async = true; s.src = u;
-        f.parentNode.insertBefore(s, f);
-      }, 1);
+  <?php
+    if(defined(CC_ENVIRONMENT) && CC_ENVIRONMENT == 'PRODUCTION') {
+  ?>
+      <script type="text/javascript">
+        var _kmq = _kmq || [];
+        var _kmk = _kmk || 'd1956d77b1fd9e9437566c72b0ab784ddba4a119';
+        function _kms(u){
+          setTimeout(function(){
+            var d = document, f = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+            s.type = 'text/javascript'; s.async = true; s.src = u;
+            f.parentNode.insertBefore(s, f);
+          }, 1);
+        }
+        _kms('//i.kissmetrics.com/i.js');
+        _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+      </script>
+      
+      <?php
+        /*<script type="text/javascript">  _kmq.push(['record', 'Clicked on Sign Up Form Confirm']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Hero/Footer']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Sign Up Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Pricing Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Blog Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Contact Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Press Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Learning Centre Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Visited Team Page']);</script>
+        <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Navigation']);</script>*/
+      ?>
+  <?php
     }
-    _kms('//i.kissmetrics.com/i.js');
-    _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-    </script>
-    
-    <?php
-      /*<script type="text/javascript">  _kmq.push(['record', 'Clicked on Sign Up Form Confirm']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Hero/Footer']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Sign Up Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Pricing Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Blog Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Contact Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Press Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Learning Centre Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Visited Team Page']);</script>
-      <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Navigation']);</script>*/
-    ?>
-<?php
-  }
-?>
+  ?>
+</head>
 
 <body>
   <div class="cc-external-wrap">
