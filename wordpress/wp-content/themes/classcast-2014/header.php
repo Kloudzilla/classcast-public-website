@@ -47,7 +47,7 @@
   <!-- END OF: FAVICONS -->
 
   <?php
-    if(defined(CC_ENVIRONMENT) && CC_ENVIRONMENT == 'PRODUCTION') {
+    if(CC_ENVIRONMENT && CC_ENVIRONMENT == 'PRODUCTION') {
   ?>
       <script type="text/javascript">
         var _kmq = _kmq || [];
