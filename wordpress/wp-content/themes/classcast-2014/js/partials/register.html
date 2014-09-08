@@ -1,0 +1,71 @@
+<form name="register" ng-class="{'cc-form-submitted':registerSubmitted}" novalidate role="form">
+
+	<div>
+		<input name="first_name" ng-model="first_name" ng-required="1" placeholder="First Name" type="text">
+
+		<p ng-show="register.first_name.$error.required && registerSubmitted || register.first_name.$error.required && register.first_name.$dirty">
+            First Name is required
+        </p>
+	</div>
+
+	<div>
+		<input name="last_name" ng-model="last_name" ng-required="1" placeholder="Last Name" type="text">
+
+		<p ng-show="register.last_name.$error.required && registerSubmitted || register.last_name.$error.required && register.last_name.$dirty">
+            Last Name is required
+        </p>
+	</div>
+	
+	<div>
+		<input name="company" ng-model="company" placeholder="Company Name" type="text">
+	</div>
+	
+	<div>
+		<input name="email" ng-model="email" ng-required="1" placeholder="Email Address" type="email">
+
+		<p ng-show="register.email.$error.email && registerSubmitted || register.email.$error.email && register.email.$dirty">
+            Email is invalid
+        </p>
+
+		<p ng-show="register.email.$error.required && registerSubmitted || register.email.$error.required && register.email.$dirty">
+            Email is required
+        </p>
+	</div>
+	
+	<div>
+		<input name="phone" ng-model="phone" ng-required="1" placeholder="Phone Number" type="phone">
+
+		<p ng-show="register.phone.$error.required && registerSubmitted || register.phone.$error.required && register.phone.$dirty">
+            Phone Number is required
+        </p>
+	</div>
+	
+	<div>
+		<select name="package" ng-model="package" ng-options="package.id as package.name for package in packages" ng-required="1">
+			<option value="">
+				Please select ...
+			</option>
+		</select>
+
+		<p ng-show="register.package.$error.required && registerSubmitted || register.package.$error.required && register.package.$dirty">
+            Package is required
+        </p>
+	</div>
+
+	<div>
+		<input data-wait="Please wait..." id="submit" name="submit" ng-click="submitRegisterForm(register.$valid)" type="button" value="Create Account">
+	</div>
+
+	<div class="w-form-done" ng-class="{'w-form-show':success}">
+        <p class="cc-success-p">
+            {{success}}
+        </p>
+    </div>
+
+    <div class="w-form-fail" ng-class="{'w-form-show':error}">
+        <p class="cc-error-p">
+            {{error}}
+        </p>
+    </div>
+
+</form>

@@ -22,9 +22,22 @@
       lorem ipsum dolor
     </div>
 
-    
+<!--     <div ng-controller="RegisterCtrl">
+      {{test}}
+    </div> -->
+
+    <div ng-view></div>
   </div>
 </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap.min.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script> -->
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/angular.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/angular-controllers.js"></script>
 
 <?php
   get_footer('min');

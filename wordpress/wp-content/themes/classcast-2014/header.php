@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Wed Jun 18 2014 05:44:26 GMT+0000 (UTC) -->
-<html data-wf-site="538bcc732502ff2560203e03">
+<html data-wf-site="538bcc732502ff2560203e03" ng-app="cc">
 <head>
   <meta charset="utf-8">
   <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -14,6 +14,7 @@
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -22,6 +23,8 @@
       }
     });
   </script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
 
   <!-- FAVICONS -->
