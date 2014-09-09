@@ -272,6 +272,7 @@
             </div>
             <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
           </div>
+          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
         </div>
       </div>
 

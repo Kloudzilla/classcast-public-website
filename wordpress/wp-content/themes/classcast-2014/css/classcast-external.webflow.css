@@ -101,6 +101,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.home {
+  height: 640px;
   background-color: #265688;
   background-image: url('../images/final-hero4.jpg');
   background-position: 50% 0px;
@@ -758,6 +759,10 @@ p {
   padding-top: 60px;
   padding-bottom: 0px;
 }
+.cc-content-container.cc-form-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .cc-section.cc-about-tagline {
   height: 180px;
   background-color: #f8f8f8;
@@ -1257,7 +1262,6 @@ p {
   margin-left: auto;
 }
 .cc-home-hero-slider-text {
-  height: 640px;
   padding-top: 180px;
   padding-right: 40px;
   text-align: left;
@@ -1728,7 +1732,7 @@ p {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #3779b0;
   font-size: 12px;
   text-align: center;
@@ -1743,6 +1747,14 @@ p {
 .cc-terms-wrap {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.cc-form-image {
+  width: 100%;
+}
+.cc-form-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -2209,6 +2221,12 @@ p {
   .cc-stats-icon-wrap {
     width: 45%;
   }
+  .cc-form-col {
+    margin-bottom: 30px;
+  }
+  .cc-form-text {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 479px) {
   h2 {
@@ -2480,6 +2498,10 @@ p {
     border-right-color: #509bd6;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 6px;
+  }
+  .cc-form-hero-headline {
+    font-size: 60px;
+    line-height: 62px;
   }
 }
 
