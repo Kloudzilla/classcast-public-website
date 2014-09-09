@@ -102,11 +102,9 @@ p {
 }
 .cc-hero.home {
   background-color: #265688;
-  background-image: url('../images/final-hero4.png');
+  background-image: url('../images/final-hero4.jpg');
   background-position: 50% 0px;
-  background-size: auto;
   background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 .cc-hero.form {
   min-height: 800px;
@@ -150,7 +148,7 @@ p {
   width: 45%;
   height: 700px;
   float: right;
-  background-image: url('../images/hero-content.png');
+  background-image: url('../images/hero-content3.jpg');
   background-position: 0px 0px;
   background-size: 940px;
   background-repeat: no-repeat;
@@ -529,9 +527,6 @@ p {
 .cc-pricing-package-price-wrap {
   margin-bottom: 8px;
 }
-.cc-pricing-package-price-wrap.featured {
-  margin-bottom: 5px;
-}
 .cc-pricing-package-price-enterprise {
   margin-bottom: 34px;
   font-size: 18px;
@@ -822,6 +817,8 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #f8f8f8;
+  background-image: url('../images/content-background-colour.jpg');
+  background-size: 100% 100%;
 }
 .cc-about-team-headline {
   margin-bottom: 40px;
@@ -1401,12 +1398,7 @@ p {
   color: #81878c;
   text-decoration: none;
 }
-.cc-pricing-package-link:hover {
-  background-color: #e6f0ff;
-  color: #6a6f73;
-}
 .cc-pricing-package-link.featured {
-  border: 1px solid #00afef;
   border-radius: 6px;
 }
 .cc-ebook-link {
