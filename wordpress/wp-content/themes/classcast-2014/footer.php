@@ -100,8 +100,7 @@
 
   <!--VIDEO MODAL-->
   <script type="text/javascript">
-    $(function() { // More efficient jQuery detector, less letters
-        // Do this for each tutorial video (or whatever you call the class around it)
+    $(function() {
         $('.video').each(function(){
             var self = $(this);
             
@@ -117,10 +116,12 @@
         });
     });
   </script>
+
   <!--HASH REMOVAL-->
   <script type="text/javascript">
     $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
   </script>
+  
   <!--MOBILE SLIDE DOWN MENU-->
   <script type="text/javascript">
     $(function(){
