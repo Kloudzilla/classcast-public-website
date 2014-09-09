@@ -101,6 +101,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.home {
+  height: 640px;
   background-color: #265688;
   background-image: url('../images/final-hero4.jpg');
   background-position: 50% 0px;
@@ -1257,7 +1258,6 @@ p {
   margin-left: auto;
 }
 .cc-home-hero-slider-text {
-  height: 640px;
   padding-top: 180px;
   padding-right: 40px;
   text-align: left;
@@ -1728,7 +1728,7 @@ p {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #3779b0;
   font-size: 12px;
   text-align: center;
