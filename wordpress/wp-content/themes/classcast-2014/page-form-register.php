@@ -37,6 +37,7 @@
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script> -->
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/angular.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/angular-factories.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/angular-controllers.js"></script>
 
 <?php

@@ -82,6 +82,14 @@
   <?php
     }
   ?>
+
+  <script type="text/javascript">
+    /**
+    * Website Environment Variables
+    */
+
+    var CC_ENVIRONMENT = '<?php echo CC_ENVIRONMENT; ?>';
+  </script>
 </head>
 
 <body>

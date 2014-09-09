@@ -14,28 +14,18 @@ cc.controller('HomeCtrl', ['$scope', function($scope) {
 * Register
 */
 
-cc.controller('RegisterCtrl', ['$scope', function($scope) {
+cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_customer', function($scope, $window, cc_customer) {
 
 	// Packages
-	$scope.packages = [
+	$scope.countries = [
 		{
-			id: 1,
-			name: 'Starter'
+			id: 'AU',
+			name: 'Australia'
 		},
 
 		{
-			id: 2,
-			name: 'Grow'
-		},
-
-		{
-			id: 3,
-			name: 'Max'
-		},
-
-		{
-			id: 4,
-			name: 'Enterprise'
+			id: 'US',
+			name: 'United States'
 		}
 	];
 
@@ -54,22 +44,20 @@ cc.controller('RegisterCtrl', ['$scope', function($scope) {
 				submit_button.prop('disabled', true);
 			}
 
-			data = {
-				company: $scope.company,
+			var data = {
+				country: $scope.country,
 				email: $scope.email,
-				first_name: $scope.first_name,
-				last_name: $scope.last_name,
-				package: $scope.package,
-				phone: $scope.phone
+				name: $scope.name,
+				password: $scope.password
 			};
 
-			## Create Customer
+			// Create Customer
 			cc_customer.apiCreateCustomer(data).then(function(response) {
 				if(response.result == true) {
-					$location.path('/users/' + response.user.id);
+					$window.location.href = 'http://manage.classcast.co';
 
 				} else {
-					if(response.errors?.length) {
+					if(response.errors && response.errors.length) {
 						$scope.error = '';
 						errors_i = 0;
 						errors_length = response.errors.length;

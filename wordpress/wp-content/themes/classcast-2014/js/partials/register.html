@@ -1,23 +1,10 @@
 <form name="register" ng-class="{'cc-form-submitted':registerSubmitted}" novalidate role="form">
-
 	<div>
-		<input name="first_name" ng-model="first_name" ng-required="1" placeholder="First Name" type="text">
+		<input name="name" ng-model="name" placeholder="Company/Organisation Name" ng-required="1" type="text">
 
-		<p ng-show="register.first_name.$error.required && registerSubmitted || register.first_name.$error.required && register.first_name.$dirty">
-            First Name is required
-        </p>
-	</div>
-
-	<div>
-		<input name="last_name" ng-model="last_name" ng-required="1" placeholder="Last Name" type="text">
-
-		<p ng-show="register.last_name.$error.required && registerSubmitted || register.last_name.$error.required && register.last_name.$dirty">
-            Last Name is required
-        </p>
-	</div>
-	
-	<div>
-		<input name="company" ng-model="company" placeholder="Company Name" type="text">
+		<p ng-show="register.name.$error.required && registerSubmitted || register.name.$error.required && register.name.$dirty">
+			Company/Organisation Name is required
+		</p>
 	</div>
 	
 	<div>
@@ -33,23 +20,28 @@
 	</div>
 	
 	<div>
-		<input name="phone" ng-model="phone" ng-required="1" placeholder="Phone Number" type="phone">
+		<input name="password" ng-minlength="8" ng-model="password" ng-required="1" placeholder="Password" type="password">
 
-		<p ng-show="register.phone.$error.required && registerSubmitted || register.phone.$error.required && register.phone.$dirty">
-            Phone Number is required
-        </p>
+
+		<p ng-show="register.password.$error.minlength && registerSubmitted || register.password.$error.minlength && register.password.$dirty">
+			Password is too short.
+		</p>
+
+		<p ng-show="register.password.$error.required && registerSubmitted || register.password.$error.required && register.password.$dirty">
+			Password is required
+		</p>
 	</div>
-	
+
 	<div>
-		<select name="package" ng-model="package" ng-options="package.id as package.name for package in packages" ng-required="1">
+		<select name="country" ng-model="country" ng-options="country.id as country.name for country in countries" ng-required="1">
 			<option value="">
-				Please select ...
+				Select Country ...
 			</option>
 		</select>
 
-		<p ng-show="register.package.$error.required && registerSubmitted || register.package.$error.required && register.package.$dirty">
-            Package is required
-        </p>
+		<p ng-show="register.country.$error.required && registerSubmitted || register.country.$error.required && register.country.$dirty">
+			Country is required
+		</p>
 	</div>
 
 	<div>
