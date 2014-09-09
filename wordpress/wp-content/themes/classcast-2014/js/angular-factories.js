@@ -35,6 +35,35 @@ cc.factory('cc_api', ['$http', 'cc_config', function($http, cc_config) {
 }]);
 
 /**
+* Authentication
+*/
+
+cc.factory('cc_authentication', ['$q', 'cc_api', function($q, cc_api) {
+	var apiEndPoints = {
+		authenticate: {
+			type: 'POST',
+			url: 'auth/manage/login'
+		}
+	}
+
+	return {
+		apiAuthenticate: function(data) {
+			var defer = $q.defer();
+
+			cc_api.cc_apiRequest(apiEndPoints.authenticate, data, function(response) {
+				if(response.result) {
+					defer.resolve(response);
+				} else {
+					defer.reject(response)
+				}
+			});
+
+			return defer.promise;
+		}
+	}
+}]);
+
+/**
 * Config
 */
 

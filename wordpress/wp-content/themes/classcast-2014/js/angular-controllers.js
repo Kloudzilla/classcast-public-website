@@ -14,7 +14,7 @@ cc.controller('HomeCtrl', ['$scope', function($scope) {
 * Register
 */
 
-cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_customer', function($scope, $window, cc_customer) {
+cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_customer', function($scope, $window, cc_authentication, cc_customer) {
 
 	// Packages
 	$scope.countries = [
@@ -44,7 +44,7 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_customer', function($sco
 				submit_button.prop('disabled', true);
 			}
 
-			var data = {
+			var create_customer_data = {
 				country: $scope.country,
 				email: $scope.email,
 				name: $scope.name,
@@ -52,10 +52,43 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_customer', function($sco
 			};
 
 			// Create Customer
-			cc_customer.apiCreateCustomer(data).then(function(response) {
+			cc_customer.apiCreateCustomer(create_customer_data).then(function(response) {
 				if(response.result == true) {
-					$window.location.href = 'http://manage.classcast.co';
+					// Attempt to login
+					var authenticate_data = {
+						email: $scope.email,
+						password: $scope.password
+					}
 
+					cc_authentication.apiAuthenticate(authenticate_data).then(function(response) {
+						if(response.result == true) {
+							if(response.accounts.length == 1) {
+								$scope.loginAsCustomer(response.accounts[0].id);
+							}
+						} else {
+							if(response.user_msg) {
+								$scope.error = response.user_msg;
+							} else {
+								$scope.error = 'Oops! Something went wrong while submitting the form :('
+							}
+
+							if(submit_button) {
+								submit_button.val(submit_button.data('original-value'));
+								submit_button.prop('disabled', false);
+							}
+						}
+					}, function(response) {
+						if(response.user_msg) {
+							$scope.error = response.user_msg;
+						} else {
+							$scope.error = 'Oops! Something went wrong while submitting the form :(';
+						}
+
+						if(submit_button) {
+							submit_button.val(submit_button.data('original-value'));
+							submit_button.prop('disabled', false);
+						}
+					});
 				} else {
 					if(response.errors && response.errors.length) {
 						$scope.error = '';
@@ -72,11 +105,11 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_customer', function($sco
 					} else {
 						scope.error = 'Oops! Something went wrong while submitting the form :(';
 					}
-				}
 
-				if(submit_button) {
-					submit_button.val(submit_button.data('original-value'));
-					submit_button.prop('disabled', false);
+					if(submit_button) {
+						submit_button.val(submit_button.data('original-value'));
+						submit_button.prop('disabled', false);
+					}
 				}
 
 			}, function(response) {
@@ -94,6 +127,36 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_customer', function($sco
 		} else {
 			$scope.error = 'Your form has errors, please review the fields above to ensure you have inserted all necessary fields.'
 		}
+	}
+
+	// Login as customer
+	$scope.loginAsCustomer = function(id) {
+		var login_data = {
+			customer_id: id,
+			email: $scope.email,
+			password: $scope.password
+		};
+
+		cc_authentication.apiAuthenticate(login_data).then(function(response) {
+			if(response.result == true) {
+				$.cookie('userID', response.user.id, {expires: 30, path: '/'});
+      			$.cookie('userToken', response.user.token, {expires: 30, path: '/'});
+      			$window.location.href = 'http://manage.classcast.co';
+			} else {
+				if(response.user_msg) {
+					$scope.error = response.user_msg;
+				} else {
+					$scope.error = 'Oops! Something went wrong while trying to login :(';
+				}
+			}
+
+		}, function(response) {
+			if(response.user_msg) {
+				$scope.error = response.user_msg;
+			} else {
+				$scope.error = 'Oops! Something went wrong while trying to login :(';
+			}
+		});
 	}
 
 }]);
