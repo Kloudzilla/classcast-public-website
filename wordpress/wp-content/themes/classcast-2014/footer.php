@@ -83,6 +83,21 @@
       });
     });
   </script>
+  <!--HERO RESIZE-->
+  <!--<script>
+
+
+  $(function () {
+    var window_width = $(window).width();
+    if (window_width > 991) {
+      $(window).resize(function() {
+        $('.cc-hero.home').height($(window).height());
+      });
+    }
+  else {}
+  });
+  </script>-->
+
   <!--VIDEO MODAL-->
   <script type="text/javascript">
     $(function() { // More efficient jQuery detector, less letters
