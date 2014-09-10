@@ -108,8 +108,8 @@ p {
   background-repeat: no-repeat;
 }
 .cc-hero.form {
-  min-height: 800px;
-  background-color: #509bd6;
+  height: 400px;
+  background-color: #00afef;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -1742,11 +1742,13 @@ p {
 }
 .cc-form-hero-headline {
   color: white;
-  font-weight: 300;
 }
 .cc-terms-wrap {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.cc-form-text {
+  margin-bottom: 20px;
 }
 .cc-form-image {
   width: 100%;
@@ -1755,6 +1757,43 @@ p {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+}
+.cc-form-list-item {
+  width: 50%;
+  float: left;
+}
+.cc-form-list-item.iom {
+  background-image: url('../images/iom_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.yogafit {
+  background-image: url('../images/yogafit_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.totalgym {
+  background-image: url('../images/totalgym_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.gymstick {
+  background-image: url('../images/gymstick_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.kettleworx {
+  background-image: url('../images/kettleworx_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-hero-subline {
+  color: white;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -1772,6 +1811,9 @@ p {
   }
   .cc-hero.home {
     background-size: cover;
+  }
+  .cc-hero.form {
+    height: auto;
   }
   .cc-users-img {
     position: static;
@@ -2004,6 +2046,9 @@ p {
   }
   .cc-signup-subline {
     text-align: center;
+  }
+  .cc-form-list-item {
+    width: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -2500,8 +2545,11 @@ p {
     border-bottom-left-radius: 6px;
   }
   .cc-form-hero-headline {
-    font-size: 60px;
-    line-height: 62px;
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .cc-form-list-item.kettleworx {
+    display: block;
   }
 }
 
