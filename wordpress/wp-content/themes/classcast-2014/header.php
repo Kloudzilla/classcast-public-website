@@ -87,9 +87,7 @@
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='form')?'form' :'');?> 
       <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
       
-    <?php
-      if($template_section == 'form') { }
-      else { ?>
+    
       <div class="cc-navigation" data-ix="navigation-past-hero">
         <div class="w-container cc-navigation-items-wrap">
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
@@ -208,9 +206,7 @@
           </div>
         </div>
       </div>
-    <?php 
-       };
-    ?>
+
 
     <?php
       if($template_section == 'home') {
@@ -308,6 +304,16 @@
 
       <div class="w-container cc-content-container cc-blog-hero-content">
         <h1 class="cc-form-hero-headline">Terms</h1>
+      </div>
+    </div>
+
+    <?php
+      } else if($template_section == 'form') {
+    ?>
+
+      <div class="w-container cc-content-container cc-blog-hero-content">
+        <h1 class="cc-form-hero-headline">SCHEDULE A DEMO</h1>
+        <div class="cc-form-hero-subline">Get started with Classcast today</div>
       </div>
     </div>
 
