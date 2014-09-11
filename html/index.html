@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Sep 10 2014 03:55:12 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Sep 11 2014 02:47:50 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="538bcc732502ff2560203e04">
 <head>
   <meta charset="utf-8">
@@ -59,6 +59,12 @@ SLIDER VERTICAL ALIGNMENT -->
         vertical-align:bottom;
     }
   </style>
+  <!-- MORE BUTTON -->
+  <style>
+    .more-togle:active {
+        background :white;
+    }
+  </style>
 </head>
 <body>
   <div class="cc-hero home">
@@ -73,25 +79,20 @@ SLIDER VERTICAL ALIGNMENT -->
               <div class="cc-navigation-menu-list-item-text-signup">GET&nbsp;STARTED</div>
             </a>
           </li>
-          <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-            <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="#">
-              <div class="cc-navigation-menu-list-item-text-signup">REQUEST&nbsp;A&nbsp;DEMO</div>
-            </a>
-          </li>
           <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
             <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
               <div class="cc-navigation-menu-list-item-text">LOGIN</div>
             </a>
           </li>
           <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-            <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="about-team.html">
-              <div class="cc-navigation-menu-list-item-text">COMPANY</div>
-            </a>
-          </li>
-          <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-            <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="about-resources.html">
-              <div class="cc-navigation-menu-list-item-text">LEARNING</div>
-            </a>
+            <div class="w-dropdown cc-more" data-delay="0">
+              <div class="w-dropdown-toggle cc-more-toggle">
+                <div class="cc-more-text">MORE</div>
+                <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+              </div>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+              </nav>
+            </div>
           </li>
           <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
             <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="pricing.html">

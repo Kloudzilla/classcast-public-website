@@ -1125,6 +1125,7 @@ p {
 .cc-navigation-menu-list-item-text {
   display: inline-block;
   padding-top: 30px;
+  float: left;
   font-size: 13px;
   font-weight: 400;
 }
@@ -1795,6 +1796,33 @@ p {
 }
 .cc-form-hero-subline {
   color: white;
+}
+.cc-navigation-menu-list-item-arrow {
+  margin-left: 4px;
+  padding-top: 30px;
+  float: left;
+  font-size: 8px;
+}
+.cc-more {
+  height: 80px;
+  padding-top: 20px;
+}
+.cc-more-toggle {
+  padding: 10px 20px 10px 0px;
+  opacity: 0.6;
+  color: white;
+  font-weight: 400;
+}
+.cc-more-toggle:hover {
+  opacity: 1;
+}
+.cc-more-list.w--open {
+  width: 160px;
+  border-radius: 6px;
+  background-color: white;
+}
+.cc-more-icon {
+  margin-right: 0px;
 }
 @media (max-width: 991px) {
   .cc-hero {
