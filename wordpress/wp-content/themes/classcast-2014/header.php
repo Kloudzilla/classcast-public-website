@@ -114,10 +114,11 @@
                 <div class="cc-more-text">MORE</div>
                 <div class="w-icon-dropdown-toggle cc-more-icon"></div>
               </div>
-              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="/company/learning">Learning Center</a><a class="w-dropdown-link cc-more-list-link" href="/company/team">Company</a><a class="w-dropdown-link cc-more-list-link" href="/blog">Blog</a><a class="w-dropdown-link cc-more-list-link"
+                href="/company/contact">Contact</a><a class="w-dropdown-link cc-more-list-link" href="http://classcast.zendesk.com/">Help Center</a>
               </nav>
             </div>
-            </li>
+          </li>
 
           <?php 
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
@@ -181,14 +182,15 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
             <div class="w-dropdown cc-more" data-delay="0">
-              <div class="w-dropdown-toggle cc-more-toggle">
+              <div class="w-dropdown-toggle cc-more-toggle pop-down">
                 <div class="cc-more-text">MORE</div>
                 <div class="w-icon-dropdown-toggle cc-more-icon"></div>
               </div>
-              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="/company/learning">Learning Center</a><a class="w-dropdown-link cc-more-list-link" href="/company/team">Company</a><a class="w-dropdown-link cc-more-list-link" href="/blog">Blog</a><a class="w-dropdown-link cc-more-list-link"
+                href="/company/contact">Contact</a><a class="w-dropdown-link cc-more-list-link" href="http://classcast.zendesk.com/">Help Center</a>
               </nav>
             </div>
-            </li>
+          </li>
 
           <?php 
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
