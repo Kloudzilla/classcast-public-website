@@ -101,7 +101,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.home {
-  height: 640px;
+  height: 702px;
   background-color: #265688;
   background-image: url('../images/final-hero4.jpg');
   background-position: 50% 0px;
@@ -1079,6 +1079,7 @@ p {
   height: 80px;
   margin-left: 35px;
   float: right;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 .cc-navigation-menu-list-item.cc-logo {
@@ -1821,18 +1822,31 @@ p {
 }
 .cc-more-list.w--open {
   width: 160px;
-  border: 1px solid #6e6e6e;
   border-radius: 6px;
   background-color: white;
+  box-shadow: #757575 0px 0px 6px 0px;
 }
 .cc-more-icon {
   margin-right: 0px;
 }
 .cc-more-list-link {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: #6e6e6e;
   text-decoration: none;
 }
 .cc-more-list-link:hover {
+  border-radius: 6px;
+  background-color: #f2f2f2;
   color: #5087d9;
+}
+.cc-more-list-separator {
+  height: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #e3e3e3;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -1849,6 +1863,7 @@ p {
     padding-bottom: 20px;
   }
   .cc-hero.home {
+    height: auto;
     background-size: cover;
   }
   .cc-hero.form {
