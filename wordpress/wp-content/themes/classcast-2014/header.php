@@ -96,10 +96,27 @@
               <a class="w-inline-block cc-navigation-item-logo" href="/"></a>
             </li>
 
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
+            <!--<li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
                 <div class="cc-navigation-menu-list-item-text-signup">REQUEST A DEMO</div>
               </a>
+            </li>-->
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="http://manage.classcast.co">
+                <div class="cc-navigation-menu-list-item-text">LOGIN</div>
+              </a>
+            </li>
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+            <div class="w-dropdown cc-more" data-delay="0">
+              <div class="w-dropdown-toggle cc-more-toggle">
+                <div class="cc-more-text">MORE</div>
+                <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+              </div>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+              </nav>
+            </div>
             </li>
 
           <?php 
@@ -154,6 +171,23 @@
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
                 <div class="cc-navigation-menu-list-item-text-signup-dark">REQUEST A DEMO</div>
               </a>
+            </li>
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://manage.classcast.co">
+                <div class="cc-navigation-menu-list-item-text">LOGIN</div>
+              </a>
+            </li>
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+            <div class="w-dropdown cc-more" data-delay="0">
+              <div class="w-dropdown-toggle cc-more-toggle">
+                <div class="cc-more-text">MORE</div>
+                <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+              </div>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+              </nav>
+            </div>
             </li>
 
           <?php 
