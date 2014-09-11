@@ -114,9 +114,9 @@
                 <div class="cc-more-text">MORE</div>
                 <div class="w-icon-dropdown-toggle cc-more-icon"></div>
               </div>
-              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="#">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="#">Videos</a>
-                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Company</a><a class="w-dropdown-link cc-more-list-link" href="#">Blog</a>
-                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Contact</a><a class="w-dropdown-link cc-more-list-link" href="#">Help Center</a>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#ebooks">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#videos">Videos</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/team">Company</a><a class="w-dropdown-link cc-more-list-link" href="/blog">Blog</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/contact">Contact</a><a class="w-dropdown-link cc-more-list-link" href="http://classcast.zendesk.com">Help Center</a>
               </nav>
             </div>
           </li>
@@ -187,9 +187,9 @@
                 <div class="cc-more-text">MORE</div>
                 <div class="w-icon-dropdown-toggle cc-more-icon"></div>
               </div>
-              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="#">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="#">Videos</a>
-                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Company</a><a class="w-dropdown-link cc-more-list-link" href="#">Blog</a>
-                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Contact</a><a class="w-dropdown-link cc-more-list-link" href="#">Help Center</a>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#ebooks">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#videos">Videos</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/team">Company</a><a class="w-dropdown-link cc-more-list-link" href="/blog">Blog</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/contact">Contact</a><a class="w-dropdown-link cc-more-list-link" href="http://classcast.zendesk.com">Help Center</a>
               </nav>
             </div>
           </li>
