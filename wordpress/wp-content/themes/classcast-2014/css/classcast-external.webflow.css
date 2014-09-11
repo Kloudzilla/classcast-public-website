@@ -1816,13 +1816,23 @@ p {
 .cc-more-toggle:hover {
   opacity: 1;
 }
+.cc-more-toggle.pop-down {
+  color: #6e6e6e;
+}
 .cc-more-list.w--open {
   width: 160px;
+  border: 1px solid #6e6e6e;
   border-radius: 6px;
   background-color: white;
 }
 .cc-more-icon {
   margin-right: 0px;
+}
+.cc-more-list-link {
+  text-decoration: none;
+}
+.cc-more-list-link:hover {
+  color: #5087d9;
 }
 @media (max-width: 991px) {
   .cc-hero {
