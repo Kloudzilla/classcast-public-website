@@ -83,7 +83,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.about {
-  height: 300px;
+  height: 330px;
   background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
@@ -1821,6 +1821,8 @@ p {
   color: #6e6e6e;
 }
 .cc-more-list.w--open {
+  position: absolute;
+  z-index: 99999;
   width: 160px;
   border-radius: 6px;
   background-color: white;
