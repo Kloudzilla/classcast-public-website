@@ -84,8 +84,8 @@
 <body>
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
-      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='form')?'form' :'');?> 
-      <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
+      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='signup')?'form' :'');?> 
+      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
       
     
       <div class="cc-navigation" data-ix="navigation-past-hero">
@@ -346,12 +346,22 @@
     </div>
 
     <?php
-      } else if($template_section == 'form') {
+      } else if($template_section == 'signup') {
     ?>
 
       <div class="w-container cc-content-container cc-blog-hero-content">
         <h1 class="cc-form-hero-headline">SCHEDULE A DEMO</h1>
         <div class="cc-form-hero-subline">Get started with Classcast today</div>
+      </div>
+    </div>
+
+    <?php
+      } else if($template_section == 'contact') {
+    ?>
+
+      <div class="w-container cc-content-container cc-blog-hero-content">
+        <h1 class="cc-form-hero-headline">CONTACT US</h1>
+        <div class="cc-form-hero-subline">One of our team will respond to your message shortly</div>
       </div>
     </div>
 

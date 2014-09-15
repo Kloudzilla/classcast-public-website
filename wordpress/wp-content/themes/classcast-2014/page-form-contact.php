@@ -3,7 +3,7 @@
 	Template Name: Form Contact
 	*/
     global $template_section;
-  $template_section = 'form';
+  $template_section = 'contact';
 ?>
 
 <?php
@@ -12,8 +12,6 @@
  
      <div class="w-container cc-content-container cc-form-hero-content">
         <div class="cc-form">
-          <h4 class="cc-form-headline">Contact Us</h4>
-          <div class="cc-form-subheadline">Our team will reply to your enquiry soon.</div>
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
           <form action="//classcast.us2.list-manage.com/subscribe/post?u=1c01ae6d41b7efa731691c63a&amp;id=74296c3792" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
