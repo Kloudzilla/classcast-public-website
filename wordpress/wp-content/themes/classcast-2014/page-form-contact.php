@@ -11,7 +11,6 @@
 ?>
  
      <div class="w-container cc-content-container cc-form-hero-content">
-        <a class="w-inline-block cc-form-logo" href="/"></a>
         <div class="cc-form">
           <h4 class="cc-form-headline">Contact Us</h4>
           <div class="cc-form-subheadline">Our team will reply to your enquiry soon.</div>
