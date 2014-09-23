@@ -83,7 +83,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.about {
-  height: 300px;
+  height: 330px;
   background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
@@ -101,15 +101,15 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.home {
-  height: 640px;
+  height: 702px;
   background-color: #265688;
   background-image: url('../images/final-hero4.jpg');
   background-position: 50% 0px;
   background-repeat: no-repeat;
 }
 .cc-hero.form {
-  min-height: 800px;
-  background-color: #509bd6;
+  height: 400px;
+  background-color: #00afef;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -1079,6 +1079,7 @@ p {
   height: 80px;
   margin-left: 35px;
   float: right;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 .cc-navigation-menu-list-item.cc-logo {
@@ -1125,6 +1126,7 @@ p {
 .cc-navigation-menu-list-item-text {
   display: inline-block;
   padding-top: 30px;
+  float: left;
   font-size: 13px;
   font-weight: 400;
 }
@@ -1742,11 +1744,13 @@ p {
 }
 .cc-form-hero-headline {
   color: white;
-  font-weight: 300;
 }
 .cc-terms-wrap {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.cc-form-text {
+  margin-bottom: 20px;
 }
 .cc-form-image {
   width: 100%;
@@ -1755,6 +1759,96 @@ p {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+}
+.cc-form-list-item {
+  width: 50%;
+  height: 80px;
+  float: left;
+}
+.cc-form-list-item.iom {
+  background-image: url('../images/iom_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.yogafit {
+  background-image: url('../images/yogafit_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.totalgym {
+  background-image: url('../images/totalgym_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.gymstick {
+  background-image: url('../images/gymstick_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.kettleworx {
+  background-image: url('../images/kettleworx_1.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cc-form-hero-subline {
+  color: white;
+}
+.cc-navigation-menu-list-item-arrow {
+  margin-left: 4px;
+  padding-top: 30px;
+  float: left;
+  font-size: 8px;
+}
+.cc-more {
+  height: 80px;
+  padding-top: 20px;
+}
+.cc-more-toggle {
+  padding: 10px 20px 10px 0px;
+  opacity: 0.6;
+  color: white;
+  font-weight: 400;
+}
+.cc-more-toggle:hover {
+  opacity: 1;
+}
+.cc-more-toggle.pop-down {
+  color: #6e6e6e;
+}
+.cc-more-list.w--open {
+  position: absolute;
+  z-index: 99999;
+  width: 160px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: #757575 0px 0px 6px 0px;
+}
+.cc-more-icon {
+  margin-right: 0px;
+}
+.cc-more-list-link {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: #6e6e6e;
+  text-decoration: none;
+}
+.cc-more-list-link:hover {
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  color: #5087d9;
+}
+.cc-more-list-separator {
+  height: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #e3e3e3;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -1771,7 +1865,11 @@ p {
     padding-bottom: 20px;
   }
   .cc-hero.home {
+    height: auto;
     background-size: cover;
+  }
+  .cc-hero.form {
+    height: auto;
   }
   .cc-users-img {
     position: static;
@@ -2004,6 +2102,9 @@ p {
   }
   .cc-signup-subline {
     text-align: center;
+  }
+  .cc-form-list-item {
+    width: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -2500,8 +2601,11 @@ p {
     border-bottom-left-radius: 6px;
   }
   .cc-form-hero-headline {
-    font-size: 60px;
-    line-height: 62px;
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .cc-form-list-item.kettleworx {
+    display: block;
   }
 }
 
