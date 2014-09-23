@@ -3,7 +3,7 @@
 	Template Name: Form Signup
 	*/
     global $template_section;
-  $template_section = 'form';
+  $template_section = 'signup';
 ?>
 
 <?php
