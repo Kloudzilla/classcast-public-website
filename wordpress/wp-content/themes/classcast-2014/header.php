@@ -256,8 +256,8 @@
               <div class="w-slide">
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
-                    <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
-                    <div class="cc-home-hero-subtext"><em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
+                    <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
+                    <div class="cc-home-hero-subtext"><em>The No. 1 Health and Fitness content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                       <div>REQUEST&nbsp;A&nbsp;DEMO</div>
@@ -351,7 +351,8 @@
 
       <div class="w-container cc-content-container cc-blog-hero-content">
         <h1 class="cc-form-hero-headline">SCHEDULE A DEMO</h1>
-        <div class="cc-form-hero-subline">Get started with Classcast today</div>
+        <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
+          <br>Get a personalized tour of the Classcast today and learn how we make it easier.</div>
       </div>
     </div>
 
