@@ -17,9 +17,8 @@
             <div class="cc-form-title">Engage, connect and deliver content to your customers today.</div>
             <div class="cc-form-text">Spend time with one of our Classcast experts. You will be able to see what Classcast could do for your business. Let us demonstrate the
               <br>power and ease of our product.</div>
-            <div class="cc-form-text-center">Join these great companies/people in delivering content mobile.</div>
+            <div class="cc-form-text">Join these great companies/people in delivering content mobile.</div>
             <ul class="w-list-unstyled w-clearfix cc-form-list">
-              <li class="cc-form-list-item gymstick"></li>
               <li class="cc-form-list-item iom"></li>
               <li class="cc-form-list-item kettleworx"></li>
               <li class="cc-form-list-item totalgym"></li>
