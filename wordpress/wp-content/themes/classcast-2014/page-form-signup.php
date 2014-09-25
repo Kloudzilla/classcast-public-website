@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="mc-field-group">
-                          <label for="mce-CONTENT">Do you have any content that you distribute?</label>
+                          <label for="mce-CONTENT">Do you have any content to distribute?</label>
                           <select name="CONTENT" class="required" id="mce-CONTENT">
                           <option value=""></option>
                           <option value="Yes">Yes</option>
