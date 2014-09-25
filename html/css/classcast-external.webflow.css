@@ -107,7 +107,6 @@ p {
   background-position: 0% 0%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 .cc-hero.form {
   height: 400px;
@@ -968,9 +967,9 @@ p {
 .cc-home-hero-headline {
   margin-bottom: 10px;
   color: white;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
 }
 .cc-home-hero-subtext {
   display: block;
@@ -1762,6 +1761,9 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
+.cc-form-list {
+  margin-bottom: 20px;
+}
 .cc-form-list-item {
   width: 50%;
   height: 80px;
@@ -1851,6 +1853,19 @@ p {
   margin-right: 10px;
   margin-left: 10px;
   background-color: #e3e3e3;
+}
+.cc-form-text-center {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cc-form-quote {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+.cc-form-quote-author {
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   .cc-hero {
