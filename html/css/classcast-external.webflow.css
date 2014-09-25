@@ -1768,33 +1768,33 @@ p {
   float: left;
 }
 .cc-form-list-item.iom {
-  background-image: url('../images/trusted-iom.gif');
+  background-image: url('../images/iom.png');
   background-position: 50% 50%;
-  background-size: 60%;
+  background-size: 70%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.yogafit {
-  background-image: url('../images/trusted-yogafit.gif');
+  background-image: url('../images/yogafit.png');
   background-position: 50% 50%;
-  background-size: 60%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.totalgym {
-  background-image: url('../images/trusted-totalgym.gif');
+  background-image: url('../images/totalgym.png');
   background-position: 50% 50%;
-  background-size: 60%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.gymstick {
-  background-image: url('../images/trusted-gymstick.gif');
+  background-image: url('../images/gymstick.png');
   background-position: 50% 50%;
-  background-size: 60%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.kettleworx {
-  background-image: url('../images/trusted-kettleworx.gif');
+  background-image: url('../images/kettleworx.png');
   background-position: 50% 50%;
-  background-size: 60%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 .cc-form-hero-subline {
