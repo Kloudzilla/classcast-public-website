@@ -257,7 +257,7 @@
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
                     <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
-                    <div class="cc-home-hero-subtext"><em>The No. 1 Health and Fitness content publishing platform</em>
+                    <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                       <div>REQUEST&nbsp;A&nbsp;DEMO</div>
