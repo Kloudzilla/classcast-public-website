@@ -103,9 +103,11 @@ p {
 .cc-hero.home {
   height: 702px;
   background-color: #265688;
-  background-image: url('../images/final-hero4.jpg');
-  background-position: 50% 0px;
+  background-image: url('../images/final-hero6.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 .cc-hero.form {
   height: 400px;
@@ -770,8 +772,7 @@ p {
 .cc-section.cc-about-team-mini-hero {
   height: 400px;
   background-color: #509bd6;
-  background-image: url('../images/teamphoto.png');
-  background-position: 50% 0px;
+  background-image: url('../images/team.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1735,8 +1736,9 @@ p {
   right: 0px;
   bottom: 0px;
   margin-bottom: 20px;
-  color: #3779b0;
+  color: #a1a1a1;
   font-size: 12px;
+  font-weight: 600;
   text-align: center;
 }
 .cc-signup-subline {
@@ -1766,33 +1768,33 @@ p {
   float: left;
 }
 .cc-form-list-item.iom {
-  background-image: url('../images/iom_1.png');
+  background-image: url('../images/trusted-iom.gif');
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.yogafit {
-  background-image: url('../images/yogafit_1.png');
+  background-image: url('../images/trusted-yogafit.gif');
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.totalgym {
-  background-image: url('../images/totalgym_1.png');
+  background-image: url('../images/trusted-totalgym.gif');
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.gymstick {
-  background-image: url('../images/gymstick_1.png');
+  background-image: url('../images/trusted-gymstick.gif');
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .cc-form-list-item.kettleworx {
-  background-image: url('../images/kettleworx_1.png');
+  background-image: url('../images/trusted-kettleworx.gif');
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .cc-form-hero-subline {
