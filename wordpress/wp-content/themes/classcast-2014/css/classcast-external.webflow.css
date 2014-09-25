@@ -83,7 +83,7 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.about {
-  height: 300px;
+  height: 330px;
   background-color: #509bd6;
   background-image: none;
   background-position: 0% 0%;
@@ -101,16 +101,16 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.home {
+  height: 702px;
   background-color: #265688;
-  background-image: url('../images/final-hero4.png');
-  background-position: 50% 0px;
-  background-size: auto;
+  background-image: url('../images/final-hero6.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 .cc-hero.form {
-  min-height: 800px;
-  background-color: #509bd6;
+  height: 400px;
+  background-color: #00afef;
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -150,7 +150,7 @@ p {
   width: 45%;
   height: 700px;
   float: right;
-  background-image: url('../images/hero-content.png');
+  background-image: url('../images/hero-content3.jpg');
   background-position: 0px 0px;
   background-size: 940px;
   background-repeat: no-repeat;
@@ -529,9 +529,6 @@ p {
 .cc-pricing-package-price-wrap {
   margin-bottom: 8px;
 }
-.cc-pricing-package-price-wrap.featured {
-  margin-bottom: 5px;
-}
 .cc-pricing-package-price-enterprise {
   margin-bottom: 34px;
   font-size: 18px;
@@ -763,6 +760,10 @@ p {
   padding-top: 60px;
   padding-bottom: 0px;
 }
+.cc-content-container.cc-form-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .cc-section.cc-about-tagline {
   height: 180px;
   background-color: #f8f8f8;
@@ -770,8 +771,7 @@ p {
 .cc-section.cc-about-team-mini-hero {
   height: 400px;
   background-color: #509bd6;
-  background-image: url('../images/teamphoto.png');
-  background-position: 50% 0px;
+  background-image: url('../images/team.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -822,6 +822,8 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #f8f8f8;
+  background-image: url('../images/content-background-colour.jpg');
+  background-size: 100% 100%;
 }
 .cc-about-team-headline {
   margin-bottom: 40px;
@@ -965,9 +967,9 @@ p {
 .cc-home-hero-headline {
   margin-bottom: 10px;
   color: white;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
 }
 .cc-home-hero-subtext {
   display: block;
@@ -1077,6 +1079,7 @@ p {
   height: 80px;
   margin-left: 35px;
   float: right;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 .cc-navigation-menu-list-item.cc-logo {
@@ -1123,6 +1126,7 @@ p {
 .cc-navigation-menu-list-item-text {
   display: inline-block;
   padding-top: 30px;
+  float: left;
   font-size: 13px;
   font-weight: 400;
 }
@@ -1260,7 +1264,6 @@ p {
   margin-left: auto;
 }
 .cc-home-hero-slider-text {
-  height: 640px;
   padding-top: 180px;
   padding-right: 40px;
   text-align: left;
@@ -1401,12 +1404,7 @@ p {
   color: #81878c;
   text-decoration: none;
 }
-.cc-pricing-package-link:hover {
-  background-color: #e6f0ff;
-  color: #6a6f73;
-}
 .cc-pricing-package-link.featured {
-  border: 1px solid #00afef;
   border-radius: 6px;
 }
 .cc-ebook-link {
@@ -1736,9 +1734,10 @@ p {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  margin-bottom: 30px;
-  color: #3779b0;
+  margin-bottom: 20px;
+  color: #a1a1a1;
   font-size: 12px;
+  font-weight: 600;
   text-align: center;
 }
 .cc-signup-subline {
@@ -1746,11 +1745,127 @@ p {
 }
 .cc-form-hero-headline {
   color: white;
-  font-weight: 300;
 }
 .cc-terms-wrap {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.cc-form-text {
+  margin-bottom: 20px;
+}
+.cc-form-image {
+  width: 100%;
+}
+.cc-form-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.cc-form-list {
+  margin-bottom: 20px;
+}
+.cc-form-list-item {
+  width: 50%;
+  height: 80px;
+  float: left;
+}
+.cc-form-list-item.iom {
+  background-image: url('../images/iom.png');
+  background-position: 50% 50%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.yogafit {
+  background-image: url('../images/yogafit.png');
+  background-position: 50% 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.totalgym {
+  background-image: url('../images/totalgym.png');
+  background-position: 50% 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.gymstick {
+  background-image: url('../images/gymstick.png');
+  background-position: 50% 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.cc-form-list-item.kettleworx {
+  background-image: url('../images/kettleworx.png');
+  background-position: 50% 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.cc-form-hero-subline {
+  color: white;
+}
+.cc-navigation-menu-list-item-arrow {
+  margin-left: 4px;
+  padding-top: 30px;
+  float: left;
+  font-size: 8px;
+}
+.cc-more {
+  height: 80px;
+  padding-top: 20px;
+}
+.cc-more-toggle {
+  padding: 10px 20px 10px 0px;
+  opacity: 0.6;
+  color: white;
+  font-weight: 400;
+}
+.cc-more-toggle:hover {
+  opacity: 1;
+}
+.cc-more-toggle.pop-down {
+  color: #6e6e6e;
+}
+.cc-more-list.w--open {
+  position: absolute;
+  z-index: 99999;
+  width: 160px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: #757575 0px 0px 6px 0px;
+}
+.cc-more-icon {
+  margin-right: 0px;
+}
+.cc-more-list-link {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: #6e6e6e;
+  text-decoration: none;
+}
+.cc-more-list-link:hover {
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  color: #5087d9;
+}
+.cc-more-list-separator {
+  height: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #e3e3e3;
+}
+.cc-form-text-center {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cc-form-quote {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+.cc-form-quote-author {
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -1767,7 +1882,11 @@ p {
     padding-bottom: 20px;
   }
   .cc-hero.home {
+    height: auto;
     background-size: cover;
+  }
+  .cc-hero.form {
+    height: auto;
   }
   .cc-users-img {
     position: static;
@@ -2001,6 +2120,9 @@ p {
   .cc-signup-subline {
     text-align: center;
   }
+  .cc-form-list-item {
+    width: 50%;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -2216,6 +2338,12 @@ p {
   }
   .cc-stats-icon-wrap {
     width: 45%;
+  }
+  .cc-form-col {
+    margin-bottom: 30px;
+  }
+  .cc-form-text {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 479px) {
@@ -2488,6 +2616,13 @@ p {
     border-right-color: #509bd6;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 6px;
+  }
+  .cc-form-hero-headline {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .cc-form-list-item.kettleworx {
+    display: block;
   }
 }
 

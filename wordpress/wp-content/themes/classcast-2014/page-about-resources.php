@@ -35,7 +35,7 @@
   </div>
   <div class="cc-section">
     <div class="w-container cc-content-container cc-about-team">
-      <h3 class="cc-about-resources-headline">EBOOKS</h3>
+      <h3 class="cc-about-resources-headline">EBOOKS</h3><a name='ebooks'></a>
       <div class="w-row cc-ebook-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'ebook' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
@@ -54,7 +54,7 @@
         <?php endwhile; ?>
       </div>
 
-      <h3 class="cc-about-resources-headline">VIDEOS</h3>
+      <h3 class="cc-about-resources-headline">VIDEOS</h3><a name='videos'></a>
       <div class="w-row cc-video-row">
         <?php $loop = new WP_Query( array( 'post_type' => 'video' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>

@@ -84,12 +84,10 @@
 <body>
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
-      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='form')?'form' :'');?> 
-      <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
+      <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='signup')?'form' :'');?> 
+      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
       
-    <?php
-      if($template_section == 'form') { }
-      else { ?>
+    
       <div class="cc-navigation" data-ix="navigation-past-hero">
         <div class="w-container cc-navigation-items-wrap">
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
@@ -98,11 +96,30 @@
               <a class="w-inline-block cc-navigation-item-logo" href="/"></a>
             </li>
 
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
+            <!--<li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
                 <div class="cc-navigation-menu-list-item-text-signup">REQUEST A DEMO</div>
               </a>
+            </li>-->
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="http://manage.classcast.co">
+                <div class="cc-navigation-menu-list-item-text">LOGIN</div>
+              </a>
             </li>
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+            <div class="w-dropdown cc-more" data-delay="0">
+              <div class="w-dropdown-toggle cc-more-toggle">
+                <div class="cc-more-text">MORE</div>
+                <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+              </div>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#ebooks">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#videos">Videos</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/team">Company</a><a class="w-dropdown-link cc-more-list-link" href="/blog">Blog</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/contact">Contact</a><a class="w-dropdown-link cc-more-list-link" href="http://classcast.zendesk.com">Help Center</a>
+              </nav>
+            </div>
+          </li>
 
           <?php 
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
@@ -158,6 +175,25 @@
               </a>
             </li>
 
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="http://manage.classcast.co">
+                <div class="cc-navigation-menu-list-item-text">LOGIN</div>
+              </a>
+            </li>
+
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+            <div class="w-dropdown cc-more" data-delay="0">
+              <div class="w-dropdown-toggle cc-more-toggle pop-down">
+                <div class="cc-more-text">MORE</div>
+                <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+              </div>
+              <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#ebooks">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="/company/learning/#videos">Videos</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/team">Company</a><a class="w-dropdown-link cc-more-list-link" href="/blog">Blog</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="/company/contact">Contact</a><a class="w-dropdown-link cc-more-list-link" href="http://classcast.zendesk.com">Help Center</a>
+              </nav>
+            </div>
+          </li>
+
           <?php 
             foreach(wp_get_nav_menu_items('primary') as $primary_menu_item){
           ?>
@@ -208,9 +244,7 @@
           </div>
         </div>
       </div>
-    <?php 
-       };
-    ?>
+
 
     <?php
       if($template_section == 'home') {
@@ -222,8 +256,8 @@
               <div class="w-slide">
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
-                    <h3 class="cc-home-hero-headline">HARNESS&nbsp;THE POWER&nbsp;OF<br>MOBILE CONTENT</h3>
-                    <div class="cc-home-hero-subtext"><em>The <strong class='bolded-italics'>No.1 Health &amp; Fitness</strong> content publishing platform</em>
+                    <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
+                    <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="/sign-up">
                       <div>REQUEST&nbsp;A&nbsp;DEMO</div>
@@ -231,7 +265,6 @@
                     <a class="w-inline-block cc-button-l tour" href="/#tour">
                       <div>TAKE&nbsp;A&nbsp;TOUR</div>
                     </a>
-                    <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
                   </div>
                 </div>
               </div>
@@ -244,6 +277,7 @@
             </div>
             <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
           </div>
+          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
         </div>
       </div>
 
@@ -308,6 +342,27 @@
 
       <div class="w-container cc-content-container cc-blog-hero-content">
         <h1 class="cc-form-hero-headline">Terms</h1>
+      </div>
+    </div>
+
+    <?php
+      } else if($template_section == 'signup') {
+    ?>
+
+      <div class="w-container cc-content-container cc-blog-hero-content">
+        <h1 class="cc-form-hero-headline">SCHEDULE A DEMO</h1>
+        <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
+          <br>Get a personalized tour of the Classcast today and learn how we make it easier.</div>
+      </div>
+    </div>
+
+    <?php
+      } else if($template_section == 'contact') {
+    ?>
+
+      <div class="w-container cc-content-container cc-blog-hero-content">
+        <h1 class="cc-form-hero-headline">CONTACT US</h1>
+        <div class="cc-form-hero-subline">One of our team will respond to your message shortly</div>
       </div>
     </div>
 

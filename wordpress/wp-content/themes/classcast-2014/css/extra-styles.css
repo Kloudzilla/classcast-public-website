@@ -29,34 +29,11 @@ IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/
   line-height: 32px;
 }
 
-/* TOP NAVIGATION & FOOTER UNDERLINE HOVER */
-
-/*    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text {
-        border-bottom:2px solid white;
-    }
-    .cc-navigation-menu-list-item-link:hover .cc-navigation-menu-list-item-text-dark {
-        border-bottom:2px solid #555;
-    }
-    .cc-footer-list-item-link:hover .cc-footer-list-item-text {
-        border-bottom:2px solid white;
-    }
-*/
-
 /* SLIDER VERTICAL ALIGNMENT */
 
     .w-slide{
         vertical-align:bottom;
     }
-
-/* PRICING PACKAGE BUTTON HOVER */
-
-/*    .cc-pricing-package-link .cc-button-s.green.center.pricing{
-        visibility:hidden;
-    }
-    .cc-pricing-package-link:hover .cc-button-s.green.center.pricing{
-        visibility:visible;
-    }
-*/
 
 tbody {
   margin-left:auto;
@@ -155,3 +132,53 @@ img.attachment-thumbnail {
 .bolded-italics {
   font-weight:400;
 }
+
+
+/* MAIL CHIMP STYLES */
+
+#mc_embed_signup {
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+#mc_embed_signup div#mce-responses {
+ padding:0 0;
+ margin:0 0;
+ width:100%;
+ padding-bottom:10px;
+}
+
+#mc-embedded-subscribe {
+  margin:0 0;
+}
+
+#mc_embed_signup .mc-field-group input {
+  height:60px;
+  width:100%;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-weight:100;
+}
+
+#mc_embed_signup .mc-field-group label {
+  font-weight:100;
+}
+
+#mc_embed_signup .mc-field-group select {
+  min-height:60px;
+  width:100%;
+  margin-top:10px;
+}
+
+select {
+  border:1px solid #c9c9c9;
+  height:60px;
+  background-color:white;
+  background:white;
+  width:100%;
+}
+
+
+
+
