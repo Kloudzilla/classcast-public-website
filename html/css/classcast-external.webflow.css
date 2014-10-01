@@ -121,13 +121,6 @@ p {
   height: 300px;
   background-color: #509bd6;
 }
-.cc-trusted-headline {
-  margin-bottom: 0px;
-  color: white;
-  font-size: 20px;
-  font-weight: 200;
-  text-align: center;
-}
 .cc-users-img {
   position: absolute;
   top: 60px;
@@ -354,7 +347,7 @@ p {
   width: 100%;
   height: 100%;
   float: left;
-  background-image: url('../images/logo-light_1.png');
+  background-image: url('../images/logo-light.png');
   background-position: 50% 50%;
   background-size: 150px;
   background-repeat: no-repeat;
@@ -879,18 +872,6 @@ p {
 .cc-button-s.green:hover {
   background-color: #319957;
 }
-.cc-button-s.green.footer-signup {
-  display: block;
-  width: 200px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  background-color: #65d2d6;
-  text-align: center;
-}
-.cc-button-s.green.footer-signup:hover {
-  background-color: #5acdd1;
-}
 .cc-button-s.center {
   display: block;
   width: 80%;
@@ -898,9 +879,6 @@ p {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
-}
-.cc-button-s.center.highlight {
-  background-color: #3a539b;
 }
 .cc-button-s.keyline {
   padding: 5px 20px;
@@ -912,12 +890,6 @@ p {
   border-color: #509bd6;
   background-color: #509bd6;
   color: white;
-}
-.cc-button-s.blue {
-  background-color: #509bd6;
-}
-.cc-button-s.blue:hover {
-  background-color: #3e6bae;
 }
 .cc-location-row {
   height: 100%;
@@ -997,36 +969,6 @@ p {
 }
 .cc-trusted-logo-link:hover {
   opacity: 1;
-}
-.cc-trusted-logo-link.total-gym {
-  background-image: url('../images/totalgym_1.png');
-  background-position: 50% 50%;
-  background-size: 90%;
-  background-repeat: repeat;
-}
-.cc-trusted-logo-link.gymstick {
-  background-image: url('../images/gymstick_1.png');
-  background-position: 50% 50%;
-  background-size: 90%;
-  background-repeat: no-repeat;
-}
-.cc-trusted-logo-link.kettleworx {
-  background-image: url('../images/kettleworx_1.png');
-  background-position: 50% 50%;
-  background-size: 90%;
-  background-repeat: no-repeat;
-}
-.cc-trusted-logo-link.yogafit {
-  background-image: url('../images/yogafit_1.png');
-  background-position: 50% 50%;
-  background-size: 90%;
-  background-repeat: no-repeat;
-}
-.cc-trusted-logo-link.iom {
-  background-image: url('../images/iom_1.png');
-  background-position: 50% 50%;
-  background-size: 90%;
-  background-repeat: no-repeat;
 }
 .cc-footer-min-list {
   display: block;
@@ -1258,24 +1200,10 @@ p {
   display: block;
   opacity: 1;
 }
-.cc-home-hero-image {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
 .cc-home-hero-slider-text {
   padding-top: 180px;
   padding-right: 40px;
   text-align: left;
-}
-.cc-home-hero-slider-img {
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  width: 940px;
-  height: 600px;
-  padding-top: 20px;
-  float: left;
 }
 .cc-users-headline {
   color: #00afef;
@@ -1413,32 +1341,13 @@ p {
   margin-left: auto;
   text-decoration: none;
 }
-.cc-form {
-  display: block;
-  width: 80%;
-  margin: 40px auto 100px;
-  padding: 40px 20px;
-  background-color: white;
-}
 .cc-form-headline {
   color: #00afef;
   text-align: center;
 }
 .cc-form-subheadline {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
-}
-.cc-form-logo {
-  display: block;
-  width: 150px;
-  height: 30px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url('../images/logo-light.png');
-  background-position: 50% 50%;
-  background-size: 150px;
-  background-repeat: no-repeat;
 }
 .cc-button-l {
   padding: 15px 40px;
@@ -1465,15 +1374,15 @@ p {
   border-color: #3e6bae;
   background-color: #3e6bae;
 }
-.cc-button-l.get-started.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
 .cc-button-l.get-started.footer {
   margin-top: 15px;
   margin-right: 20px;
   float: right;
+}
+.cc-button-l.get-started.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .cc-button-l.join-us {
   background-color: #5087d9;
@@ -1502,6 +1411,18 @@ p {
 }
 .cc-button-l.tour:hover {
   opacity: 1;
+}
+.cc-button-l.return {
+  width: 200px;
+  background-color: #00afef;
+}
+.cc-button-l.return:hover {
+  background-color: #0296cc;
+}
+.cc-button-l.return.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .cc-company-subline {
   color: white;
@@ -1624,28 +1545,6 @@ p {
   background-color: #45b46d;
   color: white;
 }
-.cc-pricing-tab-menu.monthly {
-  position: static;
-  display: block;
-  width: 320px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.cc-pricing-tab-menu.annual {
-  position: static;
-  border-top: 2px solid #45b46d;
-  border-right: 2px solid #45b46d;
-  border-bottom: 2px solid #45b46d;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: #f8f8f8;
-  text-align: center;
-}
-.cc-pricing-tab-menu.annual.w--current {
-  position: static;
-  background-color: #45b46d;
-}
 .cc-pricing-tab {
   position: static;
   width: 140px;
@@ -1693,7 +1592,6 @@ p {
 .cc-button-h {
   padding: 20px 80px;
   border-radius: 6px;
-  background-color: #11d0d6;
   color: white;
   font-size: 18px;
   text-decoration: none;
@@ -1722,9 +1620,6 @@ p {
   margin-bottom: 10px;
   text-align: center;
 }
-.cc-bacpm {
-  background-color: #d47979;
-}
 .cc-footer-min-list-wrap {
   display: inline-block;
   float: right;
@@ -1752,9 +1647,6 @@ p {
 }
 .cc-form-text {
   margin-bottom: 20px;
-}
-.cc-form-image {
-  width: 100%;
 }
 .cc-form-title {
   margin-bottom: 10px;
@@ -1787,12 +1679,6 @@ p {
   background-size: 80%;
   background-repeat: no-repeat;
 }
-.cc-form-list-item.gymstick {
-  background-image: url('../images/gymstick.png');
-  background-position: 50% 50%;
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
 .cc-form-list-item.kettleworx {
   background-image: url('../images/kettleworx.png');
   background-position: 50% 50%;
@@ -1801,12 +1687,6 @@ p {
 }
 .cc-form-hero-subline {
   color: white;
-}
-.cc-navigation-menu-list-item-arrow {
-  margin-left: 4px;
-  padding-top: 30px;
-  float: left;
-  font-size: 8px;
 }
 .cc-more {
   height: 80px;
@@ -1853,10 +1733,6 @@ p {
   margin-right: 10px;
   margin-left: 10px;
   background-color: #e3e3e3;
-}
-.cc-form-text-center {
-  margin-bottom: 20px;
-  text-align: center;
 }
 .cc-form-quote {
   margin-bottom: 5px;
@@ -2028,6 +1904,9 @@ p {
   .cc-content-container.cc-about-hero-content {
     padding-bottom: 40px;
   }
+  .cc-content-container.cc-form-content {
+    min-height: 0px;
+  }
   .cc-section.cc-users {
     height: auto;
   }
@@ -2058,9 +1937,6 @@ p {
   .modal-background {
     display: none;
   }
-  .cc-home-hero-image {
-    width: 90%;
-  }
   .cc-home-hero-slider-text {
     width: 100%;
     height: 100%;
@@ -2070,13 +1946,6 @@ p {
     padding-bottom: 40px;
     float: none;
     text-align: center;
-  }
-  .cc-home-hero-slider-img {
-    position: static;
-    width: 100%;
-    height: 100%;
-    margin-top: 40px;
-    float: none;
   }
   .cc-button-l.get-started.footer {
     display: block;
@@ -2137,11 +2006,6 @@ p {
   }
   .cc-hero.blog {
     height: auto;
-  }
-  .cc-trusted-headline {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 18px;
   }
   .cc-users-img {
     width: 100%;
@@ -2354,13 +2218,6 @@ p {
     background-position: 67% 20%;
     background-size: 960px 490px;
   }
-  .cc-trusted-headline {
-    padding-right: 5%;
-    padding-left: 5%;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-  }
   .cc-users-img {
     width: 100%;
     height: auto;
@@ -2561,9 +2418,6 @@ p {
   .cc-branding-headline {
     margin-top: 0px;
   }
-  .cc-home-hero-image {
-    width: 95%;
-  }
   .cc-home-hero-slider-text {
     padding-top: 30px;
   }
@@ -2584,16 +2438,6 @@ p {
   }
   .cc-pricing-tab-menu {
     width: 100%;
-  }
-  .cc-pricing-tab-menu.monthly {
-    width: auto;
-  }
-  .cc-pricing-tab-menu.annual {
-    width: 100%;
-    border-left: 2px solid #45b46d;
-    border-top-style: none;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 5px;
   }
   .cc-pricing-tab.monthly {
     display: block;
