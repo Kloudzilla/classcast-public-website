@@ -2191,6 +2191,7 @@ p {
     width: 32.3%;
     margin-top: 0px;
     margin-right: 0.5%;
+    padding-bottom: 20px;
     float: left;
   }
   .cc-button-l.get-started.footer {
@@ -2237,6 +2238,9 @@ p {
   }
   .cc-form-list-item {
     width: 50%;
+  }
+  .cc-pricing-package-enterprise-blurb-link-mobile {
+    color: #509bd6;
   }
 }
 @media (max-width: 767px) {
@@ -2438,6 +2442,9 @@ p {
     margin-bottom: 20px;
   }
   .cc-pricing-package-link {
+    width: 49%;
+  }
+  .cc-pricing-package-link.enterprise {
     width: 49%;
   }
   .cc-branding-subtext {
@@ -2681,6 +2688,9 @@ p {
     height: auto;
     margin-right: 0%;
     margin-left: 0%;
+  }
+  .cc-pricing-package-link.enterprise {
+    width: 100%;
   }
   .cc-button-l.get-started {
     margin-bottom: 10px;
