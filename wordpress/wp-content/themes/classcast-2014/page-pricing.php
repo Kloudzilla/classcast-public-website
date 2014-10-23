@@ -43,7 +43,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -65,7 +65,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -86,7 +86,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -107,7 +107,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -128,11 +128,11 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
-                <div class="cc-pricing-package-link enterprise">
+                <div class="w-hidden-main cc-pricing-package-link enterprise">
                   <div class="cc-pricing-package-title-wrap">
                     <div class="cc-pricing-package-title">ENTERPRISE</div>
                   </div>
@@ -166,7 +166,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -188,7 +188,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -209,7 +209,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -230,7 +230,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -251,9 +251,16 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="#">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up">
                     <div>Get Started</div>
                   </a>
+                </div>
+                <div class="w-hidden-main cc-pricing-package-link enterprise">
+                  <div class="cc-pricing-package-title-wrap">
+                    <div class="cc-pricing-package-title">ENTERPRISE</div>
+                  </div>
+                  <div class="cc-divider"></div>
+                  <div class="cc-pricing-package-blurb enterprise">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blurb-link-mobile" target="_blank" href="mailto:hello@classcast.co?subject=Enterprise%20Enquiry">contact our sales team</a> for pricing and plan information</div>
                 </div>
                 <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-pricing-package-enterprise">
                   <div class="cc-pricing-package-enterprise-titleblock">
@@ -261,20 +268,13 @@
                     <div class="cc-pricing-package-enterprise-blurb">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blub-link" target="_blank" href="mailto:hello@classcast?subject=Enterprise%20Enquiry">contact our sales team</a> for pricing and planning information</div>
                   </div>
                 </div>
-                <div class="cc-pricing-package-link enterprise">
-                  <div class="cc-pricing-package-title-wrap">
-                    <div class="cc-pricing-package-title">ENTERPRISE</div>
-                  </div>
-                  <div class="cc-divider"></div>
-                  <div class="cc-pricing-package-blurb enterprise">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blurb-link-mobile" target="_blank" href="mailto:hello@classcast.co?subject=Enterprise%20Enquiry">contact our sales team</a> for pricing and plan information</div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="cc-request-demo-title">30 days risk free trial.</div>
-        <a class="w-inline-block cc-button-h center request-demo" href="#">
-          <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+        <div class="cc-request-demo-title"></div>
+        <a class="w-inline-block cc-button-h center request-demo" href="/sign-up">
+          <div>GET STARTED</div>
         </a>
         <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-pricing-feature-grid-wrap">
           <div class="cc-pricing-feature-grid-row-wrap">

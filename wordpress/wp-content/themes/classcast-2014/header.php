@@ -98,7 +98,7 @@
 
             <!--<li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup">REQUEST A DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup">GET STARTED</div>
               </a>
             </li>-->
 
@@ -157,7 +157,7 @@
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>REQUEST A DEMO</div>
+                  <div>GET STARTED</div>
                 </a>
               </li>
 
@@ -171,7 +171,7 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">REQUEST A DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup-dark">GET STARTED</div>
               </a>
             </li>
 
@@ -236,7 +236,7 @@
 
               <li class="cc-drop-list-item">
                 <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
-                  <div>REQUEST A DEMO</div>
+                  <div>GET STARTED</div>
                 </a>
               </li>
 
@@ -260,7 +260,7 @@
                     <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="/sign-up">
-                      <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+                      <div>GET STARTED</div>
                     </a>
                     <a class="w-inline-block cc-button-l tour" href="/#tour">
                       <div>TAKE&nbsp;A&nbsp;TOUR</div>
@@ -350,7 +350,7 @@
     ?>
 
       <div class="w-container cc-content-container cc-blog-hero-content">
-        <h1 class="cc-form-hero-headline">SCHEDULE A DEMO</h1>
+        <h1 class="cc-form-hero-headline">GET STARTED</h1>
         <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
           <br>Get a personalized tour of the Classcast today and learn how we make it easier.</div>
       </div>
