@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Sep 25 2014 10:42:58 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Oct 23 2014 06:39:34 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="538bcc732502ff2560203e04">
 <head>
   <meta charset="utf-8">
@@ -14,7 +14,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ["Raleway:100,200,300,regular,500,600,700,800,900"]
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Raleway:100,200,300,regular,500,600,700,800,900"]
       }
     });
   </script>
@@ -63,6 +63,13 @@ SLIDER VERTICAL ALIGNMENT -->
   <style>
     .more-togle:active {
         background :white;
+    }
+  </style>
+  <!-- PRICING BLURB VERTICAL ALIGN -->
+  <style>
+    .cc-pricing-package-blurb {
+        display:table-cell;
+        vertical-align:middle;
     }
   </style>
 </head>
@@ -461,15 +468,15 @@ SLIDER VERTICAL ALIGNMENT -->
       <div class="w-row">
         <div class="w-col w-col-4 w-col-stack">
           <div class="cc-signup-headline">Sign up. No-risk.</div>
-          <div class="cc-signup-subline">No credit card required</div>
+          <div class="cc-signup-subline">30 days risk free trial.</div>
         </div>
         <div class="w-col w-col-4 w-col-stack">
-          <a class="w-inline-block cc-button-l get-started footer" href="about-contact.html">
-            <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+          <a class="w-inline-block cc-button-l get-started footer" href="/about-contact">
+            <div>GET&nbsp;STARTED</div>
           </a>
         </div>
         <div class="w-col w-col-4 w-col-stack">
-          <a class="w-inline-block cc-button-l learning-center footer" href="about-contact.html">
+          <a class="w-inline-block cc-button-l learning-center footer" href="/about-contact">
             <div>OR&nbsp;VISIT&nbsp;OUR&nbsp;LEARNING&nbsp;CENTER</div>
           </a>
         </div>
@@ -508,7 +515,7 @@ SLIDER VERTICAL ALIGNMENT -->
               </a>
             </li>
             <li class="cc-footer-list-item">
-              <a class="w-inline-block cc-footer-list-item-link" href="about-contact.html">
+              <a class="w-inline-block cc-footer-list-item-link" href="/about-contact">
                 <div class="cc-footer-list-item-text">Contact Us</div>
               </a>
             </li>
