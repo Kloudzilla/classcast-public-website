@@ -26,7 +26,7 @@
           <div class="w-tab-content">
             <div class="w-tab-pane" data-w-tab="Tab 1">
               <div class="w-clearfix cc-pricing-package-wrap">
-                <a class="w-inline-block cc-pricing-package-link" href="#">
+                <div class="cc-pricing-package-link">
                   <div class="cc-pricing-package-title-wrap">
                     <div class="cc-pricing-package-title">STARTER</div>
                   </div>
@@ -43,8 +43,11 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                </a>
-                <a class="w-inline-block cc-pricing-package-link most-popular" href="#">
+                  <a class="w-inline-block cc-button-s package" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+                <div class="cc-pricing-package-link most-popular">
                   <div class="cc-pricing-package-title-wrap most-popular">
                     <div class="cc-pricing-package-title">BASIC</div>
                     <div class="cc-pricing-package-most-popular">Most Popular</div>
@@ -62,8 +65,11 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                </a>
-                <a class="w-inline-block cc-pricing-package-link" href="#">
+                  <a class="w-inline-block cc-button-s package" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+                <div class="cc-pricing-package-link">
                   <div class="cc-pricing-package-title-wrap">
                     <div class="cc-pricing-package-title">STANDARD</div>
                   </div>
@@ -80,8 +86,11 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                </a>
-                <a class="w-inline-block cc-pricing-package-link" href="#">
+                  <a class="w-inline-block cc-button-s package" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+                <div class="cc-pricing-package-link">
                   <div class="cc-pricing-package-title-wrap">
                     <div class="cc-pricing-package-title">PLUS</div>
                   </div>
@@ -98,8 +107,11 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                </a>
-                <a class="w-inline-block cc-pricing-package-link" href="#">
+                  <a class="w-inline-block cc-button-s package" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+                <div class="cc-pricing-package-link">
                   <div class="cc-pricing-package-title-wrap">
                     <div class="cc-pricing-package-title">PRO</div>
                   </div>
@@ -116,33 +128,22 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                </a>
-                <a class="w-hidden-main w-inline-block cc-pricing-package-link" href="#">
+                  <a class="w-inline-block cc-button-s package" href="#">
+                    <div>Get Started</div>
+                  </a>
+                </div>
+                <div class="cc-pricing-package-link enterprise">
                   <div class="cc-pricing-package-title-wrap">
                     <div class="cc-pricing-package-title">ENTERPRISE</div>
                   </div>
                   <div class="cc-divider"></div>
-                  <div class="cc-pricing-package-blurb enterprise">For customers who have additional needs please contact our sales team for pricing and plan information</div>
-                  <div class="cc-divider"></div>
-                  <ul class="w-list-unstyled cc-pricing-package-featured-list">
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>Over 2000&nbsp;</strong>Subscribed Users</li>
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>Unlimited</strong>&nbsp;storage and backup</li>
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
-                    </li>
-                  </ul>
-                </a>
+                  <div class="cc-pricing-package-blurb enterprise">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blurb-link-mobile" href="mailto:hello@classcast.co?subject=Enterprise%20Enquiry" target="_blank">contact our sales team</a> for pricing and plan information</div>
+                </div>
                 <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-pricing-package-enterprise">
                   <div class="cc-pricing-package-enterprise-titleblock">
                     <div class="cc-pricing-package-enterprise-title">ENTERPRISE</div>
-                    <div class="cc-pricing-package-enterprise-blurb">For customers who have additional needs please contact our sales team for pricing and planning information</div>
+                    <div class="cc-pricing-package-enterprise-blurb">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blub-link" target="_blank" href="mailto:hello@classcast?subject=Enterprise%20Enquiry">contact our sales team</a> for pricing and planning information</div>
                   </div>
-                  <ul class="w-list-unstyled cc-pricing-package-enterprise-featured-list">
-                    <li class="cc-pricing-package-enterprise-featured-list-item"><strong>Over 2000</strong> Subscribed Users</li>
-                    <li class="cc-pricing-package-enterprise-featured-list-item"><strong>Unlimited </strong>storage and backup</li>
-                    <li class="cc-pricing-package-enterprise-featured-list-item"><strong>Native Application</strong>
-                    </li>
-                  </ul>
-                  <div class="cc-pricing-package-enterprise-endblock"></div>
                 </div>
               </div>
             </div>
@@ -254,25 +255,18 @@
                     <div>Get Started</div>
                   </a>
                 </div>
-                <a class="w-hidden-main w-inline-block cc-pricing-package-link" href="#">
-                  <div class="cc-pricing-package-title-wrap">
-                    <div class="cc-pricing-package-title">ENTERPRISE</div>
-                  </div>
-                  <div class="cc-divider"></div>
-                  <div class="cc-pricing-package-blurb enterprise">For customers who have additional needs please contact our sales team for pricing and plan information</div>
-                  <div class="cc-divider"></div>
-                  <ul class="w-list-unstyled cc-pricing-package-featured-list">
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>Over 2000&nbsp;</strong>Subscribed Users</li>
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>Unlimited</strong>&nbsp;storage and backup</li>
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
-                    </li>
-                  </ul>
-                </a>
                 <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-pricing-package-enterprise">
                   <div class="cc-pricing-package-enterprise-titleblock">
                     <div class="cc-pricing-package-enterprise-title">ENTERPRISE</div>
                     <div class="cc-pricing-package-enterprise-blurb">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blub-link" target="_blank" href="mailto:hello@classcast?subject=Enterprise%20Enquiry">contact our sales team</a> for pricing and planning information</div>
                   </div>
+                </div>
+                <div class="cc-pricing-package-link enterprise">
+                  <div class="cc-pricing-package-title-wrap">
+                    <div class="cc-pricing-package-title">ENTERPRISE</div>
+                  </div>
+                  <div class="cc-divider"></div>
+                  <div class="cc-pricing-package-blurb enterprise">For customers who have additional needs please <a class="cc-pricing-package-enterprise-blurb-link-mobile" target="_blank" href="mailto:hello@classcast.co?subject=Enterprise%20Enquiry">contact our sales team</a> for pricing and plan information</div>
                 </div>
               </div>
             </div>
