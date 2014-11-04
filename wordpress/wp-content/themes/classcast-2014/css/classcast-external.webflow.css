@@ -347,7 +347,7 @@ p {
   width: 100%;
   height: 100%;
   float: left;
-  background-image: url('../images/logo-light.png');
+  background-image: url('../images/logo-white.png');
   background-position: 50% 50%;
   background-size: 150px;
   background-repeat: no-repeat;
@@ -390,7 +390,7 @@ p {
   width: 100%;
   height: 100%;
   float: left;
-  background-image: url('../images/logo-dark-colour.png');
+  background-image: url('../images/logo-colour.png');
   background-position: 50% 50%;
   background-size: 150px;
   background-repeat: no-repeat;
@@ -618,7 +618,7 @@ p {
   height: 60px;
   padding-top: 20px;
   float: right;
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 700;
   text-decoration: none;
 }
@@ -642,7 +642,7 @@ p {
 }
 .cc-press-post-headline {
   margin-bottom: 20px;
-  color: #00afef;
+  color: #3cafe6;
   font-size: 26px;
   line-height: 40px;
 }
@@ -666,7 +666,7 @@ p {
 }
 .cc-team-name {
   margin-bottom: 10px;
-  color: #00afef;
+  color: #3cafe6;
   font-size: 18px;
   font-weight: 600;
 }
@@ -821,7 +821,7 @@ p {
 }
 .cc-about-team-headline {
   margin-bottom: 40px;
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
 }
 .cc-about-team-subtext {
@@ -850,7 +850,7 @@ p {
   text-align: left;
 }
 .cc-about-team-location-headline {
-  color: #00afef;
+  color: #3cafe6;
   text-align: center;
 }
 .cc-team-row {
@@ -889,7 +889,7 @@ p {
 .cc-button-s.keyline:hover {
   border-style: solid;
   border-color: #509bd6;
-  background-color: #509bd6;
+  background-color: #3cafe6;
   color: white;
 }
 .cc-button-s.enterprise {
@@ -945,7 +945,7 @@ p {
 }
 .cc-about-resources-headline {
   margin-bottom: 40px;
-  color: #00afef;
+  color: #3cafe6;
 }
 .cc-tutorial-subtext {
   font-size: 16px;
@@ -957,7 +957,7 @@ p {
   font-weight: 300;
 }
 .cc-content-headline {
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
   text-align: left;
 }
@@ -1032,7 +1032,7 @@ p {
   color: white;
 }
 .cc-blog-post-headline-link {
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
   text-decoration: none;
 }
@@ -1119,7 +1119,7 @@ p {
 }
 .cc-pricing-faq-title {
   margin-top: 60px;
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
   text-align: center;
 }
@@ -1133,12 +1133,12 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #5087d9;
+  background-color: #3cafe6;
   color: white;
   font-size: 13px;
 }
 .cc-navigation-menu-list-item-text-signup-dark:hover {
-  background-color: #3e6bae;
+  background-color: #2d9ccf;
 }
 .cc-branding-img {
   display: block;
@@ -1149,7 +1149,7 @@ p {
   background-repeat: no-repeat;
 }
 .cc-branding-headline {
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
 }
 .modal-background {
@@ -1231,11 +1231,11 @@ p {
   text-align: left;
 }
 .cc-users-headline {
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
 }
 .cc-stats-headline {
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
 }
 .cc-trusted-headline-top {
@@ -1247,7 +1247,7 @@ p {
 .cc-job-title-headline {
   margin-top: 0px;
   margin-bottom: 20px;
-  color: #00afef;
+  color: #3cafe6;
   font-size: 22px;
   font-weight: 300;
 }
@@ -1264,7 +1264,7 @@ p {
 }
 .cc-about-team-values-headline {
   margin-bottom: 40px;
-  color: #00afef;
+  color: #3cafe6;
 }
 .cc-ebook-cover {
   display: block;
@@ -1277,7 +1277,7 @@ p {
 }
 .cc-ebook-title {
   margin-bottom: 20px;
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
 }
 .cc-ebook-row {
@@ -1293,7 +1293,7 @@ p {
   background-color: #e6e6e6;
 }
 .cc-video-title {
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
 }
 .cc-video-row {
@@ -1302,7 +1302,7 @@ p {
 .cc-tutorial-title {
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #00afef;
+  color: #3cafe6;
   font-weight: 300;
   text-align: left;
 }
@@ -1406,8 +1406,8 @@ p {
   width: 220px;
   padding-right: 40px;
   padding-left: 40px;
-  border: 2px solid #5087d9;
-  background-color: #5087d9;
+  border: 2px solid #3cafe6;
+  background-color: #3cafe6;
   color: white;
   font-size: 14px;
   line-height: 20px;
@@ -1415,8 +1415,8 @@ p {
   text-align: center;
 }
 .cc-button-l.get-started:hover {
-  border-color: #3e6bae;
-  background-color: #3e6bae;
+  border-color: #2d9ccf;
+  background-color: #2d9ccf;
 }
 .cc-button-l.get-started.footer {
   margin-top: 15px;
@@ -1429,11 +1429,11 @@ p {
   margin-left: auto;
 }
 .cc-button-l.join-us {
-  background-color: #5087d9;
+  background-color: #3cafe6;
   color: white;
 }
 .cc-button-l.join-us:hover {
-  background-color: #3e6bae;
+  background-color: #2d9ccf;
 }
 .cc-button-l.learning-center {
   border: 2px solid white;
@@ -1474,7 +1474,7 @@ p {
   font-weight: 300;
 }
 .cc-features-headline {
-  color: #00afef;
+  color: #3cafe6;
   text-align: center;
 }
 .cc-features-subline {
@@ -1498,7 +1498,7 @@ p {
 }
 .cc-features-title {
   margin-bottom: 20px;
-  color: #00afef;
+  color: #3cafe6;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
