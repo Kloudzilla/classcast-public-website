@@ -33,7 +33,7 @@
               <div class="response" id="mce-success-response" style="display:none"></div>
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_1c01ae6d41b7efa731691c63a_74296c3792" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="cc-button-s blue"></div>
+              <div class="clear"><input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="cc-button-l get-started"></div>
           </form>
           </div>
           <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
