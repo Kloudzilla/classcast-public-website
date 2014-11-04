@@ -14,6 +14,14 @@
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
+  <?php
+      if($template_section == 'pricing') { ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/tooltip.css">
+        <script src="<?php echo get_template_directory_uri(); ?>/js/tooltip.js" type="text/javascript"></script>
+  <?php
+      }
+      else {}
+  ?>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
