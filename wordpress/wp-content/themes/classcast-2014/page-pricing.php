@@ -43,7 +43,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -65,7 +65,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -86,7 +86,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -107,7 +107,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -128,7 +128,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -166,7 +166,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -188,7 +188,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -209,7 +209,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -230,7 +230,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -251,7 +251,7 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up">
+                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
                     <div>Get Started</div>
                   </a>
                 </div>
@@ -772,7 +772,7 @@
         </div>
       </div>
     </div>
-
+<script type="text/javascript">  _kmq.push(['record', 'Visited pricing page']);</script>
 <?php
   get_footer();
 ?>

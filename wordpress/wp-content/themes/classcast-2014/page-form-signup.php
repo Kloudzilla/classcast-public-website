@@ -99,7 +99,7 @@
                           <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                           <div style="position: absolute; left: -5000px;"><input type="text" name="b_1c01ae6d41b7efa731691c63a_168b1a7f71" tabindex="-1" value=""></div>
-                          <div class="clear"><input type="submit" value="GET STARTED" name="subscribe" class="cc-button-l get-started"></div>
+                          <div class="clear"><input type="submit" onclick="_kmq.push(['record', 'Submits sign up form']);" value="GET STARTED" name="subscribe" class="cc-button-l get-started"></div>
                           </div>
                       </form>
                       </div>
@@ -109,7 +109,7 @@
         </div>
       </div>
     </div>
-
+<script type="text/javascript">  _kmq.push(['record', 'Visited sign up page']);</script>
 <?php
 	get_footer('min');
 ?>

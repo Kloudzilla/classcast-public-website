@@ -45,7 +45,7 @@
       </div>
     </div>
                 
-
+<script type="text/javascript">  _kmq.push(['record', 'Visited blog page']);</script>
 <?php
 	get_footer('min');
 ?>
