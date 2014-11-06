@@ -1095,6 +1095,11 @@ Webflow.define('forms', function($, _) {
   'use strict';
 
   var api = {};
+
+  var FORM_API_HOST = 'https://webflow.com';
+  var FORM_SUBMIT_HOST = 'https://webflow.com';
+  var FORM_OLDIE_HOST = 'http://formdata.webflow.com';
+
   var $doc = $(document);
   var $forms;
   var loc = window.location;
@@ -1256,11 +1261,11 @@ Webflow.define('forms', function($, _) {
     // Read site ID
     // NOTE: If this site is exported, the HTML tag must retain the data-wf-site attribute for forms to work
     if (!siteId) { afterSubmit(data); return; }
-    var url = 'https://webflow.com/api/v1/form/' + siteId;
+    var url = FORM_API_HOST + '/api/v1/form/' + siteId;
 
     // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
-    if (retro && url.indexOf('https://webflow.com') >= 0) {
-      url = url.replace('https://webflow.com/', 'http://formdata.webflow.com/');
+    if (retro && url.indexOf(FORM_SUBMIT_HOST) >= 0) {
+      url = url.replace(FORM_SUBMIT_HOST, FORM_OLDIE_HOST);
     }
 
     $.ajax({
@@ -2096,6 +2101,7 @@ Webflow.define('slider', function($, _) {
 
       // Swipe event
       if (evt.type == 'swipe') {
+        if (Webflow.env('editor')) return;
         if (options.direction == 'left') return next(data)();
         if (options.direction == 'right') return previous(data)();
         return;

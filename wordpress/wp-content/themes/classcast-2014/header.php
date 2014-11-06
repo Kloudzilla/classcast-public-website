@@ -14,6 +14,14 @@
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
+  <?php
+      if($template_section == 'pricing') { ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/tooltip.css">
+        <script src="<?php echo get_template_directory_uri(); ?>/js/tooltip.js" type="text/javascript"></script>
+  <?php
+      }
+      else {}
+  ?>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -47,7 +55,7 @@
   <!-- END OF: FAVICONS -->
 
   <?php
-    if(CC_ENVIRONMENT && CC_ENVIRONMENT == 'PRODUCTION') {
+    // if(CC_ENVIRONMENT && CC_ENVIRONMENT == 'PRODUCTION') {
   ?>
       <script type="text/javascript">
         var _kmq = _kmq || [];
@@ -64,20 +72,8 @@
         _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
       </script>
       
-      <?php
-        /*<script type="text/javascript">  _kmq.push(['record', 'Clicked on Sign Up Form Confirm']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Hero/Footer']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Sign Up Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Pricing Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Blog Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Contact Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Press Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Learning Centre Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Visited Team Page']);</script>
-        <script type="text/javascript">  _kmq.push(['record', 'Clicked on Request a Demo in Navigation']);</script>*/
-      ?>
   <?php
-    }
+    // }
   ?>
 </head>
 
@@ -156,7 +152,7 @@
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
+                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED mobile drop menu']);">
                   <div>GET STARTED</div>
                 </a>
               </li>
@@ -170,7 +166,7 @@
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED top navigation scroll']);">
                 <div class="cc-navigation-menu-list-item-text-signup-dark">GET STARTED</div>
               </a>
             </li>
@@ -235,7 +231,7 @@
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up">
+                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED mobile drop menu scroll']);">
                   <div>GET STARTED</div>
                 </a>
               </li>
@@ -259,7 +255,7 @@
                     <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
                     <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
-                    <a class="w-inline-block cc-button-l get-started" href="/sign-up">
+                    <a class="w-inline-block cc-button-l get-started" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED homepage hero']);">
                       <div>GET STARTED</div>
                     </a>
                     <a class="w-inline-block cc-button-l tour" href="/#tour">

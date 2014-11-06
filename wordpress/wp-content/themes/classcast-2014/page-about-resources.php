@@ -115,7 +115,7 @@
     </div>
   </div>
                 
-
+<script type="text/javascript">  _kmq.push(['record', 'Visited learning centre page']);</script>
 <?php
 	get_footer('min');
 ?>
