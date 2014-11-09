@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Wed Jun 18 2014 05:44:26 GMT+0000 (UTC) -->
-<html data-wf-site="538bcc732502ff2560203e03">
+<html data-wf-site="538bcc732502ff2560203e03" ng-app="cc">
 <head>
   <meta charset="utf-8">
   <title><?php wp_title( '|', true, 'right' ); ?></title>

@@ -22,9 +22,9 @@
       lorem ipsum dolor
     </div>
 
-<!--     <div ng-controller="RegisterCtrl">
+    <div ng-controller="RegisterCtrl">
       {{test}}
-    </div> -->
+    </div>
 
     <div ng-view></div>
   </div>
@@ -39,7 +39,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/angular.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/angular-factories.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/angular-controllers.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie-1.4.1.min.js"></script>
+<!--<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie-1.4.1.min.js"></script>-->
 
 <?php
   get_footer('min');
