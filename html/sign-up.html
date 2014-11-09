@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Tue Nov 04 2014 05:20:18 GMT+0000 (UTC) -->
+<html data-wf-site="538bcc732502ff2560203e03" data-wf-page="5407de5cb4ba23e5115026ec">
+<head>
+  <meta charset="utf-8">
+  <title>Sign-up - Classcast External</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/classcast-external.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Raleway:100,200,300,regular,500,600,700,800,900"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/webclip.png">
+  <!--
+IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/ -->
+  <style>
+    @font-face {
+  font-family: 'ios7-icon';
+  src:
+    url('fonts/ios7-icon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'ios7-icon';
+  margin-right: 20px;
+  -webkit-text-rendering: geometricPrecision;
+  -moz-text-rendering: geometricPrecision;
+  -ms-text-rendering: geometricPrecision;
+  -o-text-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.text {
+  font-size: 24px;
+  line-height: 32px;
+}
+  </style>
+  <!--
+SLIDER VERTICAL ALIGNMENT -->
+  <style>
+    .w-slide{
+        vertical-align:bottom;
+    }
+  </style>
+  <!-- MORE BUTTON -->
+  <style>
+    .more-togle:active {
+        background :white;
+    }
+  </style>
+  <!-- PRICING BLURB VERTICAL ALIGN -->
+  <style>
+    .cc-pricing-package-blurb {
+        display:table-cell;
+        vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="cc-external-wrap">
+    <div class="modal-background">
+      <div class="w-clearfix modal-window">
+        <a class="w-inline-block close-modal" href="#">
+          <div>CLOSE</div>
+        </a>
+        <h3>Heading</h3>
+      </div>
+    </div>
+    <div class="cc-hero form" data-ix="navigation-past-hero">
+      <div class="cc-navigation" data-ix="navigation-past-hero">
+        <div class="w-container cc-navigation-items-wrap">
+          <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
+            <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
+              <a class="w-inline-block cc-navigation-item-logo" href="index.html"></a>
+            </li>
+            <li class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-inline-block cc-navigation-menu-list-item-link modal-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-signup">GET&nbsp;STARTED</div>
+              </a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
+                <div class="cc-navigation-menu-list-item-text">LOGIN</div>
+              </a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="#">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="#">Videos</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Company</a><a class="w-dropdown-link cc-more-list-link" href="#">Blog</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Contact</a><a class="w-dropdown-link cc-more-list-link" href="#">Help Center</a>
+                </nav>
+              </div>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="/pricing">
+                <div class="cc-navigation-menu-list-item-text">PRICING</div>
+              </a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="#">
+                <div class="cc-navigation-menu-list-item-text">TOUR</div>
+              </a>
+            </li>
+            <li class="w-hidden-main cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link cc-drop-link">
+                <div class="cc-navigation-menu-list-item-text">MENU</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="cc-drop">
+          <div class="w-container cc-content-container cc-drop-content">
+            <ul class="w-list-unstyled cc-drop-list">
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link" href="#">
+                  <div class="cc-drop-list-item-link-text">About</div>
+                </a>
+              </li>
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link" href="#">
+                  <div>Pricing</div>
+                </a>
+              </li>
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link" href="#">
+                  <div>Log In</div>
+                </a>
+              </li>
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
+                  <div>Get Started</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cc-navigation-past-hero">
+        <div class="w-container cc-navigation-items-wrap">
+          <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-signup-dark">GET&nbsp;STARTED</div>
+              </a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
+                <div class="cc-navigation-menu-list-item-text-dark">LOGIN</div>
+              </a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle pop-down">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+                </nav>
+              </div>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="/pricing">
+                <div class="cc-navigation-menu-list-item-text-dark">PRICING</div>
+              </a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
+                <div class="cc-navigation-menu-list-item-text-dark">TOUR</div>
+              </a>
+            </li>
+            <li class="w-hidden-main cc-navigation-menu-list-item">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down cc-drop-pasthero-link" href="#">
+                <div class="cc-navigation-menu-list-item-text-dark">MENU</div>
+              </a>
+            </li>
+            <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
+              <a class="w-inline-block cc-navigation-item-logo-pasthero" href="#"></a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+                </nav>
+              </div>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+                </nav>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="cc-drop-pasthero">
+          <div class="w-container cc-content-container cc-drop-content">
+            <ul class="w-list-unstyled cc-drop-list">
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link" href="#">
+                  <div class="cc-drop-list-item-link-text">About</div>
+                </a>
+              </li>
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link" href="#">
+                  <div>Pricing</div>
+                </a>
+              </li>
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link" href="#">
+                  <div>Log In</div>
+                </a>
+              </li>
+              <li class="cc-drop-list-item">
+                <a class="w-inline-block cc-drop-list-item-link modal-link" href="#">
+                  <div>Get Started</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-container cc-content-container cc-blog-hero-content">
+        <h1 class="cc-form-hero-headline">GET STARTED</h1>
+        <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
+          <br>Get a personalized tour of the Classcast today and learn how we make it easier.</div>
+      </div>
+    </div>
+    <div class="cc-section">
+      <div class="w-container cc-content-container cc-form-content">
+        <div class="w-row">
+          <div class="w-col w-col-6 cc-form-col">
+            <div class="cc-form-title">Engage, connect and deliver content to your customers today.</div>
+            <div class="cc-form-text">Spend time with one of our Classcast experts. You will be able to see what Classcast could do for your business. Let us demonstrate the
+              <br>power and ease of our product.</div>
+            <div class="cc-form-text">Join these great companies/people in delivering content mobile.</div>
+            <ul class="w-list-unstyled w-clearfix cc-form-list">
+              <li class="cc-form-list-item iom"></li>
+              <li class="cc-form-list-item kettleworx"></li>
+              <li class="cc-form-list-item totalgym"></li>
+              <li class="cc-form-list-item yogafit"></li>
+            </ul>
+            <div class="cc-form-text">To connect with us, all you need to do is complete the form and one of our friendly team will reach out to schedule a time and provide a complete walk through of the product!
+              <br>
+              <br>We can’t wait to hear from you!</div>
+            <div class="cc-form-quote">“...It’s simply the best solution for
+              <br>class content delivery weve found”</div>
+            <div class="cc-form-quote-author">Jesse Campanaro, President Total Gym</div>
+          </div>
+          <div class="w-col w-col-6 cc-form-col">
+            <div>Once you’ve submitted we’ll be in contact shortly to schedule your demo or arrange to help you get started.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cc-section cc-footer-min-section">
+      <div class="w-container cc-content-container cc-footer-min-content">
+        <div class="w-clearfix cc-footer-min">
+          <div class="cc-footer-min-list-wrap">
+            <ul class="w-list-unstyled cc-footer-min-list">
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="about-team.html">Company</a>
+              </li>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="/pricing">Pricing</a>
+              </li>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">Blog</a>
+              </li>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" target="_blank" href="https://classcast.zendesk.com/">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cc-footer-min-legal">© Classcast Inc&nbsp;2014. All&nbsp;Rights Reserved. Made with&nbsp;♡ in Palo Alto &amp;&nbsp;Sydney.&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><span class="pe-7s-map-marker"></span> pe-7s-map-marker
+  <!--
+MODAL
+-->
+  <!--<script type="text/javascript">
+$(document).ready(function() {
+  $('.modal-link').click(function() {
+    $('.modal-background').fadeIn();
+  });
+  $('.close-modal').click(function() {
+    $('.modal-background').fadeOut();
+  });
+});
+</script>-->
+  <!--
+VIDEO MODAL
+-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-video-link').click(function() {
+        $('.modal-video-background').fadeIn();
+      });
+      $('.close-modal-video').click(function() {
+        $('.modal-video-background').fadeOut();
+      });
+    });
+  </script>
+  <!--
+HASH REMOVAL
+-->
+  <script type="text/javascript">
+    $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
+  </script>
+  <!--
+MOBILE SLIDE DOWN MENU
+-->
+  <script type="text/javascript">
+    $(function(){
+        var menuBindPairs = [
+             { key: '.cc-drop-link', menu: '.cc-drop'}, 
+             { key: '.cc-drop-pasthero-link', menu: '.cc-drop-pasthero'}
+       ];
+        $.map(menuBindPairs, function(pair, index) {
+            $(pair.key).on('click', function(ev) {
+                var menu = $(pair.menu);
+                // Slide it down and then bind a new event to do the opposite
+                menu.slideDown(400, function(){
+                    $(document).on('click.closemenu' + index, '*', function(e){
+                        e.stopPropagation();
+                        var clickedElement = $(this);
+                        console.log(clickedElement);
+                        if (!clickedElement.is(menu) && clickedElement.closest(menu).length <= 0) {
+                             // Close menu
+                            menu.slideUp(400, function(){
+                                 $(document).off('click.closemenu' + index); // Close the bind
+                            })
+                        }
+                        // Else
+                    });
+                });
+            })
+        });
+    });
+  </script>
+</body>
+</html>

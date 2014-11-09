@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Sep 09 2014 06:31:26 GMT+0000 (UTC) -->
+<!-- Last Published: Tue Nov 04 2014 05:20:18 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="539ba9c7397dd3750b085027">
 <head>
   <meta charset="utf-8">
@@ -14,7 +14,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ["Raleway:100,200,300,regular,500,600,700,800,900"]
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Raleway:100,200,300,regular,500,600,700,800,900"]
       }
     });
   </script>
@@ -59,6 +59,19 @@ SLIDER VERTICAL ALIGNMENT -->
         vertical-align:bottom;
     }
   </style>
+  <!-- MORE BUTTON -->
+  <style>
+    .more-togle:active {
+        background :white;
+    }
+  </style>
+  <!-- PRICING BLURB VERTICAL ALIGN -->
+  <style>
+    .cc-pricing-package-blurb {
+        display:table-cell;
+        vertical-align:middle;
+    }
+  </style>
 </head>
 <body>
   <div class="cc-external-wrap">
@@ -82,28 +95,25 @@ SLIDER VERTICAL ALIGNMENT -->
                 <div class="cc-navigation-menu-list-item-text-signup">GET&nbsp;STARTED</div>
               </a>
             </li>
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup">REQUEST&nbsp;A&nbsp;DEMO</div>
-              </a>
-            </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="blog.html">
                 <div class="cc-navigation-menu-list-item-text">LOGIN</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="about-team.html">
-                <div class="cc-navigation-menu-list-item-text">COMPANY</div>
-              </a>
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link cc-more-list-link" href="#">Ebooks</a><a class="w-dropdown-link cc-more-list-link" href="#">Videos</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Company</a><a class="w-dropdown-link cc-more-list-link" href="#">Blog</a>
+                  <div class="cc-more-list-separator"></div><a class="w-dropdown-link cc-more-list-link" href="#">Contact</a><a class="w-dropdown-link cc-more-list-link" href="#">Help Center</a>
+                </nav>
+              </div>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="about-resources.html">
-                <div class="cc-navigation-menu-list-item-text">LEARNING</div>
-              </a>
-            </li>
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="pricing.html">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link" href="/pricing">
                 <div class="cc-navigation-menu-list-item-text">PRICING</div>
               </a>
             </li>
@@ -151,26 +161,26 @@ SLIDER VERTICAL ALIGNMENT -->
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up modal-link" href="#">
-                <div class="cc-navigation-menu-list-item-text-signup-dark">REQUEST&nbsp;A&nbsp;DEMO</div>
+                <div class="cc-navigation-menu-list-item-text-signup-dark">GET&nbsp;STARTED</div>
               </a>
             </li>
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
               <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="#">
                 <div class="cc-navigation-menu-list-item-text-dark">LOGIN</div>
               </a>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
-                <div class="cc-navigation-menu-list-item-text-dark">COMPANY</div>
-              </a>
-            </li>
-            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="about-team.html">
-                <div class="cc-navigation-menu-list-item-text-dark">LEARNING</div>
-              </a>
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle pop-down">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+                </nav>
+              </div>
             </li>
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-navigation-menu-list-item">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="pricing.html">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down" href="/pricing">
                 <div class="cc-navigation-menu-list-item-text-dark">PRICING</div>
               </a>
             </li>
@@ -186,6 +196,26 @@ SLIDER VERTICAL ALIGNMENT -->
             </li>
             <li class="w-clearfix cc-navigation-menu-list-item cc-logo">
               <a class="w-inline-block cc-navigation-item-logo-pasthero" href="#"></a>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+                </nav>
+              </div>
+            </li>
+            <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item">
+              <div class="w-dropdown cc-more" data-delay="0">
+                <div class="w-dropdown-toggle cc-more-toggle">
+                  <div class="cc-more-text">MORE</div>
+                  <div class="w-icon-dropdown-toggle cc-more-icon"></div>
+                </div>
+                <nav class="w-dropdown-list cc-more-list"><a class="w-dropdown-link" href="#">Learning Center</a><a class="w-dropdown-link" href="#">Company</a><a class="w-dropdown-link" href="#">Blog</a><a class="w-dropdown-link" href="#">Contact</a><a class="w-dropdown-link" href="#">Help Center</a>
+                </nav>
+              </div>
             </li>
           </ul>
         </div>
@@ -244,7 +274,7 @@ SLIDER VERTICAL ALIGNMENT -->
             </a>
           </li>
           <li class="w-clearfix cc-hero-navigation-list-item">
-            <a class="w-inline-block cc-hero-navigation-list-item-link" href="about-contact.html">
+            <a class="w-inline-block cc-hero-navigation-list-item-link" href="/about-contact">
               <div>Contact</div>
             </a>
           </li>
@@ -256,24 +286,21 @@ SLIDER VERTICAL ALIGNMENT -->
         <div class="cc-press-post">
           <div class="cc-press-post-content">
             <div class="cc-press-post-headline">Case Study: How KettleWorkX Uses Classcast To Engage Instructors</div>
-            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis
-              facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
+            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
             <div class="cc-press-post-author-text">By Firstname Last – May 26th, 2014</div>
           </div>
         </div>
         <div class="cc-press-post">
           <div class="cc-press-post-content">
             <div class="cc-press-post-headline">Case Study: How KettleWorkX Uses Classcast To Engage Instructors</div>
-            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis
-              facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
+            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
             <div class="cc-press-post-author-text">By Firstname Last – May 26th, 2014</div>
           </div>
         </div>
         <div class="cc-press-post">
           <div class="cc-press-post-content last">
             <div class="cc-press-post-headline">Case Study: How KettleWorkX Uses Classcast To Engage Instructors</div>
-            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis
-              facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
+            <div class="cc-press-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ipsum non commodo laoreet. Vivamus ut imperdiet orci. Maecenas dapibus nisi tellus, ac facilisis metus tristique et. Morbi adipiscing accumsan lectus non rutrum. Duis facilisis id enim eget iaculis. Nulla tellus arcu, ultricies ac dictum at, commodo in nibh. Morbi eu lorem imperdiet, posuere velit semper, convallis dolor.</div>
             <div class="cc-press-post-author-text">By Firstname Last – May 26th, 2014</div>
           </div>
         </div>
@@ -286,7 +313,7 @@ SLIDER VERTICAL ALIGNMENT -->
             <ul class="w-list-unstyled cc-footer-min-list">
               <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="about-team.html">Company</a>
               </li>
-              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="pricing.html">Pricing</a>
+              <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="/pricing">Pricing</a>
               </li>
               <li class="cc-footer-min-list-item"><a class="cc-footer-min-list-item-link" href="blog.html">Blog</a>
               </li>

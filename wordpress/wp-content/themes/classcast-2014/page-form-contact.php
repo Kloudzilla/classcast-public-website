@@ -3,7 +3,7 @@
 	Template Name: Form Contact
 	*/
     global $template_section;
-  $template_section = 'form';
+  $template_section = 'contact';
 ?>
 
 <?php
@@ -11,10 +11,7 @@
 ?>
  
      <div class="w-container cc-content-container cc-form-hero-content">
-        <a class="w-inline-block cc-form-logo" href="/"></a>
         <div class="cc-form">
-          <h4 class="cc-form-headline">Contact Us</h4>
-          <div class="cc-form-subheadline">Our team will reply to your enquiry soon.</div>
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
           <form action="//classcast.us2.list-manage.com/subscribe/post?u=1c01ae6d41b7efa731691c63a&amp;id=74296c3792" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -36,7 +33,7 @@
               <div class="response" id="mce-success-response" style="display:none"></div>
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_1c01ae6d41b7efa731691c63a_74296c3792" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="cc-button-s blue"></div>
+              <div class="clear"><input type="submit" onclick="_kmq.push(['record', 'Submits contact us form']);" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="cc-button-l get-started"></div>
           </form>
           </div>
           <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -50,7 +47,7 @@
         </div>
       </div>
     </div>
-
+<script type="text/javascript">  _kmq.push(['record', 'Visited contact page']);</script>
 <?php
 	get_footer('min');
 ?>

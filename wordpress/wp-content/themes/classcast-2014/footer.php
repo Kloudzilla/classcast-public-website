@@ -3,11 +3,11 @@
       <div class="w-row">
         <div class="w-col w-col-4 w-col-stack">
           <div class="cc-signup-headline">Sign up. No-risk.</div>
-          <div class="cc-signup-subline">No credit card required</div>
+          <div class="cc-signup-subline">30 days risk free trial.</div>
         </div>
         <div class="w-col w-col-4 w-col-stack">
-          <a class="w-inline-block cc-button-l get-started footer" href="/sign-up">
-            <div>REQUEST&nbsp;A&nbsp;DEMO</div>
+          <a class="w-inline-block cc-button-l get-started footer" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED large footer']);">
+            <div>GET STARTED</div>
           </a>
         </div>
         <div class="w-col w-col-4 w-col-stack">
