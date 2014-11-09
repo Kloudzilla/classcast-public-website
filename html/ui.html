@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Sun Nov 09 2014 12:56:55 GMT+0000 (UTC) -->
+<html data-wf-site="538bcc732502ff2560203e03" data-wf-page="545ae2afb061a9b032095834">
+<head>
+  <meta charset="utf-8">
+  <title>ui - Classcast External</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/classcast-external.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Raleway:100,200,300,regular,500,600,700,800,900"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/webclip.png">
+  <!--
+IOS 7 ICON FONT - DEMO PAGE HERE: http://ios7-icon-font-demo.herokuapp.com/ -->
+  <style>
+    @font-face {
+  font-family: 'ios7-icon';
+  src:
+    url('fonts/ios7-icon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'ios7-icon';
+  margin-right: 20px;
+  -webkit-text-rendering: geometricPrecision;
+  -moz-text-rendering: geometricPrecision;
+  -ms-text-rendering: geometricPrecision;
+  -o-text-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.text {
+  font-size: 24px;
+  line-height: 32px;
+}
+  </style>
+  <!--
+SLIDER VERTICAL ALIGNMENT -->
+  <style>
+    .w-slide{
+        vertical-align:bottom;
+    }
+  </style>
+  <!-- MORE BUTTON -->
+  <style>
+    .more-togle:active {
+        background :white;
+    }
+  </style>
+  <!-- PRICING BLURB VERTICAL ALIGN -->
+  <style>
+    .cc-pricing-package-blurb {
+        display:table-cell;
+        vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="w-container">
+    <h1>UI Docs</h1>
+    <h2>Saving phone field for later use</h2>
+    <div class="w-form">
+      <form id="email-form" name="email-form" data-name="Email Form" data-redirect="http://classcast-app.webflow.com/dashboard-first-time-user">
+        <div class="w-row">
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+            <label class="cc-label cc-label-match-input" for="name">Your Full Name</label>
+          </div>
+          <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+            <input class="w-input cc-input" id="name-2" type="text" placeholder="Aidan Green" name="name-2" data-name="Name 2">
+          </div>
+        </div>
+        <div class="w-row">
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+            <label class="cc-label cc-label-match-input" for="name-2">Company</label>
+          </div>
+          <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+            <input class="w-input cc-input" id="Company-Name-2" type="text" placeholder="Acme co" name="Company-Name-2" data-name="Company Name 2">
+          </div>
+        </div>
+        <div class="w-row">
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+            <label class="cc-label cc-label-match-input" for="name-3">Phone</label>
+          </div>
+          <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+            <div class="w-embed w-script">
+              <input id="phone" type="tel" placeholder="" class="w-input cc-input" />
+              <input id="country-hidden" type="hidden" />
+              <link rel="stylesheet" href="//s3.amazonaws.com/web-classcast-webflow/classcast.co/lib/intl-tel-input/build/css/intlTelInput.css">
+              <style type="text/css">
+                body .intl-tel-input{
+                display:block;
+                margin-bottom:10px;
+                }
+              </style>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+              <script src="https://s3.amazonaws.com/web-classcast-webflow/classcast.co/lib/intl-tel-input/build/js/intlTelInput.min.js"></script>
+              <script type="text/javascript">
+                // get the country data from the plugin
+                var countryData = $.fn.intlTelInput.getCountryData(),
+                  telInput = $("#phone"),
+                  countryHidden = $("#country-hidden");
+                // init plugin
+                telInput.intlTelInput({
+                  defaultCountry: "auto",
+                  utilsScript: "//s3.amazonaws.com/web-classcast-webflow/classcast.co/lib/intl-tel-input/lib/libphonenumber/build/utils.js" // just for formatting/placeholders etc
+                });
+                // listen to the telephone input for changes
+                telInput.change(function() {
+                  var countryCode = telInput.intlTelInput("getSelectedCountryData").iso2;
+                  countryHidden.val(countryCode);
+                });
+                // trigger a fake "change" event now, to trigger an initial sync
+                telInput.change();
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="w-row">
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+            <label class="cc-label cc-label-match-input" for="email">Email</label>
+          </div>
+          <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+            <input class="w-input cc-input" id="email-2" type="email" placeholder="aidan@example.com" name="email-2" data-name="Email 2" required="required">
+          </div>
+        </div>
+        <div class="w-row cc-margin-bottom-20">
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+            <label class="cc-label cc-label-match-input" for="Password">Password</label>
+          </div>
+          <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+            <input class="w-input cc-input" id="Password-2" type="password" placeholder="Something hard to guess" name="Password-2" data-name="Password 2" required="required">
+          </div>
+        </div>
+        <input class="w-button cc-button-l cc-button-free-trial" type="submit" value="Start my 30 day free trial" data-wait="Please wait...">
+      </form>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
+      </div>
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form :(</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><span class="pe-7s-map-marker"></span> pe-7s-map-marker
+  <!--
+MODAL
+-->
+  <!--<script type="text/javascript">
+$(document).ready(function() {
+  $('.modal-link').click(function() {
+    $('.modal-background').fadeIn();
+  });
+  $('.close-modal').click(function() {
+    $('.modal-background').fadeOut();
+  });
+});
+</script>-->
+  <!--
+VIDEO MODAL
+-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal-video-link').click(function() {
+        $('.modal-video-background').fadeIn();
+      });
+      $('.close-modal-video').click(function() {
+        $('.modal-video-background').fadeOut();
+      });
+    });
+  </script>
+  <!--
+HASH REMOVAL
+-->
+  <script type="text/javascript">
+    $('a[href="#"]').on('click', function(e) { e.preventDefault(); });
+  </script>
+  <!--
+MOBILE SLIDE DOWN MENU
+-->
+  <script type="text/javascript">
+    $(function(){
+        var menuBindPairs = [
+             { key: '.cc-drop-link', menu: '.cc-drop'}, 
+             { key: '.cc-drop-pasthero-link', menu: '.cc-drop-pasthero'}
+       ];
+        $.map(menuBindPairs, function(pair, index) {
+            $(pair.key).on('click', function(ev) {
+                var menu = $(pair.menu);
+                // Slide it down and then bind a new event to do the opposite
+                menu.slideDown(400, function(){
+                    $(document).on('click.closemenu' + index, '*', function(e){
+                        e.stopPropagation();
+                        var clickedElement = $(this);
+                        console.log(clickedElement);
+                        if (!clickedElement.is(menu) && clickedElement.closest(menu).length <= 0) {
+                             // Close menu
+                            menu.slideUp(400, function(){
+                                 $(document).off('click.closemenu' + index); // Close the bind
+                            })
+                        }
+                        // Else
+                    });
+                });
+            })
+        });
+    });
+  </script>
+</body>
+</html>
