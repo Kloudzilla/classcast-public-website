@@ -16,7 +16,7 @@ cc.controller('HomeCtrl', ['$scope', function($scope) {
 
 cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_customer', function($scope, $window, cc_authentication, cc_customer) {
 
-	// Packages
+	// Countries
 	$scope.countries = [
 		{
 			id: 'AU',
@@ -28,6 +28,12 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 			name: 'United States'
 		}
 	];
+
+	// Pre-select country
+	// $.get("http://ipinfo.io", function(response) {
+	// 	ccUserInitialCountry = response.country;
+	// 	$("#country").val(ccUserInitialCountry.toUpperCase());
+	// }, "jsonp");
 
 	// Submit Register Form
 	$scope.submitRegisterForm = function(isValid) {
@@ -45,6 +51,7 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 			}
 
 			var create_customer_data = {
+				company: $scope.company,
 				country: $scope.country,
 				email: $scope.email,
 				name: $scope.name,
@@ -103,7 +110,7 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 							errors_i++;
 						}
 					} else {
-						scope.error = 'Oops! Something went wrong while submitting the form :(';
+						$scope.error = 'Oops! Something went wrong while submitting the form :(';
 					}
 
 					if(submit_button) {
