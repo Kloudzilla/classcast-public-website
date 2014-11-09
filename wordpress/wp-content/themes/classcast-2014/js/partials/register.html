@@ -1,0 +1,101 @@
+<form name="register" ng-class="{'cc-form-submitted':registerSubmitted}" ng-submit="submitRegisterForm(register.$valid)" novalidate>
+  <div class="w-row">
+    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+      <label class="cc-label cc-label-match-input" for="name">
+      	Your Full Name
+      </label>
+    </div>
+
+    <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+      <input class="w-input cc-input" id="name" name="name" ng-model="name" ng-required="1" placeholder="Aidan Green" type="text">
+
+      <p ng-show="register.name.$error.required && registerSubmitted || register.name.$error.required && register.name.$dirty">
+			Company/Organisation Name is required
+		</p>
+    </div>
+  </div>
+
+  <div class="w-row">
+    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+      <label class="cc-label cc-label-match-input" for="company">
+      	Company
+      </label>
+    </div>
+
+    <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+      <input class="w-input cc-input" id="company" name="company" ng-model="company" ng-required="1" placeholder="Acme co" type="text">
+    </div>
+  </div>
+  
+  <div class="w-row">
+    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+      <label class="cc-label cc-label-match-input" for="name-3">
+      	Country
+      </label>
+    </div>
+
+    <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+      <div class="w-embed">
+        <select class="w-select cc-input" id="country" name="country" ng-model="country" ng-options="country.id as country.name for country in countries" ng-required="1"></select>
+
+        <p ng-show="register.country.$error.required && registerSubmitted || register.country.$error.required && register.country.$dirty">
+			Country is required
+		</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-row">
+    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+      <label class="cc-label cc-label-match-input" for="email">
+      	Email
+      </label>
+    </div>
+
+    <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+      <input class="w-input cc-input" id="email" name="email" ng-model="email" ng-required="1" placeholder="aidan@example.com" type="email">
+
+      <p ng-show="register.email.$error.email && registerSubmitted || register.email.$error.email && register.email.$dirty">
+            Email is invalid
+        </p>
+
+		<p ng-show="register.email.$error.required && registerSubmitted || register.email.$error.required && register.email.$dirty">
+            Email is required
+        </p>
+    </div>
+  </div>
+
+  <div class="w-row cc-margin-bottom-20">
+    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+      <label class="cc-label cc-label-match-input" for="password">
+      	Password
+      </label>
+    </div>
+
+    <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+      <input class="w-input cc-input" id="password" name="password" ng-minlength="8" ng-model="password" ng-required="1" placeholder="Something hard to guess" type="password">
+
+      <p ng-show="register.password.$error.minlength && registerSubmitted || register.password.$error.minlength && register.password.$dirty">
+			Password is too short.
+		</p>
+
+		<p ng-show="register.password.$error.required && registerSubmitted || register.password.$error.required && register.password.$dirty">
+			Password is required
+		</p>
+    </div>
+  </div>
+
+  <input class="w-button cc-button-l cc-button-free-trial"  data-wait="Please wait..." id="submit" type="submit" value="Start my 30 day free trial">
+</form>
+
+<div class="w-form-done" ng-class="{'w-form-show':success}">
+	<p class="cc-success-p">
+		{{success}}
+	</p>
+</div>
+
+<div class="w-form-fail" ng-class="{'w-form-show':error}">
+	<p class="cc-error-p">
+		{{error}}
+	</p>
+</div>

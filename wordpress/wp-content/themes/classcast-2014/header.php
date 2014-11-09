@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Wed Jun 18 2014 05:44:26 GMT+0000 (UTC) -->
-<html data-wf-site="538bcc732502ff2560203e03">
+<html data-wf-site="538bcc732502ff2560203e03" ng-app="cc">
 <head>
   <meta charset="utf-8">
   <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -81,7 +81,7 @@
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='signup')?'form' :'');?> 
-      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
+      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?> <?php echo(($template_section =='register')?'form' :'');?>">
       
     
       <div class="cc-navigation" data-ix="navigation-past-hero">
@@ -363,6 +363,15 @@
     </div>
 
     <?php
+      } else if($template_section == 'register') {
+    ?>
+        <div class="w-container cc-content-container cc-blog-hero-content">
+          <h1 class="cc-form-hero-headline"><span class="w-hidden-small w-hidden-tiny">START&nbsp;</span>FREE&nbsp;TRIAL</h1>
+          
+          <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
+            <br>Signup to a free trial below to see how we make it easy.</div>
+          </div>
+      </div>
+    <?php
       }
-      else {}
     ?>
