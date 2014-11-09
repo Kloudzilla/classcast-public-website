@@ -81,7 +81,7 @@
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='signup')?'form' :'');?> 
-      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
+      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?> <?php echo(($template_section =='register')?'form' :'');?>">
       
     
       <div class="cc-navigation" data-ix="navigation-past-hero">
@@ -363,6 +363,15 @@
     </div>
 
     <?php
+      } else if($template_section == 'register') {
+    ?>
+        <div class="w-container cc-content-container cc-blog-hero-content">
+          <h1 class="cc-form-hero-headline"><span class="w-hidden-small w-hidden-tiny">START&nbsp;</span>FREE&nbsp;TRIAL</h1>
+          
+          <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
+            <br>Signup to a free trial below to see how we make it easy.</div>
+          </div>
+      </div>
+    <?php
       }
-      else {}
     ?>
