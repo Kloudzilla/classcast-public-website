@@ -36,7 +36,11 @@
 
     <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
       <div class="w-embed">
-        <select class="w-select cc-input" id="country" name="country" ng-model="country" ng-options="country.id as country.name for country in countries" ng-required="1"></select>
+        <select class="w-select cc-input" id="country" name="country" ng-model="country" ng-options="country.id as country.name for country in countries" ng-required="1">
+          <option value="">
+            Select one
+          </option>
+        </select>
 
         <p ng-show="register.country.$error.required && registerSubmitted || register.country.$error.required && register.country.$dirty">
       Country is required
@@ -54,7 +58,11 @@
 
     <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
       <div class="w-embed">
-        <select class="w-select cc-input" id="industry" name="industry" ng-model="industry" ng-options="industry.id as industry.name for industry in industries" ng-required="1"></select>
+        <select class="w-select cc-input" id="industry" name="industry" ng-model="industry" ng-options="industry.id as industry.name for industry in industries" ng-required="1">
+          <option value="">
+            Select one
+          </option>
+        </select>
 
         <p ng-show="register.industry.$error.required && registerSubmitted || register.industry.$error.required && register.industry.$dirty">
           Industry is required
@@ -74,12 +82,12 @@
       <input class="w-input cc-input" id="email" name="email" ng-model="email" ng-required="1" placeholder="aidan@example.com" type="email">
 
       <p ng-show="register.email.$error.email && registerSubmitted || register.email.$error.email && register.email.$dirty">
-            Email is invalid
-        </p>
+        Email is invalid
+      </p>
 
-		<p ng-show="register.email.$error.required && registerSubmitted || register.email.$error.required && register.email.$dirty">
-            Email is required
-        </p>
+	    <p ng-show="register.email.$error.required && registerSubmitted || register.email.$error.required && register.email.$dirty">
+        Email is required
+      </p>
     </div>
   </div>
 

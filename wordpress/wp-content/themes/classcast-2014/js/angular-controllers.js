@@ -32,13 +32,43 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 	// Industries
 	$scope.industries = [
 		{
-			id: 'education',
-			name: 'Education'
+			id: 'Dietician / Nutrionist',
+			name: 'Dietician / Nutrionist'
 		},
 
 		{
-			id: 'fitness',
-			name: 'Fitness'
+			id: 'Fitness Club or Studio',
+			name: 'Fitness Club or Studio'
+		},
+
+		{
+			id: 'Fitness Instructor',
+			name: 'Fitness Instructor'
+		},
+
+		{
+			id: 'Life Coach / Transformational Consultant',
+			name: 'Life Coach / Transformational Consultant'
+		},
+
+		{
+			id: 'Personal Trainer',
+			name: 'Personal Trainer'
+		},
+
+		{
+			id: 'Physiotherapist',
+			name: 'Physiotherapist'
+		},
+
+		{
+			id: 'Rehabilitation Specialist',
+			name: 'Rehabilitation Specialist'
+		},
+
+		{
+			id: 'Other',
+			name: 'Other'
 		}
 	];
 
