@@ -29,6 +29,19 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 		}
 	];
 
+	// Industries
+	$scope.industries = [
+		{
+			id: 'education',
+			name: 'Education'
+		},
+
+		{
+			id: 'fitness',
+			name: 'Fitness'
+		}
+	];
+
 	// Pre-select country
 	// $.get("http://ipinfo.io", function(response) {
 	// 	ccUserInitialCountry = response.country;
@@ -51,10 +64,11 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 			}
 
 			var create_customer_data = {
-				company: $scope.company,
+				company_name: $scope.company_name,
 				country: $scope.country,
 				email: $scope.email,
-				name: $scope.name,
+				full_name: $scope.full_name,
+				industry: $scope.industry,
 				password: $scope.password
 			};
 

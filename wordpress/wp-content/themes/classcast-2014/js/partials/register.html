@@ -1,36 +1,36 @@
 <form name="register" ng-class="{'cc-form-submitted':registerSubmitted}" ng-submit="submitRegisterForm(register.$valid)" novalidate>
   <div class="w-row">
     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-      <label class="cc-label cc-label-match-input" for="name">
+      <label class="cc-label cc-label-match-input" for="full_name">
       	Your Full Name
       </label>
     </div>
 
     <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
-      <input class="w-input cc-input" id="name" name="name" ng-model="name" ng-required="1" placeholder="Aidan Green" type="text">
+      <input class="w-input cc-input" id="full_name" name="full_name" ng-model="full_name" ng-required="1" placeholder="Aidan Green" type="text">
 
-      <p ng-show="register.name.$error.required && registerSubmitted || register.name.$error.required && register.name.$dirty">
-			Company/Organisation Name is required
-		</p>
+      <p ng-show="register.full_name.$error.required && registerSubmitted || register.full_name.$error.required && register.full_name.$dirty">
+        Company/Organisation Name is required
+		  </p>
     </div>
   </div>
 
   <div class="w-row">
     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-      <label class="cc-label cc-label-match-input" for="company">
+      <label class="cc-label cc-label-match-input" for="company_name">
       	Company
       </label>
     </div>
 
     <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
-      <input class="w-input cc-input" id="company" name="company" ng-model="company" ng-required="1" placeholder="Acme co" type="text">
+      <input class="w-input cc-input" id="company_name" name="company_name" ng-model="company_name" ng-required="1" placeholder="Acme co" type="text">
     </div>
   </div>
   
   <div class="w-row">
     <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-      <label class="cc-label cc-label-match-input" for="name-3">
-      	Country
+      <label class="cc-label cc-label-match-input" for="country">
+        Country
       </label>
     </div>
 
@@ -39,8 +39,26 @@
         <select class="w-select cc-input" id="country" name="country" ng-model="country" ng-options="country.id as country.name for country in countries" ng-required="1"></select>
 
         <p ng-show="register.country.$error.required && registerSubmitted || register.country.$error.required && register.country.$dirty">
-			Country is required
-		</p>
+      Country is required
+    </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-row">
+    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+      <label class="cc-label cc-label-match-input" for="industry">
+      	Industry
+      </label>
+    </div>
+
+    <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+      <div class="w-embed">
+        <select class="w-select cc-input" id="industry" name="industry" ng-model="industry" ng-options="industry.id as industry.name for industry in industries" ng-required="1"></select>
+
+        <p ng-show="register.industry.$error.required && registerSubmitted || register.industry.$error.required && register.industry.$dirty">
+          Industry is required
+		    </p>
       </div>
     </div>
   </div>
