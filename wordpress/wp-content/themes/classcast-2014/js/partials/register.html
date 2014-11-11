@@ -10,7 +10,7 @@
       <input class="w-input cc-input" id="full_name" name="full_name" ng-model="full_name" ng-required="1" placeholder="Aidan Green" type="text">
 
       <p ng-show="register.full_name.$error.required && registerSubmitted || register.full_name.$error.required && register.full_name.$dirty">
-        Company/Organisation Name is required
+        Name is required
 		  </p>
     </div>
   </div>
@@ -36,7 +36,7 @@
 
     <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
       <div class="w-embed">
-        <select class="w-select cc-input" id="country" name="country" ng-model="country" ng-options="country.id as country.name for country in countries" ng-required="1">
+        <select class="w-select cc-input" id="country" name="country" ng-model="country" ng-options="country.alpha_2_code as country.name for country in countries" ng-required="1">
           <option value="">
             Select one
           </option>

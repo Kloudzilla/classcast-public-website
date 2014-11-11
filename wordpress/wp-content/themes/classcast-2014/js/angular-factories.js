@@ -120,3 +120,33 @@ cc.factory('cc_customer', ['$q', 'cc_api', function($q, cc_api) {
 		}
 	}
 }]);
+
+/**
+* Data
+*/
+
+cc.factory('cc_data', ['$q', 'cc_api', function($q, cc_api) {
+	var apiEndPoints = {
+		get_registration_countries: {
+			type: 'GET',
+			url: 'registration/countries'
+		}
+	};
+
+	return {
+		/**
+		* GET registration countries
+		*/
+		apiGetRegistrationCountries: function(data) {
+			var defer = $q.defer();
+
+			cc_api.cc_apiRequest(apiEndPoints.get_registration_countries, null, function(response) {
+				defer.resolve(response);
+			}, function(response) {
+				defer.reject(response);
+			});
+
+			return defer.promise;
+		}
+	}
+}]);

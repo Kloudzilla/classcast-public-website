@@ -14,20 +14,7 @@ cc.controller('HomeCtrl', ['$scope', function($scope) {
 * Register
 */
 
-cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_customer', function($scope, $window, cc_authentication, cc_customer) {
-
-	// Countries
-	$scope.countries = [
-		{
-			id: 'AU',
-			name: 'Australia'
-		},
-
-		{
-			id: 'US',
-			name: 'United States'
-		}
-	];
+cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_customer', 'cc_data', function($scope, $window, cc_authentication, cc_customer, cc_data) {
 
 	// Industries
 	$scope.industries = [
@@ -72,7 +59,21 @@ cc.controller('RegisterCtrl', ['$scope', '$window', 'cc_authentication', 'cc_cus
 		}
 	];
 
-	// Pre-select country
+	/**
+	* Get list of countries from API
+	*/
+	if(!cc_data.countries || !cc_data.countries.length) {
+		cc_data.apiGetRegistrationCountries().then(function(response) {
+			cc_data.countries = response.response;
+			$scope.countries = cc_data.countries;
+		}, function(response) {
+			$scope.error = 'There was an error requesting countries from the API.';
+		});
+	} else {
+		$scope.countries = cc_data.countries
+	}
+
+	// @todo Pre-select country
 	// $.get("http://ipinfo.io", function(response) {
 	// 	ccUserInitialCountry = response.country;
 	// 	$("#country").val(ccUserInitialCountry.toUpperCase());
