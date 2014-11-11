@@ -79,14 +79,14 @@ cc.factory('cc_config', [function() {
 
 			PRODUCTION: {
 				api: {
-					host: 'staging.classcast.co/api',
+					host: 'www.classcast.co/api',
 					protocol: 'https'
 				}
 			},
 
 			STAGING: {
 				api: {
-					host: 'www.classcast.co/api',
+					host: 'staging.classcast.co/api',
 					protocol: 'https'
 				}
 			}
