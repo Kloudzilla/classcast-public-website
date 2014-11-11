@@ -6,12 +6,6 @@ cc.config(['$locationProvider', '$routeProvider', function($locationProvider, $r
 	$locationProvider.html5Mode(true);
 
 	$routeProvider
-	// Home
-	.when('/', {
-		controller: 'HomeCtrl',
-		templateUrl: '/wordpress/wp-content/themes/classcast-2014/js/partials/home.html'
-	})
-
 	// Register
 	.when('/register', {
 		controller: 'RegisterCtrl',
@@ -20,6 +14,9 @@ cc.config(['$locationProvider', '$routeProvider', function($locationProvider, $r
 
 	// Default page
 	.otherwise({
-		redirectTo: '/'
+		redirectTo: function(routeParams, path, search) {
+			// Most likely a page outside of the Angular app
+        	window.location = path;
+    	}
 	})
 }]);
