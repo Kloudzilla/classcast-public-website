@@ -89,13 +89,32 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 
  
 function get_custom_post_type_template($single_template) {
-     global $post;
- 
-       if ($post->post_type == 'custom-post-type') {
-          $single_template = dirname( __FILE__ ) . '/single-template.php';
-     }
-     return $single_template;
+	global $post;
+
+	if ($post->post_type == 'custom-post-type') {
+		$single_template = dirname( __FILE__ ) . '/single-template.php';
+	}
+
+	return $single_template;
 }
  
-add_filter( "single_template", "get_custom_post_type_template" ) ;
-?>
+add_filter( "single_template", "get_custom_post_type_template" );
+
+/**
+*
+*/
+function getManageCustomerRegisterURL() {
+	switch(ENVIRONMENT) {
+		case "DEVELOPMENT":
+			return 'http://manage.classcast.dev:3000/manage/customer/register';
+
+		case "STAGING":
+			return 'https://staging-manage.simplecue.com/manage/customer/register';
+
+		case "PRODUCTION":
+			return 'https://manage.classcast.co/manage/customer/register';
+
+		default:
+			return 'https://staging-manage.simplecue.com/manage/customer/register';
+	}
+}
