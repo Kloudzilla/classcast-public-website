@@ -75,6 +75,8 @@
   <?php
     // }
   ?>
+
+  <script src="//cdn.optimizely.com/js/1766580407.js"></script>
 </head>
 
 <body>
