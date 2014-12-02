@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Dec 02 2014 01:56:34 GMT+0000 (UTC) -->
-<html data-wf-site="538bcc732502ff2560203e03" data-wf-page="542b58486d96f6881f5adbc6">
+<!-- Last Published: Tue Dec 02 2014 01:56:35 GMT+0000 (UTC) -->
+<html data-wf-site="538bcc732502ff2560203e03" data-wf-page="5472cd7dc010d63b28a52255">
 <head>
   <meta charset="utf-8">
-  <title>Sign-up Thankyou - Classcast External</title>
+  <title>Contact - Classcast External</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -247,18 +247,29 @@ SLIDER VERTICAL ALIGNMENT -->
         </div>
       </div>
       <div class="w-container cc-content-container cc-blog-hero-content">
-        <h1 class="cc-form-hero-headline">SCHEDULE A DEMO</h1>
-        <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
-          <br>Get a personalized tour of the Classcast today and learn how we make it easier.</div>
+        <h1 class="cc-form-hero-headline">CONTACT&nbsp;US</h1>
+        <div class="cc-form-hero-subline">One of our team will respond to your message shortly</div>
       </div>
     </div>
     <div class="cc-section">
       <div class="w-container cc-content-container cc-form-content">
-        <h2 class="cc-form-headline">Thankyou!</h2>
-        <div class="cc-form-subheadline">For confirming your details. Your registration is now complete. A Classcast representative will initiate contact with you shortly.</div>
-        <a class="w-inline-block cc-button-l return center" href="#">
-          <div>RETURN&nbsp;HOME</div>
-        </a>
+        <div class="w-form">
+          <form id="email-form" name="email-form" data-name="Email Form">
+            <label for="name">Name:</label>
+            <input class="w-input" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" required="required">
+            <label for="email">Email Address:</label>
+            <input class="w-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
+            <label for="Message">Your Message</label>
+            <textarea class="w-input" id="Message" placeholder="Enter your message" name="Message" data-name="Message" required="required"></textarea>
+            <input class="w-button cc-button-l get-started" type="submit" value="SUBMIT" data-wait="Please wait...">
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form :(</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="cc-section cc-footer-min-section">
