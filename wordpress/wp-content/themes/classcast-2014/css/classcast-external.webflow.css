@@ -367,7 +367,6 @@ p {
   background-color: #464c4d;
   -webkit-transform: translate(-100%, -5px);
   -ms-transform: translate(-100%, -5px);
-  -o-transform: translate(-100%, -5px);
   transform: translate(-100%, -5px);
 }
 .cc-navigation-past-hero {
@@ -383,7 +382,6 @@ p {
   box-shadow: #6e6e6e 0px 1px 1px -1px;
   -webkit-transform: none;
   -ms-transform: none;
-  -o-transform: none;
   transform: none;
 }
 .cc-navigation-item-logo-pasthero {
@@ -1400,6 +1398,7 @@ p {
 }
 .cc-button-l.cc-button-free-trial {
   width: 100%;
+  margin-bottom: 20px;
   background-color: #00afef;
   font-size: 18px;
 }
@@ -1894,6 +1893,9 @@ p {
   height: 44px;
   border-radius: 4px;
 }
+.cc-input.ng-invalid {
+  border: 1px solid #b81d2a;
+}
 .cc-label {
   font-weight: 300;
 }
@@ -1919,6 +1921,18 @@ p {
   margin-right: 10px;
   float: left;
   border-radius: 50%;
+}
+.cc-register-terms-text {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.cc-link {
+  color: #00afef;
+}
+.help-block {
+  color: #b81d2a;
+  font-size: 14px;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -2038,7 +2052,6 @@ p {
     display: none;
     -webkit-transform: none;
     -ms-transform: none;
-    -o-transform: none;
     transform: none;
   }
   .cc-pricing-faq-wrap {
@@ -2250,7 +2263,6 @@ p {
   .cc-navigation-past-hero {
     -webkit-transform: none;
     -ms-transform: none;
-    -o-transform: none;
     transform: none;
   }
   .cc-footer-legal-mobile {
@@ -2493,7 +2505,6 @@ p {
   .cc-navigation-past-hero {
     -webkit-transform: none;
     -ms-transform: none;
-    -o-transform: none;
     transform: none;
   }
   .cc-pricing-grid-col {
