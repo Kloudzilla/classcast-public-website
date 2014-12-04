@@ -78,6 +78,16 @@
   ?>
 
   <script src="//cdn.optimizely.com/js/1766580407.js"></script>
+  
+  <!-- FACEBOOK SHARE CONTROLS -->
+
+  <meta property="og:title" content="Classcast" />
+  <meta property="og:site_name" content="Classcast" />
+  <meta property="og:url" content="http://www.classcast.co" />
+  <meta property="og:description" content="The No.1 Health, Wellness & Fitness content publishing platform" />
+  <meta property="og:image" content="https://www.classcast.co/wordpress/wp-content/themes/classcast-2014/images/logo-colour.png" />
+  <meta property="og:type" content="website" />
+  
 </head>
 
 <body>
