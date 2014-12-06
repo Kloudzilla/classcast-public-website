@@ -13,7 +13,6 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/webflow.css">
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
   <?php
       if($template_section == 'pricing') { ?>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/tooltip.css">
@@ -22,6 +21,8 @@
       }
       else {}
   ?>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -77,7 +78,7 @@
   ?>
 
   <script src="//cdn.optimizely.com/js/1766580407.js"></script>
-
+  
   <!--Start of Zopim Live Chat Script-->
   <script type="text/javascript">
   window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -87,6 +88,15 @@
   type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
   </script>
   <!--End of Zopim Live Chat Script-->
+  
+  <!-- FACEBOOK SHARE CONTROLS -->
+  <meta property="og:title" content="Classcast" />
+  <meta property="og:site_name" content="Classcast" />
+  <meta property="og:url" content="http://www.classcast.co" />
+  <meta property="og:description" content="The No.1 Health, Wellness & Fitness content publishing platform" />
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/facebook_share.png" />
+  <meta property="og:type" content="website" />
+  <!-- END OF: FACEBOOK SHARE CONTROLS -->
 </head>
 
 <body>
@@ -257,7 +267,40 @@
     <?php
       if($template_section == 'home') {
     ?>
-
+      <!-- Facebook Conversion Code for Clicks to web -->
+        <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6017829039898', {'value':'0.00','currency':'USD'}]);
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017829039898&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+        
+        <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+          _fbq.push(['addPixelId', '623174104459253']);
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', 'PixelInitialized', {}]);
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=623174104459253&amp;ev=PixelInitialized" /></noscript>
+        
         <div class="cc-section">
           <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
             <div class="w-slider-mask">

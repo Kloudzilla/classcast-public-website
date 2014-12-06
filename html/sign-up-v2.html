@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sun Nov 09 2014 12:56:55 GMT+0000 (UTC) -->
+<!-- Last Published: Tue Dec 02 2014 01:56:35 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="54585dc44afb31505b76a77d">
 <head>
   <meta charset="utf-8">
@@ -262,7 +262,8 @@ SLIDER VERTICAL ALIGNMENT -->
                   <label class="cc-label cc-label-match-input" for="name">Your Full Name</label>
                 </div>
                 <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
-                  <input class="w-input cc-input" id="name" type="text" placeholder="Aidan Green" name="name" data-name="Name" required="required">
+                  <input class="w-input cc-input ng-invalid" id="name" type="text" placeholder="Aidan Green" name="name" data-name="Name" required="required">
+                  <p class="help-block">Name is required</p>
                 </div>
               </div>
               <div class="w-row">
@@ -271,6 +272,7 @@ SLIDER VERTICAL ALIGNMENT -->
                 </div>
                 <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
                   <input class="w-input cc-input" id="Company-Name" type="text" placeholder="Acme co" name="Company-Name" data-name="Company Name" required="required">
+                  <p class="help-block">Company/business/org is required</p>
                 </div>
               </div>
               <div class="w-row">
@@ -532,6 +534,7 @@ SLIDER VERTICAL ALIGNMENT -->
                       <option value="ZW">Zimbabwe</option>
                     </select>
                   </div>
+                  <p class="help-block">Country is required</p>
                   <div class="w-embed w-script">
                     <script src="https://code.jquery.com/jquery-2.1.1.js" type="text/javascript"></script>
                     <script type="text/javascript">
@@ -547,10 +550,32 @@ SLIDER VERTICAL ALIGNMENT -->
               </div>
               <div class="w-row">
                 <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                  <label class="cc-label cc-label-match-input" for="email">Industry</label>
+                </div>
+                <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
+                  <select class="w-select" id="Industry" name="Industry" data-name="Industry" required="required">
+                    <option value="">Select one...</option>
+                    <option value="Fitness Instructor">Fitness Instructor</option>
+                    <option value="Personal Trainer">Personal Trainer</option>
+                    <option value="Fitness Club or Studio">Fitness Club or Studio</option>
+                    <option value="Physiotherapist">Physiotherapist</option>
+                    <option value="Rehabilitation Specialist">Rehabilitation Specialist</option>
+                    <option value="Dietician / Nutrionist">Dietician / Nutrionist</option>
+                    <option value="Life Coach / Transformational Consultant">Life Coach / Transformational Consultant</option>
+                    <option value="Other">Other</option>
+                    <p class="help-block wf-affected">Name is required</p>
+                  </select>
+                  <p class="help-block">Industry is required</p>
+                </div>
+              </div>
+              <div class="w-row">
+                <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
                   <label class="cc-label cc-label-match-input" for="email">Email</label>
                 </div>
                 <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
-                  <input class="w-input cc-input" id="email" type="email" placeholder="aidan@example.com" name="email" data-name="Email" required="required">
+                  <input class="w-input cc-input" id="email-2" type="email" placeholder="aidan@example.com" name="email-2" data-name="Email 2" required="required">
+                  <p class="help-block">Email is required</p>
+                  <p class="help-block">Does not appear to be a valid email address</p>
                 </div>
               </div>
               <div class="w-row cc-margin-bottom-20">
@@ -559,9 +584,12 @@ SLIDER VERTICAL ALIGNMENT -->
                 </div>
                 <div class="w-col w-col-8 w-col-small-8 w-col-tiny-8">
                   <input class="w-input cc-input" id="Password" type="password" placeholder="Something hard to guess" name="Password" data-name="Password" required="required">
+                  <p class="help-block">Password is required</p>
+                  <p class="help-block">Must be atleast 4 characters long</p>
                 </div>
               </div>
               <input class="w-button cc-button-l cc-button-free-trial" type="submit" value="Start my 30 day free trial" data-wait="Please wait...">
+              <p class="cc-register-terms-text">By clicking below to sign up, you are agreeing to the Classcast <a class="cc-link" target="_blank" href="terms.html">Terms of Service</a>.</p>
             </form>
             <div class="w-form-done">
               <p>Thank you! Your submission has been received!</p>
