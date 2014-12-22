@@ -118,3 +118,48 @@ function getManageCustomerRegisterURL() {
 			return 'https://staging-manage.simplecue.com/manage/customer/register';
 	}
 }
+
+
+function get_blog_subscribe_form(){
+	return '
+	
+<div class="cc-blog-subscribe-section">
+  <div class="w-container">
+    <div class="cc-blog-subscribe-tile">
+      <div class="w-row">
+        <div class="w-col w-col-5 w-col-small-5">
+          <h5 class="cc-blog-subscribe-text">Get tips and ideas on<br><strong>fitness</strong> and&nbsp;<strong>technology</strong>&nbsp;&gt;</h5>
+        </div>
+        <div class="w-col w-col-7 w-col-small-7">
+          <div class="w-form cc-blog-subscribe-form">
+            <form id="wf-form-Blog-Subscribe-Form" name="wf-form-Blog-Subscribe-Form" data-name="Blog Subscribe Form" action="//classcast.us2.list-manage.com/subscribe/post?u=1c01ae6d41b7efa731691c63a&amp;amp;id=7817767906" method="post">
+              <div class="w-row">
+                <div class="w-col w-col-7 w-col-small-6">
+                  <input class="w-input cc-input cc-blog-subscribe-input" id="EMAIL" type="email" placeholder="Enter your email address" name="EMAIL" data-name="EMAIL" required="required">
+                </div>
+                <div class="w-col w-col-5 w-col-small-6">
+                  <input class="w-button cc-button-s cc-blog-subscribe-button" type="submit" value="Subscribe To Blog" data-wait="Please wait...">
+                </div>
+              </div>
+              <div class="w-embed">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_1c01ae6d41b7efa731691c63a_7817767906" tabindex="-1" value="">
+                </div>
+              </div>
+            </form>
+            <div class="w-form-done cc-blog-subscribe-success">
+              <p>Please check your emails and confirm your blog subscription.</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	';
+}
