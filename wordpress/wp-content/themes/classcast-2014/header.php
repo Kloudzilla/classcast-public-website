@@ -174,7 +174,7 @@
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED mobile drop menu']);">
+                <a class="w-inline-block cc-drop-list-item-link" href="/register" onclick="_kmq.push(['record', 'Clicked on GET STARTED mobile drop menu']);">
                   <div>GET STARTED</div>
                 </a>
               </li>
@@ -188,7 +188,7 @@
           <ul class="w-list-unstyled w-clearfix cc-navigation-menu-list">
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED top navigation scroll']);">
+              <a class="w-clearfix w-inline-block cc-navigation-menu-list-item-link pop-down sign-up" href="/register" onclick="_kmq.push(['record', 'Clicked on GET STARTED top navigation scroll']);">
                 <div class="cc-navigation-menu-list-item-text-signup-dark">GET STARTED</div>
               </a>
             </li>
@@ -253,7 +253,7 @@
               ?>
 
               <li class="cc-drop-list-item">
-                <a class="w-inline-block cc-drop-list-item-link" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED mobile drop menu scroll']);">
+                <a class="w-inline-block cc-drop-list-item-link" href="/register" onclick="_kmq.push(['record', 'Clicked on GET STARTED mobile drop menu scroll']);">
                   <div>GET STARTED</div>
                 </a>
               </li>
@@ -310,7 +310,7 @@
                     <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
                     <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
-                    <a class="w-inline-block cc-button-l get-started" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED homepage hero']);">
+                    <a class="w-inline-block cc-button-l get-started" href="/register" onclick="_kmq.push(['record', 'Clicked on GET STARTED homepage hero']);">
                       <div>GET STARTED</div>
                     </a>
                     <a class="w-inline-block cc-button-l tour" href="/#tour">
