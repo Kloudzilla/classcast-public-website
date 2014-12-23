@@ -3719,15 +3719,16 @@ Webflow.define('branding', function($, _) {
         padding: '5px 5px 5px 10px',
         fontFamily: 'Arial',
         fontSize: '10px',
-        textTransform: 'uppercase'
-
+        textTransform: 'uppercase',
+        opacity: '0',
+        transition: 'opacity 0.50s ease-in-out'
       });
 
       $link.css({
         color: '#AAADB0',
         textDecoration: 'none'
       });
-      
+
       var $webflowLogo = $('<img>');
       $webflowLogo.attr('src', 'https://daks2k3a4ib2z.cloudfront.net/54153e6a3d25f2755b1f14ed/5445a4b1944ecdaa4df86d3e_subdomain-brand.svg');
       $webflowLogo.css({
@@ -3741,7 +3742,14 @@ Webflow.define('branding', function($, _) {
       $branding.text('Built with');
       $branding.append($webflowLogo);
       $link.append($branding);
+
       $body.append($link);
+
+      setTimeout(function() {
+        $branding.css({
+          opacity: '1.0'
+        });
+      }, 4000);
     }
   };
 

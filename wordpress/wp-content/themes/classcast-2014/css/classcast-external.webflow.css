@@ -861,6 +861,13 @@ p {
 .cc-button-s.package:hover {
   background-color: #3480ba;
 }
+.cc-button-s.cc-blog-subscribe-button {
+  width: 100%;
+  margin-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #896ec7;
+}
 .cc-location-row {
   height: 100%;
 }
@@ -1896,6 +1903,10 @@ p {
 .cc-input.ng-invalid {
   border: 1px solid #b81d2a;
 }
+.cc-input.cc-blog-subscribe-input {
+  width: 100%;
+  margin-bottom: 0px;
+}
 .cc-label {
   font-weight: 300;
 }
@@ -1933,6 +1944,37 @@ p {
 .help-block {
   color: #b81d2a;
   font-size: 14px;
+}
+.text-center {
+  text-align: center;
+}
+.cc-blog-subscribe-section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+}
+.cc-blog-subscribe-tile {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.small {
+  font-size: 14px;
+}
+.cc-blog-subscribe-form {
+  margin-bottom: 0px;
+}
+.cc-blog-subscribe-text {
+  text-align: left;
+}
+.cc-blog-subscribe-success {
+  background-color: white;
+}
+.cc-social-share-block {
+  margin-bottom: 20px;
+}
+.cc-social-share-link {
+  margin-right: 10px;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -2188,6 +2230,15 @@ p {
   .cc-pricing-package-enterprise-blurb-link-mobile {
     color: #509bd6;
   }
+  .cc-blog-subscribe-tile {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 0px;
+  }
+  .cc-social-share-block {
+    position: static;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -2407,6 +2458,9 @@ p {
   .cc-free-trial-col2 {
     width: 100%;
   }
+  .cc-blog-subscribe-tile {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 479px) {
   h2 {
@@ -2566,6 +2620,9 @@ p {
   .cc-location-info-text {
     margin-bottom: 20px;
   }
+  .cc-button-s.cc-blog-subscribe-button {
+    margin-left: 0px;
+  }
   .cc-location-col.palo-alto {
     border-bottom: 1px solid #3f4042;
     border-right-style: none;
@@ -2664,6 +2721,16 @@ p {
   }
   .cc-pricing-package-blurb {
     height: auto;
+  }
+  .cc-input.cc-blog-subscribe-input {
+    margin-bottom: 10px;
+  }
+  .cc-blog-subscribe-tile {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .cc-blog-subscribe-text {
+    margin-bottom: 10px;
   }
 }
 

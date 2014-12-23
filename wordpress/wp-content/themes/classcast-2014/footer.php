@@ -6,7 +6,7 @@
           <div class="cc-signup-subline">30 days risk free trial.</div>
         </div>
         <div class="w-col w-col-4 w-col-stack">
-          <a class="w-inline-block cc-button-l get-started footer" href="/register" onclick="_kmq.push(['record', 'Clicked on GET STARTED large footer']);">
+          <a class="w-inline-block cc-button-l get-started footer" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED large footer']);">
             <div>GET STARTED</div>
           </a>
         </div>
@@ -70,6 +70,8 @@
     </div>
   </div>
   
+  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
    <!--MODAL-->

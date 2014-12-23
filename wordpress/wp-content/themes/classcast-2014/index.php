@@ -6,6 +6,9 @@
 <?php
 	get_header();
 ?>
+<?php
+	echo get_blog_subscribe_form();
+?>
  
     <div class="cc-section">
       <div class="w-container cc-content-container cc-blog-content">
