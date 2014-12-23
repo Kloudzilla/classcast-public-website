@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Wed Jun 18 2014 05:44:26 GMT+0000 (UTC) -->
-<html data-wf-site="538bcc732502ff2560203e03">
+<html data-wf-site="538bcc732502ff2560203e03" ng-app="cc">
 <head>
   <meta charset="utf-8">
   <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -13,7 +13,6 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/webflow.css">
   <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/classcast-external.webflow.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
   <?php
       if($template_section == 'pricing') { ?>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/tooltip.css">
@@ -22,6 +21,8 @@
       }
       else {}
   ?>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/extra-styles.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -77,7 +78,7 @@
   ?>
 
   <script src="//cdn.optimizely.com/js/1766580407.js"></script>
-
+  
   <!--Start of Zopim Live Chat Script-->
   <script type="text/javascript">
   window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -87,13 +88,22 @@
   type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
   </script>
   <!--End of Zopim Live Chat Script-->
+  
+  <!-- FACEBOOK SHARE CONTROLS -->
+  <meta property="og:title" content="Classcast" />
+  <meta property="og:site_name" content="Classcast" />
+  <meta property="og:url" content="http://www.classcast.co" />
+  <meta property="og:description" content="The No.1 Health, Wellness & Fitness content publishing platform" />
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/facebook_share.png" />
+  <meta property="og:type" content="website" />
+  <!-- END OF: FACEBOOK SHARE CONTROLS -->
 </head>
 
 <body>
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='signup')?'form' :'');?> 
-      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?>">
+      <?php echo(($template_section =='contact')?'form' :'');?> <?php echo(($template_section =='privacy')?'legal' :'');?> <?php echo(($template_section =='terms')?'legal' :'');?> <?php echo(($template_section =='register')?'form' :'');?>">
       
     
       <div class="cc-navigation" data-ix="navigation-past-hero">
@@ -105,7 +115,7 @@
             </li>
 
             <!--<li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
-              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/sign-up">
+              <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/register">
                 <div class="cc-navigation-menu-list-item-text-signup">GET STARTED</div>
               </a>
             </li>-->
@@ -257,7 +267,40 @@
     <?php
       if($template_section == 'home') {
     ?>
-
+      <!-- Facebook Conversion Code for Clicks to web -->
+        <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6017829039898', {'value':'0.00','currency':'USD'}]);
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017829039898&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+        
+        <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+          _fbq.push(['addPixelId', '623174104459253']);
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', 'PixelInitialized', {}]);
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=623174104459253&amp;ev=PixelInitialized" /></noscript>
+        
         <div class="cc-section">
           <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
             <div class="w-slider-mask">
@@ -375,6 +418,15 @@
     </div>
 
     <?php
+      } else if($template_section == 'register') {
+    ?>
+        <div class="w-container cc-content-container cc-blog-hero-content">
+          <h1 class="cc-form-hero-headline"><span class="w-hidden-small w-hidden-tiny">START&nbsp;</span>FREE&nbsp;TRIAL</h1>
+          
+          <div class="cc-form-hero-subline">Delivering content to your customers mobile devices can be overwhelming.
+            <br>Signup to a free trial below to see how we make it easy.</div>
+          </div>
+      </div>
+    <?php
       }
-      else {}
     ?>

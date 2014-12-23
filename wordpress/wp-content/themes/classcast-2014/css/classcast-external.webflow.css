@@ -367,7 +367,6 @@ p {
   background-color: #464c4d;
   -webkit-transform: translate(-100%, -5px);
   -ms-transform: translate(-100%, -5px);
-  -o-transform: translate(-100%, -5px);
   transform: translate(-100%, -5px);
 }
 .cc-navigation-past-hero {
@@ -383,7 +382,6 @@ p {
   box-shadow: #6e6e6e 0px 1px 1px -1px;
   -webkit-transform: none;
   -ms-transform: none;
-  -o-transform: none;
   transform: none;
 }
 .cc-navigation-item-logo-pasthero {
@@ -443,19 +441,10 @@ p {
 .cc-footer-list-item-link:hover {
   opacity: 1;
 }
-.cc-pricing-grid-wrap {
-  display: block;
-  margin: -10px auto 20px;
-}
 .cc-pricing-grid-col {
   margin-top: 12px;
   padding-right: 0px;
   padding-left: 0px;
-}
-.cc-pricing-grid-col-list-item {
-  padding: 20px 10px;
-  font-weight: 300;
-  text-align: center;
 }
 .cc-pricing-grid-col-package {
   margin-top: 8px;
@@ -467,9 +456,6 @@ p {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-}
-.cc-pricing-package-title.featured {
-  margin-bottom: 5px;
 }
 .cc-pricing-faq-wrap {
   margin-top: 40px;
@@ -491,14 +477,6 @@ p {
 }
 .cc-pricing-faq-text {
   color: #81878c;
-}
-.cc-pricing-package-currency {
-  width: 20px;
-  padding-top: 8px;
-  float: left;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
 }
 .cc-pricing-package-price {
   display: block;
@@ -522,13 +500,6 @@ p {
 .cc-pricing-package-price-wrap {
   display: block;
   margin: 20px auto;
-}
-.cc-pricing-package-price-enterprise {
-  margin-bottom: 34px;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-  text-align: center;
 }
 .cc-blog-post {
   margin-top: 60px;
@@ -866,21 +837,6 @@ p {
   text-align: center;
   text-decoration: none;
 }
-.cc-button-s.green {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.cc-button-s.green:hover {
-  background-color: #319957;
-}
-.cc-button-s.center {
-  display: block;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
-}
 .cc-button-s.keyline {
   padding: 5px 20px;
   border: 1px solid #d1d1d1;
@@ -891,17 +847,6 @@ p {
   border-color: #509bd6;
   background-color: #3cafe6;
   color: white;
-}
-.cc-button-s.enterprise {
-  display: block;
-  width: 140px;
-  margin-top: 47px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
-  background-color: #63bcff;
-  font-size: 14px;
 }
 .cc-button-s.package {
   display: block;
@@ -915,6 +860,13 @@ p {
 }
 .cc-button-s.package:hover {
   background-color: #3480ba;
+}
+.cc-button-s.cc-blog-subscribe-button {
+  width: 100%;
+  margin-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #896ec7;
 }
 .cc-location-row {
   height: 100%;
@@ -985,15 +937,6 @@ p {
 .cc-blog-hero-headline {
   color: white;
   font-weight: 700;
-}
-.cc-trusted-logo-link {
-  width: 20%;
-  height: 75px;
-  float: left;
-  opacity: 0.6;
-}
-.cc-trusted-logo-link:hover {
-  opacity: 1;
 }
 .cc-footer-min-list {
   display: block;
@@ -1367,9 +1310,6 @@ p {
   color: #81878c;
   text-decoration: none;
 }
-.cc-pricing-package-link.featured {
-  border-radius: 6px;
-}
 .cc-pricing-package-link.most-popular {
   border-color: #509bd6;
 }
@@ -1423,11 +1363,6 @@ p {
   margin-right: 20px;
   float: right;
 }
-.cc-button-l.get-started.center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
 .cc-button-l.join-us {
   background-color: #3cafe6;
   color: white;
@@ -1467,6 +1402,18 @@ p {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+.cc-button-l.cc-button-free-trial {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #00afef;
+  font-size: 18px;
+}
+.cc-button-l.cc-button-free-trial:hover {
+  background-color: #2d9ccf;
+}
+.cc-button-l.cc-button-free-trial:active {
+  background-color: #2d9ccf;
 }
 .cc-company-subline {
   color: white;
@@ -1629,10 +1576,6 @@ p {
 .cc-pricing-tab.annual.w--current {
   background-color: #509bd6;
 }
-.cc-pricing-package-subline {
-  color: #00afef;
-  text-align: center;
-}
 .cc-button-h {
   padding: 20px 80px;
   border-radius: 6px;
@@ -1788,9 +1731,6 @@ p {
 .cc-form-quote-author {
   font-weight: 400;
 }
-.cc-pricing-package-row {
-  margin-top: 20px;
-}
 .cc-pricing-package-blurb {
   height: 75px;
   font-weight: 600;
@@ -1803,25 +1743,10 @@ p {
   margin-bottom: 10px;
   text-align: center;
 }
-.cc-pricing-package-featured-list.enterprise {
-  width: 40.5%;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  float: left;
-}
 .cc-pricing-package-featured-list-item {
   color: #4da0e3;
   font-size: 18px;
   font-weight: 600;
-}
-.cc-pricing-package-featured-list-item.native-app {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-.cc-pricing-package-list-item {
-  margin-bottom: 5px;
-  text-align: left;
 }
 .cc-divider {
   display: block;
@@ -1834,11 +1759,6 @@ p {
   margin-bottom: 15px;
   text-align: left;
 }
-.cc-pricing-package-more {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
 .cc-pricing-package-title-wrap {
   margin-right: -15px;
   margin-left: -15px;
@@ -1849,16 +1769,6 @@ p {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #509bd6;
-}
-.cc-most-popular-text {
-  color: #e1e8ed;
-  font-size: 12px;
-  text-align: center;
-}
-.cc-pricing-package-feature-block {
-  width: 100%;
-  margin-right: -10px;
-  margin-left: -10px;
 }
 .cc-pricing-package-most-popular {
   display: block;
@@ -1953,30 +1863,118 @@ p {
   color: #a1d6ff;
   font-size: 16px;
 }
-.cc-pricing-package-enterprise-featured-list {
-  position: relative;
-  z-index: 9000;
-  display: inline-block;
-  width: 28%;
-  height: 140px;
-  padding-top: 20px;
-  padding-left: 20px;
-  float: left;
-  box-shadow: #1f5d8c 0px -1px 4px 0px;
-}
-.cc-pricing-package-enterprise-featured-list-item {
-  margin-bottom: 15px;
-}
-.cc-pricing-package-enterprise-endblock {
-  width: 20%;
-  height: 140px;
-  float: left;
-  background-color: #509bd6;
-}
 .cc-pricing-package-enterprise-blub-link {
   color: white;
   font-weight: 500;
   text-decoration: underline;
+}
+.cc-start-free-trial-hdg {
+  margin-top: 55px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.cc-start-free-trial-section {
+  background-color: #efefef;
+}
+.cc-start-free-trial-text {
+  margin-bottom: 20px;
+}
+.cc-testimonial-block {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #efefef;
+}
+.cc-app-name-text {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.cc-hr {
+  height: 0px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+.cc-margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.cc-input {
+  height: 44px;
+  border-radius: 4px;
+}
+.cc-input.ng-invalid {
+  border: 1px solid #b81d2a;
+}
+.cc-input.cc-blog-subscribe-input {
+  width: 100%;
+  margin-bottom: 0px;
+}
+.cc-label {
+  font-weight: 300;
+}
+.cc-label.cc-label-match-input {
+  height: 44px;
+  line-height: 44px;
+}
+.bg-danger {
+  padding: 10px;
+  background-color: #ffd9d9;
+}
+.cc-free-trial-col1 {
+  width: 50%;
+  float: right;
+}
+.cc-free-trial-col2 {
+  width: 41%;
+  float: left;
+}
+.cc-testimonial-photo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 50%;
+}
+.cc-register-terms-text {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.cc-link {
+  color: #00afef;
+}
+.help-block {
+  color: #b81d2a;
+  font-size: 14px;
+}
+.text-center {
+  text-align: center;
+}
+.cc-blog-subscribe-section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+}
+.cc-blog-subscribe-tile {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.small {
+  font-size: 14px;
+}
+.cc-blog-subscribe-form {
+  margin-bottom: 0px;
+}
+.cc-blog-subscribe-text {
+  text-align: left;
+}
+.cc-blog-subscribe-success {
+  background-color: white;
+}
+.cc-social-share-block {
+  margin-bottom: 20px;
+}
+.cc-social-share-link {
+  margin-right: 10px;
 }
 @media (max-width: 991px) {
   .cc-hero {
@@ -2096,13 +2094,7 @@ p {
     display: none;
     -webkit-transform: none;
     -ms-transform: none;
-    -o-transform: none;
     transform: none;
-  }
-  .cc-pricing-grid-wrap {
-    width: 100%;
-    padding-right: 5%;
-    padding-left: 5%;
   }
   .cc-pricing-faq-wrap {
     margin-top: 60px;
@@ -2150,10 +2142,6 @@ p {
   }
   .cc-section.cc-footer-section {
     padding-bottom: 10px;
-  }
-  .cc-button-s.center {
-    padding-right: 20px;
-    padding-left: 20px;
   }
   .cc-content-headline {
     text-align: center;
@@ -2242,6 +2230,15 @@ p {
   .cc-pricing-package-enterprise-blurb-link-mobile {
     color: #509bd6;
   }
+  .cc-blog-subscribe-tile {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 0px;
+  }
+  .cc-social-share-block {
+    position: static;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -2317,14 +2314,7 @@ p {
   .cc-navigation-past-hero {
     -webkit-transform: none;
     -ms-transform: none;
-    -o-transform: none;
     transform: none;
-  }
-  .cc-pricing-grid-wrap {
-    width: 90%;
-  }
-  .cc-pricing-grid-col.second-row {
-    margin-top: 40px;
   }
   .cc-footer-legal-mobile {
     color: #96c5ff;
@@ -2396,22 +2386,12 @@ p {
   .cc-team-col {
     margin-top: 40px;
   }
-  .cc-button-s.green {
-    display: block;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-  }
   .cc-tutorial-subtext {
     margin-bottom: 30px;
     text-align: center;
   }
   .cc-home-hero-headline {
     text-align: center;
-  }
-  .cc-trusted-logo-link {
-    width: 30%;
-    float: none;
   }
   .cc-footer-min {
     display: inline-block;
@@ -2468,8 +2448,18 @@ p {
   .cc-form-text {
     margin-bottom: 20px;
   }
-  .cc-pricing-package-row {
-    margin-top: 0px;
+  .cc-sign-up-helper-block {
+    margin-left: 0px;
+  }
+  .cc-free-trial-col1 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .cc-free-trial-col2 {
+    width: 100%;
+  }
+  .cc-blog-subscribe-tile {
+    padding-left: 20px;
   }
 }
 @media (max-width: 479px) {
@@ -2569,14 +2559,10 @@ p {
   .cc-navigation-past-hero {
     -webkit-transform: none;
     -ms-transform: none;
-    -o-transform: none;
     transform: none;
   }
   .cc-pricing-grid-col {
     margin-top: 20px;
-  }
-  .cc-pricing-grid-col-package.featured {
-    margin-top: -2px;
   }
   .cc-pricing-faq-col {
     padding-right: 10px;
@@ -2634,11 +2620,8 @@ p {
   .cc-location-info-text {
     margin-bottom: 20px;
   }
-  .cc-button-s.green {
-    display: block;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
+  .cc-button-s.cc-blog-subscribe-button {
+    margin-left: 0px;
   }
   .cc-location-col.palo-alto {
     border-bottom: 1px solid #3f4042;
@@ -2650,9 +2633,6 @@ p {
   }
   .cc-home-hero-subtext {
     text-align: center;
-  }
-  .cc-trusted-logo-link {
-    float: none;
   }
   .cc-footer-min-list {
     display: block;
@@ -2741,6 +2721,16 @@ p {
   }
   .cc-pricing-package-blurb {
     height: auto;
+  }
+  .cc-input.cc-blog-subscribe-input {
+    margin-bottom: 10px;
+  }
+  .cc-blog-subscribe-tile {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .cc-blog-subscribe-text {
+    margin-bottom: 10px;
   }
 }
 

@@ -179,6 +179,24 @@ select {
   width:100%;
 }
 
+div#mcTooltip 
+{
+    line-height:16px;
+    border-width: 1px;   
+    color:#81878c; 
+    border-color:#c9c9c9;
+    padding:15px;
+    font-size: 12px;
+    font-family: Raleway, sans-serif;
+    border-radius:6px; /*Rounded corners. N/A for IE 8 and below.*/
+    box-shadow: none;
+}
+
+div#mcTooltip, div.mcTooltipInner 
+{
+    background-color:white;
+}
+
 
 
 
