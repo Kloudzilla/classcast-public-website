@@ -90,12 +90,14 @@
   <!--End of Zopim Live Chat Script-->
   
   <!-- FACEBOOK SHARE CONTROLS -->
+  <?php if($template_section != 'blogpost'){ ?>
   <meta property="og:title" content="Classcast" />
   <meta property="og:site_name" content="Classcast" />
   <meta property="og:url" content="http://www.classcast.co" />
   <meta property="og:description" content="The No.1 Health, Wellness & Fitness content publishing platform" />
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/facebook_share.png" />
   <meta property="og:type" content="website" />
+  <?php } ?>
   <!-- END OF: FACEBOOK SHARE CONTROLS -->
 </head>
 
