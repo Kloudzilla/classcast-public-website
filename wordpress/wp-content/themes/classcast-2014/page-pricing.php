@@ -43,8 +43,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link most-popular">
@@ -65,8 +65,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -86,8 +86,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -107,8 +107,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -128,8 +128,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="w-hidden-main cc-pricing-package-link enterprise">
@@ -166,8 +166,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link most-popular">
@@ -188,8 +188,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -209,8 +209,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -230,8 +230,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -251,8 +251,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL pricing package']);">
-                    <div>START FREE TRIAL</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="w-hidden-main cc-pricing-package-link enterprise">
