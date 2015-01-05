@@ -83,17 +83,17 @@
         <div class="w-row cc-team-row">
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
-              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/stuart.jpg" width="129" alt="53ead9eca6f42a2f6a366809_stuart.jpg">
+              <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/Greg-bw.jpg" width="129" alt="Greg Kennish">
             </div>
-            <div class="cc-team-name">Stuart Guest-Smith</div>
-            <div class="cc-team-title">CEO &amp;&nbsp;C0-Founder</div>
+            <div class="cc-team-name">Greg Kennish</div>
+            <div class="cc-team-title">Executive Chairman</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
               <img class="cc-team-img" src="<?php echo get_template_directory_uri(); ?>/images/suren.jpg" width="150" alt="53eada2ef90240c2448f697f_suren.jpg">
             </div>
             <div class="cc-team-name">Suren Tippireddy</div>
-            <div class="cc-team-title">CTO &amp; Co-Founder</div>
+            <div class="cc-team-title">CTO</div>
           </div>
           <div class="w-col w-col-3 w-col-small-6 cc-team-col">
             <div class="cc-team-img">
@@ -159,7 +159,7 @@
           </div>
           <div class="w-col w-col-2 w-col-small-6 cc-location-col">
             <div class="cc-location-info-headline">Sydney Office</div>
-            <div class="cc-location-info-text">Suite 304, 29 Kiora Road, Miranda
+            <div class="cc-location-info-text">Suite 209, 29 Kiora Road, Miranda
               <br>2228</div>
           </div>
         </div>
