@@ -43,8 +43,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link most-popular">
@@ -60,13 +60,13 @@
                   <div class="cc-pricing-package-blurb">Basic plan for individuals or small businesses</div>
                   <div class="cc-divider"></div>
                   <ul class="w-list-unstyled cc-pricing-package-featured-list">
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>50&nbsp;</strong>Subscribed Users</li>
+                    <li class="cc-pricing-package-featured-list-item-subline"><strong>60&nbsp;</strong>Subscribed Users</li>
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>10GB</strong> storage and backup</li>
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -86,8 +86,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -107,8 +107,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -128,8 +128,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="w-hidden-main cc-pricing-package-link enterprise">
@@ -166,8 +166,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link most-popular">
@@ -183,13 +183,13 @@
                   <div class="cc-pricing-package-blurb">Basic plan for individuals or small businesses</div>
                   <div class="cc-divider"></div>
                   <ul class="w-list-unstyled cc-pricing-package-featured-list">
-                    <li class="cc-pricing-package-featured-list-item-subline"><strong>50&nbsp;</strong>Subscribed Users</li>
+                    <li class="cc-pricing-package-featured-list-item-subline"><strong>60&nbsp;</strong>Subscribed Users</li>
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>10GB</strong> storage and backup</li>
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -209,8 +209,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -230,8 +230,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="cc-pricing-package-link">
@@ -251,8 +251,8 @@
                     <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
                     </li>
                   </ul>
-                  <a class="w-inline-block cc-button-s package" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED pricing package']);">
-                    <div>Get Started</div>
+                  <a class="w-inline-block cc-button-s package" href="/register" onclick="_kmq.push(['record', 'Clicked on Try for FREE pricing package']);">
+                    <div>Try for FREE</div>
                   </a>
                 </div>
                 <div class="w-hidden-main cc-pricing-package-link enterprise">
@@ -273,8 +273,8 @@
           </div>
         </div>
         <div class="cc-request-demo-title"></div>
-        <a class="w-inline-block cc-button-h center request-demo" href="/sign-up">
-          <div>GET STARTED</div>
+        <a class="w-inline-block cc-button-h center request-demo" href="/register">
+          <div>START FREE TRIAL</div>
         </a>
         <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-clearfix cc-pricing-feature-grid-wrap">
           <div class="cc-pricing-feature-grid-row-wrap">

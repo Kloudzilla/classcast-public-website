@@ -6,8 +6,8 @@
           <div class="cc-signup-subline">30 days risk free trial.</div>
         </div>
         <div class="w-col w-col-4 w-col-stack">
-          <a class="w-inline-block cc-button-l get-started footer" href="/sign-up" onclick="_kmq.push(['record', 'Clicked on GET STARTED large footer']);">
-            <div>GET STARTED</div>
+          <a class="w-inline-block cc-button-l get-started footer" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL large footer']);">
+            <div>START FREE TRIAL</div>
           </a>
         </div>
         <div class="w-col w-col-4 w-col-stack">
