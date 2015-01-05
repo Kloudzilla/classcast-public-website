@@ -104,7 +104,7 @@ add_filter( "single_template", "get_custom_post_type_template" );
 *
 */
 function getManageCustomerRegisterURL() {
-	switch(ENVIRONMENT) {
+	switch(CC_ENVIRONMENT) {
 		case "DEVELOPMENT":
 			return 'http://manage.classcast.dev:3000/manage/customer/register';
 
