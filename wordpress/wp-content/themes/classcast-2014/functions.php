@@ -104,19 +104,19 @@ add_filter( "single_template", "get_custom_post_type_template" );
 *
 */
 function getManageCustomerRegisterURL() {
-	switch(CC_ENVIRONMENT) {
-		case "DEVELOPMENT":
-			return 'http://manage.classcast.dev:3000/manage/customer/register';
+  switch(CC_ENVIRONMENT) {
+    case "DEVELOPMENT":
+      return 'http://manage.classcast.dev:3000/manage/customer/register';
 
-		case "STAGING":
-			return 'https://staging-manage.simplecue.com/manage/customer/register';
+    case "STAGING":
+      return 'https://staging-manage.simplecue.com/manage/customer/register';
 
-		case "PRODUCTION":
-			return 'https://manage.classcast.co/manage/customer/register';
+    case "PRODUCTION":
+      return 'https://manage.classcast.co/manage/customer/register';
 
-		default:
-			return 'https://staging-manage.simplecue.com/manage/customer/register';
-	}
+    default:
+      return 'https://manage.classcast.co/manage/customer/register';
+  }
 }
 
 
