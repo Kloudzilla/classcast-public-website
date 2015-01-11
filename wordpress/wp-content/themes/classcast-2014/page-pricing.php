@@ -350,6 +350,10 @@
 				  <div class="cc-pricing-faq-headline">How much is video encoding?</div>
 				  <div class="cc-pricing-faq-text">Videos uploaded are automatically encode into multiple different formats so your end users always have smooth playback. Additional encoding is $30/hr.</div>
 				</li>
+				<li class="cc-pricing-faq-col-list-item">
+				  <div class="cc-pricing-faq-headline">Can i get help with my app icon and graphics?</div>
+				  <div class="cc-pricing-faq-text">Yes, we have a design package which will create an app icon, launch and intro screens as well as choose fonts colours and even review your current website and make recommendations for marketing to drive growth of the app. This package is $2,000.</div>
+				</li>
               </ul>
             </div>
             <div class="w-col w-col-6 cc-pricing-faq-col">
@@ -366,6 +370,10 @@
                   <div class="cc-pricing-faq-headline">Hosting and storage included?</div>
                   <div class="cc-pricing-faq-text">All videos, music, text... well anything is hosted for as long as you remain with us.</div>
                 </li>
+				<li class="cc-pricing-faq-col-list-item">
+				  <div class="cc-pricing-faq-headline">Can you enter the content for me?</div>
+				  <div class="cc-pricing-faq-text">Yes, we have a content entry service for $120/hr if you have a back catalog of DVD’s to enter this usually takes around 1-2hrs per dvd depending on the complexity of the choreography and video retrieval.</div>
+				</li>
                 <li class="cc-pricing-faq-col-list-item">
                   <div class="cc-pricing-faq-headline">What happens when I want to cancel an account?</div>
                   <div class="cc-pricing-faq-text">This would be a very sad moment, but we understand that these things happen. From your point of view, nothing. Once you cancel your account you’ll simply never be billed again. To cancel your account please just send as an email and we’ll process your request.</div>
