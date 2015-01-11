@@ -1644,8 +1644,16 @@ Webflow.define('scroll', function($) {
   var $doc = $(document);
   var win = window;
   var loc = win.location;
-  var history = win.history;
+  var history = inIframe() ? null : win.history;
   var validHash = /^[a-zA-Z][\w:.-]*$/;
+
+  function inIframe() {
+    try {
+      return !!win.frameElement;
+    } catch (e) {
+      return true;
+    }
+  }
 
   function ready() {
     // If hash is already present on page load, scroll to it right away
