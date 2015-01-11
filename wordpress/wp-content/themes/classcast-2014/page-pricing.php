@@ -27,7 +27,7 @@
             </div>
             <div class="cc-divider"></div>
 			<ul class="w-list-unstyled cc-pricing-package-featured-list">
-			  <li class="cc-pricing-package-featured-list-item-subline"><strong>+ $5</strong>&nbsp;per&nbsp;subscriber</li>
+			  <li class="cc-pricing-package-featured-list-item-subline"><strong>+ $4.99</strong>&nbsp;per paid subscriber</li>
 			  <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
 			  </li>
 			</ul>
@@ -46,7 +46,7 @@
             </div>
             <div class="cc-divider"></div>
 			<ul class="w-list-unstyled cc-pricing-package-featured-list">
-			  <li class="cc-pricing-package-featured-list-item-subline"><strong>100&nbsp;</strong>inc subscribers
+			  <li class="cc-pricing-package-featured-list-item-subline"><strong>100&nbsp;</strong>paid subscribers included
 			    <br>+ <strong>$2.99</strong> / subscriber / month</li>
 			  <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
 			  </li>
@@ -135,7 +135,7 @@
 		    </div>
 		  </div>
 		  <div class="w-clearfix cc-pricing-feature-grid-row">
-		    <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'Monetize content by acception payments directly from the platform')">Subscription billing system</div>
+		    <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'Monetize content by acception payments directly from the platform')">Subscription Billing System</div>
 		    <div class="w-clearfix cc-pricing-feature-grid-col-wrap">
 		      <div class="cc-pricing-feature-grid-col">
 		        <div class="cc-pricing-feature-grid-icon"></div>
@@ -149,7 +149,7 @@
 		    </div>
 		  </div>
 		  <div class="w-clearfix cc-pricing-feature-grid-row">
-		    <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'See overall and month-to-month changes in key metrics and app usage')">Dashboard Stastics</div>
+		    <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'See overall and month-to-month changes in key metrics and app usage')">Dashboard Statistics</div>
 		    <div class="w-clearfix cc-pricing-feature-grid-col-wrap">
 		      <div class="cc-pricing-feature-grid-col">
 		        <div class="cc-pricing-feature-grid-icon"></div>
@@ -283,7 +283,7 @@
 		    </div>
 		  </div>
 		<div class="w-clearfix cc-pricing-feature-grid-row">
-		  <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'Uploaded videos are encoded into multiple formats for adaptable video. No technical knowledge required.')">Video Encoding</div>
+		  <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'Uploaded videos are encoded into multiple formats for adaptable video. No technical knowledge required. Additional Encoding charged at $30/hr of uploaded video')">Video Encoding</div>
 		  <div class="w-clearfix cc-pricing-feature-grid-col-wrap">
 		    <div class="cc-pricing-feature-grid-col">Inc 1hr/month</div>
 		    <div class="cc-pricing-feature-grid-col">Inc 2hr/month</div>
@@ -293,7 +293,7 @@
 		  </div>
 		</div>
 		  <div class="w-clearfix cc-pricing-feature-grid-row">
-		    <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'Best practices and assistance to develop your product')">Custom onboarding</div>
+		    <div class="cc-pricing-feature-grid-feature" onmouseover="tooltip.pop(this, 'Best practices and assistance to develop your product')">Custom Onboarding</div>
 		    <div class="w-clearfix cc-pricing-feature-grid-col-wrap">
 		      <div class="cc-pricing-feature-grid-col">add-on</div>
 		      <div class="cc-pricing-feature-grid-col">add-on</div>
@@ -348,7 +348,7 @@
                 </li>
 				<li class="cc-pricing-faq-col-list-item">
 				  <div class="cc-pricing-faq-headline">How much is video encoding?</div>
-				  <div class="cc-pricing-faq-text">Before sending the videos uploaded to your customers we encode them into multiple different formats so they always have smooth playback. Additional encoding is $30/hr.</div>
+				  <div class="cc-pricing-faq-text">Videos uploaded are automatically encode into multiple different formats so your end users always have smooth playback. Additional encoding is $30/hr.</div>
 				</li>
               </ul>
             </div>
