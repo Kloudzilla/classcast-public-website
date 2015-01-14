@@ -118,7 +118,7 @@
 
             <li class="w-hidden-medium w-hidden-small w-hidden-tiny cc-navigation-menu-list-item sign-up">
               <a class="w-inline-block cc-navigation-menu-list-item-link sign-up" href="/register">
-                <div class="cc-navigation-menu-list-item-text-signup">FREE TIRAL</div>
+                <div class="cc-navigation-menu-list-item-text-signup">FREE TRIAL</div>
               </a>
             </li>
 
