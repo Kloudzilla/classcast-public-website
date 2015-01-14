@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sun Jan 11 2015 05:27:04 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Jan 14 2015 23:27:47 GMT+0000 (UTC) -->
 <html data-wf-site="538bcc732502ff2560203e03" data-wf-page="538bcc732502ff2560203e04">
 <head>
   <meta charset="utf-8">
@@ -73,8 +73,15 @@ SLIDER VERTICAL ALIGNMENT -->
     }
   </style>
   <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5492699514f56463"></script>
+  <script src="http://jwpsrv.com/library/ZwKfBBt1EeOreSIACusDuQ.js"></script>
 </head>
 <body>
+  <div class="w-embed">
+    <video autoplay="" loop="" style="width:100%; height: auto; position:absolute; z-index: -1;">
+      <source src="http://staging.classcast.co/wordpress/wp-content/themes/classcast-2014/videos/BackgroundVideo.mp4" type="video/mp4">
+        <source src="http://staging.classcast.co/wordpress/wp-content/themes/classcast-2014/videos/BackgroundVideo.ogv" type="video/ogg">
+    </video>
+  </div>
   <div class="cc-hero home">
     <div class="cc-navigation" data-ix="navigation-past-hero">
       <div class="w-container cc-navigation-items-wrap">
@@ -244,7 +251,7 @@ SLIDER VERTICAL ALIGNMENT -->
           <div class="w-slide">
             <div class="w-container">
               <div class="cc-home-hero-slider-text">
-                <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
+                <h3 class="cc-home-hero-headline">Your App. Your Content.<br>Made in Minutes</h3>
                 <div class="cc-home-hero-subtext"><em>The No. 1 Health and Fitness content publishing platform</em>
                 </div>
                 <a class="w-inline-block cc-button-l get-started" href="sign-up-v2.html">
@@ -286,6 +293,19 @@ SLIDER VERTICAL ALIGNMENT -->
           <div class="cc-trusted-logo kettleworx"></div>
           <div class="cc-trusted-logo yogafit"></div>
           <div class="cc-trusted-logo iom"></div>
+        </div>
+        <div class="w-embed w-script cc-testimonial-video-block">
+          <div id='playerUACpVPxMogbc'></div>
+          <script type='text/javascript'>
+            jwplayer('playerUACpVPxMogbc').setup({
+                file: 'http://staging.classcast.co/wordpress/wp-content/themes/classcast-2014/videos/testimonial-thump-boxing.mp4',
+                image: 'http://staging.classcast.co/wordpress/wp-content/themes/classcast-2014/images/testimonial-thump-boxing.jpg',
+                title: 'Thump Boxing Testimonial',
+                width: '100%',
+                aspectratio: '16:9',
+                skin: 'five'
+            });
+          </script>
         </div>
       </div>
     </div>
@@ -436,7 +456,7 @@ SLIDER VERTICAL ALIGNMENT -->
         </div>
       </div>
     </div>
-    <div class="w-slider cc-quote" data-animation="slide" data-duration="500" data-infinite="1">
+    <div class="w-slider cc-quote" data-animation="slide" data-duration="500" data-infinite="1" data-nav-spacing="10">
       <div class="w-slider-mask">
         <div class="w-slide">
           <div class="w-container cc-content-container">
