@@ -99,9 +99,23 @@
   <meta property="og:type" content="website" />
   <?php } ?>
   <!-- END OF: FACEBOOK SHARE CONTROLS -->
+  
+  <script src="http://jwpsrv.com/library/ZwKfBBt1EeOreSIACusDuQ.js"></script>
+
 </head>
 
 <body>
+    <?php
+      if($template_section == 'home') {
+    ?>
+		<div class="w-embed">
+		  <video autoplay="" loop="" style="width:100%; height: auto; position:absolute; z-index: -1;">
+		    <source src="<?php echo get_template_directory_uri(); ?>/videos/BackgroundVideo.mp4" type="video/mp4">
+		      <source src="<?php echo get_template_directory_uri(); ?>/videos/BackgroundVideo.ogv" type="video/ogg">
+		  </video>
+		</div>
+    <?php } ?>
+
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
       <?php echo(($template_section =='blog')?'blog' :'');?> <?php echo(($template_section =='blogpost')?'blog' :'');?> <?php echo(($template_section =='pricing')?'pricing' :'');?> <?php echo(($template_section =='signup')?'form' :'');?> 
@@ -309,7 +323,7 @@
               <div class="w-slide">
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
-                    <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
+                    <h3 class="cc-home-hero-headline">Your App. Your Content.<br>Made in Minutes</h3>
                     <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="/register" onclick="_kmq.push(['record', 'Clicked on START FREE TRIAL homepage hero']);">

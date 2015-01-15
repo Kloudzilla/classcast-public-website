@@ -249,6 +249,12 @@
     <?php
       if($template_section == 'home') {
     ?>
+		<div class="w-embed">
+		  <video autoplay="" loop="" style="width:100%; height: auto; position:absolute; z-index: -1;">
+		    <source src="<?php echo get_template_directory_uri(); ?>/videos/BackgroundVideo.mp4" type="video/mp4">
+		      <source src="<?php echo get_template_directory_uri(); ?>/videos/BackgroundVideo.ogv" type="video/ogg">
+		  </video>
+		</div>
 
         <div class="cc-section">
           <div class="w-slider cc-home-hero-slider" data-animation="slide" data-duration="800" data-infinite="1">
@@ -256,7 +262,7 @@
               <div class="w-slide">
                 <div class="w-container">
                   <div class="cc-home-hero-slider-text">
-                    <h3 class="cc-home-hero-headline">THE POWER&nbsp;OF<br> MOBILE CONTENT</h3>
+                    <h3 class="cc-home-hero-headline">Your App. Your Content.<br>Made in Minutes</h3>
                     <div class="cc-home-hero-subtext"><em>The No. 1 health and fitness content publishing platform</em>
                     </div>
                     <a class="w-inline-block cc-button-l get-started" href="/sign-up">
