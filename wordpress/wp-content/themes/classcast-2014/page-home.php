@@ -20,6 +20,20 @@
           <div class="cc-trusted-logo yogafit"></div>
           <div class="cc-trusted-logo iom"></div>
         </div>
+        
+		<div class="w-embed w-script cc-testimonial-video-block">
+		  <div id='playerUACpVPxMogbc'></div>
+		  <script type='text/javascript'>
+		    jwplayer('playerUACpVPxMogbc').setup({
+		        file: '<?php echo get_template_directory_uri(); ?>/videos/testimonial-thump-boxing.mp4',
+		        image: '<?php echo get_template_directory_uri(); ?>/images/testimonial-thump-boxing.jpg',
+		        width: '100%',
+		        aspectratio: '16:9',
+		        skin: 'five'
+		    });
+		  </script>
+		</div>
+        
       </div>
     </div>
 
@@ -149,6 +163,8 @@
       </div>
     </div>
   </div>
+  <?php /*
+  
   <div class="w-slider cc-quote" data-animation="slide" data-duration="500" data-infinite="1">
     <div class="w-slider-mask">
       <div class="w-slide">
@@ -168,6 +184,8 @@
     </div>
     <div class="w-slider-nav w-round cc-quote-slide-nav"></div>
   </div>
+*/
+?>
 
 <?php
 	get_footer();

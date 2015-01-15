@@ -101,12 +101,9 @@ p {
   background-attachment: scroll;
 }
 .cc-hero.home {
+  display: block;
   height: 702px;
-  background-color: #70593a;
-  background-image: url('../images/final-hero-7.jpg');
-  background-position: 0% 0%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.49);
 }
 .cc-hero.form {
   height: 400px;
@@ -1990,6 +1987,11 @@ p {
   font-size: 70px;
   line-height: 73px;
   text-align: center;
+}
+.cc-testimonial-video-block {
+  display: block;
+  max-width: 640px;
+  margin: 20px auto;
 }
 @media (max-width: 991px) {
   .cc-hero {
