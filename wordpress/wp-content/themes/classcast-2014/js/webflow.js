@@ -1784,6 +1784,7 @@ Webflow.define('links', function($, _) {
   var designer;
   var inApp = Webflow.env();
   var location = window.location;
+  var tempLink = document.createElement('a');
   var linkCurrent = 'w--current';
   var validHash = /^#[a-zA-Z][\w:.-]*$/;
   var indexPage = /index\.(html|php)$/;
@@ -1821,7 +1822,8 @@ Webflow.define('links', function($, _) {
   }
 
   function select(link) {
-    var href = link.getAttribute('href');
+    var href = (designer && link.getAttribute('href-disabled')) || link.getAttribute('href');
+    tempLink.href = href;
 
     // Ignore any hrefs with a colon to safely avoid all uri schemes
     if (href.indexOf(':') >= 0) return;
@@ -1841,7 +1843,7 @@ Webflow.define('links', function($, _) {
     if (href === '#') return;
 
     // Determine whether the link should be selected
-    var match = (link.href === location.href) || (href === slug) || (indexPage.test(href) && dirList.test(slug));
+    var match = (tempLink.href === location.href) || (href === slug) || (indexPage.test(href) && dirList.test(slug));
     setClass($link, linkCurrent, match);
   }
 

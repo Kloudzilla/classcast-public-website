@@ -38,6 +38,24 @@
     </div>
 
     <div class="cc-section cc-industry">
+    
+	<div class="w-container cc-content-container cc-industry-content">
+	  <h3 class="cc-features-headline">Take a video tour</h3>
+	  <div class="cc-features-subline">See an app being created and previewed instantly.</div>
+	  <div class="w-embed w-script">
+	    <div id='playerzaoTZwanHVgF'></div>
+	    <script type='text/javascript'>
+	      jwplayer('playerzaoTZwanHVgF').setup({
+	          file: '<?php echo get_template_directory_uri(); ?>/videos/demo.mov',
+	          image: '<?php echo get_template_directory_uri(); ?>/images/demo.jpg',
+	          width: '100%',
+	          aspectratio: '16:10',
+	          skin: 'five'
+	      });
+	    </script>
+	  </div>
+	</div>
+    
       <div class="w-container cc-content-container cc-industry-content">
         <h3 class="cc-features-headline">Everything you need in one platform</h3>
         <div class="cc-features-subline">Built from the ground up for health &amp; fitness professionals everywhere. Classcast is designed to quickly give you the information you need to run your business today.</div>
