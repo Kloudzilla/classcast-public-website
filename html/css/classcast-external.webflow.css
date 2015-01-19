@@ -336,6 +336,9 @@ p {
 .cc-external-wrap {
   min-height: 720px;
 }
+.cc-external-wrap.cc-white-bg {
+  background-color: white;
+}
 .cc-navigation-items-wrap {
   height: 100%;
 }
@@ -747,6 +750,9 @@ p {
   display: block;
   padding-top: 10px;
   background-color: #f8f8f8;
+}
+.cc-section.cc-industry.cc-white-bg {
+  background-color: white;
 }
 .cc-section.cc-users {
   position: relative;
