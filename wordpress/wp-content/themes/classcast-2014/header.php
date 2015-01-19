@@ -330,8 +330,9 @@
                       <div>START FREE TRIAL</div>
                     </a>
                     <a class="w-inline-block cc-button-l tour" href="/#tour">
-                      <div>TAKE&nbsp;A&nbsp;TOUR</div>
+                      <div>PLAY DEMO</div>
                     </a>
+	                <p class="cc-free-trial-sub-text">Risk Free, 30 Days Trial</p>
                   </div>
                 </div>
               </div>

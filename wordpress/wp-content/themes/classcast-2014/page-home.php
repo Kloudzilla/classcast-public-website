@@ -10,9 +10,29 @@
 <?php
 	get_header();
 ?>
+
+	<div class="cc-section cc-industry cc-white-bg">
+		<div class="w-container cc-content-container cc-industry-content">
+		  <h3 class="cc-features-headline">Take a video tour</h3><a name='tour'></a>
+		  <div class="cc-features-subline">See an app being created and previewed instantly.</div>
+		  <div class="w-embed w-script">
+		    <div id='playerzaoTZwanHVgF'></div>
+		    <script type='text/javascript'>
+		      jwplayer('playerzaoTZwanHVgF').setup({
+		          file: '<?php echo get_template_directory_uri(); ?>/videos/demo.mov',
+		          image: '<?php echo get_template_directory_uri(); ?>/images/demo.jpg',
+		          width: '100%',
+		          aspectratio: '16:10',
+		          skin: 'five'
+		      });
+		    </script>
+		  </div>
+		</div>
+	</div>
+
      <div class="w-hidden-small w-hidden-tiny cc-section cc-trusted">
       <div class="w-container cc-content-container">
-        <h3 class="cc-trusted-headline-top">Trusted by these companies</h3><a name='tour'></a>
+        <h3 class="cc-trusted-headline-top">Trusted by these companies</h3><a name='trusted'></a>
         <div class="w-clearfix cc-trusted-logo-wrap">
           <div class="cc-trusted-logo total-gym"></div>
           <div class="cc-trusted-logo gymstick"></div>
@@ -38,23 +58,6 @@
     </div>
 
     <div class="cc-section cc-industry">
-    
-	<div class="w-container cc-content-container cc-industry-content">
-	  <h3 class="cc-features-headline">Take a video tour</h3>
-	  <div class="cc-features-subline">See an app being created and previewed instantly.</div>
-	  <div class="w-embed w-script">
-	    <div id='playerzaoTZwanHVgF'></div>
-	    <script type='text/javascript'>
-	      jwplayer('playerzaoTZwanHVgF').setup({
-	          file: '<?php echo get_template_directory_uri(); ?>/videos/demo.mov',
-	          image: '<?php echo get_template_directory_uri(); ?>/images/demo.jpg',
-	          width: '100%',
-	          aspectratio: '16:10',
-	          skin: 'five'
-	      });
-	    </script>
-	  </div>
-	</div>
     
       <div class="w-container cc-content-container cc-industry-content">
         <h3 class="cc-features-headline">Everything you need in one platform</h3>
