@@ -46,8 +46,7 @@
             </div>
             <div class="cc-divider"></div>
 			<ul class="w-list-unstyled cc-pricing-package-featured-list">
-			  <li class="cc-pricing-package-featured-list-item-subline"><strong>100&nbsp;</strong>paid subscribers included
-			    <br>+ <strong>$2.99</strong> / subscriber / month</li>
+			  <li class="cc-pricing-package-featured-list-item-subline">+ <strong>$2.99</strong> / subscriber / month</li>
 			  <li class="cc-pricing-package-featured-list-item-subline"><strong>Native Application</strong>
 			  </li>
 			</ul>
