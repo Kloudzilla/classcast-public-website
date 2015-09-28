@@ -76,12 +76,12 @@
           <div class="w-col w-col-3">
             <img class="cc-features-icon" src="<?php echo get_template_directory_uri(); ?>/images/revenue2.png" width="150" alt="53eee29e3013e11e7a83d2db_revenue2.png">
             <div class="cc-features-title">Make money from content</div>
-            <p class="cc-features-text">Your content is valuable, secure recurring revenue from it, globally – and give your customers even more ways to enjoy it. See payments in your bank account every month.</p>
+            <p class="cc-features-text">Your content is valuable, secure recurring revenue from it, globally Ã¢â‚¬â€œ and give your customers even more ways to enjoy it. See payments in your bank account every month.</p>
           </div>
           <div class="w-col w-col-3">
             <img class="cc-features-icon" src="<?php echo get_template_directory_uri(); ?>/images/graph.png" width="150" alt="53ede40454f8e79e17592d25_graph.png">
             <div class="cc-features-title">Track and improve</div>
-            <p class="cc-features-text">From new customers to what’s been used by item, Classcast Analytics helps you see what’s working or where you need to improve.</p>
+            <p class="cc-features-text">From new customers to whatÃ¢â‚¬â„¢s been used by item, Classcast Analytics helps you see whatÃ¢â‚¬â„¢s working or where you need to improve.</p>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
         </div>
         <div class="cc-branding-text-wrap">
           <h3 class="cc-branding-headline">Content with your brand</h3>
-          <p class="cc-branding-text">Whether you need simple pages, amazing exercise libraries, professional release, music access, or a rich video list, it’s all included with your Classcast mobile product. Best of all,
+          <p class="cc-branding-text">Whether you need simple pages, amazing exercise libraries, professional release, music access, or a rich video list, itÃ¢â‚¬â„¢s all included with your Classcast mobile product. Best of all,
             <br>everything is published with your brand.</p>
           <div class="w-row">
             <div class="w-col w-col-6">
@@ -102,7 +102,7 @@
             </div>
             <div class="w-col w-col-6">
               <div class="cc-branding-subline">Simple styling</div>
-              <div>Classcast gives you the tools to easily apply your brand feel and color. Just select and upload your brand assets – a few clicks and you’re done.</div>
+              <div>Classcast gives you the tools to easily apply your brand feel and color. Just select and upload your brand assets Ã¢â‚¬â€œ a few clicks and youÃ¢â‚¬â„¢re done.</div>
             </div>
           </div>
         </div>
@@ -112,12 +112,12 @@
       <div class="cc-users-img"></div>
       <div class="w-container cc-content-container cc-users-content">
         <h3 class="cc-users-headline">Know your customers</h3>
-        <p class="cc-users-text">Intelligently manage and connect with customers. Notify them of upcoming events, see who is viewing your content, and how much they love it – or don’t. Keep in touch with your customers and reach out to them when you need to on their device.</p>
+        <p class="cc-users-text">Intelligently manage and connect with customers. Notify them of upcoming events, see who is viewing your content, and how much they love it Ã¢â‚¬â€œ or donÃ¢â‚¬â„¢t. Keep in touch with your customers and reach out to them when you need to on their device.</p>
         <div
         class="w-row">
           <div class="w-col w-col-6">
             <div class="cc-users-subline">Know what they do</div>
-            <div class="cc-users-subtext">With Classcast you know who is using your product and how, so it’s easy to target your content, marketing or sales to the right customers and&nbsp;drive growth in your business</div>
+            <div class="cc-users-subtext">With Classcast you know who is using your product and how, so itÃ¢â‚¬â„¢s easy to target your content, marketing or sales to the right customers and&nbsp;drive growth in your business</div>
           </div>
           <div class="w-col w-col-6">
             <div class="cc-users-subline">One single view</div>
@@ -130,11 +130,11 @@
     <div class="cc-content-img"></div>
     <div class="w-container cc-content-container cc-content-content">
       <h3 class="cc-content-headline">Content done right</h3>
-      <p class="cc-content-text">This is at the heart of what you do, create great content that changes peoples lives. So we have dedicated ourselves to making this fast and easy for you to load content and when you’re ready publish instantly to your customers.</p>
+      <p class="cc-content-text">This is at the heart of what you do, create great content that changes peoples lives. So we have dedicated ourselves to making this fast and easy for you to load content and when youÃ¢â‚¬â„¢re ready publish instantly to your customers.</p>
       <div class="w-row">
         <div class="w-col w-col-6">
           <div class="cc-content-subline">Beautiful content</div>
-          <div class="cc-content-subtext">No more printing DVD’s and Booklets, broadcast your content to your customers with fast streaming video, beautiful text and in a way that is effortless to use.</div>
+          <div class="cc-content-subtext">No more printing DVDÃ¢â‚¬â„¢s and Booklets, broadcast your content to your customers with fast streaming video, beautiful text and in a way that is effortless to use.</div>
         </div>
         <div class="w-col w-col-6">
           <div class="cc-content-subline">More time to create</div>
@@ -162,7 +162,7 @@
           <div class="w-clearfix cc-stats-icon-wrap">
             <img class="cc-stats-icon" src="<?php echo get_template_directory_uri(); ?>/images/funnel.png" width="76" alt="53ef1bef980b47c27ec5674a_funnel.png">
             <div class="cc-stats-subline">Know why customers
-              <br>stay or don’t.</div>
+              <br>stay or donÃ¢â‚¬â„¢t.</div>
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@
     <div class="w-slider-mask">
       <div class="w-slide">
         <div class="w-container cc-content-container">
-          <p class="cc-quote-text">“We discovered Classcast through our own network of professionals: it’s simply the best solution for class delivery we found.”</p>
+          <p class="cc-quote-text">Ã¢â‚¬Å“We discovered Classcast through our own network of professionals: itÃ¢â‚¬â„¢s simply the best solution for class delivery we found.Ã¢â‚¬Â</p>
           <div class="cc-quote-author-wrap">
             <div class="cc-quote-author">
               <div class="cc-quote-author-img-wrap">

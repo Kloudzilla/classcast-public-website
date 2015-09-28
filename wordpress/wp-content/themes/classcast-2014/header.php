@@ -106,7 +106,7 @@
 
 <body>
     <?php
-      if($template_section == 'home') {
+      /*if($template_section == 'home') {
     ?>
 		<div class="w-embed">
 		  <video autoplay="" loop="" style="width:100%; height: auto; position:absolute; z-index: -1;">
@@ -114,7 +114,7 @@
 		      <source src="<?php echo get_template_directory_uri(); ?>/videos/BackgroundVideo.ogv" type="video/ogg">
 		  </video>
 		</div>
-    <?php } ?>
+    <?php }*/ ?>
 
   <div class="cc-external-wrap">
     <div class="cc-hero <?php echo(($template_section =='home')?'home' :'');?> <?php echo(($template_section =='about')?'about' :'');?> <?php echo(($template_section =='aboutpost')?'about' :'');?>
@@ -345,7 +345,7 @@
             </div>
             <div class="w-slider-nav w-round cc-home-hero-slider-nav"></div>
           </div>
-          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE&nbsp;↓</div>
+          <div class="w-hidden-medium w-hidden-small w-hidden-tiny cc-hero-scrolldown">SCROLL&nbsp;DOWN&nbsp;TO&nbsp;LEARN&nbsp;MORE</div>
         </div>
       </div>
 
